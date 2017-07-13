@@ -1,0 +1,150 @@
+\documentclass[book,12pt,twoside,openright,authoryear]{report}
+\usepackage{subfigure}
+\usepackage[subfigure]{tocloft}
+\usepackage[title,titletoc,toc]{appendix}
+\usepackage{shorttoc}
+\usepackage[utf8x]{inputenc}
+\usepackage[english]{babel}
+\usepackage[nottoc]{tocbibind} %afficher plus d'info dans table matieres
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{enumitem}
+\usepackage{multicol}
+\usepackage{listings}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{stmaryrd}
+\usepackage{setspace}
+\linespread{1.5}
+\usepackage{fancyhdr}%<-------------to control headers and footers
+\usepackage[a4paper,margin=1in,footskip=.25in]{geometry}
+\renewcommand{\labelitemi}{\tiny$\blacksquare$}
+\renewcommand{\labelitemii}{\tiny$\bullet$}
+\usepackage{hyperref}%[hidelinks]
+\usepackage{color}
+\usepackage[usenames,dvipsnames]{xcolor}
+\definecolor{c1}{rgb}{0.55,0,0}
+\definecolor{c2}{rgb}{0,0.35,0}
+\definecolor{c3}{rgb}{1,0.5,0}
+\definecolor{c4}{rgb}{0.1,0.1,0.7}
+\definecolor{c5}{rgb}{1,0.5,0}
+\usepackage{listings}
+\usepackage{changepage}
+%\usepackage[round]{natbib}
+\usepackage{adforn}
+\usepackage{tikz}
+\usepackage{caption}
+\usepackage{eurosym}
+\usepackage{longtable} 
+\usepackage{booktabs}
+\hypersetup{
+    pdfstartview={FitH},    % fits the width of the page to the window
+    pdftitle={PhD Thesis - Supply Function Equilibria on the Electricity Market},    % title
+    pdfauthor={Alexis Bergès},     % author
+    pdfsubject={Economic Theory},   % subject of the document
+    pdfkeywords={Supply function}{Electricity} {Equilibria} {Ramping costs} {Day-ahead}{Stochastic}{Dynamics}, % list of keywords
+    colorlinks=true,       % false: boxed links; true: colored links
+    linkcolor=black,          % color of internal links (change box color with linkbordercolor)
+    citecolor=c1,        % color of links to bibliography
+    filecolor=black,      % color of file links
+    urlcolor=c4           % color of external links
+    }
+
+
+%\usepackage[utf8x]{inputenc}
+%\usepackage{amsfonts}
+%\usepackage{amsmath}
+%\usepackage{amssymb}
+%\usepackage{newtxtext}
+%\usepackage{newtxmath}
+%\usepackage{latexsym}
+%%\usepackage[pdftex]{graphicx}
+%\usepackage[round]{natbib}
+%\usepackage{tikz}
+%\usepackage{geometry}
+%\usepackage{setspace}
+%\usepackage{import}
+%\usepackage[english]{babel}
+%\usepackage{tocloft}
+%\usepackage{emptypage}
+%\usepackage{shorttoc}
+%\usepackage{changepage}
+%\usepackage{adforn}
+%\usepackage{scalefnt}
+%\usepackage{enumitem}
+%\usepackage[stable]{footmisc}
+%\usetikzlibrary{patterns}
+%\usepackage{appendix}
+
+\raggedbottom
+\setlength{\footskip}{30pt}
+
+%\setlength{\bibsep}{0pt plus 0.3ex}
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{corollary}[theorem]{Corollary}
+\newenvironment{proof}[1][Proof]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}]}{\end{trivlist}}
+\newenvironment{definition}[1][Definition]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}]}{\end{trivlist}}
+\newenvironment{example}[1][Example]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}]}{\end{trivlist}}
+\newenvironment{remark}[1][Remark]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}]}{\end{trivlist}}
+\newcommand{\qed}{$\blacksquare$}
+
+
+\pdfmapfile{+OrnementsADF.map}
+
+
+\begin{document}
+
+\pagenumbering{gobble}
+
+\include{Titre}
+
+\pagenumbering{roman}
+
+\onehalfspace
+%\doublespace
+
+\include{Remerciements}
+
+\renewcommand{\cftchappresnum}{Chapter\space}
+\renewcommand{\cftchapaftersnum}{:}
+\renewcommand{\cftchapnumwidth}{6em}
+
+\shorttoc{Contents}{0}
+\cleardoublepage
+
+\pagenumbering{arabic}
+\include{intro}
+\include{resumes}
+
+\include{ch1}
+\include{ch2}
+
+\singlespacing
+
+\bibliographystyle{apalike}
+\renewcommand\bibname{References}
+\bibliography{biblio.bib}
+
+\makeatletter
+\renewcommand*\l@figure{\@dottedtocline{1}{1 em}{3.2em}}
+\makeatother
+
+\newpage
+\listoffigures
+\newpage
+
+
+\renewcommand{\cftchapleader}{\bfseries\cftdotfill{\cftchapdotsep}}
+\renewcommand{\cftchappagefont}{\bfseries}
+\renewcommand{\contentsname}{Table of Contents}
+\renewcommand{\cftsecdotsep}{\cftnodots}
+\setlength\cftaftertoctitleskip{20pt}
+\tableofcontents
+\end{document}
