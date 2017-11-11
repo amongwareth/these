@@ -27,11 +27,30 @@
 \BOOKMARK [2][-]{subsection.2.1.1}{General background}{section.2.1}% 27
 \BOOKMARK [2][-]{subsection.2.1.2}{Auction rules and mechanism}{section.2.1}% 28
 \BOOKMARK [1][-]{section.2.2}{Our data explained}{chapter.2}% 29
-\BOOKMARK [1][-]{section.2.3}{The economic model}{chapter.2}% 30
-\BOOKMARK [1][-]{section.2.4}{The political model}{chapter.2}% 31
-\BOOKMARK [1][-]{section.2.5}{Property rights institutions}{chapter.2}% 32
-\BOOKMARK [1][-]{section.2.6}{Conclusion}{chapter.2}% 33
-\BOOKMARK [0][-]{section*.22}{Appendix}{}% 34
-\BOOKMARK [1][-]{section.b.2.A}{Appendix Feasible investments \(proof of Prop. n\260\)}{section*.22}% 35
-\BOOKMARK [0][-]{chapter*.23}{References}{}% 36
-\BOOKMARK [0][-]{section*.24}{List of Figures}{}% 37
+\BOOKMARK [1][-]{section.2.3}{Methodology}{chapter.2}% 30
+\BOOKMARK [2][-]{subsection.2.3.1}{Point selection}{section.2.3}% 31
+\BOOKMARK [2][-]{subsection.2.3.2}{Regression methodology}{section.2.3}% 32
+\BOOKMARK [1][-]{section.2.4}{Results }{chapter.2}% 33
+\BOOKMARK [2][-]{subsection.2.4.1}{Demand estimation}{section.2.4}% 34
+\BOOKMARK [2][-]{subsection.2.4.2}{Final regression}{section.2.4}% 35
+\BOOKMARK [1][-]{section.2.5}{Discussion }{chapter.2}% 36
+\BOOKMARK [2][-]{subsection.2.5.1}{Findings}{section.2.5}% 37
+\BOOKMARK [2][-]{subsection.2.5.2}{Internal and external validity}{section.2.5}% 38
+\BOOKMARK [2][-]{subsection.2.5.3}{Endogeneity}{section.2.5}% 39
+\BOOKMARK [1][-]{section.2.6}{Conclusion}{chapter.2}% 40
+\BOOKMARK [0][-]{chapter*.50}{Bibliography}{}% 41
+\BOOKMARK [1][-]{section.2.7}{Results of the point selection methodology }{chapter*.50}% 42
+\BOOKMARK [2][-]{subsection.2.7.1}{Precision of point selection}{section.2.7}% 43
+\BOOKMARK [2][-]{subsection.2.7.2}{Observations of bidding frictions}{section.2.7}% 44
+\BOOKMARK [2][-]{subsection.2.7.3}{Value of selected points \(determining K\) }{section.2.7}% 45
+\BOOKMARK [2][-]{subsection.2.7.4}{Discussion and Conclusion}{section.2.7}% 46
+\BOOKMARK [2][-]{subsection.2.7.5}{Technical details}{section.2.7}% 47
+\BOOKMARK [2][-]{subsection.2.7.6}{Outlier detection and removal}{section.2.7}% 48
+\BOOKMARK [2][-]{subsection.2.7.7}{Summary statistics of selected points}{section.2.7}% 49
+\BOOKMARK [1][-]{section.2.8}{Appendix: Technical details on PLUR}{chapter*.50}% 50
+\BOOKMARK [2][-]{subsection.2.8.1}{Methodology to aggregate geographically dispersed information on a national level}{section.2.8}% 51
+\BOOKMARK [1][-]{section.2.9}{Appendix : Computational details and descriptives}{chapter*.50}% 52
+\BOOKMARK [2][-]{subsection.2.9.1}{Hard choices in the PLU computation}{section.2.9}% 53
+\BOOKMARK [2][-]{subsection.2.9.2}{Descriptive Statistics}{section.2.9}% 54
+\BOOKMARK [0][-]{chapter*.101}{References}{}% 55
+\BOOKMARK [0][-]{section*.102}{List of Figures}{}% 56

@@ -30,11 +30,65 @@
 \contentsline {subsection}{\numberline {2.1.1}General background}{43}{subsection.2.1.1}
 \contentsline {subsection}{\numberline {2.1.2}Auction rules and mechanism}{44}{subsection.2.1.2}
 \contentsline {section}{\numberline {2.2}Our data explained}{45}{section.2.2}
-\contentsline {section}{\numberline {2.3}The economic model}{48}{section.2.3}
-\contentsline {section}{\numberline {2.4}The political model}{48}{section.2.4}
-\contentsline {section}{\numberline {2.5}Property rights institutions}{48}{section.2.5}
-\contentsline {section}{\numberline {2.6}Conclusion}{48}{section.2.6}
-\contentsline {chapter}{Appendix}{48}{section*.22}
-\contentsline {section}{Appendix \numberline {2.A}Feasible investments (proof of Prop. n\IeC {\textdegree })}{48}{section.b.2.A}
-\contentsline {chapter}{References}{49}{chapter*.23}
-\contentsline {chapter}{List of Figures}{51}{section*.24}
+\contentsline {section}{\numberline {2.3}Methodology}{48}{section.2.3}
+\contentsline {subsection}{\numberline {2.3.1}Point selection}{50}{subsection.2.3.1}
+\contentsline {subsubsection}{Purpose}{52}{section*.24}
+\contentsline {subsubsection}{Non-parametric technique to compare bid functions}{52}{section*.25}
+\contentsline {subsection}{\numberline {2.3.2}Regression methodology}{54}{subsection.2.3.2}
+\contentsline {subsubsection}{Identification}{54}{section*.28}
+\contentsline {subsubsection}{Left-hand-side variables}{55}{section*.29}
+\contentsline {subsubsection}{Right-hand-side variables}{55}{section*.30}
+\contentsline {subparagraph}{Generating proxies for uncertainty from market demand (PLU$^D$)}{56}{section*.31}
+\contentsline {subparagraph}{In the first step,}{56}{section*.32}
+\contentsline {subparagraph}{In the second step,}{56}{section*.33}
+\contentsline {subparagraph}{In the third step,}{57}{section*.34}
+\contentsline {subparagraph}{Generating proxy for uncertainty from renewable energies (PLU$^R$)}{57}{section*.35}
+\contentsline {subparagraph}{Controls}{59}{section*.36}
+\contentsline {subsubsection}{Extensions and robustness checks}{62}{section*.39}
+\contentsline {subsubsection}{Bootstrapping standard errors}{62}{section*.40}
+\contentsline {subparagraph}{Kernel based uncertainty forecasts (PLU$^D$)}{63}{section*.41}
+\contentsline {section}{\numberline {2.4}Results }{64}{section.2.4}
+\contentsline {subsection}{\numberline {2.4.1}Demand estimation}{64}{subsection.2.4.1}
+\contentsline {subsection}{\numberline {2.4.2}Final regression}{69}{subsection.2.4.2}
+\contentsline {paragraph}{For the point of inflection ($k=3$),}{70}{section*.44}
+\contentsline {paragraph}{For the other points ($k=1,2,4,5$),}{72}{section*.47}
+\contentsline {section}{\numberline {2.5}Discussion }{73}{section.2.5}
+\contentsline {subsection}{\numberline {2.5.1}Findings}{73}{subsection.2.5.1}
+\contentsline {subsection}{\numberline {2.5.2}Internal and external validity}{75}{subsection.2.5.2}
+\contentsline {subsection}{\numberline {2.5.3}Endogeneity}{76}{subsection.2.5.3}
+\contentsline {section}{\numberline {2.6}Conclusion}{78}{section.2.6}
+\contentsline {chapter}{Bibliography}{83}{chapter*.50}
+\contentsline {section}{\numberline {2.7}Results of the point selection methodology }{86}{section.2.7}
+\contentsline {subsection}{\numberline {2.7.1}Precision of point selection}{86}{subsection.2.7.1}
+\contentsline {subsection}{\numberline {2.7.2}Observations of bidding frictions}{87}{subsection.2.7.2}
+\contentsline {subsection}{\numberline {2.7.3}Value of selected points (determining $K$) }{89}{subsection.2.7.3}
+\contentsline {subsection}{\numberline {2.7.4}Discussion and Conclusion}{91}{subsection.2.7.4}
+\contentsline {subsection}{\numberline {2.7.5}Technical details}{92}{subsection.2.7.5}
+\contentsline {subsubsection}{Using the kernel density estimation (KDE) in our setting}{92}{section*.57}
+\contentsline {subsubsection}{Hard choices in the code of the KDE}{93}{section*.58}
+\contentsline {paragraph}{Kernel choice:}{93}{section*.59}
+\contentsline {paragraph}{Bandwidth choice:}{93}{section*.60}
+\contentsline {subsection}{\numberline {2.7.6}Outlier detection and removal}{96}{subsection.2.7.6}
+\contentsline {subsection}{\numberline {2.7.7}Summary statistics of selected points}{97}{subsection.2.7.7}
+\contentsline {section}{\numberline {2.8}Appendix: Technical details on PLU$^R$}{98}{section.2.8}
+\contentsline {subsection}{\numberline {2.8.1}Methodology to aggregate geographically dispersed information on a national level}{98}{subsection.2.8.1}
+\contentsline {subsubsection}{Dealing with meteorological data}{98}{section*.69}
+\contentsline {subparagraph}{Interpolation methodology on weather observations}{98}{section*.70}
+\contentsline {subparagraph}{Picture treatment to recover weather forecasts}{99}{section*.73}
+\contentsline {subparagraph}{Autocorrelation lengthscale}{101}{section*.76}
+\contentsline {subsubsection}{Aggregation of local information}{102}{section*.78}
+\contentsline {subparagraph}{Wind1DA}{102}{section*.79}
+\contentsline {subparagraph}{Tempeff15}{105}{section*.82}
+\contentsline {subparagraph}{Tempeff}{106}{section*.84}
+\contentsline {subparagraph}{Roll\_Temp$H$}{106}{section*.85}
+\contentsline {subparagraph}{Solar}{106}{section*.86}
+\contentsline {subparagraph}{SolarRest}{107}{section*.88}
+\contentsline {subparagraph}{RteBlackBox}{108}{section*.90}
+\contentsline {section}{\numberline {2.9}Appendix : Computational details and descriptives}{109}{section.2.9}
+\contentsline {subsection}{\numberline {2.9.1}Hard choices in the PLU computation}{109}{subsection.2.9.1}
+\contentsline {subsection}{\numberline {2.9.2}Descriptive Statistics}{111}{subsection.2.9.2}
+\contentsline {subsubsection}{On realised market equilibria}{111}{section*.93}
+\contentsline {subsubsection}{On player bid functions}{112}{section*.96}
+\contentsline {subsubsection}{On exogenous factors}{112}{section*.99}
+\contentsline {chapter}{References}{113}{chapter*.101}
+\contentsline {chapter}{List of Figures}{115}{section*.102}
