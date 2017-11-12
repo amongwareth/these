@@ -96,11 +96,23 @@ Green, R.~J. and Newbery, D.~M. (1992).
 \newblock Competition in the british electricity spot market.
 \newblock {\em Journal of political economy}, 100(5):929--953.
 
+\bibitem[Grossman, 1981]{grossman1981nash}
+Grossman, S.~J. (1981).
+\newblock Nash equilibrium and the industrial organization of markets with
+  large fixed costs.
+\newblock {\em Econometrica: Journal of the Econometric Society}, pages
+  1149--1172.
+
 \bibitem[Hobbs, 2001]{hobbs2001next}
 Hobbs, B.~F. (2001).
 \newblock {\em The next generation of electric power unit commitment models},
   volume~36.
 \newblock Springer.
+
+\bibitem[Holmberg et~al., 2008]{holmberg2008supply}
+Holmberg, P., Newbery, D.~M., and Ralph, D. (2008).
+\newblock Supply function equilibria: Step functions and continuous
+  representations.
 
 \bibitem[Hortacsu and Puller, 2008]{hortacsu2008understanding}
 Hortacsu, A. and Puller, S.~L. (2008).
@@ -190,6 +202,11 @@ Silverman, B. and Ramsay, J. (2005).
 Silverman, B.~W. (1986).
 \newblock {\em Density estimation for statistics and data analysis}, volume~26.
 \newblock CRC press.
+
+\bibitem[von~der Fehr and Harbord, 1993]{von1993spot}
+von~der Fehr, N.-H.~M. and Harbord, D. (1993).
+\newblock Spot market competition in the uk electricity industry.
+\newblock {\em The Economic Journal}, 103(418):531--546.
 
 \bibitem[White, 1980]{white1980heteroskedasticity}
 White, H. (1980).
