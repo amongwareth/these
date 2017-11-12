@@ -9,44 +9,46 @@ A level-1 auxiliary file: ch1.aux
 A level-1 auxiliary file: ch2.aux
 The style file: apalike.bst
 Database file #1: biblio.bib.bib
-You've used 28 entries,
+Warning--empty journal in rtewebsite1
+You've used 39 entries,
             1935 wiz_defined-function locations,
-            631 strings with 7684 characters,
-and the built_in function-call counts, 9434 in all, are:
-= -- 954
-> -- 294
-< -- 29
-+ -- 96
-- -- 90
-* -- 710
-:= -- 1681
-add.period$ -- 81
-call.type$ -- 28
-change.case$ -- 185
-chr.to.int$ -- 28
-cite$ -- 28
-duplicate$ -- 384
-empty$ -- 673
-format.name$ -- 138
-if$ -- 1842
+            693 strings with 9352 characters,
+and the built_in function-call counts, 13279 in all, are:
+= -- 1345
+> -- 405
+< -- 40
++ -- 134
+- -- 124
+* -- 1016
+:= -- 2358
+add.period$ -- 113
+call.type$ -- 39
+change.case$ -- 259
+chr.to.int$ -- 39
+cite$ -- 40
+duplicate$ -- 537
+empty$ -- 957
+format.name$ -- 187
+if$ -- 2591
 int.to.chr$ -- 1
 int.to.str$ -- 0
-missing$ -- 23
-newline$ -- 140
-num.names$ -- 84
-pop$ -- 142
+missing$ -- 32
+newline$ -- 194
+num.names$ -- 117
+pop$ -- 194
 preamble$ -- 1
-purify$ -- 185
+purify$ -- 257
 quote$ -- 0
-skip$ -- 321
+skip$ -- 447
 stack$ -- 0
-substring$ -- 655
-swap$ -- 47
-text.length$ -- 4
+substring$ -- 951
+swap$ -- 64
+text.length$ -- 6
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 160
-warning$ -- 0
-while$ -- 81
+type$ -- 224
+warning$ -- 1
+while$ -- 116
 width$ -- 0
-write$ -- 349
+write$ -- 490
+(There was 1 warning)

@@ -19,11 +19,28 @@ Arima, K. (2012).
   resolution analysis.
 \newblock Technical report, Wärtsilä Power Plants.
 
+\bibitem[Berg et~al., 1999]{berg1999bid}
+Berg, S.~A., Boukai, B., and Landsberger, M. (1999).
+\newblock Bid functions for treasury securities; across countries comparison.
+\newblock Technical report, Citeseer.
+
 \bibitem[Berg\`{e}s and Martimort, 2014]{bergesmartimort2014}
 Berg\`{e}s, A. and Martimort, D. (2014).
 \newblock Dynamics of the electricity day-ahead market : Supply function
   equilibria and ramping costs.
 \newblock Technical report, Paris School of Economics.
+
+\bibitem[Bertoldi and Atanasiu, 2007]{eleceurope}
+Bertoldi, P. and Atanasiu, B. (2007).
+\newblock Electricity consumption and efficiency trends in the enlarged
+  european union, status report.
+\newblock Technical report, Institute for Environment and Sustainability,
+  European Commission.
+
+\bibitem[Boiteux, 1960]{boiteux1960peak}
+Boiteux, M. (1960).
+\newblock Peak-load pricing.
+\newblock {\em The Journal of Business}, 33(2):157--179.
 
 \bibitem[Bolle, 1992]{bolle1992supply}
 Bolle, F. (1992).
@@ -36,6 +53,13 @@ Borenstein, S., Bushnell, J.~B., and Wolak, F.~A. (2002).
 \newblock Measuring market inefficiencies in california's restructured
   wholesale electricity market.
 \newblock {\em American Economic Review}, 92(5):1376--1405.
+
+\bibitem[Boukai and Landsberger, 1998]{boukai1998market}
+Boukai, B. and Landsberger, M. (1998).
+\newblock Market bid functions for treasury securities as logistic growth
+  curves.
+\newblock Technical report, Working Paper, Indiana University--Purdue
+  University, Indianapolis, Indiana.
 
 \bibitem[Boyle, 2007]{Boyle}
 Boyle, G. (2007).
@@ -57,10 +81,20 @@ GE (2015).
 \newblock Heavy-duty gas turbine operating and maintenance considerations.
 \newblock Technical report, General Electrics Energy.
 
+\bibitem[Green, 1991]{green1991reshaping}
+Green, R. (1991).
+\newblock Reshaping the cegb: electricity privatization in the uk.
+\newblock {\em Utilities Policy}, 1(3):245--254.
+
+\bibitem[Green, 1999]{green1999electricity}
+Green, R. (1999).
+\newblock The electricity contract market in england and wales.
+\newblock {\em The Journal of Industrial Economics}, 47(1):107--124.
+
 \bibitem[Green and Newbery, 1992]{Newgreen}
-Green, R. and Newbery, D. (1992).
+Green, R.~J. and Newbery, D.~M. (1992).
 \newblock Competition in the british electricity spot market.
-\newblock {\em JPE}.
+\newblock {\em Journal of political economy}, 100(5):929--953.
 
 \bibitem[Hobbs, 2001]{hobbs2001next}
 Hobbs, B.~F. (2001).
@@ -73,6 +107,11 @@ Hortacsu, A. and Puller, S.~L. (2008).
 \newblock Understanding strategic bidding in multi-unit auctions: a case study
   of the texas electricity spot market.
 \newblock {\em The RAND Journal of Economics}, 39(1):86--114.
+
+\bibitem[Kastl, 2011]{kastl2011discrete}
+Kastl, J. (2011).
+\newblock Discrete bids and empirical inference in divisible good auctions.
+\newblock {\em The Review of Economic Studies}, 78(3):974--1014.
 
 \bibitem[Klemperer and Meyer, 1989]{KM}
 Klemperer, P. and Meyer, M. (1989).
@@ -122,6 +161,16 @@ Reichl, J., Schmidthaler, M., and Schneider, F. (2013).
 REN21, S.~C. (2013).
 \newblock Renewables 2013, global status report.
 
+\bibitem[RTE, 2014]{rtewebsite1}
+RTE (2014).
+\newblock Website of rte, the french grid operator.
+
+\bibitem[Salgado-Ugarte et~al., 1994]{salgado1994exploring}
+Salgado-Ugarte, I.~H., Shimizu, M., and Taniuchi, T. (1994).
+\newblock Exploring the shape of univariate data using kernel density
+  estimators.
+\newblock {\em Stata Technical Bulletin}, 3(16).
+
 \bibitem[Seierstad and Sydsaeter, 1987]{constraint}
 Seierstad, A. and Sydsaeter, K. (1987).
 \newblock {\em Optimal Control Theory with Economics Applications}.
@@ -136,6 +185,18 @@ Sewalt, M. and De~Jong, C. (2003).
 Silverman, B. and Ramsay, J. (2005).
 \newblock {\em Functional Data Analysis}.
 \newblock Springer.
+
+\bibitem[Silverman, 1986]{silverman1986density}
+Silverman, B.~W. (1986).
+\newblock {\em Density estimation for statistics and data analysis}, volume~26.
+\newblock CRC press.
+
+\bibitem[White, 1980]{white1980heteroskedasticity}
+White, H. (1980).
+\newblock A heteroskedasticity-consistent covariance matrix estimator and a
+  direct test for heteroskedasticity.
+\newblock {\em Econometrica: Journal of the Econometric Society}, pages
+  817--838.
 
 \bibitem[Wolak, 2007]{wolak2007quantifying}
 Wolak, F.~A. (2007).
