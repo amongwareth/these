@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.7.5)  12 NOV 2017 18:58
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.7.5)  13 NOV 2017 23:28
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1102,7 +1102,7 @@ Missing character: There is no m in font OrnementsADF!
 Missing character: There is no i in font OrnementsADF!
 Missing character: There is no c in font OrnementsADF!
 Missing character: There is no s in font OrnementsADF!
-Package hyperref Info: Option `colorlinks' set `true' on input line 52.
+Package hyperref Info: Option `colorlinks' set `true' on input line 53.
 \c@theorem=\count173
 {/usr/local/texlive/2017/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/usr/loc
 al/texlive/2017/texmf-dist/fonts/map/dvips/adforn/OrnementsADF.map
@@ -1123,27 +1123,27 @@ LaTeX Warning: Label `newapproach' multiply defined.
 ))
 \openout1 = `Thesis.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 103.
-LaTeX Font Info:    ... okay on input line 103.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 103.
-LaTeX Font Info:    ... okay on input line 103.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 103.
-LaTeX Font Info:    ... okay on input line 103.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 103.
-LaTeX Font Info:    ... okay on input line 103.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 103.
-LaTeX Font Info:    ... okay on input line 103.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 103.
-LaTeX Font Info:    ... okay on input line 103.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 103.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 103.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 104.
+LaTeX Font Info:    ... okay on input line 104.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 104.
+LaTeX Font Info:    ... okay on input line 104.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 104.
+LaTeX Font Info:    ... okay on input line 104.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 104.
+LaTeX Font Info:    ... okay on input line 104.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 104.
+LaTeX Font Info:    ... okay on input line 104.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 104.
+LaTeX Font Info:    ... okay on input line 104.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 104.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 104.
 
  (/usr/local/texlive/2017/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 103.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 103.
-LaTeX Font Info:    ... okay on input line 103.
+LaTeX Font Info:    ... okay on input line 104.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 104.
+LaTeX Font Info:    ... okay on input line 104.
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/ucs/ucsencs.def
 File: ucsencs.def 2011/01/21 Fixes to fontencodings LGR, T3
@@ -1215,7 +1215,7 @@ e
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 \AtBeginShipoutBox=\box76
-Package hyperref Info: Link coloring ON on input line 103.
+Package hyperref Info: Link coloring ON on input line 104.
 (/usr/local/texlive/2017/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 
@@ -1224,9 +1224,9 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count181
 )
-LaTeX Info: Redefining \ref on input line 103.
-LaTeX Info: Redefining \pageref on input line 103.
-LaTeX Info: Redefining \nameref on input line 103.
+LaTeX Info: Redefining \ref on input line 104.
+LaTeX Info: Redefining \pageref on input line 104.
+LaTeX Info: Redefining \nameref on input line 104.
 
 (./Thesis.out) (./Thesis.out)
 \@outlinefile=\write4
@@ -1329,12 +1329,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 22--23
 
  []
 
-
+[11]
 Underfull \hbox (badness 10000) in paragraph at lines 26--27
 
  []
 
-[11]
+
 Underfull \hbox (badness 10000) in paragraph at lines 28--29
 
  []
@@ -1344,7 +1344,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 30--31
 
  []
 
-
+[12]
 Underfull \hbox (badness 10000) in paragraph at lines 32--33
 
  []
@@ -1359,12 +1359,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 36--37
 
  []
 
-[12]
+
 Underfull \hbox (badness 10000) in paragraph at lines 51--52
 
  []
 
-
+[13]
 Underfull \hbox (badness 10000) in paragraph at lines 53--54
 
  []
@@ -1374,9 +1374,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 55--56
 
  []
 
-[13] (/usr/local/texlive/2017/texmf-dist/tex/latex/ucs/data/uni-32.def
-File: uni-32.def 2013/05/13 UCS: Unicode data U+2000..U+20FF
-)
+[14]
 Underfull \hbox (badness 10000) in paragraph at lines 61--62
 
  []
@@ -1391,7 +1389,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 65--66
 
  []
 
-[14]
+[15]
 Underfull \hbox (badness 10000) in paragraph at lines 73--74
 
  []
@@ -1402,52 +1400,67 @@ Underfull \hbox (badness 10000) in paragraph at lines 75--76
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 81--83
-
- []
-
-[15]
-Underfull \hbox (badness 10000) in paragraph at lines 88--90
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 91--92
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 93--94
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 95--96
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 97--98
+Underfull \hbox (badness 10000) in paragraph at lines 77--78
 
  []
 
 [16]
-Underfull \hbox (badness 10000) in paragraph at lines 104--105
+Underfull \hbox (badness 10000) in paragraph at lines 79--80
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 106--107
+Underfull \hbox (badness 10000) in paragraph at lines 81--82
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 108--109
+Underfull \hbox (badness 10000) in paragraph at lines 87--89
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 115--117
+Underfull \hbox (badness 10000) in paragraph at lines 90--91
+
+ []
+
+[17]
+Underfull \hbox (badness 10000) in paragraph at lines 96--98
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 99--100
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 101--102
+
+ []
+
+[18]
+Underfull \hbox (badness 10000) in paragraph at lines 103--104
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 105--106
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 107--108
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 109--110
+
+ []
+
+[19]
+Underfull \hbox (badness 10000) in paragraph at lines 116--117
 
  []
 
@@ -1456,123 +1469,154 @@ Underfull \hbox (badness 10000) in paragraph at lines 118--119
 
  []
 
-[17]
-Underfull \hbox (badness 10000) in paragraph at lines 126--127
+
+Underfull \hbox (badness 10000) in paragraph at lines 120--121
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 129--130
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 135--137
-
- []
-
-[18]
-Underfull \hbox (badness 10000) in paragraph at lines 145--146
-
- []
-
-
-Overfull \hbox (9.71242pt too wide) detected at line 153
-[]\U/msb/m/n/12 E [] \OT1/cmr/m/n/12 = \U/msb/m/n/12 E []
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 165--167
-
- []
-
-[19]
-Overfull \hbox (69.5848pt too wide) in alignment at lines 169--173
- [][][] []
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 173--175
-
- []
-
-
-Overfull \hbox (11.69133pt too wide) detected at line 181
-[]\OML/cmm/m/it/12 ^^Y[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 t\OT1/cmr/m/n/12 ) = 
-\OML/cmm/m/it/12 p\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 ^^R\OT1/cmr/m/n/12 (\OML/cm
-m/m/it/12 t\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 ; t\OT1/cmr/m/n/12 )\OML/cmm/m/it/
-12 S[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 p\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 ^^R\
-OT1/cmr/m/n/12 (\OML/cmm/m/it/12 t\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 ; t\OT1/cmr
-/m/n/12 )\OML/cmm/m/it/12 ; t\OT1/cmr/m/n/12 ) \OMS/cmsy/m/n/12 ^^@ \OML/cmm/m/
-it/12 C[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 S[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12
- p\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 ^^R\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 t\OT1/
-cmr/m/n/12 )\OML/cmm/m/it/12 ; t\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 ; t\OT1/cmr/m
-/n/12 )) \OMS/cmsy/m/n/12 ^^@ []\OML/cmm/m/it/12 @[]S[]\OT1/cmr/m/n/12 (\OML/cm
-m/m/it/12 p\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 ^^R\OT1/cmr/m/n/12 (\OML/cmm/m/it/
-12 t\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 ; t\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 ; t\
-OT1/cmr/m/n/12 )[]\OML/cmm/m/it/12 @[]p\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 ^^R\OT
-1/cmr/m/n/12 (\OML/cmm/m/it/12 t\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 ; t\OT1/cmr/m
-/n/12 )[]\OML/cmm/m/it/12 ^^[\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 ^^R; t\OT1/cmr/m
-/n/12 )[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 196--197
+Underfull \hbox (badness 10000) in paragraph at lines 127--128
 
  []
 
 [20]
-Underfull \hbox (badness 10000) in paragraph at lines 214--216
+Underfull \hbox (badness 10000) in paragraph at lines 133--135
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 217--219
+Underfull \hbox (badness 10000) in paragraph at lines 136--137
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 144--145
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 148--149
 
  []
 
 [21]
-Underfull \hbox (badness 10000) in paragraph at lines 246--247
+Underfull \hbox (badness 10000) in paragraph at lines 150--151
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 248--249
+Underfull \hbox (badness 10000) in paragraph at lines 156--158
+
+ []
+
+[22]
+Underfull \hbox (badness 10000) in paragraph at lines 166--167
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 250--251
+Overfull \hbox (9.71242pt too wide) detected at line 174
+[]\U/msb/m/n/12 E [] \OT1/cmr/m/n/12 = \U/msb/m/n/12 E []
+ []
+
+[23]
+Underfull \hbox (badness 10000) in paragraph at lines 186--188
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 252--253
+Overfull \hbox (39.2464pt too wide) in alignment at lines 191--195
+ [][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 195--198
 
  []
 
-[22pdfTeX warning (ext4): destination with the same identifier (name{equation.1
+
+Overfull \hbox (5.40479pt too wide) detected at line 204
+[]\OML/cmm/m/it/10.95 ^^Y[]\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 t; ^^R\OT1/c
+mr/m/n/10.95 (\OML/cmm/m/it/10.95 t\OT1/cmr/m/n/10.95 )) = \OML/cmm/m/it/10.95 
+p\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 ^^R\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/1
+0.95 t\OT1/cmr/m/n/10.95 )\OML/cmm/m/it/10.95 ; t\OT1/cmr/m/n/10.95 )\OML/cmm/m
+/it/10.95 S[]\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 p\OT1/cmr/m/n/10.95 (\OML/
+cmm/m/it/10.95 ^^R\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 t\OT1/cmr/m/n/10.95 )
+\OML/cmm/m/it/10.95 ; t\OT1/cmr/m/n/10.95 )\OML/cmm/m/it/10.95 ; t\OT1/cmr/m/n/
+10.95 ) \OMS/cmsy/m/n/10.95 ^^@ \OML/cmm/m/it/10.95 C[]\OT1/cmr/m/n/10.95 (\OML
+/cmm/m/it/10.95 S[]\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 p\OT1/cmr/m/n/10.95 
+(\OML/cmm/m/it/10.95 ^^R\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 t\OT1/cmr/m/n/1
+0.95 )\OML/cmm/m/it/10.95 ; t\OT1/cmr/m/n/10.95 )\OML/cmm/m/it/10.95 ; t\OT1/cm
+r/m/n/10.95 )) \OMS/cmsy/m/n/10.95 ^^@ []\OML/cmm/m/it/10.95 @[]S[]\OT1/cmr/m/n
+/10.95 (\OML/cmm/m/it/10.95 p\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 ^^R\OT1/cm
+r/m/n/10.95 (\OML/cmm/m/it/10.95 t\OT1/cmr/m/n/10.95 )\OML/cmm/m/it/10.95 ; t\O
+T1/cmr/m/n/10.95 )\OML/cmm/m/it/10.95 ; t\OT1/cmr/m/n/10.95 )[]\OML/cmm/m/it/10
+.95 @[]p\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 ^^R\OT1/cmr/m/n/10.95 (\OML/cmm
+/m/it/10.95 t\OT1/cmr/m/n/10.95 )\OML/cmm/m/it/10.95 ; t\OT1/cmr/m/n/10.95 )[]\
+OML/cmm/m/it/10.95 ^^[\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 ^^R; t\OT1/cmr/m/
+n/10.95 )[]
+ []
+
+[24]
+Underfull \hbox (badness 10000) in paragraph at lines 220--221
+
+ []
+
+[25]
+Underfull \hbox (badness 10000) in paragraph at lines 238--240
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 241--243
+
+ []
+
+[26]
+Underfull \hbox (badness 10000) in paragraph at lines 270--271
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 272--273
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 274--275
+
+ []
+
+[27pdfTeX warning (ext4): destination with the same identifier (name{equation.1
 .4.18}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.253 
-      ] <figch1/monopoly_complet.png, id=473, 639.38875pt x 401.5pt>
+l.275 
+      ]
+Underfull \hbox (badness 10000) in paragraph at lines 276--277
+
+ []
+
+<figch1/monopoly_complet.png, id=499, 639.38875pt x 401.5pt>
 File: figch1/monopoly_complet.png Graphic file (type png)
 
 <use figch1/monopoly_complet.png>
-Package pdftex.def Info: figch1/monopoly_complet.png used on input line 259.
+Package pdftex.def Info: figch1/monopoly_complet.png used on input line 283.
 (pdftex.def)             Requested size: 284.52756pt x 178.67pt.
 
-<figch1/monopoly_completab.png, id=474, 268.00125pt x 392.46625pt>
+<figch1/monopoly_completab.png, id=500, 268.00125pt x 392.46625pt>
 File: figch1/monopoly_completab.png Graphic file (type png)
 
 <use figch1/monopoly_completab.png>
-Package pdftex.def Info: figch1/monopoly_completab.png used on input line 259.
+Package pdftex.def Info: figch1/monopoly_completab.png used on input line 283.
 (pdftex.def)             Requested size: 128.0374pt x 187.49535pt.
- [23 <./figch1/monopoly_complet.png (PNG copy)> <./figch1/monopoly_completab.pn
-g (PNG copy)>]
-Overfull \hbox (32.51778pt too wide) detected at line 285
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[28]
+Overfull \hbox (32.51778pt too wide) detected at line 309
 [][]  [][] \OML/cmm/m/it/12 f[]p\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 a^^R \OT1/cmr
 /m/n/12 + \OML/cmm/m/it/12 b \OMS/cmsy/m/n/12 ^^@ \OML/cmm/m/it/12 p \OMS/cmsy/
 m/n/12 ^^@ \OT1/cmr/m/n/12 (\OML/cmm/m/it/12 n \OMS/cmsy/m/n/12 ^^@ \OT1/cmr/m/
@@ -1584,178 +1628,255 @@ n \OMS/cmsy/m/n/12 ^^@ \OT1/cmr/m/n/12 1)\OML/cmm/m/it/12 S\OT1/cmr/m/n/12 )[]
  ^^R[]\OT1/cmr/m/n/12 ) [][] []\OML/cmm/m/it/12 d^^R
  []
 
-[24pdfTeX warning (ext4): destination with the same identifier (name{equation.1
+[29 <./figch1/monopoly_complet.png (PNG copy)> <./figch1/monopoly_completab.png
+ (PNG copy)>]
+Underfull \hbox (badness 10000) in paragraph at lines 336--337
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 338--339
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 340--341
+
+ []
+
+[30pdfTeX warning (ext4): destination with the same identifier (name{equation.1
 .5.25}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.310 \end{proof}
-                 ]
-Underfull \hbox (badness 10000) in paragraph at lines 312--313
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 314--315
-
- []
-
-<figch1/oligovraiKMd.png, id=503, 583.17876pt x 367.3725pt>
+l.341 
+      ] <figch1/oligovraiKMd.png, id=533, 583.17876pt x 367.3725pt>
 File: figch1/oligovraiKMd.png Graphic file (type png)
 
 <use figch1/oligovraiKMd.png>
-Package pdftex.def Info: figch1/oligovraiKMd.png used on input line 327.
+Package pdftex.def Info: figch1/oligovraiKMd.png used on input line 353.
 (pdftex.def)             Requested size: 341.43306pt x 215.08861pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 331--332
+Underfull \hbox (badness 10000) in paragraph at lines 357--358
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 333--334
+Underfull \hbox (badness 10000) in paragraph at lines 359--360
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 335--336
-
- []
-
-[25]
-Underfull \hbox (badness 10000) in paragraph at lines 337--338
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 344--345
-
- []
-
-[26 <./figch1/oligovraiKMd.png (PNG copy)>]
-Underfull \hbox (badness 10000) in paragraph at lines 347--349
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 350--351
-
- []
-
-(/usr/local/texlive/2017/texmf-dist/tex/latex/ucs/data/uni-2.def
-File: uni-2.def 2013/05/13 UCS: Unicode data U+0200..U+02FF
-) [27]
-Underfull \hbox (badness 10000) in paragraph at lines 377--378
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 379--380
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 381--382
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 383--384
-
- []
-
-[28] <figch1/figdyn1.png, id=537, 960.58875pt x 603.25375pt>
-File: figch1/figdyn1.png Graphic file (type png)
-
-<use figch1/figdyn1.png>
-Package pdftex.def Info: figch1/figdyn1.png used on input line 387.
-(pdftex.def)             Requested size: 426.79134pt x 268.02824pt.
- [29 <./figch1/figdyn1.png (PNG copy)>]
-Underfull \hbox (badness 10000) in paragraph at lines 430--431
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 432--433
-
- []
-
-[30]
-Underfull \hbox (badness 10000) in paragraph at lines 452--454
+Underfull \hbox (badness 10000) in paragraph at lines 361--362
 
  []
 
 [31]
-Underfull \hbox (badness 10000) in paragraph at lines 465--467
+Underfull \hbox (badness 10000) in paragraph at lines 363--364
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 473--475
-
- []
-
-[32]
-Underfull \hbox (badness 10000) in paragraph at lines 485--487
+Underfull \hbox (badness 10000) in paragraph at lines 367--368
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 502--504
+Underfull \hbox (badness 10000) in paragraph at lines 369--370
+
+ []
+
+[32 <./figch1/oligovraiKMd.png (PNG copy)>]
+Underfull \hbox (badness 10000) in paragraph at lines 371--372
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 505--506
+Underfull \hbox (badness 10000) in paragraph at lines 373--376
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 380--381
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 382--383
 
  []
 
 [33]
-Overfull \hbox (89.43898pt too wide) in paragraph at lines 513--515
+Underfull \hbox (badness 10000) in paragraph at lines 384--385
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 386--387
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 388--389
+
+ []
+
+[34]
+Underfull \hbox (badness 10000) in paragraph at lines 390--391
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 392--393
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 397--399
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 400--401
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 402--403
+
+ []
+
+[35]
+Underfull \hbox (badness 10000) in paragraph at lines 404--405
+
+ []
+
+[36]
+Underfull \hbox (badness 10000) in paragraph at lines 419--420
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 421--422
+
+ []
+
+[37] [38]
+Underfull \hbox (badness 10000) in paragraph at lines 456--457
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 458--459
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 460--461
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 462--463
+
+ []
+
+[39] <figch1/figdyn1.png, id=597, 960.58875pt x 603.25375pt>
+File: figch1/figdyn1.png Graphic file (type png)
+
+<use figch1/figdyn1.png>
+Package pdftex.def Info: figch1/figdyn1.png used on input line 466.
+(pdftex.def)             Requested size: 426.79134pt x 268.02824pt.
+ [40 <./figch1/figdyn1.png (PNG copy)>]
+Underfull \hbox (badness 10000) in paragraph at lines 509--510
+
+ []
+
+[41]
+Underfull \hbox (badness 10000) in paragraph at lines 511--512
+
+ []
+
+[42]
+Underfull \hbox (badness 10000) in paragraph at lines 531--533
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 544--546
+
+ []
+
+[43]
+Underfull \hbox (badness 10000) in paragraph at lines 552--554
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 564--566
+
+ []
+
+[44]
+Underfull \hbox (badness 10000) in paragraph at lines 581--583
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 584--585
+
+ []
+
+[45]
+Overfull \hbox (89.43898pt too wide) in paragraph at lines 592--594
 \OT1/cmr/m/n/12 con-tin-u-ous and piece-wise con-tin-u-ously dif-fer-en-tiable 
 func-tion $\OML/cmm/m/it/12 ^^V$\OT1/cmr/m/n/12 , as shown in [[],
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 513--515
+Underfull \hbox (badness 10000) in paragraph at lines 592--594
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 516--517
+Underfull \hbox (badness 10000) in paragraph at lines 595--596
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 530--532
+Underfull \hbox (badness 10000) in paragraph at lines 609--611
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 537--539
+[46]
+Underfull \hbox (badness 10000) in paragraph at lines 616--618
 
  []
 
-[34]) [35]
+) [47]
 \openout2 = `ch2.aux'.
 
- (./ch2.tex [36
+ (./ch2.tex [48
 
 
 
 ]
 Chapter 2.
-[37] [38
+[49] [50
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 16--16
 [][][] \OT1/cmr/m/n/10 [[]], [[]], [[]], [[]],
  []
 
-[39]
+[51] (/usr/local/texlive/2017/texmf-dist/tex/latex/ucs/data/uni-32.def
+File: uni-32.def 2013/05/13 UCS: Unicode data U+2000..U+20FF
+)
+[52]
 
 Package hyperref Warning: Difference (2) between bookmark levels is greater 
 (hyperref)                than one, level fixed on input line 66.
@@ -1766,93 +1887,92 @@ Overfull \hbox (29.61737pt too wide) in paragraph at lines 69--73
  ini-ti-ated by [[]].
  []
 
-[40] [41] [42] <figch2/Shot35.pdf, id=716, 792.9625pt x 629.35126pt>
+[53] [54] [55] [56] <figch2/Shot35.pdf, id=790, 792.9625pt x 629.35126pt>
 File: figch2/Shot35.pdf Graphic file (type pdf)
 
 <use figch2/Shot35.pdf>
 Package pdftex.def Info: figch2/Shot35.pdf used on input line 142.
 (pdftex.def)             Requested size: 179.24373pt x 142.26378pt.
- <figch2/Shot36.pdf, id=717, 793.96625pt x 628.3475pt>
+ <figch2/Shot36.pdf, id=791, 793.96625pt x 628.3475pt>
 File: figch2/Shot36.pdf Graphic file (type pdf)
 
 <use figch2/Shot36.pdf>
 Package pdftex.def Info: figch2/Shot36.pdf used on input line 142.
 (pdftex.def)             Requested size: 179.76138pt x 142.26378pt.
- [43] [44 <./figch2/Shot35.pdf> <./figch2/Shot36.pdf>]
-<figch2/volplusconso3.pdf, id=748, 650.43pt x 361.35pt>
+ [57 <./figch2/Shot35.pdf> <./figch2/Shot36.pdf>]
+[58] <figch2/volplusconso3.pdf, id=820, 650.43pt x 361.35pt>
 File: figch2/volplusconso3.pdf Graphic file (type pdf)
 
 <use figch2/volplusconso3.pdf>
 Package pdftex.def Info: figch2/volplusconso3.pdf used on input line 219.
 (pdftex.def)             Requested size: 378.9865pt x 210.55038pt.
- [45 <./figch2/volplusconso3.pdf>]
+ [59 <./figch2/volplusconso3.pdf>]
 Overfull \hbox (18.23732pt too wide) in paragraph at lines 254--256
 []\OT1/cmr/m/n/12 Prices are spec-i-fied in \U/eurosym/m/n/12 e\OT1/cmr/m/n/12 
 /MWh with two dec-i-mal dig-its and must range from -3000\U/eurosym/m/n/12 e\OT
 1/cmr/m/n/12 /MWh
  []
 
-[46] [47] <figch2/aggbidfuncnozoom.pdf, id=787, 397.485pt x 289.08pt>
+[60] [61] <figch2/aggbidfuncnozoom.pdf, id=858, 397.485pt x 289.08pt>
 File: figch2/aggbidfuncnozoom.pdf Graphic file (type pdf)
 
 <use figch2/aggbidfuncnozoom.pdf>
 Package pdftex.def Info: figch2/aggbidfuncnozoom.pdf used on input line 297.
 (pdftex.def)             Requested size: 195.6124pt x 142.26378pt.
 
-<figch2/aggbidfuncwithzoom.pdf, id=788, 397.485pt x 289.08pt>
+<figch2/aggbidfuncwithzoom.pdf, id=859, 397.485pt x 289.08pt>
 File: figch2/aggbidfuncwithzoom.pdf Graphic file (type pdf)
 
 <use figch2/aggbidfuncwithzoom.pdf>
 Package pdftex.def Info: figch2/aggbidfuncwithzoom.pdf used on input line 297.
 (pdftex.def)             Requested size: 195.6124pt x 142.26378pt.
 
-<figch2/Shot28.pdf, id=789, 1225.57875pt x 497.86pt>
+<figch2/Shot28.pdf, id=860, 1225.57875pt x 497.86pt>
 File: figch2/Shot28.pdf Graphic file (type pdf)
  <use figch2/Shot28.pdf>
 Package pdftex.def Info: figch2/Shot28.pdf used on input line 308.
 (pdftex.def)             Requested size: 350.20992pt x 142.26378pt.
 
-<figch2/Shot27.pdf, id=790, 1237.62375pt x 494.84875pt>
+<figch2/Shot27.pdf, id=861, 1237.62375pt x 494.84875pt>
 File: figch2/Shot27.pdf Graphic file (type pdf)
 
 <use figch2/Shot27.pdf>
 Package pdftex.def Info: figch2/Shot27.pdf used on input line 312.
 (pdftex.def)             Requested size: 355.80463pt x 142.26378pt.
- (./texch2/FIN_overallsummary.tex
-Overfull \vbox (3.59894pt too high) has occurred while \output is active []
-
-
-[48 <./figch2/aggbidfuncnozoom.pdf> <./figch2/aggbidfuncwithzoom.pdf>])
-[49 <./figch2/Shot28.pdf> <./figch2/Shot27.pdf>] [50]
-<figch2/DemandplusK.pdf, id=870, 907.39pt x 736.7525pt>
+ (./texch2/FIN_overallsummary.tex [62]) [63] [64 <./figch2/aggbidfuncnozoom.pdf
+> <./figch2/aggbidfuncwithzoom.pdf> <./figch2/Shot28.pdf> <./figch2/Shot27.pdf>
+] [65]
+<figch2/DemandplusK.pdf, id=947, 907.39pt x 736.7525pt>
 File: figch2/DemandplusK.pdf Graphic file (type pdf)
 
 <use figch2/DemandplusK.pdf>
 Package pdftex.def Info: figch2/DemandplusK.pdf used on input line 408.
 (pdftex.def)             Requested size: 175.20271pt x 142.26378pt.
 
-<figch2/SupplyplusK.pdf, id=871, 926.46124pt x 736.7525pt>
+<figch2/SupplyplusK.pdf, id=948, 926.46124pt x 736.7525pt>
 File: figch2/SupplyplusK.pdf Graphic file (type pdf)
 
 <use figch2/SupplyplusK.pdf>
 Package pdftex.def Info: figch2/SupplyplusK.pdf used on input line 408.
 (pdftex.def)             Requested size: 178.88506pt x 142.26378pt.
- [51 <./figch2/DemandplusK.pdf> <./figch2/SupplyplusK.pdf>] [52]
-<figch2/Pic1_C_2011_H7_v30_sym.png, id=919, 876.27374pt x 637.38126pt>
+ [66] [67 <./figch2/DemandplusK.pdf> <./figch2/SupplyplusK.pdf>]
+<figch2/Pic1_C_2011_H7_v30_sym.png, id=994, 876.27374pt x 637.38126pt>
 File: figch2/Pic1_C_2011_H7_v30_sym.png Graphic file (type png)
 
 <use figch2/Pic1_C_2011_H7_v30_sym.png>
 Package pdftex.def Info: figch2/Pic1_C_2011_H7_v30_sym.png used on input line 4
 46.
 (pdftex.def)             Requested size: 289.46538pt x 210.55038pt.
- [53 <./figch2/Pic1_C_2011_H7_v30_sym.png>]
+ [68]
 
 LaTeX Font Warning: Font shape `U/stmry/b/n' undefined
 (Font)              using `U/stmry/m/n' instead on input line 501.
 
-<figch2/compare2d.pdf, id=934, 505.89pt x 289.08pt>
+[69 <./figch2/Pic1_C_2011_H7_v30_sym.png>]
+<figch2/compare2d.pdf, id=1015, 505.89pt x 289.08pt>
 File: figch2/compare2d.pdf Graphic file (type pdf)
- <use figch2/compare2d.pdf>
+
+<use figch2/compare2d.pdf>
 Package pdftex.def Info: figch2/compare2d.pdf used on input line 517.
 (pdftex.def)             Requested size: 301.33536pt x 170.71652pt.
 
@@ -1860,19 +1980,19 @@ Package pdftex.def Info: figch2/compare2d.pdf used on input line 517.
 pdfTeX warning: /usr/local/texlive/2017/bin/x86_64-darwin/pdflatex (file ./figc
 h2/Shot30.pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.
 5> allowed
-<figch2/Shot30.pdf, id=939, 1036.87375pt x 750.805pt>
+<figch2/Shot30.pdf, id=1020, 1036.87375pt x 750.805pt>
 File: figch2/Shot30.pdf Graphic file (type pdf)
  <use figch2/Shot30.pdf>
 Package pdftex.def Info: figch2/Shot30.pdf used on input line 529.
 (pdftex.def)             Requested size: 373.29008pt x 270.30118pt.
 
-[54] [55 <./figch2/compare2d.pdf> <./figch2/Shot30.pdf>] [56] [57] [58]
-[59]
+[70] [71 <./figch2/compare2d.pdf>] [72 <./figch2/Shot30.pdf>] [73] [74]
+[75] [76]
 
-LaTeX Warning: Reference `Lengthofautocorrel' on page 60 undefined on input lin
+LaTeX Warning: Reference `Lengthofautocorrel' on page 77 undefined on input lin
 e 730.
 
-[60]
+[77]
 Overfull \hbox (14.40273pt too wide) in paragraph at lines 759--760
 []\OT1/cmr/m/n/12 The vec-tor $[]$ for the de-mand equa-tion in-cludes the vari
 -ables: Tem-p-eff15, Roll[]Temp24,
@@ -1899,10 +2019,10 @@ Overfull \hbox (15.04736pt too wide) in paragraph at lines 800--800
  []
 
 
-LaTeX Warning: Reference `suncycle' on page 61 undefined on input line 804.
+LaTeX Warning: Reference `suncycle' on page 78 undefined on input line 804.
 
 
-LaTeX Warning: Reference `deltasun' on page 61 undefined on input line 809.
+LaTeX Warning: Reference `deltasun' on page 78 undefined on input line 809.
 
 
 Overfull \hbox (9.8341pt too wide) in paragraph at lines 816--816
@@ -1930,28 +2050,28 @@ Overfull \hbox (0.72598pt too wide) in paragraph at lines 825--826
  []
 
 
-LaTeX Warning: Reference `Gas' on page 61 undefined on input line 827.
+LaTeX Warning: Reference `Gas' on page 78 undefined on input line 827.
 
 
 Overfull \hbox (10.98825pt too wide) in paragraph at lines 827--827
 []|\TS1/cmr/m/n/12 £\OT1/cmr/m/n/12 /Therm| 
  []
 
-[61] <figch2/tempseasonality2.pdf, id=1083, 1267.73625pt x 662.475pt>
+[78] [79] <figch2/tempseasonality2.pdf, id=1173, 1267.73625pt x 662.475pt>
 File: figch2/tempseasonality2.pdf Graphic file (type pdf)
 
 <use figch2/tempseasonality2.pdf>
 Package pdftex.def Info: figch2/tempseasonality2.pdf used on input line 848.
 (pdftex.def)             Requested size: 272.22913pt x 142.26378pt.
 
-<figch2/seasonalityday3.pdf, id=1085, 1259.70625pt x 510.90875pt>
+<figch2/seasonalityday3.pdf, id=1175, 1259.70625pt x 510.90875pt>
 File: figch2/seasonalityday3.pdf Graphic file (type pdf)
 
 <use figch2/seasonalityday3.pdf>
 Package pdftex.def Info: figch2/seasonalityday3.pdf used on input line 858.
 (pdftex.def)             Requested size: 350.75475pt x 142.26378pt.
- [62] [63 <./figch2/tempseasonality2.pdf>]
-[64 <./figch2/seasonalityday3.pdf>] [65] [66] [67] [68]
+ [80] [81 <./figch2/tempseasonality2.pdf>]
+[82 <./figch2/seasonalityday3.pdf>] [83] [84] [85] [86] [87]
 *geometry* verbose mode - [ newgeometry ] result:
 * driver: pdftex
 * paper: a4paper
@@ -1995,20 +2115,20 @@ Underfull \hbox (badness 10000) in paragraph at lines 1058--1059
 
  []
 
-[69
+[88
 
-] [70]
+] [89]
 Underfull \hbox (badness 10000) in paragraph at lines 1064--1067
 
  []
 
-[71
+[90
 
-] [72] [73] (./texch2/FIN_main1_5.tex)
+] [91] [92] (./texch2/FIN_main1_5.tex)
 
 LaTeX Warning: Float too large for page by 56.33096pt on input line 1127.
 
-(./texch2/FIN_mainNS1_1.tex) (./texch2/FIN_mainNS1_3.tex)
+[93] (./texch2/FIN_mainNS1_1.tex) (./texch2/FIN_mainNS1_3.tex)
 
 LaTeX Warning: Float too large for page by 106.73271pt on input line 1152.
 
@@ -2016,24 +2136,24 @@ LaTeX Warning: Float too large for page by 106.73271pt on input line 1152.
 
 LaTeX Warning: Float too large for page by 106.73271pt on input line 1164.
 
-[74] [75] [76] [77] [78] [79]
+[94] [95] [96] [97] [98] [99]
 Underfull \hbox (badness 10000) in paragraph at lines 1330--1331
 
  []
 
-[80] <figch2/g10el.pdf, id=1321, 397.485pt x 491.436pt>
+[100] <figch2/g10el.pdf, id=1419, 397.485pt x 491.436pt>
 File: figch2/g10el.pdf Graphic file (type pdf)
- <use figch2/g10el.pdf>
+
+<use figch2/g10el.pdf>
 Package pdftex.def Info: figch2/g10el.pdf used on input line 1370.
 (pdftex.def)             Requested size: 386.10315pt x 491.4348pt.
-
-<figch2/g10hl.pdf, id=1323, 397.485pt x 491.436pt>
+ <figch2/g10hl.pdf, id=1421, 397.485pt x 491.436pt>
 File: figch2/g10hl.pdf Graphic file (type pdf)
- <use figch2/g10hl.pdf>
+
+<use figch2/g10hl.pdf>
 Package pdftex.def Info: figch2/g10hl.pdf used on input line 1370.
 (pdftex.def)             Requested size: 224.37518pt x 284.52756pt.
-
-[81 <./figch2/g10el.pdf> <./figch2/g10hl.pdf>]
+ [101 <./figch2/g10el.pdf> <./figch2/g10hl.pdf>]
 Underfull \hbox (badness 10000) in paragraph at lines 1405--1411
 
  []
@@ -2043,41 +2163,40 @@ Underfull \hbox (badness 10000) in paragraph at lines 1414--1415
 
  []
 
-<figch2/Shot06.pdf, id=1375, 1000.73875pt x 710.655pt>
+<figch2/Shot06.pdf, id=1474, 1000.73875pt x 710.655pt>
 File: figch2/Shot06.pdf Graphic file (type pdf)
  <use figch2/Shot06.pdf>
 Package pdftex.def Info: figch2/Shot06.pdf used on input line 1422.
 (pdftex.def)             Requested size: 213.70398pt x 136.57323pt.
 
-<figch2/Shot15.pdf, id=1377, 1002.74625pt x 709.65125pt>
+<figch2/Shot15.pdf, id=1476, 1002.74625pt x 709.65125pt>
 File: figch2/Shot15.pdf Graphic file (type pdf)
 
 <use figch2/Shot15.pdf>
 Package pdftex.def Info: figch2/Shot15.pdf used on input line 1422.
 (pdftex.def)             Requested size: 214.46928pt x 136.57323pt.
- [82 <./figch2/Shot06.pdf> <./figch2/Shot15.pdf>]
-<figch2/histslope3.pdf, id=1410, 1068.99374pt x 778.91pt>
+ [102]
+<figch2/histslope3.pdf, id=1492, 1068.99374pt x 778.91pt>
 File: figch2/histslope3.pdf Graphic file (type pdf)
 
 <use figch2/histslope3.pdf>
 Package pdftex.def Info: figch2/histslope3.pdf used on input line 1445.
 (pdftex.def)             Requested size: 136.65782pt x 99.58464pt.
 
-<figch2/histslope5.pdf, id=1412, 1072.005pt x 777.90625pt>
+<figch2/histslope5.pdf, id=1494, 1072.005pt x 777.90625pt>
 File: figch2/histslope5.pdf Graphic file (type pdf)
 
 <use figch2/histslope5.pdf>
 Package pdftex.def Info: figch2/histslope5.pdf used on input line 1445.
 (pdftex.def)             Requested size: 137.22272pt x 99.58464pt.
 
-<figch2/histslope7.pdf, id=1414, 1074.0125pt x 782.925pt>
+<figch2/histslope7.pdf, id=1496, 1074.0125pt x 782.925pt>
 File: figch2/histslope7.pdf Graphic file (type pdf)
 
 <use figch2/histslope7.pdf>
 Package pdftex.def Info: figch2/histslope7.pdf used on input line 1445.
 (pdftex.def)             Requested size: 137.10275pt x 99.58464pt.
- [83 <./figch2/histslope3.pdf> <./figch2/histslope5.pdf> <./figch2/histslope7.p
-df>]
+ [103 <./figch2/Shot06.pdf> <./figch2/Shot15.pdf>]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 1461.
@@ -2086,74 +2205,74 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 1461.
 
-<figch2/MC3.pdf, id=1460, 422.57875pt x 347.2975pt>
+[104 <./figch2/histslope3.pdf> <./figch2/histslope5.pdf> <./figch2/histslope7.p
+df>] <figch2/MC3.pdf, id=1564, 422.57875pt x 347.2975pt>
 File: figch2/MC3.pdf Graphic file (type pdf)
  <use figch2/MC3.pdf>
 Package pdftex.def Info: figch2/MC3.pdf used on input line 1474.
 (pdftex.def)             Requested size: 173.10365pt x 142.26378pt.
 
-<figch2/MC4.pdf, id=1462, 427.5975pt x 345.29pt>
+<figch2/MC4.pdf, id=1566, 427.5975pt x 345.29pt>
 File: figch2/MC4.pdf Graphic file (type pdf)
  <use figch2/MC4.pdf>
 Package pdftex.def Info: figch2/MC4.pdf used on input line 1474.
 (pdftex.def)             Requested size: 176.17735pt x 142.26378pt.
 
-<figch2/MC5.pdf, id=1464, 425.59pt x 348.30125pt>
+<figch2/MC5.pdf, id=1568, 425.59pt x 348.30125pt>
 File: figch2/MC5.pdf Graphic file (type pdf)
  <use figch2/MC5.pdf>
 Package pdftex.def Info: figch2/MC5.pdf used on input line 1478.
 (pdftex.def)             Requested size: 175.25931pt x 142.26378pt.
 
-<figch2/MC6.pdf, id=1466, 415.5525pt x 346.29375pt>
+<figch2/MC6.pdf, id=1570, 415.5525pt x 346.29375pt>
 File: figch2/MC6.pdf Graphic file (type pdf)
  <use figch2/MC6.pdf>
 Package pdftex.def Info: figch2/MC6.pdf used on input line 1478.
 (pdftex.def)             Requested size: 172.13403pt x 142.26378pt.
 
-[84] <figch2/MC7.pdf, id=1480, 1125.20375pt x 713.66624pt>
+[105 <./figch2/MC3.pdf> <./figch2/MC4.pdf> <./figch2/MC5.pdf> <./figch2/MC6.pdf
+>] <figch2/MC7.pdf, id=1626, 1125.20375pt x 713.66624pt>
 File: figch2/MC7.pdf Graphic file (type pdf)
-
-<use figch2/MC7.pdf>
+ <use figch2/MC7.pdf>
 Package pdftex.def Info: figch2/MC7.pdf used on input line 1493.
 (pdftex.def)             Requested size: 224.2985pt x 142.26378pt.
- <figch2/MC1.pdf, id=1485, 1354.05875pt x 826.08624pt>
-File: figch2/MC1.pdf Graphic file (type pdf)
 
-<use figch2/MC1.pdf>
+<figch2/MC1.pdf, id=1631, 1354.05875pt x 826.08624pt>
+File: figch2/MC1.pdf Graphic file (type pdf)
+ <use figch2/MC1.pdf>
 Package pdftex.def Info: figch2/MC1.pdf used on input line 1508.
 (pdftex.def)             Requested size: 209.85628pt x 128.0374pt.
- <figch2/MC2.pdf, id=1487, 1369.115pt x 821.0675pt>
-File: figch2/MC2.pdf Graphic file (type pdf)
 
-<use figch2/MC2.pdf>
+<figch2/MC2.pdf, id=1633, 1369.115pt x 821.0675pt>
+File: figch2/MC2.pdf Graphic file (type pdf)
+ <use figch2/MC2.pdf>
 Package pdftex.def Info: figch2/MC2.pdf used on input line 1508.
 (pdftex.def)             Requested size: 213.48499pt x 128.0374pt.
- [85 <./figch2/MC3.pdf> <./figch2/MC4.pdf> <./figch2/MC5.pdf> <./figch2/MC6.pdf
->] [86 <./figch2/MC7.pdf> <./figch2/MC1.pdf> <./figch2/MC2.pdf>] [87] [88] <fig
-ch2/comparison1.pdf, id=1597, 397.485pt x 289.08pt>
+
+[106 <./figch2/MC7.pdf> <./figch2/MC1.pdf> <./figch2/MC2.pdf>] [107] [108]
+[109] <figch2/comparison1.pdf, id=1702, 397.485pt x 289.08pt>
 File: figch2/comparison1.pdf Graphic file (type pdf)
 
 <use figch2/comparison1.pdf>
 Package pdftex.def Info: figch2/comparison1.pdf used on input line 1577.
 (pdftex.def)             Requested size: 357.90071pt x 256.0748pt.
 
-<figch2/comparison2.pdf, id=1599, 397.485pt x 289.08pt>
+<figch2/comparison2.pdf, id=1704, 397.485pt x 289.08pt>
 File: figch2/comparison2.pdf Graphic file (type pdf)
 
 <use figch2/comparison2.pdf>
 Package pdftex.def Info: figch2/comparison2.pdf used on input line 1587.
 (pdftex.def)             Requested size: 352.12294pt x 256.0748pt.
- [89] [90 <./figch2/comparison1.pdf>]
-<figch2/diff37rangehist.pdf, id=1630, 397.485pt x 289.08pt>
+ [110 <./figch2/comparison1.pdf>] [111 <./figch2/comparison2.pdf>] <figch2/diff
+37rangehist.pdf, id=1741, 397.485pt x 289.08pt>
 File: figch2/diff37rangehist.pdf Graphic file (type pdf)
 
 <use figch2/diff37rangehist.pdf>
 Package pdftex.def Info: figch2/diff37rangehist.pdf used on input line 1636.
 (pdftex.def)             Requested size: 195.6124pt x 142.26378pt.
- (./texch2/selectedPricesPurchase.tex) [91 <./figch2/comparison2.pdf>] (./texch
-2/selectedVolumesPurchase.tex)
-(./texch2/selectedPricesSell.tex) [92 <./figch2/diff37rangehist.pdf>]
-(./texch2/selectedVolumesSell.tex)
+ (./texch2/selectedPricesPurchase.tex) [112]
+(./texch2/selectedVolumesPurchase.tex) (./texch2/selectedPricesSell.tex)
+[113 <./figch2/diff37rangehist.pdf>] (./texch2/selectedVolumesSell.tex)
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 1672.
@@ -2166,223 +2285,223 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 1672.
 
-[93] <forqgis/stationstemp.pdf, id=1670, 284.06125pt x 284.06125pt>
+[114] <forqgis/stationstemp.pdf, id=1772, 284.06125pt x 284.06125pt>
 File: forqgis/stationstemp.pdf Graphic file (type pdf)
 
 <use forqgis/stationstemp.pdf>
 Package pdftex.def Info: forqgis/stationstemp.pdf used on input line 1688.
 (pdftex.def)             Requested size: 128.04309pt x 128.0374pt.
 
-<forqgis/stationswind.pdf, id=1671, 284.06125pt x 284.06125pt>
+<forqgis/stationswind.pdf, id=1773, 284.06125pt x 284.06125pt>
 File: forqgis/stationswind.pdf Graphic file (type pdf)
 
 <use forqgis/stationswind.pdf>
 Package pdftex.def Info: forqgis/stationswind.pdf used on input line 1688.
 (pdftex.def)             Requested size: 128.04309pt x 128.0374pt.
 
-<forqgis/stationslum.pdf, id=1672, 284.06125pt x 284.06125pt>
+<forqgis/stationslum.pdf, id=1774, 284.06125pt x 284.06125pt>
 File: forqgis/stationslum.pdf Graphic file (type pdf)
 
 <use forqgis/stationslum.pdf>
 Package pdftex.def Info: forqgis/stationslum.pdf used on input line 1689.
 (pdftex.def)             Requested size: 128.04309pt x 128.0374pt.
-
-<forqgis/natneiweights.png, id=1674, 301.125pt x 241.90375pt>
+ [115 <./forqgis/stationstemp.pdf> <./forqgis/stationswind.pdf> <./forqgis/stat
+ionslum.pdf>]
+<forqgis/natneiweights.png, id=1797, 301.125pt x 241.90375pt>
 File: forqgis/natneiweights.png Graphic file (type png)
 
 <use forqgis/natneiweights.png>
 Package pdftex.def Info: forqgis/natneiweights.png used on input line 1700.
 (pdftex.def)             Requested size: 95.6314pt x 76.82243pt.
 
-<forqgis/natneiref.pdf, id=1675, 200.75pt x 161.60374pt>
+<forqgis/natneiref.pdf, id=1798, 200.75pt x 161.60374pt>
 File: forqgis/natneiref.pdf Graphic file (type pdf)
 
 <use forqgis/natneiref.pdf>
 Package pdftex.def Info: forqgis/natneiref.pdf used on input line 1700.
 (pdftex.def)             Requested size: 95.43074pt x 76.82243pt.
 
-<forqgis/natneireco1.pdf, id=1676, 202.7575pt x 160.6pt>
+<forqgis/natneireco1.pdf, id=1799, 202.7575pt x 160.6pt>
 File: forqgis/natneireco1.pdf Graphic file (type pdf)
 
 <use forqgis/natneireco1.pdf>
 Package pdftex.def Info: forqgis/natneireco1.pdf used on input line 1701.
 (pdftex.def)             Requested size: 96.99146pt x 76.82243pt.
 
-<forqgis/natneireco2.pdf, id=1677, 208.78pt x 158.5925pt>
+<forqgis/natneireco2.pdf, id=1800, 208.78pt x 158.5925pt>
 File: forqgis/natneireco2.pdf Graphic file (type pdf)
 
 <use forqgis/natneireco2.pdf>
 Package pdftex.def Info: forqgis/natneireco2.pdf used on input line 1701.
 (pdftex.def)             Requested size: 101.1371pt x 76.82243pt.
- [94 <./forqgis/stationstemp.pdf> <./forqgis/stationswind.pdf> <./forqgis/stati
-onslum.pdf>]
-<forqgis/ref-2011-11-03-15.png, id=1701, 592.2125pt x 548.0475pt>
+
+<forqgis/ref-2011-11-03-15.png, id=1802, 592.2125pt x 548.0475pt>
 File: forqgis/ref-2011-11-03-15.png Graphic file (type png)
 
 <use forqgis/ref-2011-11-03-15.png>
 Package pdftex.def Info: forqgis/ref-2011-11-03-15.png used on input line 1715.
 
 (pdftex.def)             Requested size: 184.47858pt x 170.71652pt.
- [95 <./forqgis/natneiweights.png (PNG copy)> <./forqgis/natneiref.pdf> <./forq
-gis/natneireco1.pdf> <./forqgis/natneireco2.pdf> <./forqgis/ref-2011-11-03-15.p
-ng>]
+ [116 <./forqgis/natneiweights.png (PNG copy)> <./forqgis/natneiref.pdf> <./for
+qgis/natneireco1.pdf> <./forqgis/natneireco2.pdf>]
 File: forqgis/ref-2011-11-03-15.png Graphic file (type png)
  <use forqgis/ref-2011-11-03-15.png>
 Package pdftex.def Info: forqgis/ref-2011-11-03-15.png used on input line 1733.
 
 (pdftex.def)             Requested size: 92.23477pt x 85.35826pt.
 
-<forqgis/2011-11-03-15.png, id=1752, 570.13pt x 519.9425pt>
+<forqgis/2011-11-03-15.png, id=1853, 570.13pt x 519.9425pt>
 File: forqgis/2011-11-03-15.png Graphic file (type png)
 
 <use forqgis/2011-11-03-15.png>
 Package pdftex.def Info: forqgis/2011-11-03-15.png used on input line 1733.
 (pdftex.def)             Requested size: 93.59761pt x 85.35826pt.
 
-<forqgis/mcieledge.png, id=1753, 567.11874pt x 516.93124pt>
+<forqgis/mcieledge.png, id=1854, 567.11874pt x 516.93124pt>
 File: forqgis/mcieledge.png Graphic file (type png)
 
 <use forqgis/mcieledge.png>
 Package pdftex.def Info: forqgis/mcieledge.png used on input line 1733.
 (pdftex.def)             Requested size: 93.63977pt x 85.35826pt.
 
-<forqgis/mcielsmooth.png, id=1754, 434.62375pt x 339.2675pt>
+<forqgis/mcielsmooth.png, id=1855, 434.62375pt x 339.2675pt>
 File: forqgis/mcielsmooth.png Graphic file (type png)
 
 <use forqgis/mcielsmooth.png>
 Package pdftex.def Info: forqgis/mcielsmooth.png used on input line 1733.
 (pdftex.def)             Requested size: 109.34537pt x 85.35826pt.
- [96 <./forqgis/2011-11-03-15.png (PNG copy)> <./forqgis/mcieledge.png> <./forq
-gis/mcielsmooth.png>]
-<forqgis/lautocorgraph.png, id=1766, 1088.065pt x 789.95125pt>
+ [117 <./forqgis/ref-2011-11-03-15.png>] [118 <./forqgis/2011-11-03-15.png (PNG
+ copy)> <./forqgis/mcieledge.png> <./forqgis/mcielsmooth.png>] <forqgis/lautoco
+rgraph.png, id=1873, 1088.065pt x 789.95125pt>
 File: forqgis/lautocorgraph.png Graphic file (type png)
 
 <use forqgis/lautocorgraph.png>
 Package pdftex.def Info: forqgis/lautocorgraph.png used on input line 1757.
 (pdftex.def)             Requested size: 372.31137pt x 270.30118pt.
- [97] [98 <./forqgis/lautocorgraph.png (PNG copy)>] <forqgis/ref-powercurve.png
-, id=1780, 652.4375pt x 407.5225pt>
+ [119 <./forqgis/lautocorgraph.png (PNG copy)>]
+[120] <forqgis/ref-powercurve.png, id=1888, 652.4375pt x 407.5225pt>
 File: forqgis/ref-powercurve.png Graphic file (type png)
 
 <use forqgis/ref-powercurve.png>
 Package pdftex.def Info: forqgis/ref-powercurve.png used on input line 1797.
 (pdftex.def)             Requested size: 227.75922pt x 142.26378pt.
 
-<forqgis/windprodD1A.png, id=1782, 1432.35126pt x 841.1425pt>
+<forqgis/windprodD1A.png, id=1890, 1432.35126pt x 841.1425pt>
 File: forqgis/windprodD1A.png Graphic file (type png)
 
 <use forqgis/windprodD1A.png>
 Package pdftex.def Info: forqgis/windprodD1A.png used on input line 1807.
 (pdftex.def)             Requested size: 387.61424pt x 227.62204pt.
- [99 <./forqgis/ref-powercurve.png>]
-<forqgis/Temp_Cons_France_RTE.png, id=1791, 720.6925pt x 349.305pt>
+
+<forqgis/Temp_Cons_France_RTE.png, id=1893, 720.6925pt x 349.305pt>
 File: forqgis/Temp_Cons_France_RTE.png Graphic file (type png)
 
 <use forqgis/Temp_Cons_France_RTE.png>
 Package pdftex.def Info: forqgis/Temp_Cons_France_RTE.png used on input line 18
 21.
 (pdftex.def)             Requested size: 381.58032pt x 184.9429pt.
- [100 <./forqgis/windprodD1A.png (PNG copy)> <./forqgis/Temp_Cons_France_RTE.pn
-g>]
+ [121 <./forqgis/ref-powercurve.png>]
+[122 <./forqgis/windprodD1A.png (PNG copy)> <./forqgis/Temp_Cons_France_RTE.png
+>]
 Underfull \hbox (badness 10000) in paragraph at lines 1846--1846
 [][][]\OT1/cmr/m/n/10 These es-ti-mates are com-puted by the au-thors based on 
 num-bers com-ing from
  []
 
-[101] <forqgis/solobs_reco.png, id=1810, 1439.3775pt x 740.7675pt>
+<forqgis/solobs_reco.png, id=1909, 1439.3775pt x 740.7675pt>
 File: forqgis/solobs_reco.png Graphic file (type png)
 
 <use forqgis/solobs_reco.png>
 Package pdftex.def Info: forqgis/solobs_reco.png used on input line 1854.
 (pdftex.def)             Requested size: 359.3603pt x 184.9429pt.
- (./forqgis/FIN_Solarblack.tex) [102 <./forqgis/solobs_reco.png (PNG copy)>] (.
-/forqgis/FIN_Black1.tex) [103]
-(./texch2/FIN_multikernel.tex) <figch2/h1a.pdf, id=1828, 433.62pt x 289.08pt>
+ (./forqgis/FIN_Solarblack.tex) [123] [124 <./forqgis/solobs_reco.png (PNG copy
+)>] (./forqgis/FIN_Black1.tex) [125]
+(./texch2/FIN_multikernel.tex) <figch2/h1a.pdf, id=1935, 433.62pt x 289.08pt>
 File: figch2/h1a.pdf Graphic file (type pdf)
 
 <use figch2/h1a.pdf>
 Package pdftex.def Info: figch2/h1a.pdf used on input line 2003.
 (pdftex.def)             Requested size: 213.39536pt x 142.26378pt.
- <figch2/h1b.pdf, id=1829, 433.62pt x 289.08pt>
+ <figch2/h1b.pdf, id=1936, 433.62pt x 289.08pt>
 File: figch2/h1b.pdf Graphic file (type pdf)
 
 <use figch2/h1b.pdf>
 Package pdftex.def Info: figch2/h1b.pdf used on input line 2003.
 (pdftex.def)             Requested size: 213.39536pt x 142.26378pt.
- [104]
-<figch2/Shot16.pdf, id=1834, 1004.75375pt x 709.65125pt>
+ [126]
+<figch2/Shot16.pdf, id=1941, 1004.75375pt x 709.65125pt>
 File: figch2/Shot16.pdf Graphic file (type pdf)
 
 <use figch2/Shot16.pdf>
 Package pdftex.def Info: figch2/Shot16.pdf used on input line 2017.
 (pdftex.def)             Requested size: 181.27715pt x 128.0374pt.
- <figch2/Shot01.pdf, id=1836, 997.7275pt x 710.655pt>
+ <figch2/Shot01.pdf, id=1943, 997.7275pt x 710.655pt>
 File: figch2/Shot01.pdf Graphic file (type pdf)
 
 <use figch2/Shot01.pdf>
 Package pdftex.def Info: figch2/Shot01.pdf used on input line 2017.
 (pdftex.def)             Requested size: 179.75066pt x 128.0374pt.
- <figch2/Shot20.pdf, id=1838, 1049.9225pt x 744.7825pt>
+ <figch2/Shot20.pdf, id=1945, 1049.9225pt x 744.7825pt>
 File: figch2/Shot20.pdf Graphic file (type pdf)
 
 <use figch2/Shot20.pdf>
 Package pdftex.def Info: figch2/Shot20.pdf used on input line 2061.
 (pdftex.def)             Requested size: 180.48703pt x 128.0374pt.
- <figch2/Shot21.pdf, id=1839, 1047.915pt x 743.77875pt>
+ <figch2/Shot21.pdf, id=1946, 1047.915pt x 743.77875pt>
 File: figch2/Shot21.pdf Graphic file (type pdf)
 
 <use figch2/Shot21.pdf>
 Package pdftex.def Info: figch2/Shot21.pdf used on input line 2061.
 (pdftex.def)             Requested size: 180.38177pt x 128.0374pt.
- <figch2/stepsD1.pdf, id=1840, 722.7pt x 433.62pt>
+ <figch2/stepsD1.pdf, id=1947, 722.7pt x 433.62pt>
 File: figch2/stepsD1.pdf Graphic file (type pdf)
 
 <use figch2/stepsD1.pdf>
 Package pdftex.def Info: figch2/stepsD1.pdf used on input line 2072.
 (pdftex.def)             Requested size: 213.39314pt x 128.0374pt.
- <figch2/stepsS1.pdf, id=1842, 722.7pt x 433.62pt>
+ <figch2/stepsS1.pdf, id=1949, 722.7pt x 433.62pt>
 File: figch2/stepsS1.pdf Graphic file (type pdf)
 
 <use figch2/stepsS1.pdf>
 Package pdftex.def Info: figch2/stepsS1.pdf used on input line 2072.
 (pdftex.def)             Requested size: 213.39314pt x 128.0374pt.
- [105 <./figch2/Shot16.pdf> <./figch2/Shot01.pdf> <./figch2/h1a.pdf> <./figch2/
+ [127 <./figch2/Shot16.pdf> <./figch2/Shot01.pdf> <./figch2/h1a.pdf> <./figch2/
 h1b.pdf>]
-<figch2/m1b.pdf, id=1893, 397.485pt x 289.08pt>
+<figch2/m1b.pdf, id=2000, 397.485pt x 289.08pt>
 File: figch2/m1b.pdf Graphic file (type pdf)
  <use figch2/m1b.pdf>
 Package pdftex.def Info: figch2/m1b.pdf used on input line 2085.
 (pdftex.def)             Requested size: 176.04631pt x 128.0374pt.
 
-<figch2/m2b.pdf, id=1895, 397.485pt x 289.08pt>
+<figch2/m2b.pdf, id=2002, 397.485pt x 289.08pt>
 File: figch2/m2b.pdf Graphic file (type pdf)
  <use figch2/m2b.pdf>
 Package pdftex.def Info: figch2/m2b.pdf used on input line 2087.
 (pdftex.def)             Requested size: 176.04631pt x 128.0374pt.
-) [106 <./figch2/stepsD1.pdf> <./figch2/stepsS1.pdf> <./figch2/m1b.pdf> <./figc
-h2/m2b.pdf> <./figch2/Shot20.pdf> <./figch2/Shot21.pdf>] [107] [108] [109] [110
+) [128 <./figch2/stepsD1.pdf> <./figch2/stepsS1.pdf> <./figch2/m1b.pdf> <./figc
+h2/m2b.pdf> <./figch2/Shot20.pdf> <./figch2/Shot21.pdf>] [129] [130] [131] [132
 ]
-(./Thesis.bbl [111
+(./Thesis.bbl [133
 
 
-] [112]) [113] (./Thesis.lof [114])
+] [134]) [135] (./Thesis.lof [136])
 \tf@lof=\write5
 \openout5 = `Thesis.lof'.
 
- [115] (./Thesis.toc
-[116])
+ [137] (./Thesis.toc
+[138])
 \tf@toc=\write6
 \openout6 = `Thesis.toc'.
 
- [117]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 151.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 151.
+ [139]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 152.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 152.
  (./Thesis.aux (./Titre.aux) (./Remerciements.aux) (./intro.aux)
 (./resumes.aux) (./ch1.aux) (./ch2.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 151.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 151.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 152.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 152.
 Package rerunfilecheck Info: File `Thesis.out' has not changed.
-(rerunfilecheck)             Checksum: 3A257F46F78B95D5977D3AB05ECF4482;4321.
+(rerunfilecheck)             Checksum: B1A389BD6366058A2BA55ADA7A801686;4384.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
@@ -2393,20 +2512,20 @@ LaTeX Warning: There were undefined references.
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 151.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 152.
  )
 (\end occurred inside a group at level 1)
 
-### semi simple group (level 1) entered at line 111 (\begingroup)
+### semi simple group (level 1) entered at line 112 (\begingroup)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 23773 strings out of 492995
- 416152 string characters out of 6132705
- 543134 words of memory out of 5000000
- 26246 multiletter control sequences out of 15000+600000
+ 23511 strings out of 492995
+ 413379 string characters out of 6132705
+ 539627 words of memory out of 5000000
+ 25959 multiletter control sequences out of 15000+600000
  23443 words of font info for 92 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 55i,23n,54p,1605b,716s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 55i,23n,54p,1605b,702s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/cm-super/cm
 -super-ts1.enc}{/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/adforn/Ornem
 entsADF.enc}</usr/local/texlive/2017/texmf-dist/fonts/type1/arkandis/adforn/Orn
@@ -2440,10 +2559,10 @@ ve/2017/texmf-dist/fonts/type1/public/eurosym/feymr10.pfb></usr/local/texlive/2
 017/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texli
 ve/2017/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/t
 exlive/2017/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on Thesis.pdf (125 pages, 6207726 bytes).
+Output written on Thesis.pdf (147 pages, 6231268 bytes).
 PDF statistics:
- 2368 PDF objects out of 2487 (max. 8388607)
- 1993 compressed objects within 20 object streams
- 464 named destinations out of 1000 (max. 500000)
- 906 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 2482 PDF objects out of 2487 (max. 8388607)
+ 2084 compressed objects within 21 object streams
+ 492 named destinations out of 1000 (max. 500000)
+ 914 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -11,45 +11,45 @@ The style file: apalike.bst
 Database file #1: biblio.bib.bib
 Warning--empty journal in holmberg2008supply
 Warning--empty journal in rtewebsite1
-You've used 42 entries,
+You've used 43 entries,
             1935 wiz_defined-function locations,
-            709 strings with 9783 characters,
-and the built_in function-call counts, 14505 in all, are:
-= -- 1471
-> -- 443
-< -- 43
-+ -- 146
-- -- 136
-* -- 1111
-:= -- 2559
-add.period$ -- 121
-call.type$ -- 42
-change.case$ -- 280
-chr.to.int$ -- 42
-cite$ -- 44
-duplicate$ -- 589
-empty$ -- 1045
-format.name$ -- 204
-if$ -- 2840
+            714 strings with 9935 characters,
+and the built_in function-call counts, 14952 in all, are:
+= -- 1518
+> -- 450
+< -- 45
++ -- 150
+- -- 138
+* -- 1138
+:= -- 2625
+add.period$ -- 124
+call.type$ -- 43
+change.case$ -- 286
+chr.to.int$ -- 43
+cite$ -- 45
+duplicate$ -- 614
+empty$ -- 1084
+format.name$ -- 207
+if$ -- 2939
 int.to.chr$ -- 1
 int.to.str$ -- 0
-missing$ -- 35
-newline$ -- 208
-num.names$ -- 126
-pop$ -- 213
+missing$ -- 36
+newline$ -- 213
+num.names$ -- 129
+pop$ -- 222
 preamble$ -- 1
-purify$ -- 278
+purify$ -- 284
 quote$ -- 0
-skip$ -- 494
+skip$ -- 513
 stack$ -- 0
-substring$ -- 1052
-swap$ -- 77
-text.length$ -- 7
+substring$ -- 1090
+swap$ -- 85
+text.length$ -- 8
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 242
+type$ -- 248
 warning$ -- 2
-while$ -- 127
+while$ -- 132
 width$ -- 0
-write$ -- 526
+write$ -- 539
 (There were 2 warnings)

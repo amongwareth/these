@@ -12,7 +12,7 @@
 \label{chap:ch1}
 \cleardoublepage
 
-%\doublespacing
+\doublespacing
 \section{Introduction}
 \subsection{Litterature review}
 The electricity markets have flourished in Europe during the 1990s during the wave of privatisation. The argument for their creation was one of competition, that was supposed to bring lower prices to the end consumer of electricity.\\
@@ -33,7 +33,7 @@ One of the mose striking aspects of the supply function equilibria approaches is
 
 Furthermore, these models abstract away some of the details of the actual markets, reason for which authors which try and evaluate the market power of producers on the electricity markets view their endeavour as painting the situation with an optimistic brush \cite{Newgreen}. \\
 
-Here we will tackle the points raised in the last two paragraphs to some extent. We propose to consider a technical reality of the operating of power plants : their cost structure is history-dependant, more precisely, producing a quantity $q1$ does not entail the same cost if the previous quantity produced was already $q_1$ or if the previous quantity was different from it. Raising or decreasing production in and of itslef imply costs. By introducing these costs we aim to produce a model capable of capturing more precisely the competition that arises in the electricity markets, and in so doing we will show that the continuum of equilibria caracteristic of supply function equilibria under uncertainty collapses to unique equilibria, which in turn allows us to comment on the question of tacit collusion.\\
+Here we will tackle the points raised in the last two paragraphs to some extent. We propose to consider a technical reality of the operating of power plants : their cost structure is history-dependant, more precisely, producing a quantity $q_1$ does not entail the same cost if the previous quantity produced was already $q_1$ or if the previous quantity was different from it. Raising or decreasing production in and of itslef imply costs. By introducing these costs we aim to produce a model capable of capturing more precisely the competition that arises in the electricity markets, and in so doing we will show that the continuum of equilibria caracteristic of supply function equilibria under uncertainty collapses to unique equilibria, which in turn allows us to comment on the question of tacit collusion.\\
 
 
 %
@@ -70,44 +70,62 @@ In section \ref{heur} we will present a heuristic approach to get the intuition 
 %\section{Litterature Review}\label{litrev}
 %TO BE FILLED
 \section{Heuristic Description of the Model}\label{heur}
-In this section the essence of the model is presented before introducing the proper mathematical tools needed to treat this problem rigorously in the next section. \\
+In this section the essence of the model is presented before introducing the proper mathematical tools needed to treat this problem rigorously in the next section. It is thought of as an overview of the mathematical methods that are going to be used, as a way to give a sense of the intent of the modelling choices.\\
 
-As in KM's setup, the producer faces uncertain demand, $D(\theta,p)$, with $\theta$ a stochastic shock to the demand and $p$ the price, to which we add ramping costs and uncertain dynamics of demand: $\theta(t)$ is the time trajectory of a stochastic shock with stochastic dynamics. In the real market, bidders submit a finite number of bids once a day, and face the ramping costs inter-period, that is, when production has to be adjusted to reach the subsequent market outcome. Here we assume that time is continuous, that ramping costs are incurred continuously, and that bidders are allowed to submit a different supply schedule for every point in time. This amounts to being asked to submit a surface of strategy in the price-quantity-time space. \\
+As in KM's setup, the aim is to model an oligopoly facing uncertain demand, taken as exogenous. Before the demand shocks are realized, each firm needs to commit on a strategy. Firms also incur costs that not only depend on the level of production but also on the evolution of the production given its anterior level produced. \\
 
-The producer maximises her expected profits, and we consider here the simplest case in which the distribution of shocks is static and the producer is asked by the market operator to submit a single supply schedule a day in advance. In an oligopoly the program maximised by producer $i$ is therefore:
+More formally, the producer, as in KM, faces uncertain demand, $D(\theta,p)$, with $\theta$ a stochastic shock to the demand and $p$ the price. We add to that both ramping costs and uncertain dynamics of demand. As we want to keep the key ingredient of KM, the introduction of uncertainty, but take into account the dynamics of this uncertainty, of these demand shocks, we need to add more structure.\\
+
+Consider the following notation, where $\theta(t)$ denotes the value of the stochastic shock at time $t$, whereas $\Theta$ denotes the family of all available time trajectories of our demand shocks. \\
+
+In the real market, bidders submit a finite number of bids once a day, and face the ramping costs inter-period, that is, when production has to be adjusted to reach the subsequent market outcome. The first bit of structure we introduce is that we are going to assume that time is continuous. The second is that ramping costs are incurred continuously, and can be thought of as costs depending on the variation of production over time. Finally we consider that bidders are allowed to submit a different supply schedule for every point in time between $0$ and $T$. This amounts to being asked to submit a surface of strategy in the price-quantity-time space for the next day. \\
+
+The producer maximises her expected profits, and we consider here the simplest case in which the distribution of shocks is static, that is that the distribution of probability of shocks does not depend on time, and the producer is asked by the market operator to submit the same supply schedule for every point in time a day in advance. In an oligopoly, the program maximised by producer $i$ is therefore:
 
 \begin{equation}
-\displaystyle{\max_{S_i(p)}}~\mathbb{E}\left[\int_{0}^{T} \left(p(\theta(t))S_i(p(\theta(t))) -C\left(S_i(p(\theta(t))),\frac{dS_i(p(\theta(t)))}{dt} \right)\right)dt\right]
+\displaystyle{\max_{S_i(p)}}~\mathbb{E}_{\Theta}\left[\int_{0}^{T} \left(p(\theta(t))S_i(p(\theta(t))) -C\left(S_i(p(\theta(t))),\frac{dS_i(p(\theta(t)))}{dt} \right)\right)dt\right]
 \end{equation}
-with $p(\theta(t))$ the price given the demand shock $\theta(t)$ at date $t$, $S_i(\cdot)$ the supply schedule of producer $i$ and $C(\cdot,\cdot)$ the dynamic cost function.  \\
+with $p(\theta(t))$ the price given the demand shock $\theta(t)$ at date $t$, $S_i(\cdot)$ the supply schedule of producer $i$ and $C(\cdot,\cdot)$ the dynamic cost function. Note that the price depends on $t$ only through $\theta(t)$, i.e. a given level of demand shock implies a given price.  \\
 
-The goal of this section is to provide the intuition of the model, therefore we will not describe here the conditions that must be verified by the different terms of the model. We will simply assume that the dynamic cost function is additively separable between a static and a ramping term, $C(S_i,\frac{dS_i}{dt})=C_s(S_i)+C_r(\frac{dS_i}{dt})$, and that the demand shocks $\theta$ are bounded in $[\underline{\theta},\overline{\theta}]$. Lastly we require the ramping term $C_d(\cdot)=\frac{\gamma}{2}(\cdot)^k$ for clarity, and $k\geq2$ an integer. We distribute the expectation operator and write that $\frac{dS_i}{dt}=\frac{dS_i}{dp}\frac{dp}{d\theta}\frac{d\theta}{dt}=S_i'\cdot \dot{p}\cdot \frac{d\theta}{dt}$, with $X'$ the derivative of univariate function $X$ with respect to its argument, $\dot{X}=\frac{dX}{d\theta}$. The maximisation program can then be written as follows :
+The goal of this section is to provide a first run through of the model, therefore we will not describe here the conditions that must be verified by the different terms of the model. We will simply assume that the dynamic cost function is additively separable between a static and a ramping term, $C(S_i,\frac{dS_i}{dt})=C_s(S_i)+C_r(\frac{dS_i}{dt})$, and that the demand shocks $\theta$ are bounded in $[\underline{\theta},\overline{\theta}]$. Lastly we require the ramping term $C_r(\cdot)=\frac{\gamma}{2}(\cdot)^k$ for clarity, and $k\geq2$ an integer. We distribute the expectation operator and write that $\frac{dS_i}{dt}=\frac{dS_i}{dp}\frac{dp}{d\theta}\frac{d\theta}{dt}=S_i'\cdot \dot{p}\cdot \frac{d\theta}{dt}$, with $X'$ the derivative of univariate function $X$ with respect to its argument, $\dot{X}=\frac{dX}{d\theta}$. \\
+
+With this setup, by distributing the expectation operator over all possible trajectories of shocks, we are able to rewrite the problem without having time $t$ appear explicitly. This point is crucial, as it is what will let us use mathematical tools that will yield our unicity results. The maximisation program can indeed be written as follows :
 \begin{equation}
-\displaystyle{\max_{S_i(p)}}~\int_{\underline{\theta}}^{\overline{\theta}} f(\theta)\left(p(\theta)S_i(p(\theta(t))) -C_s(S_i(p(\theta(t))))-\frac{\gamma}{2}\left(S_i'\cdot\dot{p}\right)^k\mathbb{E}\left[\left(\frac{d\theta}{dt}\right)^k\middle \vert \theta  \right]\right)d\theta
+\displaystyle{\max_{S_i(p)}}~\int_{\underline{\theta}}^{\overline{\theta}} f(\theta)\left(p(\theta)S_i(p(\theta(t))) -C_s(S_i(p(\theta(t))))-\frac{\gamma}{2}\left(S_i'\cdot\dot{p}\right)^k\mathbb{E}_{\Theta}\left[\left(\frac{d\theta}{dt}\right)^k\middle \vert \theta  \right]\right)d\theta
 \label{maxbase}
 \end{equation}
-with $f(\theta)$ the distribution of shocks, and $\gamma$ the ramping cost parameter capturing the magnitude of the ramping costs.\\
+with $f(\theta)$ the distribution of shocks, and $\gamma$ the ramping cost parameter capturing the magnitude of the ramping costs. The expected value on the trajectory of shocks of any of the terms above that only depend on $\theta(t)$, that is the value of the shock at a point in time, can be rewritten simply as an integral over the possible values of the shock. \\
 
-Note that $\mathbb{E}\left[\left(\frac{d\theta}{dt}\right)^k\middle \vert \theta  \right]$ depends only on $\theta$, and that producer $i$ faces a residual demand so that $S_i(p(\theta(t)))=D(\theta,p(\theta(t)))-S_{-i}(p(\theta(t)))$ which depends only on $\theta$ and $p$, with $S_{-i}$ the aggregate supply schedule of all the other producers, taken as given by producer $i$. This implies that the integrand in eq. \ref{maxbase} depends only on three variables: $\theta$, $p$ and $\dot{p}$.  The maximisation pogram is therefore equivalent to an Euler-Lagrange problem, a very well described mathematical object: $\max_p\int\mathcal{L}(\theta,p,\dot{p})d\theta$. \\
+We are left with $\mathbb{E}_{\Theta}\left[\left(\frac{d\theta}{dt}\right)^k\middle \vert \theta  \right]$ as the only term that depends on the trajectory of shocks. Take for granted that this term can only depend on $\theta$ for now, this result will be defended properly in the next section. \\
 
-The information obtained from taking the first-order condition of an Euler-Lagrange problem yields a second order differential equation as well as two boundary conditions: $\frac{\partial\mathcal{L}}{\partial p}=\frac{d}{d\theta}\frac{\partial\mathcal{L}}{\partial \dot{p}}$ and $\frac{\partial\mathcal{L}}{\partial\dot{p}}\big|_{\underline{\theta}}=\frac{\partial\mathcal{L}}{\partial\dot{p}}\big|_{\overline{\theta}}=0$. This is why we obtain unique solutions: if the boundary conditions are not verified there exists profitable deviations. In less mathematical terms, taking ramping costs into account as specified above means that for a given level of shock, one not only cares about the optimal level of production for this shock, but also about the optimal slope of the supply schedule at this level of production. Effectively, this means that optimal levels of production cannot be chosen independently for different level of shocks anymore, thus shrinking the continuum of equilibria. The boundary conditions' argument explains why the continuum not only shrinks, but collapses to a unique equilibrium. \\
+Note now that producer $i$ faces a residual demand so that $S_i(p(\theta(t)))=D(\theta,p(\theta(t)))-S_{-i}(p(\theta(t)))$ which depends only on $\theta$ and $p$, $t$ does not intervene directly, with $S_{-i}$ the aggregate supply schedule of all the other producers, taken as given by producer $i$. This implies that the integrand in eq. \ref{maxbase} depends only on three variables: $\theta$, $p$ and $\dot{p}$.  The maximisation pogram is therefore equivalent to an Euler-Lagrange problem, a very well described mathematical object: $\max_p\int\mathcal{L}(\theta,p,\dot{p})d\theta$. \\
 
-Note that if the ramping cost parameter $\gamma$ is taken equal to $0$ we are back to KM's model: one doesn't care about the slope of the supply schedule anymore, and the problem comes down to a pointwise maximisation which therefore yields ex-post optimal equilibria. We want to stress that this means that it is not sufficient to specify the dynamics of the shocks to obtain a dynamic model, one needs to take into account ramping costs.\\
+The information obtained from taking the first-order condition of an Euler-Lagrange problem yields a second order differential equation as well as two boundary conditions: $\frac{\partial\mathcal{L}}{\partial p}=\frac{d}{d\theta}\frac{\partial\mathcal{L}}{\partial \dot{p}}$ and $\frac{\partial\mathcal{L}}{\partial\dot{p}}\big|_{\underline{\theta}}=\frac{\partial\mathcal{L}}{\partial\dot{p}}\big|_{\overline{\theta}}=0$. This is why we obtain unique solutions: if the boundary conditions are not verified there exists profitable deviations. \\
 
-The maximisation program~\ref{maxbase} is a heuristic description of the situation. We want to model the stochastic nature of demand and of its dynamics. We do this by using It\={o} processes, a class of stochastic processes built through brownians, to describe the stochastic trajectory of the demand shocks with respect to time. The difficulty is that brownians are everywhere continuous but nowhere differentiable, therefore the way program~\ref{maxbase} is written, with a term in $\frac{d\theta}{dt}$, is incorrect.\\
+In less mathematical terms, taking ramping costs into account as specified above means that for a given level of shock, the producer not only cares about the optimal level of production for this shock, but also about the optimal slope of the supply schedule at this level of production. Effectively, this means that optimal levels of production cannot be chosen independently for different level of shocks as is the case in KM, thus shrinking the continuum of equilibria. The boundary conditions' argument explains why the continuum not only shrinks, but collapses to a unique equilibrium. \\
+
+Note that if the ramping cost parameter $\gamma$ is taken equal to $0$ we are back to KM's model: one doesn't care about the slope of the supply schedule anymore, and the problem comes down to a pointwise maximisation which therefore yields ex-post optimal equilibria. We want to stress that this means that it is not sufficient to specify the dynamics of the shocks to obtain a supply function model that would react to these dynamics, one needs to take into account ramping costs.\\
+
+The maximisation program~\ref{maxbase} is a heuristic description of the situation. We want to model the stochastic nature of demand and of its dynamics. We do this by using It\={o} processes, a class of stochastic processes built through brownians, to describe the stochastic trajectory of the demand shocks with respect to time. The difficulty is that brownians are everywhere continuous but nowhere differentiable, therefore the way program~\ref{maxbase} is written, with a term in $\frac{d\theta}{dt}$, is a shortcut.\\
 
 In the next section we introduce the stochastic dynamics properly without using the concept of derivative. 
 
 
 \section{Stochastic Dynamics}\label{math}
 
-As described in the previous section, we consider that bidders submit surfaces, that is supply schedules for every point in time. The reason to describe a discrete dynamic market as a continuous one is that although discrete time is conceptually more easily understood, continuous time allows to use much more powerful mathematical tools and to obtain closed form solutions, which we think are crucial in gaining intuitive insights about these dynamics. Therefore we consider that demand fluctuates continuously and that ramping costs are incurred instantaneously. This approximation would need to be tested, although it should be noted that day ahead markets operate with hourly or half-hourly periods and are therefore facing a reasonnable amount of periods each day. \\ 
+As described in the previous section, we consider that bidders submit surfaces, that is supply schedules for every point in time. The reason to describe a discrete dynamic market as a continuous one is that although discrete time is conceptually more easily understood, continuous time allows to use much more powerful mathematical tools and to obtain closed form solutions, which we think are crucial in gaining intuitive insights about these dynamics. Therefore we consider that demand fluctuates continuously and that ramping costs are incurred instantaneously. This approximation would need to be tested, although it should be noted that day ahead markets operate with hourly or half-hourly periods and producers are therefore facing a reasonable amount of periods each day. \\ 
 
-Our strategy to describe a discrete process as a continuous one is as follows. We approximate the stochastic process (continuous in time) that we want to use to describe the market by a random walk (discrete in time), and then decrease its timescale towards $0$ to converge towards the stochastic process. We are first going to describe the target stochastic process that we will be using throughout this paper, before illustrating how we go from a discrete description to a continuous one. \\
+We want our shock variable to evolve over time in a random fashion. The class of mathematical objects used to describe this are stochastic processes. The simplest stochastic process one can think of, and indeed the most important historically, is a Brownian motion process. \\
 
-In the electricity market, demand shocks, denoted $\theta(t)$, are bounded: there are no days for which demand is null nor are there days for which demand tends towards infinity. The structure to be imposed on the dynamics of the shocks has to imply bounded shocks. \\
+Unfortunately, Brownian processes are unbounded, and cannot therefore be used to describe the dynamics of the electricity market in which demand shocks, denoted $\theta(t)$, are bounded: there are no days for which demand is null nor are there days for which demand tends towards infinity. The structure to be imposed on the dynamics of the shocks has to imply bounded shocks.\\
+
+%Our strategy to describe a discrete process as a continuous one is as follows. We know which class of stochastic process we want to use in continuous time that is rich enough to yield interesting dynamics yet still manageable mathematically speaking. We are therefore going to take the discrete approximation of this continuous process, discuss this discrete description, and then decrease its timescale towards $0$ to converge towards the stochastic process. We are first going to describe the target stochastic process that we will be using throughout this paper, before illustrating how we go from a discrete description to a continuous one. \\
+%
+%In the electricity market, demand shocks, denoted $\theta(t)$, are bounded: there are no days for which demand is null nor are there days for which demand tends towards infinity. The structure to be imposed on the dynamics of the shocks has to imply bounded shocks. \\
 
 \subsection{The stochastic process}
+A richer set of stochastic processes is the set of It\={o} processes.\\
+
 A simple It\={o} process one can consider that leads to bounded shocks is defined by the following stochastic differential equation (SDE):
 \begin{equation}
 d\theta(t)=-2\theta(t) dt+\sqrt{1-\theta(t)^2}dB_t
@@ -126,9 +144,12 @@ Such a stochastic process has a distribution of probability $f(\theta)$ given by
 Here, for SDE \ref{eqSDE}, this yields that $f(\theta)=\frac{3}{4}(1-\theta^2)$ on $[-1,1]$ and $0$ elsewhere.\\
 
 \subsection{The ramping costs}
+\label{sec_ramping_costs}
 In the rest of the paper we are going to consider quadratic ramping costs. More precisely we consider the costs induced by fluctuations in the production level. As described in the introduction, fluctuations imply increased wear and tear, whether the production is increasing or decreasing. In addition, these ramping costs are null in the absence of fluctuations. This means that they can be captured by a function $C_r(\cdot)$ verifying $C_r(0)=0$, $C_r(\cdot)\geq0$ and increasing in the absolute value of its argument. In the abscence of more detailed knowledge about the actual shape of these ramping costs, it seems reasonable to consider a quadratic cost function, that is the first term in a Taylor expansion of the actual real ramping cost function. \\
 
-We cannot compute $\frac{d\theta}{dt}$ as it appears in Eq.~\ref{maxbase}, as a stochastic process, although everywhere continuous, is nowhere differentiable. We are therefore going to consider a random walk of timestep $\Delta t$ which converges towards the It\={o} process \ref{sdegen}, using the Euler-Maruyama approximation, a generalisation of the Euler method to stochastic differential equations. We consider a Markov chain $Y$ defined as follows : 
+We cannot compute $\frac{d\theta}{dt}$ as it appears in Eq.~\ref{maxbase}, as a stochastic process, although everywhere continuous, is nowhere differentiable. The goal of this section is to express properly the maximisation program of the producer that we presented rapidly in Eq.~\ref{maxbase}, and most importantly, to introduce properly how we can work in continuous time with a cost function which depends on fluctuations, and fluctuations which are nowhere differentiable.\\
+
+We are therefore going to first consider the discrete case of a random walk of timestep $\Delta t$ which converges towards the It\={o} process \ref{sdegen}, using the Euler-Maruyama approximation, a generalisation of the Euler method to stochastic differential equations. We consider a Markov chain $Y$ defined as follows : 
 
 \begin{equation}
 \Delta Y_n=Y_{n+1}-Y_n= \mu(Y_n,n \Delta t)\Delta t+\sigma (Y_n,n \Delta t)\Delta B_n
@@ -166,24 +187,27 @@ We apply this result to the problem at hand, that is that we evaluate the rampin
 with $X'$ the derivative of quantity X with respect to its argument and $\dot{X}$ its derivative with respect to $\theta$. Note that we considered here that the variance term $\sigma(\theta)=1-\theta^2$ depends only on $\theta$ and not explicitly on $t$, which in turn implies that the strategy $S_i$ does not depend explicitly on $t$ either. \\
 
 Let us consider the case where the strategy and the variance depend explicitly on time, and are thus written $S_i(p(\theta(t),t),t)$ and $\sigma(\theta,t)$ respectively.  By using a first order expansion as before, the ramping cost function can be approximated as follows:
+\begin{small}
 \begin{eqnarray}
-\lim_{\Delta t \to 0}\mathbb{E}\left[\frac{\Gamma(\Delta t)}{2}\left(\frac{\Delta S_i(p(\theta(t),t),t)}{\Delta t_c}\right)^2\middle \vert \theta(t)  \right] &=& \lim_{\Delta t \to 0}\mathbb{E}\left[\frac{\gamma}{2} (\partial_1S(p(\theta(t),t),t)\partial_1p(\theta(t),t))^2\frac{\Delta\theta^2}{\Delta t}+\mathcal{O}(\Delta t)\right]\nonumber\\
+\lim_{\Delta t \to 0}\mathbb{E}\left[\frac{\Gamma(\Delta t)}{2}\left(\frac{\Delta S_i(p(\theta(t),t),t)}{\Delta t}\right)^2\middle \vert \theta(t)  \right] &=& \lim_{\Delta t \to 0}\mathbb{E}\left[\frac{\gamma}{2} (\partial_1S(p(\theta(t),t),t)\partial_1p(\theta(t),t))^2\frac{\Delta\theta^2}{\Delta t}+\mathcal{O}(\Delta t)\right]\nonumber\\
 &=& \frac{\gamma}{2} (\partial_1S(p(\theta(t),t),t)\partial_1p(\theta(t),t))^2 \sigma(\theta,t)^2
 \label{markovtimedep}
 \end{eqnarray}
+\end{small}
 with $\partial_iX$ the partial derivative of quantity $X$ with respect to its $i^{th}$ argument. \\
 
-Now, we can write down the instantaneous expected value of the profit of producer $i$ if the demand shock is $\theta(t)$, $\pi^e_i(t)$, that is the profit that one expects to obtain when demand is at $\theta(t)$ given the expected value of the ramping costs:
-
+Now, we can write down the instantaneous expected value of the profit of producer $i$ if the demand shock is $\theta(t)$, $\pi^e_i(t, \theta(t))$, that is the profit that one expects to obtain when demand is at $\theta(t)$ given the expected value of the ramping costs:
+\begin{small}
 \begin{equation}
-\pi^e_i(t)= p(\theta(t),t)S_i(p(\theta(t),t),t) - C_s(S_i(p(\theta(t),t),t)) -\frac{\gamma}{2} \partial_1S_i(p(\theta(t),t),t)^2\partial_1p(\theta(t),t)^2 \sigma(\theta,t)^2
+\pi^e_i(t,\theta(t))= p(\theta(t),t)S_i(p(\theta(t),t),t) - C_s(S_i(p(\theta(t),t),t)) -\frac{\gamma}{2} \partial_1S_i(p(\theta(t),t),t)^2\partial_1p(\theta(t),t)^2 \sigma(\theta,t)^2
 \label{instantprofit}
 \end{equation}
+\end{small}
 
 Lastly we have to write down the expected profit for a day's worth of submitted strategies. Let us consider that the chosen unit of time is the day. Therefore, the total expected profit $\Pi^e_i$ writes: 
 
 \begin{eqnarray}
-\Pi^e_i&=&\int_0^1\mathbb{E}[\pi^e_i(t)]dt\nonumber\\
+\Pi^e_i&=&\int_0^1\mathbb{E}_{\theta(t)}[\pi^e_i(t,\theta(t))]dt\nonumber\\
 &=&\int_0^1\int_{\underline{\theta}}^{\overline{\theta}}f(\theta,t)\Big[p(\theta,t)S_i(p(\theta,t),t) - C_s(S_i(p(\theta),t)) \Big.\nonumber\\
 &&\left.-\frac{\gamma}{2} \partial_1S_i(p(\theta,t),t)^2\partial_1p(\theta,t)^2 \sigma(\theta,t)^2\right]d\theta dt
 \label{totprofit}
@@ -243,7 +267,7 @@ S^*(p)=\frac{1}{4\gamma+1+\lambda}\left(p+\frac{4\gamma}{2+\lambda}b\right) \lab
 See annex \ref{annexmonop}. \qed
 \end{proof} 
 
-We present in Fig.~\ref{monopsup} the results obtained for increasing values of the ramping cost parameter $\gamma$, starting at $\gamma=0$ in black and moving progressively from black to blue to red to green. The supply schedules are obtained by noting that the optimal solution \\
+We present in Fig.~\ref{monopsup} the results obtained for increasing values of the ramping cost parameter $\gamma$, starting at $\gamma=0$ in black and moving progressively from black to blue to red to green. \\
 
 As expected, adding these inertial costs narrows down the domain of attainable quantities produced, as a larger quantity domain implies larger incurred dynamic costs.\\
 
@@ -311,7 +335,9 @@ and the supply schedule has the following expression:
 
 We are now going to focus on the graphical representation of these solutions. As in the monopoly case we obtain unique solutions of increasing steepness in the ramping cost parameter $\gamma$. When the ramping costs increase, it becomes more and more costly to allow for a large domain of potential quantities to be produced. \\
 
-The black curve in Fig.~\ref{fig:oligop} corresponds to the limit solution when $\gamma\to0$, for which the problem gets closer to that of KM, i.e. no ramping costs. Note that as long as $\gamma\neq0$ the solutions are unique, thus our framework does not converge to that of KM.\\
+The black curve in Fig.~\ref{fig:oligop} corresponds to the limit solution when $\gamma\to0$, for which the problem gets closer to that of KM, i.e. no ramping costs. Note that as long as $\gamma\neq0$ the solutions are unique. This contrasts with the case of $\gamma=0$ which is the model presented in KM, for which there is a continuum of solutions. There is no smooth transition between our sets of solution : when considering dynamic costs, there is a single Nash equilibria, even in the limit of small such costs.\\
+
+Secondly, in their paper, Klemperer and Meyer show that in the limit of an diverging upper bound for their shocks, their continuum of solutions converges towards a unique solution. Our unique solution in the limit of small dynamic costs is the same as that ok KM in the limit of infinite support of demand shocks.\\
 
 \begin{proposition}
 When $\gamma\to0$, the solution remains unique and converges towards the linear schedule available in KM's set of solutions, that is the same schedule selected with KM's selection rule obtained when considering an infinite support for the shocks.
@@ -336,39 +362,92 @@ In addition to proposing a way to take into account dynamic technological constr
 
 We have here a model which solutions depend on the distribution of shocks, therefore we are able to capture the interday variation of bids by assuming that the distribution of shocks varies from day to day. In this case, there exists only one symmetric equilibria each day, function of the distribution of shocks.\\
 
+\subsection*{Discussion}
+
+This result sheds some light on one of the questions that the literature on electricity market focuses on. \\
+
+Accounting for dynamic costs induces a collapse of the equilibria set from a continuum to a unique element. \\
+
+Most of the tacit collusion concern that is present in the literature is based on the existence of a continuum of solutions. This continuum is thought as being conducive of tacit collusion because the electricity market entails repeated interactions between producers. In this case, producers can be feared to be able to learn to pick the most profitable Nash equilibria. \\
+
+Our result implies this pathway for tacit collusion is not available anymore. With only one Nash equilibria at any given time no learning can bring about tacit collusion. \\
+%
+%In addition to this consideration, one must note that our unique solution rotates towards a steeper and steeper supply schedule as the dynamic costs increase. However this rotation does not occur around the mean demand shock, but around a lower shock value. This means that, in expected terms, our solutions are more costly than the one selected by KMs infinite support argument. As long as the dynamic costs are not too high, our solution lies in the region of the price quantity plane delimited by the continuum of solutions of KM. Therefore, for empirical work trying to estimate
+
 In the next section we are going to present how to capture richer dynamics, and especially how the surface of bids should evolve with time when the producers have information about the anticipated variation of shocks during the day. 
 
-
-
 \section{Dynamic behavior of the bids} \label{dynamics}
-On the day-ahead market, bids, although made once per day for each period included in the next 24 hours, vary from one another. This is because demand is expected to vary according to a daily cycle with, roughly speaking, low demand during the night and higher demand during the day. The model described above doesn't account for these hourly dynamics. Here we present a way to capture these intraday variations, by considering bids that depend continuously on the date $t$. \\
+The classical supply function equilibria models, as described before, yield a continuum of Nash equilibria, and each one of those equilibria is ex-post optimal. This a very strong result that we are going to take some time to describe and comment.\\
 
-Previously, the SDE defining the dynamics of the problem was written as: 
+Consider for a moment that firms competing in supply schedules reach one of the many possible Nash equilibria under such a setup, and that they commit to their schedules. Now consider that the firms face a succession of demand shocks, and that this yields a succession of market outcomes. As the Nash equilbria are ex-post optimal, it means that given the strategies played by the other firms, no firm has any regrets concerning its strategy. Knowing about the realized demand shocks does not imply any willingness to change strategy as long as other firms keep their strategies fixed, and as long as the support of shocks is not reduced ot a point (one could think of observed realisations of shocks as helping to narrow down the expected range of shocks without implying a pinpoint accuracy).\\
+
+A corollary to this observation is that the distribution of anticipated shocks does not play any role in KM's paper, apart from its bounds. Knowing that the demand shocks are going to be drawn from distributions of high or low values does not affect the willingness to play a given strategy, as long as the support does not evolve. The little role that is played by information about shocks in KM's paper is even more counter-intuitive : to a certain extent, information about demand shocks gives rise to a larger continuum of solutions. Indeed, if one compares the equilibria available to firms for a given support $\{\theta\}_1=[\underline{\theta}_1, \overline{\theta}_1]$, noted ${S^*}_1$, to those obtained for a support strictly included in the first one $\{\theta\}_2=[\underline{\theta}_2, \overline{\theta}_2]\subset\{\theta\}_1$, noted ${S^*}_2$, then the set of equilibria will be larger in the second case, in the sense that $ {S^*}_1\restriction_{\{\theta\}_2}\subset {S^*}_2$ (where $\restriction_{\{\theta\}_2}$ denotes that the supply functions are restricted to values over $\{\theta\}_2$). \\
+
+However, actual firms bidding on the electricity markets are known to be actively engaged in forecasting the future demand levels in order to build their strategies. Bids that we can observe on the electricity markets change from hour to hour even when demand does not vary enough to warrant a change of online plants, a consideration that could explain some of the supply schedules variations. \\
+
+The general interpretation of KM's paper when applied to electricity markets is that for some unknown underlying process, strategies converge towards different equilibria of the set of available equilibria from hour to hour. One can note that the general intuition for strategies converging towards Nash equilibria in the first place is through either a high degree of sophistication on the part of firms, or through a more organic learning process. Neither of these two explanations can account for frequent switching from one Nash equilibria to another, out of a myriad of available options, wihtout considering some communication among firms. Furthermore, if such communication existed, it should be expected to yield the most profitable equilibria out of the available lot.\\ 
+
+We think that this strand of argument trying to explain bids' dynamics in the light of the supply function equilibria framework is unsatisfying and we argue that forecasting demand becomes important for firms when one considers dynamic effects, that is effects that are history dependent, of which dynamic costs which we model in this paper are an instance (one can think of start-up and shut-down costs as another instance of such dynamic effects). \\
+
+The model described in the previous section doesn't account for these hourly dynamics. Here we present a way to capture these intraday variations, by considering bids that depend continuously on the time $t$. We will show that our results imply that firms are not oblivious to information about the distribution of shocks anymore, and more than that, that their strategies directly evolve with the evolution of their knowledge about uncertain furture shocks.\\
+
+
+\subsection{The setup}
+Previously, the SDE (stochastic differential equation) defining the dynamics of the problem was written as: 
 $$d\theta(t)=-2\theta(t) dt+\sqrt{1-\theta(t)^2}dB_t$$ 
- This specification implies a stochastic trajectory for the shocks, bounded by a constant envelope. \\
+This specification implied a stochastic trajectory for the shocks, bounded by a constant envelope. That is to mean that, lacking any knowledge of the value of the shock at a point in time close to the period under consideration, the distribution of shocks does not depend on time.\\
 
-To account for these intraday variations we define the envelope by two functions, $(\underline{\theta}(t),\overline{\theta}(t))$, respectively the lower and upper bounds of the shocks. These two functions, although very easy to comprehend, are not the most useful way to define the boundary. Instead we are going to use the average value of the shocks, and the half width of the envelope, $(\hat{\theta}(t), \omega(t))$. This means that $\underline{\theta}(t)=\hat{\theta}(t)-\omega(t)$ and $\overline{\theta}(t)=\hat{\theta}(t)+\omega(t)$. The only restriction we impose on the envelope is that we require it to be continuously differentiable, that is $(\hat{\theta}(t),\omega(t))\in\mathcal{C}^1(\mathbb{R})$.\\
+To account for these intraday variations we are going to define a richer SDE. \\
 
-Consider the following SDE, in which we drop the explicit dependency of the different functions on time, that is $\theta(t)$, $\hat{\theta}(t)$ and $\omega(t)$ will be noted $\theta$, $\hat{\theta}$ and $\omega$:
+SDEs have been well studied and as a consequence there exists a number of families of SDEs satisfying numerous characteristics \cite{enveloppe}. The goal here is to find one SDE that will allow us to capture some of the dynamics of shocks and how this might influence strategies, while keeping it as simple as possible. Just as in the previous section, the first caracteristic that we want is to consider SDEs that imply a bounded support of shocks. This restricts our possible choice to four families out of the classical ones: Generalised Beta I, Beta, Power, Uniform. We also consider that a desirable property is that the distribution reaches 0 continuously at the bounds of its support. This restricts us further to only two families : Generalised Beta I and Beta. For tractability reasons we will focus here on the Beta family of SDEs, and more precisely on one of the simplest Beta SDE. However, we want to note that this choice stems from our focus towards solving analytically the problem at hand and obtain closed form solutions. If one were to try and estimate the distribution of shocks anticipated by firms from market data one might want to try and find which of the Beta or Generalised Beta I SDEs might match the distribution of errors between the published day -1 estimates for demand and the observed quantities.\\
+
+Define the evolving envelope of shocks by two functions, $(\underline{\theta}(t),\overline{\theta}(t))$, respectively the lower and upper bounds of the shocks. These two functions, although very easy to comprehend, are not the most useful way to define the boundary. Instead we are going to use the average value of the shocks, and the half width of the envelope, $(\hat{\theta}(t), \omega(t))$. This means that $\underline{\theta}(t)=\hat{\theta}(t)-\omega(t)$ and $\overline{\theta}(t)=\hat{\theta}(t)+\omega(t)$. The only restriction we impose on the envelope is that we require it to be continuously differentiable, that is $(\hat{\theta},\omega)\in\mathcal{C}^1(\mathbb{R})$.\\
+
+Consider the following SDE which is the simplest Beta SDE that we can pick that still allows us to have a free choice of the bounds of shocks. For readability, we drop the explicit dependency of the different functions on time, that is $\theta(t)$, $\hat{\theta}(t)$ and $\omega(t)$ will be noted $\theta$, $\hat{\theta}$ and $\omega$:
+\begin{equation}
+\begin{split}
+  d\theta=\left[(\hat{\theta}-\omega-\theta)+\left(1+\frac{1}{\omega}\frac{d\omega}{dt}\right)(\hat{\theta}+\omega-\theta)+\left(\frac{d\hat{\theta}}{dt}-\frac{d\omega}{dt}\right)\right]\cdot dt\\+\sqrt{\left(1+\frac{1}{\omega}\frac{d\omega}{dt}\right)(\theta-\hat{\theta}+\omega)(\hat{\theta}+\omega-\theta)}\cdot dB_{t}
+\end{split}
+\end{equation}
+
+The distribution of the shocks can be obtained through Fokker-Planck's equation \ref{FokP} and we obtain:
+\begin{equation}
+f(\theta,t)=\frac{3}{4\omega(t)^3}(\theta(t)-\hat{\theta}(t)+\omega(t))(\hat{\theta}(t)+\omega(t)-\theta(t))
+\label{distrib_prerescale}
+\end{equation}
+
+In the following analysis, we are going to rely on the fact that the term $\left(1+\frac{1}{\omega}\frac{d\omega}{dt}\right)>0$. The justification for this inequaliy comes from the following remark: if one were to rescale time in the above equations, there wouldn't be any explicit change in the equilibrium distribution \ref{distrib_prerescale}. The only effect that such a rescaling would play is in the variance of the Brownian term. In order to insure that our inequality is correct, one has to make sure that the variation of the envelope term occurs on longer timescales than the characteristic timescale of fluctuations in our problem, that is the timescale that fixes the rate at which information leaks out of the knowledge of the value of one shock at a given point in time. We are trying to capture the hourly changes in firms strategies when demand fluctuates at higher frequencies (think of the collection of individuals that choose to switch lights on or off at any given point in time in an entire country for instance). We therefore consider that this assumption is sound in this situation.\\
+
+More formally, one can define $\tau$ a rescaling parameter allowing to change the rate at which the brownian process blurs information pertaining to an initial condition. We rescale time using this parameter, so that time $t$ and the rescaled time $t_r$ verify $t_r=\tau t$. \\
+
+We can rewrite the above equations as :
 \begin{equation}
 \begin{split}
   d\theta=\left[(\hat{\theta}-\omega-\theta)+\left(1+\frac{\tau}{\omega}\frac{d\omega}{dt_r}\right)(\hat{\theta}+\omega-\theta)+\tau\left(\frac{d\hat{\theta}}{dt_r}-\frac{d\omega}{dt_r}\right)\right]\cdot dt_r\\+\sqrt{\left(1+\frac{\tau}{\omega}\frac{d\omega}{dt_r}\right)(\theta-\hat{\theta}+\omega)(\hat{\theta}+\omega-\theta)}\cdot dB_{t_r}
 \end{split}
 \end{equation}
-with $\tau$ a rescaling parameter allowing to change the rate at which the brownian process blurs information pertaining an initial condition. This parameter is of the order of the cutoff timescale $\Delta t_c$ (a few seconds at most). We rescale time as we change this parameter, so that time $t$ and the rescaled time $t_r$ verify $t=\tau t_r$. By assumption, $\Delta t_c$ is much smaller than the typical timescale of variation of strategies, therefore by hypothesis $\left(1+\frac{\tau}{\omega}\frac{d\omega}{dt_r}\right)>0$. The distribution of the shocks can be obtained through Fˆkker-Planck's equation \ref{FokP} and we obtain:
-$$f(\theta,t_r)=\frac{6}{\omega(t_r)^3}(\theta(t_r)-\hat{\theta}(t_r)+\omega(t_r))(\hat{\theta}(t_r)+\omega(t_r)-\theta(t_r))$$
+
+and 
+
+\begin{equation}
+f(\theta,t_r)=\frac{3}{4\omega(t_r)^3}(\theta(t_r)-\hat{\theta}(t_r)+\omega(t_r))(\hat{\theta}(t_r)+\omega(t_r)-\theta(t_r))
+\label{distrib_postrescale}
+\end{equation}
+
+By assumption, $\tau$ is small enough for the loss of information due to the stochastic nature of the process to be faster than the typical timescale of variation of strategies, therefore by hypothesis $\left(1+\frac{\tau}{\omega}\frac{d\omega}{dt_r}\right)>0$ is valid. We will drop this rescaled time index in the following sections as equations \ref{distrib_prerescale} and \ref{distrib_postrescale} are equal, it was just a temporary definition to justify the sign of the term that depends on the time derivative of the envelope. We will keep this $\tau$ parameter explicit however, in order to allow discussions differentiating effects related to the speed of variation of the envelope or to the relative timescales of this variation and the underlying stochastic process.
 
 \subsection{Results}
 \subsubsection{Monopoly dynamics}
 \begin{proposition}\label{monopropdyn}
-In the case of an envelope evolving with time, that is shocks belong to the bounded support $[\hat{\theta}-\omega,\hat{\theta}+\omega]$, there exists a unique optimal solution to the monopoly problem. It can be expressed as:
+In the case of an envelope evolving with time, that is shocks belong to the bounded support $[\hat{\theta}(t)-\omega(t),\hat{\theta}(t)+\omega(t)]$, there exists a unique optimal solution to the monopoly problem. It can be expressed as as surface in the price-quantity-time space:
 \begin{flalign}
-&p^*=\frac{4\gamma\left(1+\frac{\tau}{\omega}\frac{d\omega}{dt}\right)+1+\lambda}{4\gamma\left(1+\frac{\tau}{\omega}\frac{d\omega}{dt}\right)+2+\lambda}\cdot\theta-\frac{4\gamma\left(1+\frac{\tau}{\omega}\frac{d\omega}{dt}\right)}{(2+\lambda)\left(4\gamma\left(1+\frac{\tau}{\omega}\frac{d\omega}{dt}\right)+1+\lambda\right)}\cdot\hat{\theta}&\label{monopdynp}
+&p^*(\theta(t),t)=\frac{4\gamma\left(1+\frac{\tau}{\omega}\frac{d\omega}{dt}(t)\right)+1+\lambda}{4\gamma\left(1+\frac{\tau}{\omega}\frac{d\omega}{dt}(t)\right)+2+\lambda}\cdot\theta(t)-\frac{4\gamma\left(1+\frac{\tau}{\omega}\frac{d\omega}{dt}(t)\right)}{(2+\lambda)\left(4\gamma\left(1+\frac{\tau}{\omega}\frac{d\omega}{dt}(t)\right)+1+\lambda\right)}\cdot\hat{\theta}(t)&\label{monopdynp}
 \end{flalign}
 The corresponding optimal supply schedule writes as:
 \begin{flalign}
-&S^*(p)=\frac{1}{4\gamma\left(1+\frac{\tau}{\omega}\frac{d\omega}{dt}\right)+1+\lambda}\left(p+\frac{4\gamma\left(1+\frac{\tau}{\omega}\frac{d\omega}{dt}\right)}{2+\lambda}\cdot\hat{\theta}\right)&\label{monopdynS}
+&S^*(p, t)=\frac{1}{4\gamma\left(1+\frac{\tau}{\omega}\frac{d\omega}{dt}(t)\right)+1+\lambda}\left(p(t)+\frac{4\gamma\left(1+\frac{\tau}{\omega}\frac{d\omega}{dt}(t)\right)}{2+\lambda}\cdot\hat{\theta}(t)\right)&\label{monopdynS}
 \end{flalign}
+$\forall p(t)\in[p(\hat{\theta}(t) - \omega(t),t), p(\hat{\theta}(t) + \omega(t),t)]$
 \end{proposition} 
 \begin{proof}
 See appendix \ref{monopdyn}, to be written. \qed
