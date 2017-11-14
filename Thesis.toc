@@ -19,13 +19,13 @@
 \contentsline {subsection}{\numberline {1.6.2}Results}{38}{subsection.1.6.2}
 \contentsline {subsubsection}{Monopoly dynamics}{38}{section*.13}
 \contentsline {subsubsection}{Oligopoly dynamics}{41}{section*.15}
-\contentsline {section}{\numberline {1.7}Discussion}{41}{section.1.7}
+\contentsline {section}{\numberline {1.7}Discussion}{42}{section.1.7}
 \contentsline {section}{\numberline {1.8}Concluding Remarks}{42}{section.1.8}
 \contentsline {chapter}{Appendix}{43}{section*.16}
 \contentsline {section}{Appendix \numberline {1.A}Proof of Proposition \ref {monopequilibria} }{43}{section.a.1.A}
-\contentsline {section}{Appendix \numberline {1.B}Proof of Proposition \ref {propoligo1} }{44}{section.a.1.B}
-\contentsline {section}{Appendix \numberline {1.C}Proof of proposition \ref {monopropdyn}}{47}{section.a.1.C}
-\contentsline {section}{Appendix \numberline {1.D}Proof of proposition \ref {oligodynp}}{47}{section.a.1.D}
+\contentsline {section}{Appendix \numberline {1.B}Proof of Proposition \ref {propoligo1} }{45}{section.a.1.B}
+\contentsline {section}{Appendix \numberline {1.C}Proof of proposition \ref {monopropdyn}}{48}{section.a.1.C}
+\contentsline {section}{Appendix \numberline {1.D}Proof of proposition \ref {oligodynp}}{48}{section.a.1.D}
 \contentsline {chapter}{\numberline {2}Investigating the Impact of Uncertainty on Firms with Dynamic Costs : A Case Study of the French Electricity Market}{49}{chapter.2}
 \contentsline {subsection}{\numberline {2.0.1}Literature review and contribution}{53}{subsection.2.0.1}
 \contentsline {subsection}{\numberline {2.0.2}Theoretical prediction}{56}{subsection.2.0.2}
