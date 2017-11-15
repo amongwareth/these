@@ -194,7 +194,7 @@ Let us consider the case where the strategy and the variance depend explicitly o
 \label{markovtimedep}
 \end{eqnarray}
 \end{small}
-with $\partial_iX$ the partial derivative of quantity $X$ with respect to its $i^{th}$ argument. \\
+with $\partial_iX$ the partial derivative of quantity $X$ with respect to its $i^{th}$ argument. See Annex. \ref{stochasticdyn_proof} for a more details on this derivation.\\
 
 Now, we can write down the instantaneous expected value of the profit of producer $i$ if the demand shock is $\theta(t)$, $\pi^e_i(t, \theta(t))$, that is the profit that one expects to obtain when demand is at $\theta(t)$ given the expected value of the ramping costs:
 \begin{small}
@@ -251,7 +251,7 @@ s.t.\hspace{2cm}&\dot{p}(\theta)\in[0,a] \nonumber\\
 \end{eqnarray}
 
 
-\subsection*{Results}
+\subsection{Results}
 \begin{proposition}\label{monopequilibria}
 The solution exists, is unique, and has the following form:
 \begin{equation}
@@ -269,7 +269,7 @@ See annex \ref{annexmonop}. \qed
 
 We present in Fig.~\ref{monopsup} the results obtained for increasing values of the ramping cost parameter $\gamma$, starting at $\gamma=0$ in black and moving progressively from black to blue to red to green. \\
 
-As expected, adding these inertial costs narrows down the domain of attainable quantities produced, as a larger quantity domain implies larger incurred dynamic costs.\\
+As expected, adding these inertial costs narrows down the domain of attainable quantities produced, as a larger quantity domain implies larger incurred ramping costs.\\
 
 More interesting is the way the quantity domain is narrowed down. The domain of prices increases conversely, so that the solutions are steeper than the traditional monopoly situation, bringing the schedules ever closer to a Cournot-like situation. In addition, the optimal supply schedules do not depend on $a$, the parameter determining the width of the possible shocks, but only on $b$ which defines the average value of the shocks. \\
 
@@ -333,11 +333,18 @@ and the supply schedule has the following expression:
  See Annex \ref{annex1}. \qed
 \end{proof}
 
+\begin{proposition}\label{oligoslope_prop}
+The slope of the supply schedule is increasing with $\gamma$ and the schedule is shifted to the right of the plane $(q,p)$ as $\gamma$ increases. This is to say that the schedule rotates around a point in the positive quadrant of the plane. 
+\end{proposition}
+\begin{proof}
+See Annex \ref{oligopslope_proof}. \qed
+\end{proof}
+
 We are now going to focus on the graphical representation of these solutions. As in the monopoly case we obtain unique solutions of increasing steepness in the ramping cost parameter $\gamma$. When the ramping costs increase, it becomes more and more costly to allow for a large domain of potential quantities to be produced. \\
 
-The black curve in Fig.~\ref{fig:oligop} corresponds to the limit solution when $\gamma\to0$, for which the problem gets closer to that of KM, i.e. no ramping costs. Note that as long as $\gamma\neq0$ the solutions are unique. This contrasts with the case of $\gamma=0$ which is the model presented in KM, for which there is a continuum of solutions. There is no smooth transition between our sets of solution : when considering dynamic costs, there is a single Nash equilibria, even in the limit of small such costs.\\
+The black curve in Fig.~\ref{fig:oligop} corresponds to the limit solution when $\gamma\to0$, for which the problem gets closer to that of KM, i.e. no ramping costs. Note that as long as $\gamma\neq0$ the solutions are unique. This contrasts with the case of $\gamma=0$ which is the model presented in KM, for which there is a continuum of solutions. There is no smooth transition between our sets of solution : when considering ramping costs, there is a single Nash equilibria, even in the limit of small such costs.\\
 
-Secondly, in their paper, Klemperer and Meyer show that in the limit of an diverging upper bound for their shocks, their continuum of solutions converges towards a unique solution. Our unique solution in the limit of small dynamic costs is the same as that ok KM in the limit of infinite support of demand shocks.\\
+Secondly, in their paper, Klemperer and Meyer show that in the limit of a diverging upper bound for their shocks, their continuum of solutions converges towards a unique solution. Our unique solution in the limit of small ramping costs is the same as that ok KM in the limit of infinite support of demand shocks.\\
 
 \begin{proposition}
 When $\gamma\to0$, the solution remains unique and converges towards the linear schedule available in KM's set of solutions, that is the same schedule selected with KM's selection rule obtained when considering an infinite support for the shocks.
@@ -354,7 +361,7 @@ More intuitively the argument is as follows. When $\gamma\to 0$, with $\gamma>0$
 \caption{\small{This graph plots $S^*(p)$ for different values of the ramping cost parameter, and compares them to the set of equilibria obtained in KM's framework. Four optimal supply schedules are plotted. The black curve (full line) corresponds to the case where $\gamma\to0$. As before, as $\gamma$ increases the optimal schedules get steeper and steeper until in the limit of $\gamma\to\infty$, the optimal schedule attains a vertical slope. In addition, we show the set of available equilibria in KM's model in light green, and the extremal demand schedules in dashed black.  }} \label{fig:oligop}
 \end{figure}
 
-Intuitively, as we take $\gamma$ to $0$ we come closer to the situation captured in KM, but as long as $\gamma>0$, the producer still faces dynamic costs, and therefore converges towards the only linear schedule available in KM's set, as shown in Fig.~\ref{fig:oligop}, in which we plot our solutions on top of KM's solution set in order to clarify the comparison. \\
+Intuitively, as we take $\gamma$ to $0$ we come closer to the situation captured in KM, but as long as $\gamma>0$, the producer still faces ramping costs, and therefore converges towards the only linear schedule available in KM's set, as shown in Fig.~\ref{fig:oligop}, in which we plot our solutions on top of KM's solution set in order to clarify the comparison. \\
 
 Note that it isn't possible to transition smoothly from our model to that of KM, although they are obviously closely related. Indeed, $\forall \gamma>0$, our model yields unique solutions, but for $\gamma=0$ we return to KM's model for which there is a continuum of equilibria. There is an intrinsic discontinuity between these two models, namely, the correspondence $\Gamma(\gamma)$ associating the set of equilibria to the symmetric oligopoly problem obtained for a given value of the ramping cost parameter $\gamma$ is not lower hemicontinuous at $\gamma=0$. \\
 
@@ -362,17 +369,20 @@ In addition to proposing a way to take into account dynamic technological constr
 
 We have here a model which solutions depend on the distribution of shocks, therefore we are able to capture the interday variation of bids by assuming that the distribution of shocks varies from day to day. In this case, there exists only one symmetric equilibria each day, function of the distribution of shocks.\\
 
-\subsection*{Discussion}
+\subsection{Discussion}
 
-This result sheds some light on one of the questions that the literature on electricity market focuses on. \\
+This result sheds some light on one of the questions that the electricity market literature focuses on. \\
 
-Accounting for dynamic costs induces a collapse of the equilibria set from a continuum to a unique element. \\
+Accounting for ramping costs induces a collapse of the equilibria set from a continuum to a unique element. \\
 
 Most of the tacit collusion concern that is present in the literature is based on the existence of a continuum of solutions. This continuum is thought as being conducive of tacit collusion because the electricity market entails repeated interactions between producers. In this case, producers can be feared to be able to learn to pick the most profitable Nash equilibria. \\
 
 Our result implies this pathway for tacit collusion is not available anymore. With only one Nash equilibria at any given time no learning can bring about tacit collusion. \\
+
+We are also able to account for negative prices which was impossible in the previous framework. Such negative prices are actually observed, although rarely, on the market: producers prefer to subsidize consumption instead of decreasing production by a lot. In our framework, if the ramping costs are large enough, and the demand shocks can reach a small enough value, our solutions can yield negative values : the equilibrium price might even be below the marginal cost of production, understood here as $\partial_q C$ which by definition does not capture our ramping costs.
+
 %
-%In addition to this consideration, one must note that our unique solution rotates towards a steeper and steeper supply schedule as the dynamic costs increase. However this rotation does not occur around the mean demand shock, but around a lower shock value. This means that, in expected terms, our solutions are more costly than the one selected by KMs infinite support argument. As long as the dynamic costs are not too high, our solution lies in the region of the price quantity plane delimited by the continuum of solutions of KM. Therefore, for empirical work trying to estimate
+%In addition to this consideration, one must note that our unique solution rotates towards a steeper and steeper supply schedule as the ramping costs increase. However this rotation does not occur around the mean demand shock, but around a lower shock value. This means that, in expected terms, our solutions are more costly than the one selected by KMs infinite support argument. As long as the ramping costs are not too high, our solution lies in the region of the price quantity plane delimited by the continuum of solutions of KM. Therefore, for empirical work trying to estimate
 
 In the next section we are going to present how to capture richer dynamics, and especially how the surface of bids should evolve with time when the producers have information about the anticipated variation of shocks during the day. 
 
@@ -387,12 +397,12 @@ However, actual firms bidding on the electricity markets are known to be activel
 
 The general interpretation of KM's paper when applied to electricity markets is that for some unknown underlying process, strategies converge towards different equilibria of the set of available equilibria from hour to hour. One can note that the general intuition for strategies converging towards Nash equilibria in the first place is through either a high degree of sophistication on the part of firms, or through a more organic learning process. Neither of these two explanations can account for frequent switching from one Nash equilibria to another, out of a myriad of available options, wihtout considering some communication among firms. Furthermore, if such communication existed, it should be expected to yield the most profitable equilibria out of the available lot.\\ 
 
-We think that this strand of argument trying to explain bids' dynamics in the light of the supply function equilibria framework is unsatisfying and we argue that forecasting demand becomes important for firms when one considers dynamic effects, that is effects that are history dependent, of which dynamic costs which we model in this paper are an instance (one can think of start-up and shut-down costs as another instance of such dynamic effects). \\
+We think that this strand of argument trying to explain bids' dynamics in the light of the supply function equilibria framework is unsatisfying and we argue that forecasting demand becomes important for firms when one considers dynamic effects, that is effects that are history dependent, of which ramping costs which we model in this paper are an instance (one can think of start-up and shut-down costs as another instance of such dynamic effects). \\
 
 The model described in the previous section doesn't account for these hourly dynamics. Here we present a way to capture these intraday variations, by considering bids that depend continuously on the time $t$. We will show that our results imply that firms are not oblivious to information about the distribution of shocks anymore, and more than that, that their strategies directly evolve with the evolution of their knowledge about uncertain furture shocks.\\
 
 
-\subsection{The setup}
+\subsection{The setup}\label{setupdyn}
 Previously, the SDE (stochastic differential equation) defining the dynamics of the problem was written as: 
 $$d\theta(t)=-2\theta(t) dt+\sqrt{1-\theta(t)^2}dB_t$$ 
 This specification implied a stochastic trajectory for the shocks, bounded by a constant envelope. That is to mean that, lacking any knowledge of the value of the shock at a point in time close to the period under consideration, the distribution of shocks does not depend on time.\\
@@ -437,12 +447,25 @@ f(\theta,t_r)=\frac{3}{4\omega(t_r)^3}(\theta(t_r)-\hat{\theta}(t_r)+\omega(t_r)
 By assumption, $\tau$ is small enough for the loss of information due to the stochastic nature of the process to be faster than the typical timescale of variation of strategies, therefore by hypothesis $\left(1+\frac{\tau}{\omega}\frac{d\omega}{dt_r}\right)>0$ is valid. We will drop this rescaled time index in the following sections as equations \ref{distrib_prerescale} and \ref{distrib_postrescale} are equal, it was just a temporary definition to justify the sign of the term that depends on the time derivative of the envelope. We will keep this $\tau$ parameter explicit however, in order to allow discussions differentiating effects related to the speed of variation of the envelope or to the relative timescales of this variation and the underlying stochastic process.
 
 \subsection{Results}
-\subsubsection{Monopoly dynamics}
-We start by describing the dynamics of the monopoly case because the oligopoly case is not richer dynamically, but it is more complex to describe.
+\subsubsection{Dynamics in the case of the Monopoly and of the oligopoly}
+We start by describing the dynamics of the monopoly case because the oligopoly case is not richer dynamically, but it is more complex to describe. \\
+
+Our stochastic maximisation program can thus be rewritten as a regular optimal control problem as in section \ref{monosolve}, but taking into account the time depency: 
+
+\begin{equation}
+\displaystyle{\max_{S_i(p,t)}}~\int_0^T\int_{\underline{\theta}(t)}^{\overline{\theta}(t)} f(\theta,t)\left(p(\theta,t)S_i(p(\theta,t),t) -C_s(S_i(p(\theta,t),t))-\frac{\gamma}{2}\sigma(\theta,t)^2\left(S_i'(p(\theta,t),t)\dot{p}(\theta,t)\right)^2\right)d\theta dt
+\end{equation}
+\begin{eqnarray} 
+s.t.\hspace{2cm}&S_i'(\cdot)\geq0 \nonumber\\
+&\dot{p}\geq0\\
+&D(\cdot,\cdot)\geq0 \nonumber\\
+\end{eqnarray}
+
+
 \begin{proposition}\label{monopropdyn}
-In the case of an envelope evolving with time, that is shocks belong to the bounded support $[\hat{\theta}(t)-\omega(t),\hat{\theta}(t)+\omega(t)]$, there exists a unique optimal solution to the monopoly problem. It can be expressed as as surface in the price-quantity-time space:
+In the case of an envelope evolving with time, that is shocks belonging to the bounded support $[\hat{\theta}(t)-\omega(t),\hat{\theta}(t)+\omega(t)]$, there exists a unique optimal solution to the monopoly problem. It can be expressed as as surface in the price-quantity-time space:
 \begin{flalign}
-&p^*(\theta(t),t)=\frac{4\gamma\left(1+\frac{\tau}{\omega}\frac{d\omega}{dt}(t)\right)+1+\lambda}{4\gamma\left(1+\frac{\tau}{\omega}\frac{d\omega}{dt}(t)\right)+2+\lambda}\cdot\theta(t)-\frac{4\gamma\left(1+\frac{\tau}{\omega}\frac{d\omega}{dt}(t)\right)}{(2+\lambda)\left(4\gamma\left(1+\frac{\tau}{\omega}\frac{d\omega}{dt}(t)\right)+1+\lambda\right)}\cdot\hat{\theta}(t)&\label{monopdynp}
+&p^*(\theta(t),t)=\frac{4\gamma\left(1+\frac{\tau}{\omega}\frac{d\omega}{dt}(t)\right)+1+\lambda}{4\gamma\left(1+\frac{\tau}{\omega}\frac{d\omega}{dt}(t)\right)+2+\lambda}\cdot\theta(t)-\frac{1+\lambda}{2+\lambda}\cdot\hat{\theta}(t)&\label{monopdynp}
 \end{flalign}
 The corresponding optimal supply schedule writes as:
 \begin{flalign}
@@ -451,25 +474,16 @@ The corresponding optimal supply schedule writes as:
 $\forall p(t)\in[p(\hat{\theta}(t) - \omega(t),t), p(\hat{\theta}(t) + \omega(t),t)]$
 \end{proposition} 
 \begin{proof}
-With the  \qed
+See Annex \ref{monopdyn_proof}.  \qed
 \end{proof}
 
-Note that if $\frac{d\omega}{dt}=0$ equations \ref{monopdynp} and \ref{monopdynS} are equal to equations \ref{monopsol} and \ref{monopS} respectively as expected. Note also that the solution is exactly the same as in the static monopoly case in which one replaces the dynamic cost parameter $\gamma$ by $\gamma\left(1+\frac{\tau}{\omega}\frac{d\omega}{dt}(t)\right)$. The optimal supply schedule is shifted uniformly following the expected shock $\hat{\theta}(t)$, and its slope behaves as if the dynamic cost parameter was fluctuating with the width of the bounds of the shocks. The transition between a low uncertainty region to a higher uncertainty one behaves as if during the transient regime the dynamic cost parameter had a higher value, implying a higher slope. \\
-         
-The optimal supply schedule depends on the relative rate of change of the width $\frac{1}{\omega}\frac{d\omega}{dt}$ and on the average shock $\hat{\theta}$. More precisely, with a constant width, the optimal supply schedule varies according to variations in the expected average value of the shocks. This is quite standard, if demand is higher, the price and quantities both increase, and here this increase occurs with a constant slope. The behavior of the supply schedule when the width varies is less trivial. \\
+Note that if $\frac{d\omega}{dt}=0$ equations \ref{monopdynp} and \ref{monopdynS} are equal to equations \ref{monopsol} and \ref{monopS} respectively as expected. Note also that the solution is exactly the same as in the static monopoly case in which one replaces the ramping cost parameter $\gamma$ by $\gamma\left(1+\frac{\tau}{\omega}\frac{d\omega}{dt}(t)\right)$. This surprising fact, that our dynamic optimal strategy is simply the naive transcription of the static one with a specified dynamic stochastic process, can be understood as s consequence of the assumptions we have had to make in section \ref{sec_ramping_costs}. \\
 
-Remember that when describing the slope of the schedule, we are considering the plane $(quantity, price)$ while the schedule as defined by $S^*(p)$ represents the same curve but in the plane $(price, quantity)$. An increase in width is equivalent to a higher ramping cost parameter while a decrease in width is equivalent to a lower ramping cost parameter. These results are illustrated in Fig. \ref{figdyn1}. \\
+In this section, in Annex. \ref{stochasticdyn_proof} in which we develop the argument in more detail, and in section \ref{setupdyn} we end up in effect making a scale separation argument : the ramping costs are completely driven by the very short term fluctuations, whereas the evolution of these ramping costs is driven by the longer timescale at which our information about the demand shocks evolves over time. This means that we make a version of what physicists call a quasi-static argument : because of this time-scale separation between what drives our ramping cost and our information about the shocks, we can effectively reason in two steps, first solving for the static situation, and then injecting naively the slow changes in the static results with confidence as to the validity of this approximation as long as the assumption about this separation of scale is verified.\\
 
-To understand the economic intuition behind this result, consider first an increase in the width of the envelope at date $t_1$.  Consider now one possible value of $\theta(t_1)$. At $t_1+dt$, had the width been constant there would have been a given level of uncertainty about the values that $\theta(t_1+dt)$, and thus the ramping costs, could have taken.  If the width of the envelope is increasing then there is more uncertainty regarding the potential values that could be taken by $\theta(t_1+dt)$, therefore more expected ramping costs incurred, and a higher slope to hedge these costs. On the other hand, when the width decreases, the situation is reversed. In that case, we move towards a situation in which there is less uncertainty about the ramping costs, so that the slope is smaller than for a constant envelope. This difference between increasing and decreasing width is illustrated by comparing the two regions of the envelope displayed in (full) black line in Fig. \ref{figdyn1}. In addition, when contrasting the left and the right side of the figure one sees that the change in the informativeness of the envelope is captured by the relative change of the width: for the same rate of change, if the width is larger (right) then the change in informativeness is smaller (the change in the area captured by the (dashed) red and (full) green arrows).  \\
+The consequence of this is that we have a dynamic transcription of our static oligopoly of the same nature as for the monopoly above.\\
 
-\begin{figure}[h] 
-\centering
-\includegraphics[width=15cm]{figch1/figdyn1.png}
-\caption{\small{This graph plots an envelope of constant average value but varying width $\omega(t)$. By comparing regions of increasing or decreasing width, respectively the left or right side of a lobe, one sees that the informativeness of the envelope is being respectively reduced or increased with respect to a situation where the width would be kept constant. The change in informativeness is represented by the area between the (full) green arrows (observed level of informativeness) compared to the area between the (dashed) red arrows (level of informativeness had the width been constant). In addition, by comparing the left lobe to the right one, it is possible to see why the relative variation of the width, and not the absolute variation of the width, matters. For a larger width (right lobe) and the same rate of change in the width, there is less change in informativeness than for a smaller width (left lobe), i.e. the same rate of change matters less for the right lobe than for the left lobe. }} \label{figdyn1}
-\end{figure}
 
-\newpage
-\subsubsection{Oligopoly dynamics}
 \begin{proposition}\label{oligodynp}
 The solution exists, is unique, and has the following form:
 \begin{equation}
@@ -486,32 +500,62 @@ and the supply schedule has the following expression:
 \end{flalign}
 \end{proposition}
 \begin{proof}
- See Annex \ref{oligodyn}, to be written. \qed 
+ See Annex \ref{oligodyn_proof}.\qed 
 \end{proof}
 
-The dynamic behavior is the same as that of the monopoly situation presented above, and variations of the optimal schedule with respect to the other parameters are the same as in the case of a constant envelope, as described in section \ref{oligosolve}. 
+\subsection{Discussion}
 
-%We now plot optimal schedules in the case where the width $\omega$ is kept constant and in the case where the average shock $\hat{\theta}$ is kept constant. \\
-%
-%INSERT FIGURE HERE
+In both situations, the optimal supply schedule is shifted uniformly following the expected shock $\hat{\theta}(t)$, which is a rather intuitive result : if on average demand shifts upwards, the producers want to extract more profit and shift their supply curve accordingly, but there is no reason to change slope.\\
 
-%\subsubsection{Generalisation of the distribution}
-%Up until now we have considered a quadratic distribution of shocks. Our results can still be expressed in closed form when we allow the distribution to be free in the set of Generalised Beta distributions, that is, rougly speeking, polynomial distributions with only one lobe. This allows for asymetric distributions to be considered, although it is not the point of this article to describe the effects of the assymetry of the distribution of shocks on the shape of the optimal supply schedules. \\
-%
-%EXPRESSION GENERALISED BETA + PROOF
-%
-\section{Discussion}\label{disc}
+What is less trivial is the way the slope behaves. Let us focus on the monopoly result for a start. The slope is affected as if the ramping cost parameter was fluctuating with the relative change in the width of the bounds of the shocks (term in $\frac{1}{\omega}\frac{d\omega}{dt} $). The transition between a low uncertainty region to a higher uncertainty one behaves as if during the transient regime the ramping cost parameter had a higher value, implying a higher slope. \\
+         
+The optimal supply schedule depends on the relative rate of change of the width $\frac{1}{\omega}\frac{d\omega}{dt}$ and on the average shock $\hat{\theta}$. More precisely, with a constant width, the optimal supply schedule varies according to variations in the expected average value of the shocks. This is quite standard, if demand is higher, the price and quantities both increase, and here this increase occurs with a constant slope. The behavior of the supply schedule when the width varies is less trivial. \\
 
-DIFFERENTIATING DAY-AHEAD AND INTRADAY MARKETS.\\
-TRANSITION BETWEEN KM AND THIS MODEL FOR DISCRETE TIME AND RAMPING COSTS: RATE OF CONVERGENCE TOWARDS THE UNIQUE SOLUTION OF THE CONTINUOUS CASE?
+Remember that when describing the slope of the schedule, we are considering the plane $(quantity, price)$ while the schedule as defined by $S^*(p)$ represents the same curve but in the plane $(price, quantity)$. An increase in width is equivalent to a higher ramping cost parameter while a decrease in width is equivalent to a lower ramping cost parameter. These results are illustrated in Fig. \ref{figdyn1}. \\
 
-\section{Concluding Remarks}\label{ccl}
+To understand the economic intuition behind this result, consider first an increase in the width of the envelope at date $t_1$.  Consider now one possible value of $\theta(t_1)$. At $t_1+dt$, had the width been constant there would have been a given level of uncertainty about the values that $\theta(t_1+dt)$, and thus the ramping costs, could have taken.  If the width of the envelope is increasing then there is more uncertainty regarding the potential values that could be taken by $\theta(t_1+dt)$, therefore more expected ramping costs incurred, and a higher slope to hedge these costs. On the other hand, when the width decreases, the situation is reversed. In that case, we move towards a situation in which there is less uncertainty about the ramping costs, so that the slope is smaller than for a constant envelope. This difference between increasing and decreasing width is illustrated by comparing the two regions of the envelope displayed in (full) black line in Fig. \ref{figdyn1}. In addition, when contrasting the left and the right side of the figure one sees that the change in the informativeness of the envelope is captured by the relative change of the width: for the same rate of change, if the width is larger (right) then the change in informativeness is smaller (the change in the area captured by the (dashed) red and (full) green arrows).  \\
 
-By introducing technological constraints previously neglected we are able to take into account the effects of the dynamics of demand shocks on the supply function framework. We restrict ourselves to linear demand. The optimal supply schedules obtained are unique, and their slope increase with the ramping costs, congruent with the idea that too much variation in production is costly. We also capture the dynamics of the bids themselves. \\
+\begin{figure}[h] 
+\centering
+\includegraphics[width=15cm]{figch1/figdyn1.png}
+\caption{\small{This graph plots an envelope of constant average value but varying width $\omega(t)$. By comparing regions of increasing or decreasing width, respectively the left or right side of a lobe, one sees that the informativeness of the envelope is being respectively reduced or increased with respect to a situation where the width would be kept constant. The change in informativeness is represented by the area between the (full) green arrows (observed level of informativeness) compared to the area between the (dashed) red arrows (level of informativeness had the width been constant). In addition, by comparing the left lobe to the right one, it is possible to see why the relative variation of the width, and not the absolute variation of the width, matters. For a larger width (right lobe) and the same rate of change in the width, there is less change in informativeness than for a smaller width (left lobe), i.e. the same rate of change matters less for the right lobe than for the left lobe. }} \label{figdyn1}
+\end{figure}
 
-Although mathematically more demanding than the traditional model by Klemperer and Meyer, we consider that this new model, while conceptually sparing (we only add ramping costs) allows for a richer, more realistic description of the electricity market, and opens new research avenues.  It yields precise and testable predictions on the dynamics of the electricity market with tractable functional forms, at least in the linear demand case. In addition, by explicitly modeling the dynamics, our work opens the possibility to explore interactions between intraday and day-ahead markets, markets that were indistinguishible in the previous framework. We are also able to account for negative prices which was impossible in the previous framework. Such negative prices are actually observed, although rarely, on the market: producers prefer to subsidize consumption instead of decreasing it by a lot. \\
+All of this reasoning applies to the dynamic oligopoly result as well as the effect can be understood in the same way as for the monopoly : changes in the width of the shock's bounds behave as if there was an effective dynamic cost that was higher than the baseline when information about the shocks is lost, and lower than the baseline when information is gained.
 
-Next, we want to generalize the existence and uniqueness results to non linear demand functions and develop more comprehensive comparative statics. It would also be important to study the robustness of our solutions to modifications of the general form of the stochastic differential equation governing the dynamics of the system. Finally, and more generally, we think that this concept of dynamic costs, the fact that change is costly, is ubiquitous and could fuel interesting research into the dynamics of a large range of markets. Such avenues have been pursued in the case of stochastic optimal control, that is, instantaneous reactions to stochastic shocks. Here we are describing a market on which agents are forced to optimize in advance, so that they have to react to continuous changes in the anticipated shocks, but not the shocks themselves, which can be understood as stochastic optimisation with periodic commitment. 
+\section{Limits}
+
+This section aims at discussing whether or not one can consider that the mapping of these results on the real world is a set of non zero measure, to put it bluntly.\\
+
+Further avenues of research would be to generalize our results to larger classes of demand functions. As hinted in the text of this chapter, a lot of effort has been invested towards this goal without results unfortunately. One could also solve the static case for different SDE's in order to test the sensitivity of our results on the underlying "mechanics" of the stochastic process. This has also been pursued without conclusive results : solving the optimization problem becomes quickly extremely difficult, as the second order differential equations exhibit poles, and divergences are difficult to cope with in optimization problems. \\
+
+The nature of these avenues of research is testament to the fact that our results are obtained for a very narrow setting. However, although a healhty dose a skepticism as to the applicability of the closed form formulas is therefore warranted, I would like to argue that the results hint towards at least one more general takeaway message, namely the collapse of the set of equilibria.\\
+
+This result stems from the nature of the mathematical problem and not from the way we set up the problem in order to maximize our chances of closed-form success per se. Therefore I think it hints towards possible more general results. The problem is the complexity of the maths as soon as one deviates from the simplest version of the problem presented here. \\
+
+The question then becomes one of the method to employ to obtain those results. The brute force mathematical approach has proved too hard for the writer of these lines, but there is one tool that might prove useful : numerical simulations. One can solve the differential equations involved here numerically, check ex-post whether they satisfy the other conditions, and in so doing provide boundaries around possible solutions. If the unicity is a characteristic that is indeed more general than our model here, there is 0 probability of finding such a solution by the method proposed, quite literally. However providing such bounds, although not demonstrating the existence of a solution, could provide circumstantial evidence towards such a result.\\
+
+More generally, I think that economics has not yet explored the full potential of numerical methods as a guide for theoretical results.  
+
+\section{Discussion and Concluding Remarks}\label{ccl}
+
+In this chapter we have introduced a supply function equilibria model of ramping costs under uncertainty.\\
+
+By introducing technological constraints previously neglected we are able to take into account the effects of the dynamics of demand shocks on the supply function framework. We restrict ourselves to linear demand. The optimal supply schedules obtained are unique. This is a striking result when compared to traditional multiplicity of equilibria. Although we do not solve the model in the case of a general demand function (half a year was spent trying to find mathematical methods to tackle this, to no avail) we think that our results make a strong case for the reduction of the set of equilibria, in our case to a unique equilibrium, when taking into account dynamic effects, that is strategies that are history dependent. \\
+
+We introduce a mathematical toolbox that was absent from this litterature in the past, and notably classes of stochastic differential equations that can be used to pick and choose processes yielding specific closed form distributions of probability of shocks at equilibrium. \\
+
+Our methodology further introduces the notion of time-scale separation to our problem, which allows to transcribe quite simply static solutions to the case of dynamic envelopes of shocks, as long as the static case is solved for the same functionnal form of stochastic processes. In our case we focus our study to quadratic distributions, which we then extend to cope with any functional form for the time dependency of the envelope of shocks.\\
+
+Our results are congruent with the economic intuition one can have about ramping costs : when they increase, the slope of the supply schedule increases in order to reduce the range of variation in production for a given range of variation of demand shocks.\\
+
+Although mathematically more demanding than the traditional model by Klemperer and Meyer, we consider that this new model, while conceptually sparing (we only add ramping costs) allows for a richer, more realistic description of the electricity market, and opens new research avenues.  It yields precise and testable predictions on the dynamics of the electricity market with tractable functional forms, at least in the linear demand case. \\
+
+In addition, by explicitly modeling the dynamics, our work opens the possibility to explore interactions between intraday and day-ahead markets, markets that were indistinguishable in the previous framework : if solutions are ex post optimal, there is no need to create a second type of spot market, with a shorter time horizon, the bids of the previous day should suffice. \\
+
+Further avenues of research would be to generalize our results to larger classes of demand functions. As hinted in the text of this chapter, a lot of effort has been invested towards this goal without results unfortunately. One could also solve the static case for different SDE's in order to test the sensitivity of our results on the underlying "mechanics" of the stochastic process. This has also been pursued without conclusive results : solving the optimization problem becomes quickly extremely difficult, as the second order differential equations exhibit poles, and divergences are difficult to cope with in optimization problems.\\
+
+Finally, and more generally, we think that this concept of ramping costs, the fact that change is costly, is ubiquitous and could fuel interesting research into the dynamics of a large range of markets. Such avenues have been pursued in the case of stochastic optimal control, that is, instantaneous reactions to stochastic shocks. Here we are describing a market on which agents are forced to optimize in advance, so that they have to react to continuous changes in the anticipated shocks, but not the shocks themselves, which can be understood as stochastic optimization with periodic commitment. 
 
 %\bibliographystyle{te}
 %\bibliography{biblio}
@@ -521,6 +565,43 @@ Next, we want to generalize the existence and uniqueness results to non linear d
 \addcontentsline{toc}{chapter}{Appendix}
 \numberwithin{figure}{section}
 \numberwithin{equation}{section}
+
+\section{Proof of equation \ref{markovtimedep}}\label{stochasticdyn_proof}
+We are here going to detail how we obtain the result in equation \ref{markovtimedep} on which the proofs of our dynamic results rely heavily. Recall that we are computing the continuous time limit of our ramping cost term which can be quite simply defined in the case of discrete dynamics but for which one has to work a bit more in order to cope with the non differentiable nature of stochastic processes. \\
+
+We are therefore going to first consider the discrete case of a random walk of timestep $\Delta t$ which converges towards the It\={o} process \ref{sdegen}, using the Euler-Maruyama approximation, a generalisation of the Euler method to stochastic differential equations. We consider a Markov chain $Y$ defined as follows : 
+
+\begin{equation}
+\Delta Y_n=Y_{n+1}-Y_n= \mu(Y_n,n \Delta t)\Delta t+\sigma (Y_n,n \Delta t)\Delta B_n
+\end{equation}
+
+
+We want to derive the following : 
+\begin{footnotesize}
+\begin{eqnarray}
+\lim_{\Delta t \to 0}\mathbb{E}\left[\frac{\Gamma(\Delta t)}{2}\left(\frac{\Delta S_i(p(\theta(t),t),t)}{\Delta t}\right)^2\middle \vert \theta(t)  \right] &=& \frac{\gamma}{2} (\partial_1S(p(\theta(t),t),t)\partial_1p(\theta(t),t))^2 \sigma(\theta,t)^2
+\end{eqnarray}
+\end{footnotesize}
+
+Let us first compute the first order expansion of $\Delta S_i(p(Y_n,n\Delta t),n \Delta t)$, by assuming that both $S_i$ and $p$ are continuously differentiable with respect to their arguments:
+\begin{small}
+\begin{eqnarray}
+\Delta S_i(p(Y_n,n\Delta t),n \Delta t) &=& \frac{\Delta S_i}{\Delta p}\left( \frac{\Delta p}{\Delta Y}\frac{\Delta Y}{\Delta t}\Delta t+ \frac{\Delta p}{\Delta t}\Delta t\right) + \frac{\Delta S_i}{\Delta t}
+\Delta t +\mathcal{O}(\Delta t^2)
+ \end{eqnarray}
+ \end{small}
+Using our differentiability assumption, note that the terms that do not depend on $\Delta Y$ scale with $\Delta t$, and that the term depending on $\Delta Y$ cannot be grouped in the same way, due to its stochastic nature, therefore:
+\begin{small}
+\begin{eqnarray}
+\frac{\Delta S_i(p(Y_n,n\Delta t),n \Delta t) }{\Delta t} &=& \frac{\Delta S_i}{\Delta p} \frac{\Delta p}{\Delta Y}\frac{\Delta Y}{\Delta t}+\mathcal{O}(1)\\
+ \left(\frac{\Delta S_i(p(Y_n,n\Delta t),n \Delta t)}{\Delta t}\right)^2 &=& \left(\frac{\Delta S_i}{\Delta p} \frac{\Delta p}{\Delta Y}\frac{\Delta Y}{\Delta t}\right)^2+ C\cdot \frac{\Delta S_i}{\Delta p} \frac{\Delta p}{\Delta Y}\frac{\Delta Y}{\Delta t} + \mathcal{O}(1)
+ \end{eqnarray}
+ \end{small}
+ with $C$ a term that does not depend on $\Delta Y$ or $\Delta t$.\\
+ 
+Now by considering the specification of our stochastic process we know that $\mathbb{E}\left[\frac{\Delta Y}{\Delta t}\vert Y_n\right]=\mu(Y_n,n \Delta t)$ and that $\mathbb{E}\left[\frac{\Delta Y}{\Delta t}^2 \right\vert Y_n]=\mu(Y_n,n \Delta t)^2 + \frac{\sigma (Y_n,n \Delta t)^2}{\Delta t}$. 
+Using the fact that $\Gamma(\Delta t) = \gamma \Delta t + o(\Delta t)$ we obtain the result of equation \ref{markovtimedep}.
+
 
 \section{Proof of Proposition \ref{monopequilibria} \label{annexmonop}}
 Define the following Hamiltonian: 
@@ -619,9 +700,73 @@ Straightforward computations show that both conditions are mutually exclusive, t
 
 Lastly, to compute the optimal supply function, we inverse the optimal price in order to get the shock as a function of the price at the equilibrium, and we inject this expression in Eq. \ref{supequ}.
 
-\section{Proof of proposition \ref{monopropdyn}}\label{monopdyn}
+\section{Proof of proposition \ref{oligopslope_prop}}\label{oligopslope_proof}
+We want to prove that the slope of the supply schedules increases as the ramping cost parameter increases. As a reminder:
+\begin{flalign}
+&\displaystyle{K_1=\frac{n\sqrt{(4\gamma+\lambda+n)^2-4n+4}-(4\gamma+\lambda+n)(n-2)}{2(4\gamma+\lambda+2n)}}& \\
+&\displaystyle{K_2=\frac{\lambda(n-1)+K_1(\lambda+n)}{(\lambda+n)(n-1)+K_1(\lambda+2n)}}&
+\end{flalign}
+and the supply schedule has the following expression:
+\begin{flalign}
+&S^*(p)=\frac{1}{n}\left( p\left( \frac{1}{K_1}-1\right)+b\left( 1-\frac{K_2}{K_1}\right) \right)&
+\end{flalign}
+Let us study how $K_1$ varies with $\gamma$. Note first that if one defines $G=4\gamma+\lambda+n$, then $\frac{\partial K_1}{\partial \gamma} =\frac{\partial K_1}{\partial G} \frac{\partial G}{\partial \gamma} = 2\frac{\partial K_1}{\partial G}$. 
 
-\section{Proof of proposition \ref{oligodynp}}\label{oligodyn}
+therefore the sign of  $\frac{\partial K_1}{\partial \gamma}$ is given by that of:
+\begin{small}
+\begin{flalign}
+&\frac{\partial K_1}{\partial G} = \frac{\partial}{\partial G}\left[\frac{n\sqrt{G^2-4n+4}-G(n-2)}{2(G + n)}\right]& \\
+&= \frac{(\sqrt{G^2-4n+4})((G+n)(nG-(n-2)\sqrt{G^2-4n+4})-(n\sqrt{G^2-4n+4}-G(n-2)))}{4(G+n)^2}&\\
+&= \frac{(\sqrt{G^2-4n+4})(n^2G+4n^2-4n - n(n-2)\sqrt{G^2-4n+4})}{4(G+n)^2}&\\
+&=  \frac{(\sqrt{G^2-4n+4})(2G+4+(n-2)(G+4-\sqrt{(G+4)^2-8G-4n-12}))}{4(G+n)^2}>0&
+\end{flalign}
+\end{small}
+
+Therefore $\frac{\partial S^*(p)}{\partial\gamma}<0$ which implies that schedules see their slope increase with $\gamma$ in the plane $(q,p)$.\\
+
+We can perform the same type of computation for the ratio $\frac{K_2}{K_1}$, using the fact that $\partial_\gamma K_1>0$:
+\begin{small}
+\begin{flalign}
+&\frac{\partial K_2/K_1}{\partial \gamma} = -\frac{\partial_\gamma K_1(K_1^2(\lambda+2n)(\lambda+n)+2 K_1(\lambda+2n)(n-1)\lambda + \lambda(\lambda+n)(n-1)^2)}{K_1^2((\lambda+n)(n-1)+K_1(\lambda+2n))^2}<0& 
+\end{flalign}
+\end{small}
+This implies that the schedule is shifted to the right in the plane $(q,p)$ when ramping costs increase.  
+
+\section{Proof of proposition \ref{monopropdyn}}\label{monopdyn_proof}
+
+Define the following Hamiltonian: 
+\begin{equation}
+\begin{split}
+H(p(\theta,t),\dot{p}(\theta,t),\mu(\theta,t),\theta,t)= f(\theta,t)\bigg( p(\theta,t)(\theta-p(\theta,t))-\frac{\lambda}{2}(\theta-p(\theta,t))^2\\
+-\frac{\gamma}{2}\sigma(theta,t)^2\left(1-u(\theta,t)\right)^2\bigg)+\mu(\theta,t) u(\theta,t)
+\end{split}
+\end{equation}
+where $u(\theta,t)$ is the control variables defined through the following equation of motion: $u(\theta,t)=\dot{p}(\theta,t)$, $u(\theta,t)\in[0,1]$. \\
+
+Note that the methods used previsouly generalise to multi-dimensional problems, and that here, our problem depends on $\theta$ and $t$ instead of only $\theta$ as in the case of the static monopoly problem. \\
+
+Further note that the problem does not depend on the time derivative of $p(\theta,t)$. This means that what would be a general Euler-Lagrange formulation expressed as $\frac{\partial\mathcal{L}}{\partial p} - \frac{\partial}{\partial \theta}\frac{\partial \mathcal{L}}{\partial \dot{p}} - \frac{\partial}{\partial t}\frac{\partial \mathcal{L}}{\partial \partial_t p}$, which is the equation that has to be solved for interior solutions, reduces to  $\frac{\partial\mathcal{L}}{\partial p} - \frac{\partial}{\partial \theta}\frac{\partial \mathcal{L}}{\partial \dot{p}}$, where  $\mathcal{L}(t,\theta,p,\dot{p}) = H(p,\dot{p},0,\theta,t)$. This is the exact same problem as before, with the only addition that our parameters now vary with $t$, but the partial differential equation is the same one as before. \\
+
+Therefore the problem can be solved exactly as before by replacing the variance term by its new dynamic version, that is that it is as if the ramping cost parameter $\gamma$ was replaced by $\gamma \cdot \left( 1+ \frac{\tau}{\omega}\frac{d\omega}{dt}\right)$ in the static solution.\\
+
+This can be seen by noting that $\sigma(\theta,t)^2 = \left(1+\frac{\tau}{\omega}\frac{d\omega}{dt}\right)(\theta-\hat{\theta}+\omega)(\hat{\theta}+\omega-\theta)$ which has to fall back to the static case in the limit, therefore we see that we simply get an additional $\left(1+\frac{\tau}{\omega}\frac{d\omega}{dt}\right)$ term that appears on the ramping cost term, that is that multiplies $\gamma$.
+
+\section{Proof of proposition \ref{oligodynp}}\label{oligodyn_proof}
+
+The exact same reasoning as the one in Annex \ref{monopdyn_proof} applies here and we only have to take our static oligopoly result and replace  $\gamma$ by $\gamma \cdot \left( 1+ \frac{\tau}{\omega}\frac{d\omega}{dt}\right)$ to obtain the dynamic results.
+
+
+
+
+
+
+
+
+
+
+
+
+
 %\section{Stochastic process} \label{rampingcostsappendix}
 %
 %\subsection{The ramping costs}
