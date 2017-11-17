@@ -7,6 +7,7 @@ A level-1 auxiliary file: intro.aux
 A level-1 auxiliary file: resumes.aux
 A level-1 auxiliary file: ch1.aux
 A level-1 auxiliary file: ch1-5.aux
+A level-1 auxiliary file: ch2.aux
 The style file: apalike.bst
 Database file #1: biblio.bib.bib
 Warning--I'm ignoring wolfi2013interacting's extra "note" field
@@ -14,45 +15,45 @@ Warning--I'm ignoring wolfi2013interacting's extra "note" field
 Warning--empty journal in holmberg2008supply
 Warning--empty journal in rtewebsite1
 Warning--empty school in wolfi2013interacting
-You've used 27 entries,
+You've used 44 entries,
             1935 wiz_defined-function locations,
-            634 strings with 7606 characters,
-and the built_in function-call counts, 8981 in all, are:
-= -- 904
-> -- 270
-< -- 28
-+ -- 88
-- -- 82
-* -- 670
-:= -- 1604
-add.period$ -- 79
-call.type$ -- 27
-change.case$ -- 176
-chr.to.int$ -- 27
-cite$ -- 30
-duplicate$ -- 376
-empty$ -- 649
-format.name$ -- 125
-if$ -- 1753
+            718 strings with 10092 characters,
+and the built_in function-call counts, 15344 in all, are:
+= -- 1559
+> -- 457
+< -- 46
++ -- 152
+- -- 140
+* -- 1175
+:= -- 2690
+add.period$ -- 128
+call.type$ -- 44
+change.case$ -- 290
+chr.to.int$ -- 44
+cite$ -- 47
+duplicate$ -- 629
+empty$ -- 1115
+format.name$ -- 210
+if$ -- 3014
 int.to.chr$ -- 1
 int.to.str$ -- 0
-missing$ -- 22
-newline$ -- 136
-num.names$ -- 81
-pop$ -- 144
+missing$ -- 37
+newline$ -- 219
+num.names$ -- 132
+pop$ -- 225
 preamble$ -- 1
-purify$ -- 176
+purify$ -- 290
 quote$ -- 0
-skip$ -- 311
+skip$ -- 525
 stack$ -- 0
-substring$ -- 600
-swap$ -- 45
-text.length$ -- 4
+substring$ -- 1133
+swap$ -- 87
+text.length$ -- 8
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 154
+type$ -- 254
 warning$ -- 3
-while$ -- 76
+while$ -- 136
 width$ -- 0
-write$ -- 339
+write$ -- 553
 (There were 4 warnings)

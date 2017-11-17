@@ -52,18 +52,61 @@
 \contentsline {subsection}{\numberline {2.3.2}Aggregation of local information}{79}{subsection.2.3.2}
 \contentsline {subparagraph}{Wind1DA}{79}{section*.37}
 \contentsline {subparagraph}{Tempeff15}{83}{section*.40}
-\contentsline {subparagraph}{Tempeff}{83}{section*.42}
-\contentsline {subparagraph}{Roll\_Temp$H$}{84}{section*.43}
-\contentsline {subparagraph}{Solar}{84}{section*.44}
-\contentsline {subparagraph}{SolarRest}{85}{section*.46}
-\contentsline {subparagraph}{RteBlackBox}{86}{section*.48}
-\contentsline {section}{\numberline {2.4}Conclusion}{87}{section.2.4}
-\contentsline {chapter}{Appendix}{89}{section*.50}
+\contentsline {subparagraph}{Solar}{83}{section*.42}
+\contentsline {subsubsection}{Other controls}{84}{section*.44}
+\contentsline {subparagraph}{Tempeff}{84}{section*.45}
+\contentsline {subparagraph}{Roll\_Temp$H$}{85}{section*.46}
+\contentsline {subparagraph}{Roll$_{avgTH}$}{85}{section*.47}
+\contentsline {subparagraph}{suncycle}{85}{section*.48}
+\contentsline {subparagraph}{deltasun}{85}{section*.49}
+\contentsline {subparagraph}{SolarRest}{85}{section*.50}
+\contentsline {subparagraph}{RteBlackBox}{86}{section*.52}
+\contentsline {section}{\numberline {2.4}Conclusion}{88}{section.2.4}
+\contentsline {chapter}{Appendix}{89}{section*.54}
 \contentsline {section}{Appendix \numberline {2.A}Technical details}{89}{section.b.2.A}
 \contentsline {subsection}{\numberline {2.A.1}Using the kernel density estimation (KDE) in our setting}{89}{subsection.b.2.A.1}
-\contentsline {subsubsection}{Hard choices in the code of the KDE}{89}{section*.51}
-\contentsline {paragraph}{Kernel choice:}{89}{section*.52}
-\contentsline {paragraph}{Bandwidth choice:}{90}{section*.53}
+\contentsline {subsubsection}{Hard choices in the code of the KDE}{89}{section*.55}
+\contentsline {paragraph}{Kernel choice:}{89}{section*.56}
+\contentsline {paragraph}{Bandwidth choice:}{90}{section*.57}
 \contentsline {subsection}{\numberline {2.A.2}Outlier detection and removal}{93}{subsection.b.2.A.2}
-\contentsline {chapter}{References}{95}{chapter*.57}
-\contentsline {chapter}{List of Figures}{97}{section*.58}
+\contentsline {chapter}{\numberline {3}Investigating the Impact of Uncertainty on Firms with Dynamic Costs : A Case Study of the French Electricity Market}{95}{chapter.3}
+\contentsline {subsection}{\numberline {3.0.1}Literature review and contribution}{99}{subsection.3.0.1}
+\contentsline {subsection}{\numberline {3.0.2}Theoretical prediction}{103}{subsection.3.0.2}
+\contentsline {section}{\numberline {3.1}The EPEX spot market}{106}{section.3.1}
+\contentsline {subsection}{\numberline {3.1.1}General background}{106}{subsection.3.1.1}
+\contentsline {subsection}{\numberline {3.1.2}Auction rules and mechanism}{107}{subsection.3.1.2}
+\contentsline {section}{\numberline {3.2}Our data explained}{109}{section.3.2}
+\contentsline {section}{\numberline {3.3}Methodology}{112}{section.3.3}
+\contentsline {subsection}{\numberline {3.3.1}Regression methodology}{115}{subsection.3.3.1}
+\contentsline {subsubsection}{Identification}{115}{section*.68}
+\contentsline {subsubsection}{Left-hand-side variables}{116}{section*.69}
+\contentsline {subsubsection}{Right-hand-side variables}{116}{section*.70}
+\contentsline {subparagraph}{Generating proxies for uncertainty from market demand (PLU$^D$)}{117}{section*.71}
+\contentsline {subparagraph}{In the first step,}{117}{section*.72}
+\contentsline {subparagraph}{In the second step,}{118}{section*.73}
+\contentsline {subparagraph}{In the third step,}{118}{section*.74}
+\contentsline {subparagraph}{Generating proxy for uncertainty from renewable energies (PLU$^R$)}{119}{section*.75}
+\contentsline {subparagraph}{Controls}{121}{section*.76}
+\contentsline {subsubsection}{Extensions and robustness checks}{126}{section*.79}
+\contentsline {subsubsection}{Bootstrapping standard errors}{126}{section*.80}
+\contentsline {subparagraph}{Kernel based uncertainty forecasts (PLU$^D$)}{127}{section*.81}
+\contentsline {section}{\numberline {3.4}Results }{129}{section.3.4}
+\contentsline {subsection}{\numberline {3.4.1}Demand estimation}{129}{subsection.3.4.1}
+\contentsline {subsection}{\numberline {3.4.2}Final regression}{135}{subsection.3.4.2}
+\contentsline {paragraph}{For the point of inflection ($k=3$),}{136}{section*.84}
+\contentsline {paragraph}{For the other points ($k=1,2,4,5$),}{138}{section*.87}
+\contentsline {section}{\numberline {3.5}Discussion }{139}{section.3.5}
+\contentsline {subsection}{\numberline {3.5.1}Findings}{140}{subsection.3.5.1}
+\contentsline {subsection}{\numberline {3.5.2}Internal and external validity}{142}{subsection.3.5.2}
+\contentsline {subsection}{\numberline {3.5.3}Endogeneity}{144}{subsection.3.5.3}
+\contentsline {section}{\numberline {3.6}Conclusion}{146}{section.3.6}
+\contentsline {chapter}{Appendix}{147}{section*.90}
+\contentsline {section}{Appendix \numberline {3.A}Summary statistics of selected points}{147}{section.c.3.A}
+\contentsline {section}{Appendix \numberline {3.B}Computational details and descriptives}{148}{section.c.3.B}
+\contentsline {subsection}{\numberline {3.B.1}Hard choices in the PLU computation}{148}{subsection.c.3.B.1}
+\contentsline {subsection}{\numberline {3.B.2}Descriptive Statistics}{149}{subsection.c.3.B.2}
+\contentsline {subsubsection}{On realised market equilibria}{149}{section*.96}
+\contentsline {subsubsection}{On player bid functions}{150}{section*.99}
+\contentsline {subsubsection}{On exogenous factors}{151}{section*.102}
+\contentsline {chapter}{References}{157}{chapter*.104}
+\contentsline {chapter}{List of Figures}{160}{section*.105}

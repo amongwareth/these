@@ -65,7 +65,7 @@ These effects cannot be captured by traditionnal cost functions depending on the
 This seemingly small addition to KM's framework has a lot of implications on the results obtained. The solutions are not ex-post optimal anymore, allowing to account more satisfactorily for the dynamics of optimal supply schedules, and our solutions are unique, even for bounded demand shocks. We also define a novel selection rule to choose from KM's continuum of equilibria. Finally these results open the possibility to distinguish intraday and day-ahead markets. \\ 
 
 %In section \ref{litrev} we will present how this paper contributes to the litterature, i
-In section \ref{heur} we will present a heuristic approach to get the intuition of the model. Then, in section \ref{math} we will introduce the mathematical tools needed to use stochastic dynamics in this context, in section \ref{monosolve} and section \ref{oligosolve} we will solve the monopoly and the symmetric oligopoly cases while considering that producers have information about the overall distribution of shocks during the day, but do not have information about differences in the shocks at different dates. Finally in section \ref{dynamics} we will discuss the dynamic variation of the optimal bids, while sections \ref{disc} and \ref{ccl} will respectively cover a few implications of these results and conclude the paper.  
+In section \ref{heur} we will present a heuristic approach to get the intuition of the model. Then, in section \ref{math} we will introduce the mathematical tools needed to use stochastic dynamics in this context, in section \ref{monosolve} and section \ref{oligosolve} we will solve the monopoly and the symmetric oligopoly cases while considering that producers have information about the overall distribution of shocks during the day, but do not have information about differences in the shocks at different dates. Finally in section \ref{dynamics} we will discuss the dynamic variation of the optimal bids, while sections \ref{limits} and \ref{ccl} will respectively cover some limits of this approach and conclude the paper.  
 
 %\section{Litterature Review}\label{litrev}
 %TO BE FILLED
@@ -282,7 +282,7 @@ Lastly, note that all schedules cross at a single point. These quadratic ramping
 \mbox{\subfigure[\small{$S^{-1~*}(p)$}] {\includegraphics[width=10.cm]{figch1/monopoly_complet.png}\label{monopsup}}\quad
 \subfigure[\small{$S^{-1~*}(p)$}]{\includegraphics[width=4.5cm]{figch1/monopoly_completab.png} \label{monopab}}}
 \captionsetup{singlelinecheck=off}
-\caption[a b]{\small{ \textbf{\subref{monopsup}} Four optimal supply schedules are plotted. In black (full line) $\gamma=0$. As $\gamma$ increases we transition from the black curve to the blue curve (large dashes), then the red curve (mixed dashes) and then finally for $\gamma\to\infty$ to the green one (small dashes). The range of production is highlighted for each curve through the thin vertical dotted lines. 
+\caption[Static symmetric oligopoly]{\small{ \textbf{\subref{monopsup}} Four optimal supply schedules are plotted. In black (full line) $\gamma=0$. As $\gamma$ increases we transition from the black curve to the blue curve (large dashes), then the red curve (mixed dashes) and then finally for $\gamma\to\infty$ to the green one (small dashes). The range of production is highlighted for each curve through the thin vertical dotted lines. 
 \vspace{0.1cm}
 
 \textbf{\subref{monopab}} The thin black dotted lines represent the extremal demand functions given $a$ and $b$, i.e. $D(\underline{\theta},p)$ and $D(\overline{\theta},p)$. From \ldots to \ldots $b$ is kept fixed while $a$ is increased, and from \ldots to \ldots $a$ is kept constant while $b$ is increased. In red (dashed) the solution for a given value of $b$. As $a$ increases, the solution widens from the thick deep red region to the thick light red one. In the case for which $a$ is kept constant and $b$ is increased the solution shifts from the dashed deep red region to the full thick blue one.   
@@ -523,7 +523,7 @@ To understand the economic intuition behind this result, consider first an incre
 
 All of this reasoning applies to the dynamic oligopoly result as well as the effect can be understood in the same way as for the monopoly : changes in the width of the shock's bounds behave as if there was an effective dynamic cost that was higher than the baseline when information about the shocks is lost, and lower than the baseline when information is gained.
 
-\section{Limits}
+\section{Limits}\label{limits}
 
 This section aims at discussing whether or not one can consider that the mapping of these results on the real world is a set of non zero measure, to put it bluntly.\\
 

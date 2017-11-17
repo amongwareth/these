@@ -40,9 +40,31 @@
 \BOOKMARK [2][-]{subsection.2.3.1}{Dealing with meteorological data}{section.2.3}% 40
 \BOOKMARK [2][-]{subsection.2.3.2}{Aggregation of local information}{section.2.3}% 41
 \BOOKMARK [1][-]{section.2.4}{Conclusion}{chapter.2}% 42
-\BOOKMARK [0][-]{section*.50}{Appendix}{}% 43
-\BOOKMARK [1][-]{section.b.2.A}{Appendix Technical details}{section*.50}% 44
+\BOOKMARK [0][-]{section*.54}{Appendix}{}% 43
+\BOOKMARK [1][-]{section.b.2.A}{Appendix Technical details}{section*.54}% 44
 \BOOKMARK [2][-]{subsection.b.2.A.1}{Using the kernel density estimation \(KDE\) in our setting}{section.b.2.A}% 45
 \BOOKMARK [2][-]{subsection.b.2.A.2}{Outlier detection and removal}{section.b.2.A}% 46
-\BOOKMARK [0][-]{chapter*.57}{References}{}% 47
-\BOOKMARK [0][-]{section*.58}{List of Figures}{}% 48
+\BOOKMARK [0][-]{chapter.3}{Investigating the Impact of Uncertainty on Firms with Dynamic Costs : A Case Study of the French Electricity Market}{}% 47
+\BOOKMARK [1][-]{subsection.3.0.1}{Literature review and contribution}{chapter.3}% 48
+\BOOKMARK [2][-]{subsection.3.0.2}{Theoretical prediction}{subsection.3.0.1}% 49
+\BOOKMARK [1][-]{section.3.1}{The EPEX spot market}{chapter.3}% 50
+\BOOKMARK [2][-]{subsection.3.1.1}{General background}{section.3.1}% 51
+\BOOKMARK [2][-]{subsection.3.1.2}{Auction rules and mechanism}{section.3.1}% 52
+\BOOKMARK [1][-]{section.3.2}{Our data explained}{chapter.3}% 53
+\BOOKMARK [1][-]{section.3.3}{Methodology}{chapter.3}% 54
+\BOOKMARK [2][-]{subsection.3.3.1}{Regression methodology}{section.3.3}% 55
+\BOOKMARK [1][-]{section.3.4}{Results }{chapter.3}% 56
+\BOOKMARK [2][-]{subsection.3.4.1}{Demand estimation}{section.3.4}% 57
+\BOOKMARK [2][-]{subsection.3.4.2}{Final regression}{section.3.4}% 58
+\BOOKMARK [1][-]{section.3.5}{Discussion }{chapter.3}% 59
+\BOOKMARK [2][-]{subsection.3.5.1}{Findings}{section.3.5}% 60
+\BOOKMARK [2][-]{subsection.3.5.2}{Internal and external validity}{section.3.5}% 61
+\BOOKMARK [2][-]{subsection.3.5.3}{Endogeneity}{section.3.5}% 62
+\BOOKMARK [1][-]{section.3.6}{Conclusion}{chapter.3}% 63
+\BOOKMARK [0][-]{section*.90}{Appendix}{}% 64
+\BOOKMARK [1][-]{section.c.3.A}{Appendix Summary statistics of selected points}{section*.90}% 65
+\BOOKMARK [1][-]{section.c.3.B}{Appendix Computational details and descriptives}{section*.90}% 66
+\BOOKMARK [2][-]{subsection.c.3.B.1}{Hard choices in the PLU computation}{section.c.3.B}% 67
+\BOOKMARK [2][-]{subsection.c.3.B.2}{Descriptive Statistics}{section.c.3.B}% 68
+\BOOKMARK [0][-]{chapter*.104}{References}{}% 69
+\BOOKMARK [0][-]{section*.105}{List of Figures}{}% 70

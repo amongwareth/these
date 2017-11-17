@@ -378,16 +378,6 @@ We focus on the effect of temperature on the demand of electricity first. In Fra
 
 We apply this information to our observed meteorological data in order to build an effective temperature for France aimed at capturing its effect on consumption. To do so, we reconstruct temperature data for every french \emph{commune}, the smallest administrative unit in France (there are around 36000 of those). We consider population as being a good proxy for potential heat consumption, therefore we apply it as a weight to the \emph{commune} temperature. Lastly, we consider that temperatures saturate at $15^\text{o}$C. This allows us to build an effective temperature taking into account where the population is located and the nonlinearity of heat start up which in turn allows us to account at the country-level for the local impact of temperature on the electricity consumption.  \\
 
-
-\subparagraph{Tempeff}
-We also build an effective temperature that does not account for the nonlinearity at $15^\text{o}$C following the same methodolgy otherwise as a control. 
-
-
-\subparagraph{Roll\_Temp$H$}
-\label{rolltemp720}
-Variable capturing seasonal trends by using the rolling average temperature on effective temperature (Tempeff15) over the last $H$ hours, i.e. the last $H/24$ days. 
-
-
 \subparagraph{Solar}
 \label{Solar}
 
@@ -407,6 +397,20 @@ We use observed luminosity data from M\'{e}t\'{e}oFrance, as there is no hourly 
 
 We observe that solar production is much more regular than wind production, therefore it is not possible to build a proxy for lighting consumption that would allow us to decorrelate the effects from production and lighting. We therefore stick to this proxy to capture the net effect of both channels.
 
+\subsubsection{Other controls}
+\subparagraph{Tempeff}
+We also build an effective temperature that does not account for the nonlinearity at $15^\text{o}$C following the same methodolgy otherwise as a control. 
+
+
+\subparagraph{Roll\_Temp$H$}
+\label{rolltemp720}
+Variable capturing seasonal trends by using the rolling average temperature on effective temperature (Tempeff15) over the last $H$ hours, i.e. the last $H/24$ days. 
+
+\subparagraph{Roll$_{avgTH}$} Variable capturing seasonal trends by using the rolling average temperature on temperature Tempeff (no kink) over the last H hours, i.e. the last H/24 days.
+
+\subparagraph{suncycle}\label{suncycle} Variable capturing intraday seasonality be measuring the intensity of sun- light as a percentage of the maximum daily observation. Midday is defined at the maximum sun intensity every day, i.e. Midday = max(Solar). Thus, suncycle$_H$ = Solar$_H$ / Midday.
+
+\subparagraph{deltasun}\label{deltasun} Variable computed to proxy for dusk and dawn. It is computed as the absolute difference between suncycle$_H$ - suncycle$_{H−1}$.
 
 \subparagraph{SolarRest}
 \label{SolarRest}

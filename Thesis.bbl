@@ -1,5 +1,12 @@
 \begin{thebibliography}{}
 
+\bibitem[Anderson and Xu, 2005]{anderson2005supply}
+Anderson, E.~J. and Xu, H. (2005).
+\newblock Supply function equilibrium in electricity spot markets with
+  contracts and price caps.
+\newblock {\em Journal of Optimization Theory and Applications},
+  124(2):257--283.
+
 \bibitem[APX, 2017]{apx}
 APX (2017).
 \newblock Type of orders on the epex day-ahead auction, uk.
@@ -35,6 +42,12 @@ Bolle, F. (1992).
   case of spot markets for electricity.
 \newblock {\em Energy economics}, 14(2):94--102.
 
+\bibitem[Borenstein et~al., 2002]{borensteinetal2002marketineffs}
+Borenstein, S., Bushnell, J.~B., and Wolak, F.~A. (2002).
+\newblock Measuring market inefficiencies in california's restructured
+  wholesale electricity market.
+\newblock {\em American Economic Review}, 92(5):1376--1405.
+
 \bibitem[Boukai and Landsberger, 1998]{boukai1998market}
 Boukai, B. and Landsberger, M. (1998).
 \newblock Market bid functions for treasury securities as logistic growth
@@ -47,6 +60,10 @@ Boyle, G. (2007).
 \newblock {\em Renewable Electricity and the Grid, the Challenge of
   Variability}.
 \newblock Routledge.
+
+\bibitem[EPEX, 2014]{epexwebsite1}
+EPEX (2014).
+\newblock Website of the european power exchange.
 
 \bibitem[EPEX, 2015]{epex}
 EPEX (2015).
@@ -86,15 +103,44 @@ Hertzler, G. (2003).
   probability distributions.
 \newblock In {\em 2003 Conference (47th), February}, pages 12--14.
 
+\bibitem[Hobbs, 2001]{hobbs2001next}
+Hobbs, B.~F. (2001).
+\newblock {\em The next generation of electric power unit commitment models},
+  volume~36.
+\newblock Springer.
+
 \bibitem[Holmberg et~al., 2008]{holmberg2008supply}
 Holmberg, P., Newbery, D.~M., and Ralph, D. (2008).
 \newblock Supply function equilibria: Step functions and continuous
   representations.
 
+\bibitem[Hortacsu and Puller, 2008]{hortacsu2008understanding}
+Hortacsu, A. and Puller, S.~L. (2008).
+\newblock Understanding strategic bidding in multi-unit auctions: a case study
+  of the texas electricity spot market.
+\newblock {\em The RAND Journal of Economics}, 39(1):86--114.
+
+\bibitem[Kastl, 2011]{kastl2011discrete}
+Kastl, J. (2011).
+\newblock Discrete bids and empirical inference in divisible good auctions.
+\newblock {\em The Review of Economic Studies}, 78(3):974--1014.
+
 \bibitem[Klemperer and Meyer, 1989]{KM}
 Klemperer, P. and Meyer, M. (1989).
 \newblock Supply function equilibria in oligopoly under uncertainty.
 \newblock {\em Econometrica}.
+
+\bibitem[LaCommare and Eto, 2004]{lacommare2004understanding}
+LaCommare, K.~H. and Eto, J.~H. (2004).
+\newblock Understanding the cost of power interruptions to us electricity
+  consumers.
+\newblock {\em Lawrence Berkeley National Laboratory}.
+
+\bibitem[Meibom et~al., 2009]{meibom2009operational}
+Meibom, P., Weber, C., Barth, R., and Brand, H. (2009).
+\newblock Operational costs induced by fluctuating wind power production in
+  germany and scandinavia.
+\newblock {\em Renewable Power Generation, IET}, 3(1):75--83.
 
 \bibitem[Newbery, 1998]{newbery1998competition}
 Newbery, D.~M. (1998).
@@ -112,6 +158,27 @@ Pr{\'e}get, R. and Waelbroeck, P. (2005).
   market bid functions.
 \newblock {\em Journal of International Money and Finance}, 24(7):1054--1072.
 
+\bibitem[Pr\'{e}get and Waelbroeck, 2005]{pw2002etude}
+Pr\'{e}get, R. and Waelbroeck, P. (2005).
+\newblock Treasury bill auction procedures: Empirical perspectives from french
+  market bid functions.
+\newblock {\em Journal of International Money and Finance}, 24:1054--1072.
+
+\bibitem[Reguant, 2011]{reguant2011welfare}
+Reguant, M. (2011).
+\newblock The welfare effects of complementary bidding mechanisms: An
+  application to electricity markets.
+\newblock Technical report, Working paper.
+
+\bibitem[Reichl et~al., 2013]{reichl2013power}
+Reichl, J., Schmidthaler, M., and Schneider, F. (2013).
+\newblock Power outage cost evaluation: Reasoning, methods and an application.
+\newblock {\em Journal of Scientific Research \& Reports}, 2(1):249--276.
+
+\bibitem[REN21, 2013]{ren2013renewables}
+REN21, S.~C. (2013).
+\newblock Renewables 2013, global status report.
+
 \bibitem[RTE, 2014]{rtewebsite1}
 RTE (2014).
 \newblock Website of rte, the french grid operator.
@@ -127,6 +194,11 @@ Seierstad, A. and Sydsaeter, K. (1987).
 \newblock {\em Optimal Control Theory with Economics Applications}.
 \newblock North-Holland.
 
+\bibitem[Sewalt and De~Jong, 2003]{sewalt2003negative}
+Sewalt, M. and De~Jong, C. (2003).
+\newblock Negative prices in electricity markets.
+\newblock {\em Commodities Now}, 2:74--79.
+
 \bibitem[Silverman and Ramsay, 2005]{ramsaysilverman2005functional}
 Silverman, B. and Ramsay, J. (2005).
 \newblock {\em Functional Data Analysis}.
@@ -141,6 +213,30 @@ Silverman, B.~W. (1986).
 von~der Fehr, N.-H.~M. and Harbord, D. (1993).
 \newblock Spot market competition in the uk electricity industry.
 \newblock {\em The Economic Journal}, 103(418):531--546.
+
+\bibitem[White, 1980]{white1980heteroskedasticity}
+White, H. (1980).
+\newblock A heteroskedasticity-consistent covariance matrix estimator and a
+  direct test for heteroskedasticity.
+\newblock {\em Econometrica: Journal of the Econometric Society}, pages
+  817--838.
+
+\bibitem[Wolak, 2007]{wolak2007quantifying}
+Wolak, F.~A. (2007).
+\newblock Quantifying the supply-side benefits from forward contracting in
+  wholesale electricity markets.
+\newblock {\em Journal of Applied Econometrics}, 22(7):1179--1209.
+
+\bibitem[Wolfram, 1998]{wolfram1998strategic}
+Wolfram, C.~D. (1998).
+\newblock Strategic bidding in a multiunit auction: An empirical analysis of
+  bids to supply electricity in england and wales.
+\newblock {\em The Rand Journal of Economics}, pages 703--725.
+
+\bibitem[Wolfram, 1999]{wolfram1999measuring}
+Wolfram, C.~D. (1999).
+\newblock Measuring duopoly power in the british electricity spot market.
+\newblock {\em American Economic Review}, pages 805--826.
 
 \bibitem[Wölfing, 2013]{wolfi2013interacting}
 Wölfing, N. (2013).
