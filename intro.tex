@@ -1,31 +1,76 @@
+\renewcommand{\thesection}{\arabic{chapter}.\arabic{section}}
+
 \chapter*{General introduction: }
 \addcontentsline{toc}{chapter}{General introduction}
 \label{chap:intro}
 \cleardoublepage
+\doublespacing
 
-%\doublespacing
+\section{The electricity markets and their modelisation over time}
+\subsection{Public utility pricing}
 
-%In the beginning : 
-%\begin{itemize}
-%\item \cite{grossman1981nash} and \cite{hart1982imperfect} : SFE without uncertainty, large multiplicity
-%\item \cite{klemperer1986price} : firms choose to compete in price or quantity, in the presence of uncertainty the number of equilibria is reduced
-%\end{itemize}
-%
-%Seminal paper : 
-%\cite{KM}
-%
-%Questions of applicability :
-%\cite{von1993spot} : step functions of finite length are different to continuous functions
-%
-%Applications using simpler model : overcomes multiplicity, and aims at computational tractability
-%\cite{borenstein1999empirical} : Cournot model estimated for the california market, finds increase in price when demand is high
-%\cite{green1996increasing} : focuses on the linear supply solution out of the SFE multiple equilbria in order to have analytical tractable forms and study the effect of three policies
-%\cite{hobbs2000strategic} : transmission constraints taken into account, with affine supply
-%
-%
-%Overview of modelling electricity markets :
-%\cite{ventosa2005electricity}
-%
+The interest for modelling the electricity markets can be traced back to the reference work by Marcel Boiteux, vice president in charge of economic studies at Electricité de France, at the outset of the second world war. The question at the time was mainly that of public utility pricing: in the context of a public monopoly, which price should the consumers face in order to allow the producers to recover their costs. \\
+
+There are two main concerns that electricity producers have to face: the uncertainty of demand and the cyclicity of demand, for a commodity that essentially cannot be stored\footnote{Electricity can be stored in hydroelectric dams, but the total energy stored is not enough to stabilize completely the demand faced by the other generation units, and only a fraction of the hydroelectric storage capacities can be actively replenished: the pumped storage facilities, which have two lakes and can therefore pump from the lower lake to the upper one on demand to store more electricity that that naturally stored in a lake that would be naturally replenished by a river.}. \\
+
+The first question is addressed in \cite{boiteux1951tarification}. In this paper, Boiteux considers a constant expected demand with fluctuations. The goal is to find the correct marginal pricing so that consumers internalize the additional cost that an uncertain demand entails for the producer. With a certain probability that demand is above its expected value by a given amount, how much more reserve capacity has to be kept in order to insure an accepted failure probability\footnote{In the context of electricity, as production has to match demand at every point in time, every national grid is built with the notion of an acceptable probability of mismatch which translates in curtailments}.\\
+
+The second question is addressed in \cite{boiteux1960peak}. Contrary to the previous situation, demand is now considered to change over time in a deterministic and cyclical fashion. The question is to price electricity in order for consumers to be sensitive to the additional investment cost implied by higher demand peaks. \\
+
+These contributions have sparked a larger litterature on the question of the pricing of economically non-storable commodities whose demand varies periodically, first in \cite{brown1969public} which studies the impact of stochastic demand on expected welfare. We refer the interested reader to the folowing review \cite{crew1995theory}. \\ 
+
+This litterature has been mainly interested in questions of optimal pricing when the agent choosing the pricing tries to maximise the consumer's welfare, that is in the case of public monopolies. \\
+
+\subsection{Regulatory evolution}
+The previous litterature took as an assumption the fact that these commodities were produced by public monopolies. Network utilities, such as gas, telecoms and electricity were thought to require to be organised as vertically integrated monopolies. \\
+
+This view started to change in the 80s, with pressure to create competition. In 1984, access to gas pipelines was opened ot competition in the USA and in 1990 Britain privatised electricity, separating generation and transmission. It was indeed thought that the natural monopoly emerged from the network, and that by separating generation from the network, generation could be opened to competition. \\
+
+The overall argument for liberalisation is that private competition is considered a safer road towards efficiency than regulation of a monopoly. In a situation of perfect competition, actors would be strongly incentivized for efficiency gains, and these gains would be transferred to consumers. As perfect competition is a very rare situation, a new branch of the litterature started to coalesce around the questions of modeling competition in the case of electricity markets \cite{newbery1997privatisation}. \\
+
+This liberalization movement has been somewhat slowed down after the California crisis in the early 2000s \cite{jamasb2005electricity}, which to sum up, concentrated on wholesale electricity markets, which, because of very little price responsiveness of demand meant very high fluctuations in price as well as shortages \cite{borenstein2002trouble}. In Europe, the European Commission has pushed with success for the continuation of the program of liberalisation and integration, and wholesale markets for electricity are now quite ubiquitous, without further instances of failure as in California. 
+
+\subsection{The markets for electricity}
+The way the markets for electricity are organised stem from three main characteristics:
+\begin{itemize}
+\item Every generation unit is to be paid the same unit price given the outcome of the market.
+\item The market has to reflect the changing demand for electricity.
+\item Bids have to be of a form that allows them to cope with uncertain nature of demand at the time of bidding
+\end{itemize}
+
+These ingredients have pushed for the creation of hourly or half-hourly markets, where suppliers are asked to submit supply schedules for a set number of bids (generally every 24 hours, that is 24 or 48 supply schedules once a day depending on whether the bids are hourly or hald-hourly). These supply schedules take the form of a set of monotonous price quantity pairs, that can be considered as forming step functions\footnote{as in the case of the England and Wales pool in the 1990s} or functions linear by parts\footnote{where price-quantity pairs are considered to be joined by lines instead of steps, which is the case for the french electricity day-ahead market, as well as the UK day-ahead market (half-hourly). Both of these markets are exchanged through EPEX Spot as of 2017.}.\\
+
+In the 1980s, a theoretical push has been made to model competition in supply functions. The first occurences of this approoch can be found in \cite{grossman1981nash} and \cite{hart1982imperfect}. They consider situations where producers compete in supply curves when facing a given demand curve. The main result is that one can solve for such problems and obtain specifications for optimal strategies in supply functions, but that there exists a very large multiplicity of equilibria in this setting.\\
+
+Around the same time, \cite{klemperer1986price} introduces a setting in which firms choose endogenously to compete either in quantity or prices. This too yields a large multiplicity of outcomes, but the key insight comes from the fact that this multiplicity is drastically reduced when uncertainty is introduced.\\
+
+This insight brings along the seminal paper \cite{KM} which studies supply function competition under uncertainty. In this paper, it is shown that although there is still a continuum of equilibria, this continuum has a structure that can be studied when suppliers face an uncertain demand. In the rest of this thesis, we denot supply function equilibria as SFE. \\
+
+This setting is then rapidly put to use in the context of electricity markets. \cite{Newgreen} studies the competition in the British spot market through the SFE framework. \\
+
+This use of SFE sparks some debate as to whether a smooth function approximation can or not capture the correct effects in markets which are largely at the time asking bidders to submit step functions:  \cite{von1993spot} argue that step functions of finite length are different to continuous functions\footnote{This debate is largely obsolete now that most of the market rules imply bids that are linear by parts and not step functions anymore.}.\\
+
+This approach is still considered relevant by a number of authors, however the multiplicity of equilibria makes it difficult to obtain clear results, as well as making it difficult to use the functional forms of the solutions in more computations, these functions being defined as solutions to a differential equation, therefore without an analytical formula. To overcome this issue, a number of authors either consider competition in simpler settings, for example Cournot competion settings applied to the electricity market in the case of \cite{borenstein1999empirical}, or choose to restrict themselves to one special solution out of the continuum of possible solutions that come out of the SFE framework: the supply function that is the unique linear solution out of this continuum. In so doing these authors pick arbitrarily one solution with a functional form and then use it to further analyse some economic questions. For example, \cite{green1996increasing} focuses on the linear supply solution out of the SFE multiple equilbria in order to have analytical tractable forms and study the effect of three different policies on competition, where 
+\cite{hobbs2000strategic} is able to model transmission constraints with an affine supply function.\\
+
+Overall, we refer the interested reader to the review by \cite{ventosa2005electricity} for a more detailed overview. In this thesis we rely heavily on the work by Klemperer and Meyer, and comment and contrast their results to ours. In order to make this easier to follow, we summarize the main parts of their paper that will be referenced in the following section
+
+\section{Klemperer and Meyer 1989}
+
+
+
+ramping costs are important, how to compute them in an uncertain setting
+continuous time setting Reguant
+\section{Stochastic differential equations, a primer}
+
+
+
+
+
+
+
+
+
 %\begin{center}
 %\adfflourishrightdouble 
 %\end{center}
