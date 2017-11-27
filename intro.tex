@@ -6,8 +6,8 @@
 \cleardoublepage
 \doublespacing
 
-\section{The electricity markets and their modelisation over time}
-\subsection{Public utility pricing}
+\section*{The electricity markets and their modelisation over time}
+\subsection*{Public utility pricing}
 
 The interest for modelling the electricity markets can be traced back to the reference work by Marcel Boiteux, vice president in charge of economic studies at Electricité de France, at the outset of the second world war. The question at the time was mainly that of public utility pricing: in the context of a public monopoly, which price should the consumers face in order to allow the producers to recover their costs. \\
 
@@ -21,7 +21,7 @@ These contributions have sparked a larger litterature on the question of the pri
 
 This litterature has been mainly interested in questions of optimal pricing when the agent choosing the pricing tries to maximise the consumer's welfare, that is in the case of public monopolies. \\
 
-\subsection{Regulatory evolution}
+\subsection*{Regulatory evolution}
 The previous litterature took as an assumption the fact that these commodities were produced by public monopolies. Network utilities, such as gas, telecoms and electricity were thought to require to be organised as vertically integrated monopolies. \\
 
 This view started to change in the 80s, with pressure to create competition. In 1984, access to gas pipelines was opened ot competition in the USA and in 1990 Britain privatised electricity, separating generation and transmission. It was indeed thought that the natural monopoly emerged from the network, and that by separating generation from the network, generation could be opened to competition. \\
@@ -30,7 +30,7 @@ The overall argument for liberalisation is that private competition is considere
 
 This liberalization movement has been somewhat slowed down after the California crisis in the early 2000s \cite{jamasb2005electricity}, which to sum up, concentrated on wholesale electricity markets, which, because of very little price responsiveness of demand meant very high fluctuations in price as well as shortages \cite{borenstein2002trouble}. In Europe, the European Commission has pushed with success for the continuation of the program of liberalisation and integration, and wholesale markets for electricity are now quite ubiquitous, without further instances of failure as in California. 
 
-\subsection{The markets for electricity}
+\subsection*{The markets for electricity}
 The way the markets for electricity are organised stem from three main characteristics:
 \begin{itemize}
 \item Every generation unit is to be paid the same unit price given the outcome of the market.
@@ -53,16 +53,69 @@ This use of SFE sparks some debate as to whether a smooth function approximation
 This approach is still considered relevant by a number of authors, however the multiplicity of equilibria makes it difficult to obtain clear results, as well as making it difficult to use the functional forms of the solutions in more computations, these functions being defined as solutions to a differential equation, therefore without an analytical formula. To overcome this issue, a number of authors either consider competition in simpler settings, for example Cournot competion settings applied to the electricity market in the case of \cite{borenstein1999empirical}, or choose to restrict themselves to one special solution out of the continuum of possible solutions that come out of the SFE framework: the supply function that is the unique linear solution out of this continuum. In so doing these authors pick arbitrarily one solution with a functional form and then use it to further analyse some economic questions. For example, \cite{green1996increasing} focuses on the linear supply solution out of the SFE multiple equilbria in order to have analytical tractable forms and study the effect of three different policies on competition, where 
 \cite{hobbs2000strategic} is able to model transmission constraints with an affine supply function.\\
 
-Overall, we refer the interested reader to the review by \cite{ventosa2005electricity} for a more detailed overview. In this thesis we rely heavily on the work by Klemperer and Meyer, and comment and contrast their results to ours. In order to make this easier to follow, we summarize the main parts of their paper that will be referenced in the following section
+Overall, we refer the interested reader to the review by \cite{ventosa2005electricity} for a more detailed overview. In this thesis we rely heavily on the work by Klemperer and Meyer, and comment and contrast their results to ours. In order to make this easier to follow, we summarize in the following section the results of their paper that will be used in this thesis.
 
-\section{Klemperer and Meyer 1989}
+\section*{Klemperer and Meyer 1989}
+Consider a setting in which firms bid supply functions while facing an uncertain demand. \\
 
+Let $D(p,\theta)$ be the demand function as a function of demand shock $\theta$. Consider that for all $(p,\theta)$, $-\infty<D_p<0$, $D_{pp}\leq 0$ and $D_\theta>0$.\\
 
+All firms are considered to be facing the same cost function $C(\cdot)$, with $C'(q)>0$ and $0<C''(q)<\infty$ for all $q>0$.\\
 
-ramping costs are important, how to compute them in an uncertain setting
-continuous time setting Reguant
-\section{Stochastic differential equations, a primer}
+The timing is such that suppliers have to bid simultaneously a supply function prior to the realisation of demand shock $\theta$ being known. Consider for now two firms $i$ and $j$ with $S^k(p)$ the supply function of supplier $k$ and that these supply functions are twice differentiable. After this shock is known, every firm produces quantity $S^k(p^*(\theta))$ at price $p^*(\theta)$, such that $D(p^*(\theta)) = S^i(p^*(\theta)) + S^j(p^*(\theta))$.\\
 
+Firm $i$'s residual demand is given by the total demand from which the supply of firm $j$ is subtracted, $D(p,\theta) - S^j(p)$. As $\theta$ is considered a scalar, the set of profit-maximizing points for every possible shock $\theta$ define a curve. If there is a unique intersection between $i$'s supply curve and the every possible demand curve, then such a supply curve is ex-post optimal, meaning that it is pointwise optimal for every realization of the shock $\theta$. \\
+
+Given the assumption that supply curves indeed behave in this way, then maximising the expected profit for the distribution of shocks can be abstracted away from the distribution of shocks, and $i$'s optimal supply curve solves for every shock $\theta$ the following program :
+
+\begin{equation}\label{maxKM}
+\max_p p\left( D(p,\theta) - S^j(p)\right) - C\left( D(p,\theta) - S^j(p)\right) 
+\end{equation}
+
+which F.O.C writes:
+
+\begin{equation}\label{KMfoc}
+\ D(p,\theta) - S^j(p) + \left( p - C^\prime\left( D(p,\theta) - S^j(p)\right)    \right)\left(  D_p(p,\theta)   - S^{j\prime}(p)\right) = 0
+\end{equation}
+
+with eq \ref{maxKM} being strictly concave in $p$ (we refer the reader to the original paper for more justifications), then eq \ref{KMfoc} defines the unique profit maximising $p^*(\theta)$ for every $\theta$, which parametrizes the optimal supply function. \\
+
+Consider that $D_{\theta p }=0$, that is that $\theta$ is an additive shock, and that we focus on symmetric equilibria, which allows us to drop the firms' superscripts. In addition, consider the fact that eq \ref{KMfoc} has to hold for every shock, it can therefore be rewritten as:
+\begin{equation}\label{KMdiff}
+S'(p) = \frac{S(p)}{p-C'(S(p))} + D_p(p)= f(p,S)
+\end{equation}
+This differential equation defines the supply function equilbria, the role of uncertainty being to ensure that this equation has to hold for every shock, therefore for every possible price. However, we can see that this differential equation is not accompanied by an initial condition. Therefore, there exists many adminissible solutions to this equation.\\
+
+Supply functions are therefore bounded by possible values of their slope, namely that the functions have slopes bounded between $0$ and $+\infty$. By solving the differential equation, one can define the locus of points for which the solutions have slopes equal to these bounds, and thus obtain a region of admissible solutions, in the context of our problem:
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=8cm]{figintro/KMboundaries.png}
+\caption{\small{This graph is adapted from the original paper by Klemperer and Meyer and illustrates the admissible region of solutions to the differential equation so as to verify the constraints on the slope of the supply function.}}
+\label{KMboundaries}
+\end{figure}
+
+Therefore, the admissible set of solutions is defined by the upper bound of the demand shocks $\overline{\theta}$, in that if the solutions cross the slope boundaries before reaching the maximal shock, they cannot be accepted as solutions to the problem which constrains the solutions more strictly than the differential equation alone. In figure \ref{KMboundaries} the demand associated with the upper bound of the shocks $D(p,\overline{\theta})$ is represented in orange, and solutions A and B to the differential equation are not solutions to the problem as they reach the boundaries for smaller values of shocks.\\
+
+The last result we will review here, is that in the case of an unbounded support of shocks, the set of equilibria is at its smallest, as it means that solutions have to have positive finite slope for every value of the shocks, and not only for a segment of the real line. \\
+
+In some cases, for example for linear demand schedules, this set can collapse to a unique solution. \\
+
+\section*{The case for ramping costs}
+
+This framework models the costs as depending only on the quantity produced. In the context of electricity generation, an important type of costs that cannot be captured in such a specification of the cost function is that of ramping costs. These ramping costs refer to the fact that making production change over time induces specific costs.\\
+
+To explain how such costs can arise, consider a thermal power plant (fossil fuels, nuclear etc.), and more precisely its core. Physically, to produce a given level of electricity, one has to maintain the core at a given temperature. To increase production, the temperature of the core has to increase. This means, that when production is increased some fuel has to be lost to simply increase the temperature, this energy expenditure is not attached to any additional production.\\
+
+This issue of ramping costs is at the heart of the choice of "quick" gas power plants to match sudden peaks in demand, where nuclear plants are more generally used for low frequency adjustments. Therefore these ramping costs are important technically on the electricity market. \\
+
+Some papers have tried to estimate their values empirically, \cite{wolak2007quantifying} and more recently \cite{reguant2011welfare}. However to our knowledge no theoretical framework has been brought to take them into account. This is what we tackle in the first chapter, which yields predictions on the change of shape in supply functions over time as a function of the underlying uncertainty about demand shocks. The second chapter then introduces methods to study the shape of supply functions as observed on the french electricity market for data from 2011 to 2013, as well as methods to estimate the uncertainty contributed by the weather. The third chapter applies these methods to test these theoretical predictions on actual market data. The second and third chapters have been co-written with Henri de Belsunce, who finished his PhD in 2015 at the Munich-based Max Planck Institute for Innovation and Competition, under the supervision of Prof. Dr. Klaus M. Schmidt.
+
+%
+% are important, how to compute them in an uncertain setting
+%continuous time setting Reguant
+%\section{Stochastic differential equations, a primer}
+%
 
 
 
