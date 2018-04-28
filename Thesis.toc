@@ -86,27 +86,27 @@
 \contentsline {subparagraph}{In the second step,}{126}{section*.80}
 \contentsline {subparagraph}{In the third step,}{126}{section*.81}
 \contentsline {subparagraph}{Generating proxy for uncertainty from renewable energies (PLU$^R$)}{127}{section*.82}
-\contentsline {subparagraph}{Controls}{129}{section*.83}
-\contentsline {subsubsection}{Extensions and robustness checks}{134}{section*.86}
-\contentsline {subsubsection}{Bootstrapping standard errors}{134}{section*.87}
-\contentsline {subparagraph}{Kernel based uncertainty forecasts (PLU$^D$)}{135}{section*.88}
-\contentsline {section}{\numberline {3.4}Results }{137}{section.3.4}
-\contentsline {subsection}{\numberline {3.4.1}Demand estimation}{137}{subsection.3.4.1}
-\contentsline {subsection}{\numberline {3.4.2}Final regression}{143}{subsection.3.4.2}
-\contentsline {paragraph}{For the point of inflection ($k=3$),}{144}{section*.91}
-\contentsline {paragraph}{For the other points ($k=1,2,4,5$),}{146}{section*.94}
-\contentsline {section}{\numberline {3.5}Discussion }{147}{section.3.5}
-\contentsline {subsection}{\numberline {3.5.1}Findings}{148}{subsection.3.5.1}
-\contentsline {subsection}{\numberline {3.5.2}Internal and external validity}{150}{subsection.3.5.2}
-\contentsline {subsection}{\numberline {3.5.3}Endogeneity}{152}{subsection.3.5.3}
-\contentsline {section}{\numberline {3.6}Conclusion}{154}{section.3.6}
-\contentsline {chapter}{Appendix}{155}{section*.97}
-\contentsline {section}{Appendix \numberline {3.A}Summary statistics of selected points}{155}{section.c.3.A}
-\contentsline {section}{Appendix \numberline {3.B}Computational details and descriptives}{156}{section.c.3.B}
-\contentsline {subsection}{\numberline {3.B.1}Hard choices in the PLU computation}{156}{subsection.c.3.B.1}
-\contentsline {subsection}{\numberline {3.B.2}Descriptive Statistics}{157}{subsection.c.3.B.2}
-\contentsline {subsubsection}{On realised market equilibria}{157}{section*.103}
-\contentsline {subsubsection}{On player bid functions}{158}{section*.106}
-\contentsline {subsubsection}{On exogenous factors}{159}{section*.109}
+\contentsline {subparagraph}{Controls}{130}{section*.83}
+\contentsline {subsubsection}{Extensions and robustness checks}{135}{section*.86}
+\contentsline {subsubsection}{Bootstrapping standard errors}{135}{section*.87}
+\contentsline {subparagraph}{Kernel based uncertainty forecasts (PLU$^D$)}{136}{section*.88}
+\contentsline {section}{\numberline {3.4}Results }{138}{section.3.4}
+\contentsline {subsection}{\numberline {3.4.1}Demand estimation}{138}{subsection.3.4.1}
+\contentsline {subsection}{\numberline {3.4.2}Final regression}{144}{subsection.3.4.2}
+\contentsline {paragraph}{For the point of inflection ($k=3$),}{145}{section*.91}
+\contentsline {paragraph}{For the other points ($k=1,2,4,5$),}{147}{section*.94}
+\contentsline {section}{\numberline {3.5}Discussion }{148}{section.3.5}
+\contentsline {subsection}{\numberline {3.5.1}Findings}{149}{subsection.3.5.1}
+\contentsline {subsection}{\numberline {3.5.2}Internal and external validity}{151}{subsection.3.5.2}
+\contentsline {subsection}{\numberline {3.5.3}Endogeneity}{153}{subsection.3.5.3}
+\contentsline {section}{\numberline {3.6}Conclusion}{155}{section.3.6}
+\contentsline {chapter}{Appendix}{156}{section*.97}
+\contentsline {section}{Appendix \numberline {3.A}Summary statistics of selected points}{156}{section.c.3.A}
+\contentsline {section}{Appendix \numberline {3.B}Computational details and descriptives}{157}{section.c.3.B}
+\contentsline {subsection}{\numberline {3.B.1}Hard choices in the PLU computation}{157}{subsection.c.3.B.1}
+\contentsline {subsection}{\numberline {3.B.2}Descriptive Statistics}{158}{subsection.c.3.B.2}
+\contentsline {subsubsection}{On realised market equilibria}{158}{section*.103}
+\contentsline {subsubsection}{On player bid functions}{159}{section*.106}
+\contentsline {subsubsection}{On exogenous factors}{160}{section*.109}
 \contentsline {chapter}{References}{165}{chapter*.111}
 \contentsline {chapter}{List of Figures}{169}{section*.112}

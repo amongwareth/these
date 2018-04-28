@@ -34,10 +34,10 @@
 \contentsline {figure}{\numberline {3.2.1}{\ignorespaces Example aggregate demand and supply bid functions\relax }}{118}{figure.caption.71}
 \contentsline {figure}{\numberline {3.2.2}{\ignorespaces Aggregate bid functions for 20 consecutive days\relax }}{120}{figure.caption.72}
 \contentsline {figure}{\numberline {3.3.1}{\ignorespaces Selected points on original bid functions\relax }}{123}{figure.caption.74}
-\contentsline {figure}{\numberline {3.3.2}{\ignorespaces Temperature based seasonality controls\relax }}{133}{figure.caption.84}
-\contentsline {figure}{\numberline {3.3.3}{\ignorespaces Continuous controls for daily patterns\relax }}{133}{figure.caption.85}
-\contentsline {figure}{\numberline {3.B.1}{\ignorespaces \relax \fontsize {10.95}{13.6}\selectfont \abovedisplayskip 11\p@ plus3\p@ minus6\p@ \abovedisplayshortskip \z@ plus3\p@ \belowdisplayshortskip 6.5\p@ plus3.5\p@ minus3\p@ \def \leftmargin \leftmargini \parsep 5\p@ plus2.5\p@ minus\p@ \topsep 10\p@ plus4\p@ minus6\p@ \itemsep 5\p@ plus2.5\p@ minus\p@ {\leftmargin \leftmargini \topsep 9\p@ plus3\p@ minus5\p@ \parsep 4.5\p@ plus2\p@ minus\p@ \itemsep \parsep }\belowdisplayskip \abovedisplayskip Plotted average realised Volume (left) and Price (right) per Hour with 95\% confidence intervals.\relax }}{157}{figure.caption.104}
-\contentsline {figure}{\numberline {3.B.2}{\ignorespaces Distribution of observed market equilibria\relax }}{158}{figure.caption.105}
-\contentsline {figure}{\numberline {3.B.3}{\ignorespaces Distribution of minimum and maximum production volumes (and corresponding range) bid in an hourly auction.\relax }}{158}{figure.caption.107}
-\contentsline {figure}{\numberline {3.B.4}{\ignorespaces Distribution of number of bid function steps\relax }}{158}{figure.caption.108}
-\contentsline {figure}{\numberline {3.B.5}{\ignorespaces Histogram of predicted wind (left) and predicted solar (right) generation\relax }}{159}{figure.caption.110}
+\contentsline {figure}{\numberline {3.3.2}{\ignorespaces Temperature based seasonality controls\relax }}{134}{figure.caption.84}
+\contentsline {figure}{\numberline {3.3.3}{\ignorespaces Continuous controls for daily patterns\relax }}{134}{figure.caption.85}
+\contentsline {figure}{\numberline {3.B.1}{\ignorespaces \relax \fontsize {10.95}{13.6}\selectfont \abovedisplayskip 11\p@ plus3\p@ minus6\p@ \abovedisplayshortskip \z@ plus3\p@ \belowdisplayshortskip 6.5\p@ plus3.5\p@ minus3\p@ \def \leftmargin \leftmargini \parsep 5\p@ plus2.5\p@ minus\p@ \topsep 10\p@ plus4\p@ minus6\p@ \itemsep 5\p@ plus2.5\p@ minus\p@ {\leftmargin \leftmargini \topsep 9\p@ plus3\p@ minus5\p@ \parsep 4.5\p@ plus2\p@ minus\p@ \itemsep \parsep }\belowdisplayskip \abovedisplayskip Plotted average realised Volume (left) and Price (right) per Hour with 95\% confidence intervals.\relax }}{158}{figure.caption.104}
+\contentsline {figure}{\numberline {3.B.2}{\ignorespaces Distribution of observed market equilibria\relax }}{159}{figure.caption.105}
+\contentsline {figure}{\numberline {3.B.3}{\ignorespaces Distribution of minimum and maximum production volumes (and corresponding range) bid in an hourly auction.\relax }}{159}{figure.caption.107}
+\contentsline {figure}{\numberline {3.B.4}{\ignorespaces Distribution of number of bid function steps\relax }}{159}{figure.caption.108}
+\contentsline {figure}{\numberline {3.B.5}{\ignorespaces Histogram of predicted wind (left) and predicted solar (right) generation\relax }}{160}{figure.caption.110}
