@@ -97,6 +97,12 @@ EPEX (2015).
 \newblock Type of orders on the epex day-ahead auction, france.
 \newblock \url{https://www.epexspot.com/en/product-info/auction}.
 
+\bibitem[EPEX, 2018]{epexnegP}
+EPEX (2018).
+\newblock Negative prices at epex.
+\newblock
+  \url{https://www.epexspot.com/en/company-info/basics_of_the_power_market/negative_prices}.
+
 \bibitem[GE, 2015]{GE}
 GE (2015).
 \newblock Heavy-duty gas turbine operating and maintenance considerations.
