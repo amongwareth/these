@@ -190,6 +190,12 @@ Klemperer, P. and Meyer, M. (1989).
 \newblock Supply function equilibria in oligopoly under uncertainty.
 \newblock {\em Econometrica}.
 
+\bibitem[Kloeden and Platen, 2011]{kloeden2011numerical}
+Kloeden, P. and Platen, E. (2011).
+\newblock {\em Numerical Solution of Stochastic Differential Equations}.
+\newblock Stochastic Modelling and Applied Probability. Springer Berlin
+  Heidelberg.
+
 \bibitem[LaCommare and Eto, 2004]{lacommare2004understanding}
 LaCommare, K.~H. and Eto, J.~H. (2004).
 \newblock Understanding the cost of power interruptions to us electricity
@@ -211,6 +217,11 @@ Newbery, D.~M. (1997).
 Newbery, D.~M. (1998).
 \newblock Competition, contracts, and entry in the electricity spot market.
 \newblock {\em The RAND Journal of Economics}, pages 726--749.
+
+\bibitem[{\O}ksendal, 2003]{oksendal2003stochastic}
+{\O}ksendal, B. (2003).
+\newblock Stochastic differential equations.
+\newblock In {\em Stochastic differential equations}, pages 65--84. Springer.
 
 \bibitem[{\"O}zcan, 2004]{ozcan2004logistic}
 {\"O}zcan, R. (2004).
@@ -244,6 +255,11 @@ Reichl, J., Schmidthaler, M., and Schneider, F. (2013).
 REN21, S.~C. (2013).
 \newblock Renewables 2013, global status report.
 
+\bibitem[Rothwell et~al., 1995]{rothwell1995dynamic}
+Rothwell, G., Rust, J., et~al. (1995).
+\newblock A dynamic programming model of us nuclear power plant operations.
+\newblock {\em Manuscript, Department of Economics, University of Wisconsin}.
+
 \bibitem[RTE, 2014]{rtewebsite1}
 RTE (2014).
 \newblock Website of rte, the french grid operator.
@@ -273,6 +289,12 @@ Silverman, B. and Ramsay, J. (2005).
 Silverman, B.~W. (1986).
 \newblock {\em Density estimation for statistics and data analysis}, volume~26.
 \newblock CRC press.
+
+\bibitem[Tanaka, 2006]{tanaka2006real}
+Tanaka, M. (2006).
+\newblock Real-time pricing with ramping costs: A new approach to managing a
+  steep change in electricity demand.
+\newblock {\em Energy Policy}, 34(18):3634--3643.
 
 \bibitem[Ventosa et~al., 2005]{ventosa2005electricity}
 Ventosa, M., Ba{\i}llo, A., Ramos, A., and Rivier, M. (2005).

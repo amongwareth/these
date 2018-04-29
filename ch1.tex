@@ -54,7 +54,7 @@ However, on this market, bids change from auction to auction. From the point of 
 
 Electricity production faces very specific technological constraints. These constraints, generally labelled as ramping costs, vary across production technologies, and have yet to be captured in a model. We propose to do so by introducing a multivariate cost function, depending as always on the quantity produced, but also on the rate at which production varies: $C(S,\frac{dS}{dt})$. We call this class of cost functions dynamic cost functions.\\
 
-All power plants face maintenance costs. However part of these maintenance costs are induced by the dynamics of production, and can be seen as ramping costs. More precisely, whatever the production technology, fluctuations in production are costly. Indeed, they imply fluctuations in the temperature of the core of the power plant, thus dilation and contraction cycles of the different parts, which cause wear and tear. The industry is aware of these effects \cite{GE}, some B2B companies even specialize in minimizing the related long term costs. For example, Wartsila Power Plants, a supplier of power plants and tools to forecast long term costs, explains in a white paper \cite{Arima}: 
+All power plants face maintenance costs. However part of these maintenance costs are induced by the dynamics of production, and can be seen as ramping costs. More precisely, whatever the production technology, fluctuations in production are costly. Indeed, they imply fluctuations in the temperature of the core of the power plant, thus dilation and contraction cycles of the different parts, which cause wear and tear. The industry is aware of these effects \cite{GE}, as well as the litterature, although it focuses mainly on other types of effects, such as the impact on shutdown due to maintenance \cite{rothwell1995dynamic}, some B2B companies even specialize in minimizing the related long term costs. For example, Wartsila Power Plants, a supplier of power plants and tools to forecast long term costs, explains in a white paper \cite{Arima}: 
 \begin{quote}
 Increased variability in net load demand means that dispatchable generating units have to ramp considerably more steeply and deeper than traditionally, thus increasing wear and tear to components.
 \end{quote}
@@ -124,18 +124,18 @@ Unfortunately, Brownian processes are unbounded, and cannot therefore be used to
 %In the electricity market, demand shocks, denoted $\theta(t)$, are bounded: there are no days for which demand is null nor are there days for which demand tends towards infinity. The structure to be imposed on the dynamics of the shocks has to imply bounded shocks. \\
 
 \subsection{The stochastic process}
-A richer set of stochastic processes is the set of It\={o} processes.\\
+A regular candidate for richer stochastic dynamics than a simple brownian process is an Ornstein–Uhlenbeck process. Unfortunately for us, such a process has unbounded support. We are going to use a richer set of stochastic processes: It\={o} processes. \\
 
-A simple It\={o} process one can consider that leads to bounded shocks is defined by the following stochastic differential equation (SDE):
+The simplest It\={o} process one can consider that leads to bounded shocks is defined by the following stochastic differential equation (SDE) \cite{enveloppe}:
 \begin{equation}
 d\theta(t)=-2\theta(t) dt+\sqrt{1-\theta(t)^2}dB_t
 \label{eqSDE}
 \end{equation}
-with $B_t$ a brownian and $dX$ an infinitesimal variation of quantity $X$. \\
+with $B_t$ a brownian and $dX$ an infinitesimal variation of quantity $X$. Its extended version will happen to be very useful in the rest of this chapter, as it leads to a quadratic distribution of shocks, a property that will allow us to obtain closed form solutions.\\
 
 Observe that this SDE is formed by a deterministic mean-returning term $-2\theta(t) dt$ and a bounded stochastic one $\sqrt{1-\theta(t)^2}dB_t$. As $\theta(t)$ approaches $-1$ or $1$ the stochastic term goes to $0$, thus $\theta(t)\in [-1,1]$.  Without loss of generality we can restrain ourselves to this special case. Other bounded supports, $\theta\in[\underline{\theta},\overline{\theta}]$, can be captured through renormalisations of $\theta$. \\
 
-Such a stochastic process has a distribution of probability $f(\theta)$ given by Fokker-Planck's equation, easily solved here. In the general case of an It\={o} process given by SDE \ref{sdegen}, one obtains in \ref{FokP} the generic Fokker-Planck equation for its distribution of probability $f(\theta,t)$:
+Such a stochastic process has a distribution of probability $f(\theta)$ given by Fokker-Planck's equation, easily solved here. In the general case of an It\={o} process given by SDE \ref{sdegen}, one obtains in \ref{FokP} the generic Fokker-Planck equation for its distribution of probability $f(\theta,t)$. This equation allows, given an initial condition on the distribution of probability of the variable, to observe how this distribution evolves to reach the steady state distribution, that is the limit distribution that any initial condition yields. If one knows the value of the stochastic variable at one point in time, one can use this equation to obtain the spread in its distribution over time. 
 \begin{flalign}
 &d\theta=\mu(\theta,t)dt+\sigma(\theta,t)dB_t&\label{sdegen}\\ 
 &\frac{\partial}{\partial t}f(\theta,t)=\frac{\partial}{\partial \theta}(\mu(\theta,t)f(\theta,t))+\frac{1}{2}\frac{\partial^2}{\partial \theta^2}(\sigma(\theta,t)^2f(\theta,t))&\label{FokP}
@@ -149,7 +149,7 @@ In the rest of the paper we are going to consider quadratic ramping costs. More 
 
 We cannot compute $\frac{d\theta}{dt}$ as it appears in Eq.~\ref{maxbase}, as a stochastic process, although everywhere continuous, is nowhere differentiable. The goal of this section is to express properly the maximisation program of the producer that we presented rapidly in Eq.~\ref{maxbase}, and most importantly, to introduce properly how we can work in continuous time with a cost function which depends on fluctuations, and fluctuations which are nowhere differentiable.\\
 
-We are therefore going to first consider the discrete case of a random walk of timestep $\Delta t$ which converges towards the It\={o} process \ref{sdegen}, using the Euler-Maruyama approximation, a generalisation of the Euler method to stochastic differential equations. We consider a Markov chain $Y$ defined as follows : 
+We are therefore going to first consider the discrete case of a random walk of timestep $\Delta t$ which converges towards the It\={o} process \ref{sdegen}, using the Euler-Maruyama approximation \cite{kloeden2011numerical}\footnote{This formula can be found on page 305. This book focuses on numerical approximations of continuous stochastic processes, which is the reverse of what we are doing here, but it is only in such numeric-centric books that this scheme is introduced. For a more general approach to stochastic differentiel equations, see \cite{oksendal2003stochastic}}, a generalisation of the Euler method to stochastic differential equations. We consider a Markov chain $Y$ defined as follows : 
 
 \begin{equation}
 \Delta Y_n=Y_{n+1}-Y_n= \mu(Y_n,n \Delta t)\Delta t+\sigma (Y_n,n \Delta t)\Delta B_n
@@ -213,13 +213,15 @@ Lastly we have to write down the expected profit for a day's worth of submitted 
 \label{totprofit}
 \end{eqnarray}
 
+We want to note that all the stochastic calculus presented here is very standard, our contribution is in noting the low-pass filter effect of the physical power plant on fluctuations which allow us to obtain convergent expressions.
+
 \subsection{Discussion of the approximations}
 We want a tractable mathematical formulation of the dynamic problem faced by producers on the electricity market. To achieve this we seek to describe the discrete real life problem by an approximated continuous one. We first use two technological facts: fluctuations in production are costly and these costs decrease linearly in time for short timescales. We then rely heavily on first order expansions of the different terms we have to compute.  
 
 \subsection{The maximisation program}
 Here, we consider that the dynamics of demand shocks are given by eq.(\ref{eqSDE}), and that therefore  $\sigma(\theta,t)^2=\sigma(\theta)^2=(1-\theta^2)$.\\
 
-We now introduce the different conditions that have to be satisfied by the various terms in this problem. First, on most electricity markets, schedules must be increasing, therefore here we take $S_i'(\cdot)\geq0$. Second, the aggregate demand is non negative as consumers do not have production facilities at their disposal: $D(\theta(t),p(\theta(t)))=\sum_iS_i(p(\theta(t)))\geq0$. Last, we consider that the shocks $\theta$ are ordered so that the demand is increasing in $\theta$, i.e. $\frac{\partial D}{\partial\theta}\geq0$, and that the price has to weakly increase with the shocks, i.e. $\dot{p}\geq0$. Our initial stochastic maximisation program can thus be rewritten as a regular optimal control problem: 
+We now introduce the different conditions that have to be satisfied by the various terms in this problem. First, on most electricity markets, schedules must be increasing, therefore here we take $S_i'(\cdot)\geq0$. Second, the aggregate demand is non negative as consumers do not have production facilities at their disposal: $D(\theta(t),p(\theta(t)))=\sum_iS_i(p(\theta(t)))\geq0$. Last, we consider that the shocks $\theta$ are ordered so that the demand is increasing in $\theta$, i.e. $\frac{\partial D}{\partial\theta}\geq0$, and that the price has to weakly increase with the shocks, i.e. $\dot{p}\geq0$, which garanties that the supply function increases with shocks. Our initial stochastic maximisation program can thus be rewritten as a regular optimal control problem: 
 
 \begin{equation}
 \displaystyle{\max_{S_i(p)}}~\int_{-1}^{1} f(\theta)\left(p(\theta)S_i(p(\theta)) -C_s(S_i(p(\theta)))-\frac{\gamma}{2}(1-\theta^2)\left(S_i'(p(\theta))\dot{p}(\theta)\right)^2\right)d\theta
@@ -265,6 +267,14 @@ S^*(p)=\frac{1}{4\gamma+1+\lambda}\left(p+\frac{4\gamma}{2+\lambda}b\right) \lab
 
 \begin{proof}
 See annex \ref{annexmonop}. \qed
+\end{proof} 
+
+\begin{proposition}\label{monopequilibriaKM}
+When taking $\gamma\to 0$, the above solution converges towards the solution obtained in the Klemperer and Meyer framework, which for a monopoly is also unique.
+\end{proposition}
+
+\begin{proof}
+See annex \ref{annexmonopKM}. \qed
 \end{proof} 
 
 We present in Fig.~\ref{monopsup} the results obtained for increasing values of the ramping cost parameter $\gamma$, starting at $\gamma=0$ in black and moving progressively from black to blue to red to green. \\
@@ -351,7 +361,7 @@ When $\gamma\to0$, the solution remains unique and converges towards the linear 
 \end{proposition}
 \begin{proof}
 It is straightforward to check that $K_1$ and $K_2$ have the same values as KM for $\gamma\to0$. \\
-More intuitively the argument is as follows. When $\gamma\to 0$, with $\gamma>0$, we retain a unique solution although the problem itself converges towards that of KM. We should select an equilibrium present in KM's continuum. When KM take the limiting case of an infinite support of shocks they select a unique equilibrium. In our case we can do the same thing by taking $a\to\infty$. In the limit, our solution being in their set which converges to a unique equilibrium, those two selected equilibria should be equal. Now note that our solution does not depend explicitly on $a$ so that when the support is finite, we still select the same equilibria out of what is now a continuum of equilibria in KM's framework.             \qed
+More intuitively the argument is as follows. When $\gamma\to 0$, with $\gamma>0$, we retain a unique solution although the problem itself converges towards that of KM. When $\gamma = 0$, we are back to the KM situation with a continuum, however we can come as close to 0 as we want while maintaining a unique solution. We should therefore select an equilibrium present in KM's continuum. When KM take the limiting case of an infinite support of shocks they select a unique equilibrium. In our case we can do the same thing by taking $a\to\infty$. In the limit, our solution being in their set which converges to a unique equilibrium, those two selected equilibria should be equal. Now note that our solution does not depend explicitly on $a$ so that when the support is finite, we still select the same equilibria out of what is now a continuum of equilibria in KM's framework.             \qed
 \end{proof}
 
 
@@ -377,9 +387,11 @@ Accounting for ramping costs induces a collapse of the equilibria set from a con
 
 Most of the tacit collusion concern that is present in the literature is based on the existence of a continuum of solutions. This continuum is thought as being conducive of tacit collusion because the electricity market entails repeated interactions between producers. In this case, producers can be feared to be able to learn to pick the most profitable Nash equilibria. \\
 
-Our result implies this pathway for tacit collusion is not available anymore. With only one Nash equilibria at any given time no learning can bring about tacit collusion. \\
+Our result implies this pathway for tacit collusion is not available anymore. With only one Nash equilibria at any given time no learning can bring about tacit collusion. This is a strong result about the structure of competition in our framework. The existence of ramping costs leads to a model in which no tacit collusion can exist, suggesting that the policy recommendations about such collusion stemming from the supply function equilibria litterature might be strongly dependent on not taking into account ramping costs.\\
 
-We are also able to account for negative prices which was impossible in the previous framework. Such negative prices are actually observed, although rarely, on the market: producers prefer to subsidize consumption instead of decreasing production by a lot. In our framework, if the ramping costs are large enough, and the demand shocks can reach a small enough value, our solutions can yield negative values : the equilibrium price might even be below the marginal cost of production, understood here as $\partial_q C$ which by definition does not capture our ramping costs.
+Our solutions are also not ex-post optimal contrary to the traditional results. As our solutions depend explicitly on the structure of the uncertainty around demand shocks, any additional information shifting the expected distribution of shocks would imply a different bid. Ex-post optimality is a very strong result, and, one could argue, more of a quirck from the usual models than its abscence in ours.\\
+
+We are also able to account for negative prices which was impossible in the previous framework. Such negative prices are actually observed, although rarely, on the market: producers prefer to subsidize consumption instead of decreasing production by a lot. In our framework, if the ramping costs are large enough, and the demand shocks can reach a small enough value, our solutions can yield negative values : the equilibrium price might even be below the marginal cost of production, understood here as $\partial_q C$ which by definition does not capture our ramping costs.\\
 
 %
 %In addition to this consideration, one must note that our unique solution rotates towards a steeper and steeper supply schedule as the ramping costs increase. However this rotation does not occur around the mean demand shock, but around a lower shock value. This means that, in expected terms, our solutions are more costly than the one selected by KMs infinite support argument. As long as the ramping costs are not too high, our solution lies in the region of the price quantity plane delimited by the continuum of solutions of KM. Therefore, for empirical work trying to estimate
@@ -407,9 +419,9 @@ Previously, the SDE (stochastic differential equation) defining the dynamics of 
 $$d\theta(t)=-2\theta(t) dt+\sqrt{1-\theta(t)^2}dB_t$$ 
 This specification implied a stochastic trajectory for the shocks, bounded by a constant envelope. That is to mean that, lacking any knowledge of the value of the shock at a point in time close to the period under consideration, the distribution of shocks does not depend on time.\\
 
-To account for these intraday variations we are going to define a richer SDE. \\
+To account for these intraday variations we are going to define a richer SDE, a non-stationary one. \\
 
-SDEs have been well studied and as a consequence there exists a number of families of SDEs satisfying numerous characteristics \cite{enveloppe}. The goal here is to find one SDE that will allow us to capture some of the dynamics of shocks and how this might influence strategies, while keeping it as simple as possible. Just as in the previous section, the first caracteristic that we want is to consider SDEs that imply a bounded support of shocks. This restricts our possible choice to four families out of the classical ones: Generalised Beta I, Beta, Power, Uniform. We also consider that a desirable property is that the distribution reaches 0 continuously at the bounds of its support. This restricts us further to only two families : Generalised Beta I and Beta. For tractability reasons we will focus here on the Beta family of SDEs, and more precisely on one of the simplest Beta SDE. However, we want to note that this choice stems from our focus towards solving analytically the problem at hand and obtain closed form solutions. If one were to try and estimate the distribution of shocks anticipated by firms from market data one might want to try and find which of the Beta or Generalised Beta I SDEs might match the distribution of errors between the published day -1 estimates for demand and the observed quantities.\\
+SDEs have been well studied and as a consequence there exists a number of families of SDEs satisfying numerous characteristics \cite{enveloppe}. The goal here is to find one SDE that will allow us to capture some of the dynamics of shocks and how this might influence strategies, while keeping it as simple as possible. Just as in the previous section, the first caracteristic that we want is to consider SDEs that imply a bounded support of shocks. This restricts our possible choice to four families out of the classical ones: Generalised Beta I, Beta, Power, Uniform. We also consider that a desirable property is that the distribution reaches 0 continuously at the bounds of its support, because there is no boundary condition on the demand for electricity that would justify that one has a positive probability of reaching a given bound, but a zero probability of reaching an infinitesimally close value to this bound. This restricts us further to only two families : Generalised Beta I and Beta. For tractability reasons we will focus here on the Beta family of SDEs, and more precisely on one of the simplest Beta SDE. However, we want to note that this choice stems from our focus towards solving analytically the problem at hand and obtain closed form solutions. If one were to try and estimate the distribution of shocks anticipated by firms from market data one might want to try and find which of the Beta or Generalised Beta I SDEs might match the distribution of errors between the published day -1 estimates for demand and the observed quantities.\\
 
 Define the evolving envelope of shocks by two functions, $(\underline{\theta}(t),\overline{\theta}(t))$, respectively the lower and upper bounds of the shocks. These two functions, although very easy to comprehend, are not the most useful way to define the boundary. Instead we are going to use the average value of the shocks, and the half width of the envelope, $(\hat{\theta}(t), \omega(t))$. This means that $\underline{\theta}(t)=\hat{\theta}(t)-\omega(t)$ and $\overline{\theta}(t)=\hat{\theta}(t)+\omega(t)$. The only restriction we impose on the envelope is that we require it to be continuously differentiable, that is $(\hat{\theta},\omega)\in\mathcal{C}^1(\mathbb{R})$.\\
 
@@ -513,12 +525,17 @@ The optimal supply schedule depends on the relative rate of change of the width 
 
 Remember that when describing the slope of the schedule, we are considering the plane $(quantity, price)$ while the schedule as defined by $S^*(p)$ represents the same curve but in the plane $(price, quantity)$. An increase in width is equivalent to a higher ramping cost parameter while a decrease in width is equivalent to a lower ramping cost parameter. These results are illustrated in Fig. \ref{figdyn1}. \\
 
-To understand the economic intuition behind this result, consider first an increase in the width of the envelope at date $t_1$.  Consider now one possible value of $\theta(t_1)$. At $t_1+dt$, had the width been constant there would have been a given level of uncertainty about the values that $\theta(t_1+dt)$, and thus the ramping costs, could have taken.  If the width of the envelope is increasing then there is more uncertainty regarding the potential values that could be taken by $\theta(t_1+dt)$, therefore more expected ramping costs incurred, and a higher slope to hedge these costs. On the other hand, when the width decreases, the situation is reversed. In that case, we move towards a situation in which there is less uncertainty about the ramping costs, so that the slope is smaller than for a constant envelope. This difference between increasing and decreasing width is illustrated by comparing the two regions of the envelope displayed in (full) black line in Fig. \ref{figdyn1}. In addition, when contrasting the left and the right side of the figure one sees that the change in the informativeness of the envelope is captured by the relative change of the width: for the same rate of change, if the width is larger (right) then the change in informativeness is smaller (the change in the area captured by the (dashed) red and (full) green arrows).  \\
+To understand the economic intuition behind this result, consider first an increase in the width of the envelope on the graphic on the right, the uncertainty level given by the orange line. At this point in time, the uncertainty is increasing, therefore the shocks are going to be larger, the variations in demand too, and to face this increase, the slope is larger so as to reduce this expected increase in ramping costs. In the case of the green line, the uncertainty is decreasing, the ramping costs incurred are expected to decrease, thus this constraint being relaxed the slope can reduce to extract more profit through more variations in quantity than if the slope had remained high.\\
+
+One can contrast this behaviour to the one described on the left hand side of the figure, where the uncertainty is constant, but the average shock is not. This implies only a vertical translation of the curve, without changes in the slope. Here the slope is fixed by a given level of uncertainty, to exploit an increased demand, the supplier simply increases its prices, but it doesn't need to hedge against increased variation by encouraging or discouraging variations in quantity by playing with the slope.\\
+
+
+% Consider now one possible value of $\theta(t_1)$. At $t_1+dt$, had the width been constant there would have been a given level of uncertainty about the values that $\theta(t_1+dt)$, and thus the ramping costs, could have taken.  If the width of the envelope is increasing then there is more uncertainty regarding the potential values that could be taken by $\theta(t_1+dt)$, therefore more expected ramping costs incurred, and a higher slope to hedge these costs. On the other hand, when the width decreases, the situation is reversed. In that case, we move towards a situation in which there is less uncertainty about the ramping costs, so that the slope is smaller than for a constant envelope. This difference between increasing and decreasing width is illustrated by comparing the two regions of the envelope displayed in (full) black line in Fig. \ref{figdyn1}. In addition, when contrasting the left and the right side of the figure one sees that the change in the informativeness of the envelope is captured by the relative change of the width: for the same rate of change, if the width is larger (right) then the change in informativeness is smaller (the change in the area captured by the (dashed) red and (full) green arrows).  \\
 
 \begin{figure}[h] 
 \centering
-\includegraphics[width=15cm]{figch1/figdyn1.png}
-\caption{\small{This graph plots an envelope of constant average value but varying width $\omega(t)$. By comparing regions of increasing or decreasing width, respectively the left or right side of a lobe, one sees that the informativeness of the envelope is being respectively reduced or increased with respect to a situation where the width would be kept constant. The change in informativeness is represented by the area between the (full) green arrows (observed level of informativeness) compared to the area between the (dashed) red arrows (level of informativeness had the width been constant). In addition, by comparing the left lobe to the right one, it is possible to see why the relative variation of the width, and not the absolute variation of the width, matters. For a larger width (right lobe) and the same rate of change in the width, there is less change in informativeness than for a smaller width (left lobe), i.e. the same rate of change matters less for the right lobe than for the left lobe. }} \label{figdyn1}
+\includegraphics[width=15cm]{figch1/uncertainty.png}
+\caption{\small{On the left, this graph plots an envelope of constant width $\omega(t)$ but varying average. The insert represent this envelope, while the graph itself represents the supply curves associated with the points in time represented by the green and orange dotted lines on the insert. On the right, this graph plots an envelope of constant average but varying width $\omega(t)$. }} \label{figdyn1}
 \end{figure}
 
 All of this reasoning applies to the dynamic oligopoly result as well as the effect can be understood in the same way as for the monopoly : changes in the width of the shock's bounds behave as if there was an effective dynamic cost that was higher than the baseline when information about the shocks is lost, and lower than the baseline when information is gained.
@@ -637,6 +654,19 @@ This expression is symmetric in $\theta$ therefore by choosing the adequate valu
 It is straightforward to see that the proposed solution satisfies this differential equation, thus we know that $\frac{\partial H}{\partial u}$ is a constant and as $\mu(-1)=0$ it is in fact null. Lastly,  we see that $p^*(\theta)\leq a\theta +b$.\\
 
 The proposed $p^*(\theta)$ therefore defines the unique optimal supply function, i.e. the parametrized curve $(a \theta +b-p^*(\theta),p^*(\theta))$.
+
+\section{Proof of Proposition \ref{monopequilibriaKM} \label{annexmonopKM}}
+Consider the following profit:
+$$p\cdot D(\theta,p) - C(D(\theta,p))$$
+Now take a linear demand schedule $D(\theta,p) = a\cdot \theta + b - p$ and a quadratic cost function $C(D(\theta,p)) = \frac{\lambda}{2} D(\theta,p)^2 = \frac{\lambda}{2}(a\cdot \theta + b - p)^2$.
+The F.O.C. with respect to $p(\theta)$ writes:
+\begin{eqnarray}
+D(\theta,p)  + p\cdot \partial_p D(\theta,p) - C'(D(\theta,p))\partial_p D(\theta,p)  &=&0\\
+C'(D(\theta,p)) - \frac{D(\theta,p)}{\partial_p D(\theta,p)} & =&p\\
+(1+\lambda)(a\cdot\theta+b-p)&=&p\\
+p&=&\frac{1+\lambda}{2+\lambda}(a\cdot\theta+b)\\
+\end{eqnarray}
+This result is the same as that of proposition  \ref{monopequilibria} with $\gamma \to 0$.
 
 \section{Proof of Proposition \ref{propoligo1} \label{annex1}}
 As for eq.~\ref{maxoligopo}, for the sake of concision, we do not write the explicit depencies of the different functions on $\theta$, thus $f(\theta)$, $p(\theta)$, $u(\theta)$, $\mu(\theta)$ and $S(p(\theta))$ will be written as $f$, $p$, $u$, $\mu$ and $S$ respectively. Define the following Hamiltonian: 

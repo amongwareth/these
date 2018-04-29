@@ -24,47 +24,48 @@
 \BOOKMARK [0][-]{section*.21}{Appendix}{}% 24
 \BOOKMARK [1][-]{section.a.1.A}{Appendix Proof of equation 1.11}{section*.21}% 25
 \BOOKMARK [1][-]{section.a.1.B}{Appendix Proof of Proposition 1.4.1 }{section*.21}% 26
-\BOOKMARK [1][-]{section.a.1.C}{Appendix Proof of Proposition 1.5.1 }{section*.21}% 27
-\BOOKMARK [1][-]{section.a.1.D}{Appendix Proof of proposition 1.5.2}{section*.21}% 28
-\BOOKMARK [1][-]{section.a.1.E}{Appendix Proof of proposition 1.6.1}{section*.21}% 29
-\BOOKMARK [1][-]{section.a.1.F}{Appendix Proof of proposition 1.6.2}{section*.21}% 30
-\BOOKMARK [0][-]{chapter.2}{Methodological tools for non parametric functional data evaluation and weather data usage}{}% 31
-\BOOKMARK [1][-]{section.2.1}{Introduction}{chapter.2}% 32
-\BOOKMARK [1][-]{section.2.2}{Point selection on functional data : a non parametric approach}{chapter.2}% 33
-\BOOKMARK [2][-]{subsection.2.2.1}{Information about our data}{section.2.2}% 34
-\BOOKMARK [2][-]{subsection.2.2.2}{Point selection algorithm}{section.2.2}% 35
-\BOOKMARK [2][-]{subsection.2.2.3}{Results of the point selection methodology}{section.2.2}% 36
-\BOOKMARK [2][-]{subsection.2.2.4}{Observations of bidding frictions}{section.2.2}% 37
-\BOOKMARK [2][-]{subsection.2.2.5}{Discussion}{section.2.2}% 38
-\BOOKMARK [1][-]{section.2.3}{Methodology to aggregate geographically dispersed information on a national level}{chapter.2}% 39
-\BOOKMARK [2][-]{subsection.2.3.1}{Dealing with meteorological data}{section.2.3}% 40
-\BOOKMARK [2][-]{subsection.2.3.2}{Aggregation of local information}{section.2.3}% 41
-\BOOKMARK [1][-]{section.2.4}{Conclusion}{chapter.2}% 42
-\BOOKMARK [0][-]{section*.62}{Appendix}{}% 43
-\BOOKMARK [1][-]{section.b.2.A}{Appendix Technical details}{section*.62}% 44
-\BOOKMARK [2][-]{subsection.b.2.A.1}{Using the kernel density estimation \(KDE\) in our setting}{section.b.2.A}% 45
-\BOOKMARK [2][-]{subsection.b.2.A.2}{Outlier detection and removal}{section.b.2.A}% 46
-\BOOKMARK [0][-]{chapter.3}{Investigating the Impact of Uncertainty on Firms with Dynamic Costs : A Case Study of the French Electricity Market}{}% 47
-\BOOKMARK [1][-]{subsection.3.0.1}{Literature review and contribution}{chapter.3}% 48
-\BOOKMARK [2][-]{subsection.3.0.2}{Theoretical prediction}{subsection.3.0.1}% 49
-\BOOKMARK [1][-]{section.3.1}{The EPEX spot market}{chapter.3}% 50
-\BOOKMARK [2][-]{subsection.3.1.1}{General background}{section.3.1}% 51
-\BOOKMARK [2][-]{subsection.3.1.2}{Auction rules and mechanism}{section.3.1}% 52
-\BOOKMARK [1][-]{section.3.2}{Our data explained}{chapter.3}% 53
-\BOOKMARK [1][-]{section.3.3}{Methodology}{chapter.3}% 54
-\BOOKMARK [2][-]{subsection.3.3.1}{Regression methodology}{section.3.3}% 55
-\BOOKMARK [1][-]{section.3.4}{Results }{chapter.3}% 56
-\BOOKMARK [2][-]{subsection.3.4.1}{Demand estimation}{section.3.4}% 57
-\BOOKMARK [2][-]{subsection.3.4.2}{Final regression}{section.3.4}% 58
-\BOOKMARK [1][-]{section.3.5}{Discussion }{chapter.3}% 59
-\BOOKMARK [2][-]{subsection.3.5.1}{Findings}{section.3.5}% 60
-\BOOKMARK [2][-]{subsection.3.5.2}{Internal and external validity}{section.3.5}% 61
-\BOOKMARK [2][-]{subsection.3.5.3}{Endogeneity}{section.3.5}% 62
-\BOOKMARK [1][-]{section.3.6}{Conclusion}{chapter.3}% 63
-\BOOKMARK [0][-]{section*.98}{Appendix}{}% 64
-\BOOKMARK [1][-]{section.c.3.A}{Appendix Summary statistics of selected points}{section*.98}% 65
-\BOOKMARK [1][-]{section.c.3.B}{Appendix Computational details and descriptives}{section*.98}% 66
-\BOOKMARK [2][-]{subsection.c.3.B.1}{Hard choices in the PLU computation}{section.c.3.B}% 67
-\BOOKMARK [2][-]{subsection.c.3.B.2}{Descriptive Statistics}{section.c.3.B}% 68
-\BOOKMARK [0][-]{chapter*.112}{References}{}% 69
-\BOOKMARK [0][-]{section*.113}{List of Figures}{}% 70
+\BOOKMARK [1][-]{section.a.1.C}{Appendix Proof of Proposition 1.4.2 }{section*.21}% 27
+\BOOKMARK [1][-]{section.a.1.D}{Appendix Proof of Proposition 1.5.1 }{section*.21}% 28
+\BOOKMARK [1][-]{section.a.1.E}{Appendix Proof of proposition 1.5.2}{section*.21}% 29
+\BOOKMARK [1][-]{section.a.1.F}{Appendix Proof of proposition 1.6.1}{section*.21}% 30
+\BOOKMARK [1][-]{section.a.1.G}{Appendix Proof of proposition 1.6.2}{section*.21}% 31
+\BOOKMARK [0][-]{chapter.2}{Methodological tools for non parametric functional data evaluation and weather data usage}{}% 32
+\BOOKMARK [1][-]{section.2.1}{Introduction}{chapter.2}% 33
+\BOOKMARK [1][-]{section.2.2}{Point selection on functional data : a non parametric approach}{chapter.2}% 34
+\BOOKMARK [2][-]{subsection.2.2.1}{Information about our data}{section.2.2}% 35
+\BOOKMARK [2][-]{subsection.2.2.2}{Point selection algorithm}{section.2.2}% 36
+\BOOKMARK [2][-]{subsection.2.2.3}{Results of the point selection methodology}{section.2.2}% 37
+\BOOKMARK [2][-]{subsection.2.2.4}{Observations of bidding frictions}{section.2.2}% 38
+\BOOKMARK [2][-]{subsection.2.2.5}{Discussion}{section.2.2}% 39
+\BOOKMARK [1][-]{section.2.3}{Methodology to aggregate geographically dispersed information on a national level}{chapter.2}% 40
+\BOOKMARK [2][-]{subsection.2.3.1}{Dealing with meteorological data}{section.2.3}% 41
+\BOOKMARK [2][-]{subsection.2.3.2}{Aggregation of local information}{section.2.3}% 42
+\BOOKMARK [1][-]{section.2.4}{Conclusion}{chapter.2}% 43
+\BOOKMARK [0][-]{section*.62}{Appendix}{}% 44
+\BOOKMARK [1][-]{section.b.2.A}{Appendix Technical details}{section*.62}% 45
+\BOOKMARK [2][-]{subsection.b.2.A.1}{Using the kernel density estimation \(KDE\) in our setting}{section.b.2.A}% 46
+\BOOKMARK [2][-]{subsection.b.2.A.2}{Outlier detection and removal}{section.b.2.A}% 47
+\BOOKMARK [0][-]{chapter.3}{Investigating the Impact of Uncertainty on Firms with Dynamic Costs : A Case Study of the French Electricity Market}{}% 48
+\BOOKMARK [1][-]{subsection.3.0.1}{Literature review and contribution}{chapter.3}% 49
+\BOOKMARK [2][-]{subsection.3.0.2}{Theoretical prediction}{subsection.3.0.1}% 50
+\BOOKMARK [1][-]{section.3.1}{The EPEX spot market}{chapter.3}% 51
+\BOOKMARK [2][-]{subsection.3.1.1}{General background}{section.3.1}% 52
+\BOOKMARK [2][-]{subsection.3.1.2}{Auction rules and mechanism}{section.3.1}% 53
+\BOOKMARK [1][-]{section.3.2}{Our data explained}{chapter.3}% 54
+\BOOKMARK [1][-]{section.3.3}{Methodology}{chapter.3}% 55
+\BOOKMARK [2][-]{subsection.3.3.1}{Regression methodology}{section.3.3}% 56
+\BOOKMARK [1][-]{section.3.4}{Results }{chapter.3}% 57
+\BOOKMARK [2][-]{subsection.3.4.1}{Demand estimation}{section.3.4}% 58
+\BOOKMARK [2][-]{subsection.3.4.2}{Final regression}{section.3.4}% 59
+\BOOKMARK [1][-]{section.3.5}{Discussion }{chapter.3}% 60
+\BOOKMARK [2][-]{subsection.3.5.1}{Findings}{section.3.5}% 61
+\BOOKMARK [2][-]{subsection.3.5.2}{Internal and external validity}{section.3.5}% 62
+\BOOKMARK [2][-]{subsection.3.5.3}{Endogeneity}{section.3.5}% 63
+\BOOKMARK [1][-]{section.3.6}{Conclusion}{chapter.3}% 64
+\BOOKMARK [0][-]{section*.98}{Appendix}{}% 65
+\BOOKMARK [1][-]{section.c.3.A}{Appendix Summary statistics of selected points}{section*.98}% 66
+\BOOKMARK [1][-]{section.c.3.B}{Appendix Computational details and descriptives}{section*.98}% 67
+\BOOKMARK [2][-]{subsection.c.3.B.1}{Hard choices in the PLU computation}{section.c.3.B}% 68
+\BOOKMARK [2][-]{subsection.c.3.B.2}{Descriptive Statistics}{section.c.3.B}% 69
+\BOOKMARK [0][-]{chapter*.112}{References}{}% 70
+\BOOKMARK [0][-]{section*.113}{List of Figures}{}% 71
