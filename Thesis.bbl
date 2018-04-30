@@ -91,6 +91,7 @@ Crew, M.~A., Fernando, C.~S., and Kleindorfer, P.~R. (1995).
 \bibitem[EPEX, 2014]{epexwebsite1}
 EPEX (2014).
 \newblock Website of the european power exchange.
+\newblock \url{https://www.epexspot.com/en/}.
 
 \bibitem[EPEX, 2015]{epex}
 EPEX (2015).
@@ -260,9 +261,16 @@ Rothwell, G., Rust, J., et~al. (1995).
 \newblock A dynamic programming model of us nuclear power plant operations.
 \newblock {\em Manuscript, Department of Economics, University of Wisconsin}.
 
+\bibitem[RTE, 2012]{RTEbilan2012}
+RTE (2012).
+\newblock 2012 overview of rte, the french grid operator.
+\newblock
+  \url{https://www.rte-france.com/sites/default/files/rte_bilan_electrique_2012.pdf}.
+
 \bibitem[RTE, 2014]{rtewebsite1}
 RTE (2014).
 \newblock Website of rte, the french grid operator.
+\newblock \url{http://www.rte-france.com/en/}.
 
 \bibitem[Salgado-Ugarte et~al., 1994]{salgado1994exploring}
 Salgado-Ugarte, I.~H., Shimizu, M., and Taniuchi, T. (1994).
