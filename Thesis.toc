@@ -112,4 +112,5 @@
 \contentsline {subsubsection}{On exogenous factors}{177}{section*.110}
 \contentsline {chapter}{General conclusion}{183}{chapter*.112}
 \contentsline {chapter}{References}{191}{chapter*.116}
-\contentsline {chapter}{List of Figures}{196}{section*.117}
+\contentsline {chapter}{Code annex}{197}{chapter*.117}
+\contentsline {chapter}{List of Figures}{257}{section*.120}
