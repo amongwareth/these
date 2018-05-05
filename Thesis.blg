@@ -11,49 +11,49 @@ A level-1 auxiliary file: ch2.aux
 The style file: apalike.bst
 Database file #1: biblio.bib.bib
 Warning--I'm ignoring wolfi2013interacting's extra "note" field
---line 600 of file biblio.bib.bib
+--line 679 of file biblio.bib.bib
 Warning--empty publisher in hart1982imperfect
 Warning--empty journal in holmberg2008supply
 Warning--empty school in wolfi2013interacting
-You've used 62 entries,
+You've used 69 entries,
             1935 wiz_defined-function locations,
-            816 strings with 12862 characters,
-and the built_in function-call counts, 22285 in all, are:
-= -- 2281
-> -- 662
-< -- 65
-+ -- 224
-- -- 204
-* -- 1716
-:= -- 3861
-add.period$ -- 185
-call.type$ -- 62
-change.case$ -- 409
-chr.to.int$ -- 62
-cite$ -- 65
-duplicate$ -- 912
-empty$ -- 1623
-format.name$ -- 302
-if$ -- 4408
-int.to.chr$ -- 1
+            853 strings with 13949 characters,
+and the built_in function-call counts, 24894 in all, are:
+= -- 2544
+> -- 761
+< -- 68
++ -- 259
+- -- 236
+* -- 1945
+:= -- 4323
+add.period$ -- 206
+call.type$ -- 69
+change.case$ -- 459
+chr.to.int$ -- 68
+cite$ -- 72
+duplicate$ -- 1005
+empty$ -- 1805
+format.name$ -- 343
+if$ -- 4905
+int.to.chr$ -- 2
 int.to.str$ -- 0
-missing$ -- 54
-newline$ -- 310
-num.names$ -- 186
-pop$ -- 315
+missing$ -- 60
+newline$ -- 345
+num.names$ -- 207
+pop$ -- 350
 preamble$ -- 1
-purify$ -- 411
+purify$ -- 461
 quote$ -- 0
-skip$ -- 762
+skip$ -- 833
 stack$ -- 0
-substring$ -- 1699
-swap$ -- 142
+substring$ -- 1901
+swap$ -- 148
 text.length$ -- 13
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 358
+type$ -- 400
 warning$ -- 3
-while$ -- 203
+while$ -- 227
 width$ -- 0
-write$ -- 786
+write$ -- 875
 (There were 4 warnings)

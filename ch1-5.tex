@@ -14,7 +14,7 @@
 \section{Introduction}
 In the previous chapter, we have introduced a model of supply function equilibria under uncertainty that takes ramping costs into account and we derived solutions that depend on the information the firms have about the future demand at the time of bidding. Here, we will focus on introducing tools that will allow us to perform an empirical analysis of the French day ahead market and test these theoretical predictions, which will be the focus of our third chapter.\\
 
-In this short chapter we develop a methodology to analyze data of two specific formats. The focus lies on the methodological details as well as evaluating the performance of our technique. The aim is first to extract points of interests from functional data in order to be able to compare function to one another across bids, and second to describe a methodology that will allow us take into account the uncertainty related to the weather. The economic interpretation is secondary in this chapter. Chapter 3 will use the methodology developed here for a case study of the French electricity market.\\
+In this short chapter we develop a methodology to analyze data of two specific formats. The focus lies on the methodological details as well as evaluating the performance of our technique. The aim is first to extract points of interests from functional data in order to be able to compare functions to one another across bids, and second to describe a methodology that will allow us take into account the uncertainty related to the weather. The economic interpretation is secondary in this chapter. Chapter 3 will use the methodology developed here for a case study of the French electricity market.\\
 
 \section{Point selection on functional data: a non parametric approach}
 Reduced form models often rely on exploiting market outcomes for their analysis, i.e. equilibrium prices and quantities, in order to identify the determinants of firm behaviour and test predictions of the theory. On a few markets, sufficient information is available to get around the problem of using endogenous equilibrium data. For example on the government bond markets, both the full aggregate demand and supply functions are observed. This market is of a specific type, it is a divisible goods auction (also called multi-unit or share auctions). These are auctions where multiple units of a good are sold in a single auction. The exact quantity is not predetermined, but endogenous and depends on the price. Furthermore, the auction format is more complex than for indivisible, single unit auctions and most notably requires that bidders simultaneously submit full bid functions for the goods, i.e. multiple price-quantity combinations at which each bidder is willing to buy or sell the goods. The market price and quantity are determined by the intersection of the aggregate demand and supply functions.\\
@@ -41,7 +41,7 @@ Here we present the methodology of our point selection and apply it to data from
 
 \subsection{Information about our data}\label{gleinfo}
 
-Our methodology is general and can be applied to any market where the structure of data observations is similar. Here, we present and discuss the performance of the method- ology on data from the electricity market. For the purposes of this chapter we will focus only on the statistical properties of the data, not on the economic interpretation.\\
+Our methodology is general and can be applied to any market where the structure of data observations is similar. Here, we present and discuss the performance of the methodology on data from the electricity market. For the purposes of this chapter we will focus only on the statistical properties of the data, not on the economic interpretation.\\
 
 We apply our methodology to data from a divisible goods auction. In this auction, each buyer and seller submits a full individual bid function, i.e. a demand or a supply function, which consists of 2 to 256 monotone price-quantity combinations. The final bid function consists of these explicitly submitted bid points and all linearly interpolated points between them.\\
 
@@ -85,7 +85,7 @@ For details on the bandwidth and kernel selection as well as algorithm specifici
 }
 \end{figure}
 
-We are therefore able to identify the regions of very high curvature, which define the transition between the three characteristic regions of these functions. We assume that these maxima can be compared across different auctions. This hypothesis is commonly made in functional data analysis and known under the method of landmark registration \cite{ramsaysilverman2005functional}. This has been applied in \cite{wolfi2013interacting}, chapter 4, to day-ahead electricity data, in order to identify the effect on fuel price shocks on supply curves. However, this landmark registration was applied in a parametric form: the regions of high steepness were identified as any part of the curve above 90€/MWh. \\
+We are therefore able to identify the regions of very high curvature, which define the transition between the three characteristic regions of these functions. We assume that these maxima can be compared across different auctions. This hypothesis is commonly made in functional data analysis and known under the method of landmark registration \cite{ramsaysilverman2005functional}. This has been applied in \cite{wolfi2013interacting}, chapter 4, to day-ahead electricity data, in order to identify the effect of fuel price shocks on supply curves. However, this landmark registration was applied in a parametric form: the regions of high steepness were identified as any part of the curve above 90€/MWh. \\
 
 We can develop this method further and define intermediary points\footnote{As an example, we could extract those points corresponding to half the density value of the maximum density of the second order derivative. The four points selected (one for each monotone portion of the graph of second derivative estimates) would then correspond to those where the curvature of the function is halved. Together with the maximum, the additional point would contain information on the speed (radius of the curvature) at which the function changes.} that can again be compared to one another. This method allows to define as many points as needed, for computational reasons we limit ourselves to $K=5$ points.\footnote{The point selection algorithm took 2 weeks runtime to complete its task of selecting 5 points per function. Defining intermediary points would have taken disproportionately more time since many sorting and interpolation steps are necessary for each intermediate point.} \\
 
@@ -417,7 +417,7 @@ We also build an effective temperature that does not account for the nonlinearit
 
 \subparagraph{Roll\_Temp$H$}
 \label{rolltemp720}
-Variable capturing seasonal trends by using the rolling average temperature on effective temperature (Tempeff15) over the last $H$ hours, i.e. the last $H/24$ days. 
+Variable capturing seasonal trends by using the rolling average temperature on effective temperature (Tempeff15) over the last $H$ hours.
 
 \subparagraph{Roll$_{avgTH}$} Variable capturing seasonal trends by using the rolling average temperature on temperature Tempeff (no kink) over the last H hours, i.e. the last H/24 days.
 
@@ -486,9 +486,26 @@ In the next chapter we will therefore be able to focus on the econometric analys
 \label{implementingkernel}
 In order to estimate the first and second derivatives of the bid functions, we use a kernel density estimation. The estimator is essentially a smooth version of a histogram and counts the number of points in moving intervals (called a window) of predefined width along a dimension of the data. In our case, it counts bid points per price interval. In addition, the KDE assigns a weight to each observation based on the distance from the observation to the center of the window. The weighing function is called the kernel. \\
 
-The observed bid functions are each a multitude of price-quantity combinations. However, a kernel density estimation on the observed points of the bid function would be useless since the number of points per price interval does not vary much with the slope of the curve. \\
+The observed bid functions are each a multitude of price-quantity combinations. However, a naive kernel density estimation on the observed points of the bid function would be useless since the number of points per price interval does not vary much with the slope of the curve. \\
 
-We are able to transpose the observed bid function to one that suits our needs. This is done by adding linearly interpolated points at the unit cent level (corresponding to the minimum bidding unit). The kernel density estimation is then able to estimate the slope of the function by simply counting the points in an interval since the number of points per price interval of constant width varies proportionally with the slope of the function over that interval. 
+The supply and demand functions, although defined by discrete points, whose number changes from bid to bid, are continuous functions. That is that between to successive points, the function is considered to be linear. Strictly speaking, we can therefore define a constant value of the first derivative, and we cannot define values for the second derivative. In order to circumvent this problem we want to use a way to smooth our data, which defines functions that are not twice differentiable, a kernel density estimate. However, this estimate needs to measure the ``density of function'', so to speak, and not the density of points: if the function has two successive but distant points, a naive kernel would count no points in between them although our function is actually comprised of a segment of a given length in this region. What such an estimate should instead measure is the arc length of the function represented by the points we have, that is the summed length of all segments present in the window of the kernel.\footnote{Consider a continuously differentiable function $f$:
+\begin{align*}
+f \colon [a,b] \subset \mathbb{R} &\to \mathbb{R}\\
+x & \mapsto y=f(x)
+\end{align*}
+Then the following parametrization defines the points of the graph of this function: 
+\begin{align*}
+g \colon [a,b] \subset \mathbb{R} &\to \mathbb{R}\\
+t & \mapsto (t, f(t))
+\end{align*}
+The arc length of the graph of function $f$ is then:
+\begin{align*}
+L(g) &= \int_a^b\lVert g'(t)\rVert dt \\
+& =\int_a^b \sqrt{1+\left(f'(t)\right)^2} dt
+\end{align*}
+} \\
+
+This quantity can be computed exactly, however it does not play well with the regular tools for kernel density estimates in stata, so we resolve to approximate it by adding a large number of linearly interpolated points at the unit cent level (corresponding to the minimum bidding unit). The kernel density estimation is then able to estimate the absolute value of the slope of the function by simply counting the points in an interval since the number of points per price interval of constant width varies proportionally with the slope of the function over that interval. This effectively returns the estimates for the absolute values of the first and second derivatives of a smoothed version of our supply and demand functions. 
 
 \subsubsection{Hard choices in the code of the KDE}
 \label{hardcodechoices}

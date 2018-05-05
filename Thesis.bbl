@@ -1,5 +1,11 @@
 \begin{thebibliography}{}
 
+\bibitem[Anderson and Hu, 2012]{anderson2012asymmetric}
+Anderson, E.~J. and Hu, X. (2012).
+\newblock Asymmetric supply function equilibria with forward contracts.
+\newblock {\em Journal of optimization theory and applications},
+  152(1):198--224.
+
 \bibitem[Anderson and Xu, 2005]{anderson2005supply}
 Anderson, E.~J. and Xu, H. (2005).
 \newblock Supply function equilibrium in electricity spot markets with
@@ -18,6 +24,12 @@ Arima, K. (2012).
 \newblock Dispatch modelling: Quantifying long term benefits via high
   resolution analysis.
 \newblock Technical report, Wärtsilä Power Plants.
+
+\bibitem[Baldick et~al., 2004]{baldick2004theory}
+Baldick, R., Grant, R., and Kahn, E. (2004).
+\newblock Theory and application of linear supply function equilibrium in
+  electricity markets.
+\newblock {\em Journal of regulatory economics}, 25(2):143--167.
 
 \bibitem[Berg et~al., 1999]{berg1999bid}
 Berg, S.~A., Boukai, B., and Landsberger, M. (1999).
@@ -98,11 +110,23 @@ EPEX (2015).
 \newblock Type of orders on the epex day-ahead auction, france.
 \newblock \url{https://www.epexspot.com/en/product-info/auction}.
 
-\bibitem[EPEX, 2018]{epexnegP}
-EPEX (2018).
+\bibitem[EPEX, 2018a]{epexnegP}
+EPEX (2018a).
 \newblock Negative prices at epex.
 \newblock
   \url{https://www.epexspot.com/en/company-info/basics_of_the_power_market/negative_prices}.
+
+\bibitem[EPEX, 2018b]{EPEXRules}
+EPEX (2018b).
+\newblock Operational rules, paragraph 9.
+\newblock
+  \url{http://www.epexspot.com/en/extras/download-center/documentation}.
+
+\bibitem[Fabrizio et~al., 2007]{fabrizio2007markets}
+Fabrizio, K.~R., Rose, N.~L., and Wolfram, C.~D. (2007).
+\newblock Do markets reduce costs? assessing the impact of regulatory
+  restructuring on us electric generation efficiency.
+\newblock {\em American Economic Review}, 97(4):1250--1277.
 
 \bibitem[GE, 2015]{GE}
 GE (2015).
@@ -278,6 +302,17 @@ Salgado-Ugarte, I.~H., Shimizu, M., and Taniuchi, T. (1994).
   estimators.
 \newblock {\em Stata Technical Bulletin}, 3(16).
 
+\bibitem[Sannikov et~al., 2016]{sannikov2016dynamic}
+Sannikov, Y., Skrzypacz, A., et~al. (2016).
+\newblock Dynamic trading: Price inertia and front-running.
+\newblock {\em Preprint}.
+
+\bibitem[Schmidt, 1996]{schmidt1996costs}
+Schmidt, K.~M. (1996).
+\newblock The costs and benefits of privatization: an incomplete contracts
+  approach.
+\newblock {\em The Journal of Law, Economics, and Organization}, 12(1):1--24.
+
 \bibitem[Seierstad and Sydsaeter, 1987]{constraint}
 Seierstad, A. and Sydsaeter, K. (1987).
 \newblock {\em Optimal Control Theory with Economics Applications}.
@@ -320,6 +355,11 @@ White, H. (1980).
   direct test for heteroskedasticity.
 \newblock {\em Econometrica: Journal of the Econometric Society}, pages
   817--838.
+
+\bibitem[Willems et~al., 2009]{willems2009cournot}
+Willems, B., Rumiantseva, I., and Weigt, H. (2009).
+\newblock Cournot versus supply functions: What does the data tell us?
+\newblock {\em Energy Economics}, 31(1):38--47.
 
 \bibitem[Wolak, 2007]{wolak2007quantifying}
 Wolak, F.~A. (2007).
