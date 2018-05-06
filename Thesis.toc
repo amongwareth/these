@@ -20,8 +20,8 @@
 \contentsline {subsection}{\numberline {1.6.1}The setup}{55}{subsection.1.6.1}
 \contentsline {subsection}{\numberline {1.6.2}Results}{58}{subsection.1.6.2}
 \contentsline {subsubsection}{Dynamics in the case of the Monopoly and of the oligopoly}{58}{section*.19}
-\contentsline {subsection}{\numberline {1.6.3}Discussion}{60}{subsection.1.6.3}
-\contentsline {section}{\numberline {1.7}Limits}{62}{section.1.7}
+\contentsline {subsection}{\numberline {1.6.3}Discussion}{61}{subsection.1.6.3}
+\contentsline {section}{\numberline {1.7}Limits}{63}{section.1.7}
 \contentsline {section}{\numberline {1.8}Concluding Remarks}{64}{section.1.8}
 \contentsline {chapter}{Appendix}{67}{section*.21}
 \contentsline {section}{Appendix \numberline {1.A}Proof of equation \ref {markovtimedep}}{67}{section.a.1.A}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.7.5)  6 MAY 2018 17:48
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.7.5)  6 MAY 2018 21:50
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -313,40 +313,41 @@ Package xc Info: IMPORTING LABELS FROM ch1-5.aux on input line 11.
 Package xc Info: IMPORTING LABELS FROM ch2.aux on input line 11.
 Package xc Info: IMPORTING LABELS FROM ccl.aux on input line 11.
 Package xc Info: IMPORTING LABELS FROM code_annex.aux on input line 11.
-Package xr Info: IMPORTING LABELS FROM ch1.aux on input line 17.
-Package xr Info: IMPORTING LABELS FROM ch1-5.aux on input line 18.
-Package xr Info: IMPORTING LABELS FROM ch2.aux on input line 19.
+\c@theorem=\count120
+Package xr Info: IMPORTING LABELS FROM ch1.aux on input line 20.
+Package xr Info: IMPORTING LABELS FROM ch1-5.aux on input line 21.
+Package xr Info: IMPORTING LABELS FROM ch2.aux on input line 22.
 
 (./Réponse L Lamy.aux)
 \openout1 = `"Réponse L Lamy.aux"'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
 
 (/usr/local/texlive/2017/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count120
+\scratchcounter=\count121
 \scratchdimen=\dimen123
 \scratchbox=\box30
-\nofMPsegments=\count121
-\nofMParguments=\count122
+\nofMPsegments=\count122
+\nofMParguments=\count123
 \everyMPshowfont=\toks27
-\MPscratchCnt=\count123
+\MPscratchCnt=\count124
 \MPscratchDim=\dimen124
-\MPnumerator=\count124
-\makeMPintoPDFobject=\count125
+\MPnumerator=\count125
+\makeMPintoPDFobject=\count126
 \everyMPtoPDFconversion=\toks28
 ) (/usr/local/texlive/2017/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
@@ -365,13 +366,13 @@ G,.JBIG2,.JB2,.eps]
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-\c@lstlisting=\count126
+\c@lstlisting=\count127
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/ucs/ucsencs.def
 File: ucsencs.def 2011/01/21 Fixes to fontencodings LGR, T3
 )
 \AtBeginShipoutBox=\box31
-Package hyperref Info: Link coloring OFF on input line 21.
+Package hyperref Info: Link coloring OFF on input line 24.
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
@@ -379,11 +380,11 @@ Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 (/usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count127
+\c@section@level=\count128
 )
-LaTeX Info: Redefining \ref on input line 21.
-LaTeX Info: Redefining \pageref on input line 21.
-LaTeX Info: Redefining \nameref on input line 21.
+LaTeX Info: Redefining \ref on input line 24.
+LaTeX Info: Redefining \pageref on input line 24.
+LaTeX Info: Redefining \nameref on input line 24.
 
 (./Réponse L Lamy.out) (./Réponse L Lamy.out)
 \@outlinefile=\write3
@@ -393,37 +394,45 @@ LaTeX Info: Redefining \nameref on input line 21.
 (/usr/local/texlive/2017/texmf-dist/tex/latex/ucs/data/uni-0.def
 File: uni-0.def 2013/05/13 UCS: Unicode data U+0000..U+00FF
 )
-LaTeX Font Info:    Try loading font information for U+msa on input line 27.
+LaTeX Font Info:    Try loading font information for U+msa on input line 30.
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 27.
+LaTeX Font Info:    Try loading font information for U+msb on input line 30.
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 30.
-
-(/usr/local/texlive/2017/texmf-dist/tex/latex/base/omscmr.fd
-File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
-)
-LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 30.
-
-Underfull \hbox (badness 10000) in paragraph at lines 30--31
+Underfull \hbox (badness 10000) in paragraph at lines 31--32
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 32--33
+Underfull \hbox (badness 10000) in paragraph at lines 33--34
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 35--36
+
+ []
+
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 39.
+(/usr/local/texlive/2017/texmf-dist/tex/latex/base/omscmr.fd
+File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 39.
+
+Underfull \hbox (badness 10000) in paragraph at lines 39--40
 
  []
 
 ! Undefined control sequence.
 <argument> ... {}\edef \Hy@tempb {cite.\XC@prefix 
                                                   von1993spot\@extra@b@citeb...
-l.35 ... submit step functions: \cite{von1993spot}
+l.44 ... submit step functions: \cite{von1993spot}
                                                    argue that step functions...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -434,7 +443,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 <argument> ... {}\edef \Hy@tempb {cite.\XC@prefix 
                                                   willems2009cournot\@extra@...
-l.35 ...y different, see \cite{willems2009cournot}
+l.44 ...y different, see \cite{willems2009cournot}
                                                    and \cite{willems2009cour...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -445,7 +454,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 <argument> ... {}\edef \Hy@tempb {cite.\XC@prefix 
                                                   willems2009cournot\@extra@...
-l.35 ...2009cournot} and \cite{willems2009cournot}
+l.44 ...2009cournot} and \cite{willems2009cournot}
                                                   . These results question w...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -456,7 +465,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 <argument> ... {}\edef \Hy@tempb {cite.\XC@prefix 
                                                   baldick2004theory\@extra@b...
-l.35 ...d not only affine \cite{baldick2004theory}
+l.44 ...d not only affine \cite{baldick2004theory}
                                                   , or a framework that is n...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -465,33 +474,18 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-Overfull \hbox (4.16724pt too wide) in paragraph at lines 35--36
+Overfull \hbox (4.16724pt too wide) in paragraph at lines 44--45
 \OT1/cmr/m/n/10 step func-tions: [[]] ar-gue that step
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 38--39
-
+Overfull \hbox (9.4594pt too wide) in paragraph at lines 47--48
+[]\OT1/cmr/bx/n/10 Citer pa-pier th^^Seorique et em-pirique sur l'impact de la 
+lib^^Seralisation
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 40--41
-
- []
-
-! Undefined control sequence.
-<argument> ... {}\edef \Hy@tempb {cite.\XC@prefix 
-                                                  schmidt1996costs\@extra@b@...
-l.43 ...erred to consumers \cite{schmidt1996costs}
-                                                  .
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 46--47
+Underfull \hbox (badness 10000) in paragraph at lines 47--48
 
  []
 
@@ -500,8 +494,24 @@ Underfull \hbox (badness 10000) in paragraph at lines 46--47
 {/usr/local/texlive/2017/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
 ! Undefined control sequence.
 <argument> ... {}\edef \Hy@tempb {cite.\XC@prefix 
+                                                  schmidt1996costs\@extra@b@...
+l.52 ...erred to consumers \cite{schmidt1996costs}
+                                                  .
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 55--56
+
+ []
+
+! Undefined control sequence.
+<argument> ... {}\edef \Hy@tempb {cite.\XC@prefix 
                                                   fabrizio2007markets\@extra...
-l.49 ...term efficiency \cite{fabrizio2007markets}
+l.58 ...term efficiency \cite{fabrizio2007markets}
                                                   , it has been somewhat slo...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -512,7 +522,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 <argument> ... {}\edef \Hy@tempb {cite.\XC@prefix 
                                                   jamasb2005electricity\@ext...
-l.49 ...e early 2000s \cite{jamasb2005electricity}
+l.58 ...e early 2000s \cite{jamasb2005electricity}
                                                   , which mainly concentrate...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -523,7 +533,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 <argument> ... {}\edef \Hy@tempb {cite.\XC@prefix 
                                                   borenstein2002trouble\@ext...
-l.49 ... as shortages \cite{borenstein2002trouble}
+l.58 ... as shortages \cite{borenstein2002trouble}
                                                   . In Europe, the European ...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -532,19 +542,19 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-Overfull \hbox (25.44504pt too wide) in paragraph at lines 49--50
+Overfull \hbox (25.44504pt too wide) in paragraph at lines 58--59
 \OT1/cmr/m/n/10 to bring at least mod-est medium-term ef-fi-ciency [[]],
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 52--53
+Underfull \hbox (badness 10000) in paragraph at lines 61--62
 
  []
 
 ! Undefined control sequence.
 <argument> ... {}\edef \Hy@tempb {cite.\XC@prefix 
                                                   green1999electricity\@extr...
-l.57 ...near functions \cite{green1999electricity}
+l.66 ...near functions \cite{green1999electricity}
                                                    to study the interaction ...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -555,7 +565,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 <argument> ... {}\edef \Hy@tempb {cite.\XC@prefix 
                                                   anderson2012asymmetric\@ex...
-l.57 ...ric function \cite{anderson2012asymmetric}
+l.66 ...ric function \cite{anderson2012asymmetric}
                                                    for the same purpose. Gen...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -564,17 +574,12 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 57--58
+Underfull \hbox (badness 10000) in paragraph at lines 66--67
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 60--61
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 62--63
+Underfull \hbox (badness 10000) in paragraph at lines 69--70
 
  []
 
@@ -582,7 +587,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 62--63
 ! Undefined control sequence.
 <argument> ... {}\edef \Hy@tempb {cite.\XC@prefix 
                                                   EPEXRules\@extra@b@citeb }...
-l.65 \cite{EPEXRules}
+l.74 \cite{EPEXRules}
                      
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -591,14 +596,14 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 68--69
+Underfull \hbox (badness 10000) in paragraph at lines 77--78
 
  []
 
 ! Undefined control sequence.
 <argument> ... {}\edef \Hy@tempb {cite.\XC@prefix 
                                                   EPEXPCR\@extra@b@citeb }\i...
-l.72 ...ery much a work in progress \cite{EPEXPCR}
+l.82 ...ery much a work in progress \cite{EPEXPCR}
                                                   .\\
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -607,25 +612,19 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 72--73
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 80--81
-
- []
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 82--83
 
  []
 
 [3]
+Underfull \hbox (badness 10000) in paragraph at lines 90--91
+
+ []
+
 ! Undefined control sequence.
 <argument> ... {}\edef \Hy@tempb {cite.\XC@prefix 
                                                   KM\@extra@b@citeb }\ifx \H...
-l.84 ...ng the key ingredient brought by \cite{KM}
+l.95 ...ng the key ingredient brought by \cite{KM}
                                                   , i.e. the uncertainty, th...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -636,7 +635,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 <argument> ... {}\edef \Hy@tempb {cite.\XC@prefix 
                                                   sannikov2016dynamic\@extra...
-l.84 ...see for example \cite{sannikov2016dynamic}
+l.95 ...see for example \cite{sannikov2016dynamic}
                                                   . However, where the focus...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -644,22 +643,22 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 97.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 101.
 [4]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 97.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 101.
  (./Réponse L Lamy.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 97.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 97.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 101.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 101.
 Package rerunfilecheck Info: File `"Réponse L Lamy".out' has not changed.
 (rerunfilecheck)             Checksum: D705841C81668166E8BBA4C7A62298BE;92.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 97.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 101.
  ) 
 Here is how much of TeX's memory you used:
- 8794 strings out of 492995
- 125414 string characters out of 6132705
- 240506 words of memory out of 5000000
- 12211 multiletter control sequences out of 15000+600000
- 10888 words of font info for 43 fonts, out of 8000000 for 9000
+ 8814 strings out of 492995
+ 125615 string characters out of 6132705
+ 240885 words of memory out of 5000000
+ 12230 multiletter control sequences out of 15000+600000
+ 11196 words of font info for 44 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  28i,8n,32p,1492b,589s stack positions out of 5000i,500n,10000p,200000b,80000s
 pdfTeX warning (dest): name{cite.sannikov2016dynamic} has been referenced but
@@ -704,18 +703,19 @@ es not exist, replaced by a fixed one
 pdfTeX warning (dest): name{cite.von1993spot} has been referenced but does not 
 exist, replaced by a fixed one
 
-</usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><
-/usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></u
-sr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr
-/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/l
-ocal/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/loca
-l/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/t
-exlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texl
-ive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on "Réponse L Lamy.pdf" (4 pages, 97533 bytes).
+</usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><
+/usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></
+usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></us
+r/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/
+local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/lo
+cal/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local
+/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/te
+xlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texli
+ve/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
+Output written on "Réponse L Lamy.pdf" (4 pages, 113509 bytes).
 PDF statistics:
- 101 PDF objects out of 1000 (max. 8388607)
- 86 compressed objects within 1 object stream
+ 105 PDF objects out of 1000 (max. 8388607)
+ 89 compressed objects within 1 object stream
  22 named destinations out of 1000 (max. 500000)
  17 words of extra memory for PDF output out of 10000 (max. 10000000)
 

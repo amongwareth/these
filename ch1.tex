@@ -60,7 +60,7 @@ Here we will tackle the points raised in the last two paragraphs to some extent.
 %
 %The supply function equilibria litterature has been active since the seminal paper by Klemperer and Meyer in 1989 \cite{KM} (henceforth known as KM). In the wake of the electricity industry liberalisation, authors, notably Green and Newbery in 1992 \cite{Newgreen}, have used this framework to evaluate the expected level of competition and argue for certain regulatory paths. \\
 
-\subsection{The day-ahead markets}
+\subsection{The day-ahead markets}\label{dayaheadintro}
 
 On the electricity day ahead markets, producers are generally required to submit supply schedules once a day for all the auctions taking place during the next day. The APX (England) and the EPEX (Austria, France, Germany and Switzerland) markets allow hourly auctions \cite{apx,epex}, and EPEX allows for bids comprising up to $256$ price quantity combinations, effectively approximating smooth supply functions. Producers can submit different supply schedules for each individual auction, but every bid must be placed at the same time one day in advance for each block of 24 hours. Customers go through the same process and submit their demand schedules, then the market operator matches supply and demand for each auction. Producers thus have to submit schedules facing uncertain demand, this is the reason for the popularity of supply function equilibria approaches to the electricity market.\\   
 
@@ -161,7 +161,7 @@ Unfortunately, Brownian processes are unbounded, and cannot therefore be used to
 %
 %In the electricity market, demand shocks, denoted $\theta(t)$, are bounded: there are no days for which demand is null nor are there days for which demand tends towards infinity. The structure to be imposed on the dynamics of the shocks has to imply bounded shocks. \\
 
-\subsection{The stochastic process}
+\subsection{The stochastic process}\label{stoprocess}
 A regular candidate for richer stochastic dynamics than a simple brownian process is an Ornstein–Uhlenbeck process. Unfortunately for us, such a process has unbounded support. We are going to use a richer set of stochastic processes: It\={o} processes. \\
 
 The simplest It\={o} process one can consider that leads to bounded shocks is defined by the following stochastic differential equation (SDE) \cite{enveloppe}:
@@ -256,7 +256,7 @@ We want to note that all the stochastic calculus presented here is very standard
 \subsection{Discussion of the approximations}
 We want a tractable mathematical formulation of the dynamic problem faced by producers on the electricity market. To achieve this we seek to describe the discrete real life problem by an approximated continuous one. We first use two technological facts: fluctuations in production are costly and these costs decrease linearly in time for short timescales. We then rely heavily on first order expansions of the different terms we have to compute.  
 
-\subsection{The maximization program}
+\subsection{The maximization program}\label{maxprogram}
 Here, we consider that the dynamics of demand shocks are given by eq.(\ref{eqSDE}), and that therefore  $\sigma(\theta,t)^2=\sigma(\theta)^2=(1-\theta^2)$.\\
 
 We now introduce the different conditions that have to be satisfied by the various terms in this problem. First, on most electricity markets, schedules must be increasing, therefore here we take $S_i'(\cdot)\geq0$. Second, the aggregate demand is non negative as consumers do not have production facilities at their disposal: $D(\theta(t),p(\theta(t)))=\sum_iS_i(p(\theta(t)))\geq0$. Last, we consider that the shocks $\theta$ are ordered so that the demand is increasing in $\theta$, i.e. $\frac{\partial D}{\partial\theta}\geq0$, and that the price has to weakly increase with the shocks, i.e. $\dot{p}\geq0$, which garanties that the supply function increases with shocks. Our initial stochastic maximization program can thus be rewritten as a regular optimal control problem: 
@@ -301,7 +301,7 @@ The optimal schedule is parametrised by $\theta$ so that $S(p(\theta))$ is forme
 \begin{equation}
 S^*(p)=\frac{1}{4\gamma+1+\lambda}\left(p+\frac{4\gamma}{2+\lambda}b\right) \label{monopS}
 \end{equation}
-These epxressions depend explicitly on our parametrization of the shocks by paramters $a$ and $b$.
+These expressions depend explicitly on our parametrization of the shocks by the parameters $a$ and $b$.
 \end{proposition}
 
 \begin{proof}
@@ -423,8 +423,8 @@ The black curve in Fig.~\ref{fig:oligop} corresponds to the limit solution when 
 
 Secondly, in their paper, Klemperer and Meyer show that in the limit of a diverging upper bound for their shocks, their continuum of solutions converges towards a unique solution. Our unique solution in the limit of small ramping costs is the same as that ok KM in the limit of infinite support of demand shocks.\\
 
-\begin{proposition}
-When $\gamma\to0$, the solution remains unique and converges towards the linear schedule available in KM's set of solutions, that is the same schedule selected with KM's selection rule obtained when considering an infinite support for the shocks.
+\begin{proposition}\label{gammato0}
+When $\gamma\to0$, with $\gamma>0$, the solution remains unique and converges towards the linear schedule available in KM's set of solutions, that is the same schedule selected with KM's selection rule obtained when considering an infinite support for the shocks.
 \end{proposition}
 \begin{proof}
 It is straightforward to check that $K_1$ and $K_2$ have the same values as KM for $\gamma\to0$. \\
@@ -637,7 +637,7 @@ This result stems from the nature of the mathematical problem and not from the w
 
 The question then becomes one of the method to employ to obtain those results. There is one tool that might prove useful: numerical simulations. One can solve the differential equations involved here numerically, check ex-post whether they satisfy the other conditions, and in so doing provide boundaries around possible solutions. If the unicity is a characteristic that is indeed more general than our model here, there is 0 probability of finding such a solution by the method proposed, quite literally. However providing such bounds, although not demonstrating the existence of a solution, could provide circumstantial evidence towards such a result.\\
 
-More generally, I think numerical methods as a guide for theoretical results have not been exploited to their fullest.  
+More generally, I think numerical methods as a guide for theoretical results have not been exploited to the fullest of their potential.  
 
 \section{Concluding Remarks}\label{ccl}
 

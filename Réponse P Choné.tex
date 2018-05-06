@@ -10,6 +10,9 @@
 \usepackage{xcite}
 \externalcitedocument{Thesis}
 
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
 \newenvironment{proof}[1][Proof]{\begin{trivlist}
 \item[\hskip \labelsep {\bfseries #1}]}{\end{trivlist}}
 \newcommand{\qed}{$\blacksquare$}
@@ -25,13 +28,20 @@
 
 \maketitle
 
+Les chapitres sont mieux reliés les uns aux autres, avec des résumés plus exhaustifs de leur contribution, des paragraphes de liaison en début et en fin de chaque chapitre, et des références aux terminologies des autres chapitres dans le corps du texte sur les questions d'incertitude notamment.\\
+
+Le code utilisé dans le chapitre 3 est maintenant joint en annexe de la thèse.\\
+
+Conclusion ajoutée, et beaucoup de typos corrigées.\\
+
 \section{Chapitre 1}
 
 \begin{itemize}
 
-\item Dans le chapitre 1, isoler le résultat sur l'influence de l'incertitude sur la pente dans une proposition.\\
+\item \textbf{Dans le chapitre 1, isoler le résultat sur l'influence de l'incertitude sur la pente dans une proposition.}\\
 
-Ajout de la proposition \ref{oligoslopedyn_prop} et de sa démonstration en annexe \ref{oligoslopedyn_proof}:\\
+Ajout de la proposition \ref{oligoslopedyn_prop} et de sa démonstration en annexe \ref{oligoslopedyn_proof}:
+
 \begin{quote}
 The slope of the supply schedule is increasing with $\frac{d\omega}{dt}$ and the schedule is shifted to the right of the plane $(q,p)$ as $\frac{d\omega}{dt}$ increases. This is to say that the schedule rotates around a point in the positive quadrant of the plane when the uncertainty increases over time. 
 \begin{proof}
@@ -39,13 +49,13 @@ The proof is exactly the same as that detailed in annex \ref{oligopslope_proof},
 \end{proof}
 \end{quote}
 
-\item Plus de détails dans les démonstrations des propositions \ref{propoligo1} et \ref{oligodynp}.\\
+\item \textbf{Plus de détails dans les démonstrations des propositions \ref{propoligo1} et \ref{oligodynp}.}\\
 
 La démonstration principale est celle de la proposition \ref{propoligo1} en annexe \ref{annex1}, les autres ne différant que par les expressions des paramètres de l'équation. Sans recopier explicitement les théorèmes cités du livre de \cite{constraint} je ne vois pas trop comment mettre plus de détails. Je peux te transmettre le pdf du livre si tu le souhaites.
 
-\item Mettre plus en exergue le résultat sur la non ex-post optimalité.\\
+\item \textbf{Mettre plus en exergue le résultat sur la non ex-post optimalité.}\\
 
-La discussion en \ref{discussion_oligo} est maintenant bien plus détaillée:\\
+La discussion en \ref{discussion_oligo} est maintenant bien plus détaillée:
 
 \begin{quote}
 Most of the tacit collusion concern that is present in the literature is based on the existence of a continuum of solutions \cite{bolle1992supply}. This continuum is thought as being conducive of tacit collusion because the electricity market entails repeated interactions between producers. In this case, producers can be feared to be able to learn to pick the most profitable Nash equilibria. Although a Nash equilibrium is not usually considered conducive to collusion, as each player's strategy is the best response to the other's and there is no profitable deviation, a multiplicity of Nash equilibrium lets open the possibility to pick and choose the most profitable one out of the available options, as compared to the one leading to the strongest competition.\\
@@ -55,18 +65,27 @@ Our result implies this pathway for tacit collusion is not available anymore. Wi
 Our solutions are also not ex-post optimal contrary to the traditional results. As our solutions depend explicitly on the structure of the uncertainty around demand shocks, any additional information shifting the expected distribution of shocks would imply a different bid. Ex-post optimality is a very strong result, and, one could argue, more of a quirck from the usual models than its abscence in ours.
 \end{quote}
 
+\item \textbf{Ajout de référence bibliographique pour la formule d'Euler Maruyama.}\\
+
+Ajout dans la partie \ref{sec_ramping_costs} :
+
+\begin{quote}
+We are therefore going to first consider the discrete case of a random walk of timestep $\Delta t$ which converges towards the It\={o} process \ref{sdegen}, using the Euler-Maruyama approximation \cite{kloeden2011numerical}, a generalization of the Euler method to stochastic differential equations. \\
+
+This formula can be found on page 305. This book focuses on numerical approximations of continuous stochastic processes, which is the reverse of what we are doing here, but it is only in such numeric-centric books that this scheme is introduced. For a more general approach to stochastic differentiel equations, see \cite{oksendal2003stochastic}.
+\end{quote}
 
 \end{itemize}
 
 \section{Chapitre 2}
 
 \begin{itemize}
-\item Définir l'intégrale curviligne utilisée pour la construction des points de référence permettant de comparer les courbes les unes aux autres dans le chaptire 2.\\
+\item \textbf{Définir l'intégrale curviligne utilisée pour la construction des points de référence permettant de comparer les courbes les unes aux autres dans le chaptire 2.}\\
 
-Ajout suivant en appendice 2.A.1:\\
+Ajout suivant en appendice 2.A.1:
 
 \begin{quote}
-The supply and demand functions, although defined by discrete points, whose number changes from bid to bid, are continuous functions. That is that between to successive points, the function is considered to be linear. Strictly speaking, we can therefore define a constant value of the first derivative, and we cannot define values for the second derivative. In order to circumvent this problem we want to smooth our data, which defines functions that are not twice differentiable, by using a kernel density estimate. However, this estimate needs to measure the ``density of function'', so to speak, and not the density of points: if the function has two successive but distant points, a naive kernel would count no points in between them although our function is actually comprised of a segment of a given length in this region. What such an estimate should instead measure is the arc length of the function represented by the points we have, that is the summed length of all segments present in the window of the kernel.
+The supply and demand functions, although defined by discrete points, whose number changes from bid to bid, are continuous functions. That is that between to successive points, the function is considered to be linear. Strictly speaking, we can therefore define a constant value of the first derivative, and we cannot define values for the second derivative. In order to circumvent this problem we want to smooth our data, which defines functions that are not twice differentiable, by using a kernel density estimate. However, this estimate needs to measure the ``density of function'', so to speak, and not the density of points: if the function has two successive but distant points, a naive kernel would count no points in between them although our function is actually comprised of a segment of a given length in this region. What such an estimate should instead measure is the arc length of the function represented by the points we have, that is the summed length of all segments present in the window of the kernel.\\
 
 Consider a continuously differentiable function $f$:
 \begin{align*}
@@ -91,21 +110,15 @@ L(g) &= \int_a^b\lVert g'(t)\rVert dt \\
 
 \begin{itemize}
 
-\item Relier les PLU définis dans le chapitre 3 avec les termes du chapitre 1.\\
+\item \textbf{Relier les PLU définis dans le chapitre 3 avec les termes du chapitre 1.}\\
 
-Modification suivante dans le paragraphe précédant l'équation 3.4.1:\\
+Modification suivante dans le paragraphe précédant l'équation 3.4.1:
+
 \begin{quote}
 Defining $S'_{i,k}$ the slope of the supply function of auction $i$ at point $k$ in the quantity (X-axis) - price (Y-axis) dimension, $\boldsymbol{X^S}$ being the vector of exogenous variables, PLU$^D_{i,k}$ being the proxy for the level of demand uncertainty, PLU$^R_i$ being the proxy for the level of uncertainty from renewables, what we called the width of our possible shocks in the first chapter, $\alpha$ being the regression constant and $\epsilon$ being the error term, we estimate the following:
 \end{quote}
 
 \end{itemize}
 
-
-%\begin{figure}
-%    \centering
-%    \includegraphics[width=3.0in]{myfigure}
-%    \caption{Simulation Results}
-%    \label{simulationfigure}
-%\end{figure}
 
 \end{document}
