@@ -1,0 +1,97 @@
+\documentclass{article}
+\usepackage{graphicx}
+\usepackage{listings}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage[utf8x]{inputenc}
+\usepackage[english]{babel}
+\usepackage{hyperref}
+\usepackage{xr}
+\usepackage{xcite}
+\externalcitedocument{Thesis}
+
+\newenvironment{proof}[1][Proof]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}]}{\end{trivlist}}
+\newcommand{\qed}{$\blacksquare$}
+
+\externaldocument{ch1}
+\externaldocument{ch1-5}
+\externaldocument{ch2}
+
+\begin{document}
+
+\title{Réponse aux remarques de Laurent Lamy}
+\author{Alexis Bergès}
+
+\maketitle
+
+\section{Introduction}
+\begin{itemize}
+\item Évoquer la litterature empirique montrant qu'on est parfois loin des SFE.\\
+
+Ajout dans l'introduction, partie ``The markets for electricity''\\
+
+\begin{quote}
+This use of SFE sparks some debate as to whether a smooth function approximation can or not capture the correct effects in markets which are largely at the time asking bidders to submit step functions: \cite{von1993spot} argue that step functions of finite length are different to continuous functions.\footnote{This debate is largely obsolete now that most of the market rules imply bids that are linear by parts and not step functions anymore.} In addition, there is empirical evidence that strategies predicted by SFE and actual observed strategies are significantly different, see \cite{willems2009cournot} and \cite{willems2009cournot}. These results question whether the SFE is the correct approach that only needs to be perfected, for example by using functions that are affine by parts and not only affine \cite{baldick2004theory}, or a framework that is not adapted to describing these markets.
+\end{quote}
+
+\item Citer papier théorique et empirique sur l'impact de la libéralisation dans les marchés de l'electricité dans l'introduction.\\
+
+Ajout simple d'une citation dans le troisième paragraphe de la partie ``Regulatory evolution'' de l'introduction:\\
+
+\begin{quote}
+The overall argument for liberalization is that private competition is considered a safer road towards efficiency than regulation of a monopoly. In a situation of perfect competition, actors would be strongly incentivized for efficiency gains, and these gains would be transferred to consumers \cite{schmidt1996costs}.
+\end{quote}
+
+Modification du dernier paragraphe de la partie ``Regulatory evolution'' de l'introduction:\\
+
+\begin{quote}
+Although this liberalization movement is empirically considered to bring at least modest medium-term efficiency \cite{fabrizio2007markets}, it has been somewhat slowed down after the California crisis in the early 2000s \cite{jamasb2005electricity}, which mainly concentrated on wholesale electricity markets. Because of very little price responsiveness of demand as well as interactions with forward contracts, there was very high fluctuations in price as well as shortages \cite{borenstein2002trouble}. In Europe, the European Commission has pushed with success for the continuation of the program of liberalization and integration, and wholesale markets for electricity are now quite ubiquitous, without further instances of failure as in California. 
+\end{quote}
+
+\item Évoquer les marchés forward.\\
+
+Ajout d'un nouveau paragraphe en avant dernière position dans la partie ``The markets for electricity''
+
+\begin{quote}
+We also want to note that day-ahead markets do not exist in a vacuum, and in fact electricity can be traded through forward contracts, on the day-ahead market, as well as on the intraday markets. Capacity markets on which guaranteed online capacity is traded for also exist. All these markets interact with one another, and part of the litterature focuses on modelling these interactions. Generally the SFE considered are simplified to be able to perform such analysis, for example to linear functions \cite{green1999electricity} to study the interaction with forward markets, or to linear asymmetric function \cite{anderson2012asymmetric} for the same purpose. Generally speaking, these papers focus on the interaction between day-ahead markets and forward contracts because the SFE framework does not allow to differentiate between day-ahead and intraday markets. \\
+\end{quote}
+
+\item Faire attention au fait qu'une unité de génération n'est pas forcément payée pareil que la voisine. \\
+
+J'ai creusé, je ne trouve pas de référence faisant allusion au fait que sur le marché day-ahead il y a autre chose qu'un paiement au même tarif pour tout le monde. Il y a des sous mécanismes, le marché de capacité, le marché intraday etc, mais sur le day-ahead les règles du marché officielles sont claires. Du coup dans le doute j'ai retiré cette allusion dans l'intro, mais je la laisse dans le chapitre 3, en \ref{epexrules}, en ajoutant la citation verbatim des règles de marché EPEX. \\
+
+\begin{quote}The Auction takes place daily, after the Order Book has closed. The price corresponds to the Matching of Exchange Members' aggregate supply and demand curves of both Single Orders and Block Orders for each Contract. The price determined by the algorithm at the time of Auction is the price at which all Trades will be executed. For price determination purposes, the Exchange Member's interest is assumed to be linear between two price/quantity combinations. The price determination algorithm aims at optimising the total welfare, i.e. the seller surplus, the buyer surplus and the congestion rent including tariff rates. The algorithm determines the execution prices, the matched volumes and the net positions of each coupled market if applicable. It also returns the selection of blocks that will be executed and other complex Orders allowed in other Coupled Markets1 if applicable. The presence of all-or-none Block Orders in the Order Book makes necessary the use of a specific search algorithm, in order to determine a market clearing price.
+\cite{EPEXRules}
+\end{quote} 
+
+\item Évoquer les règles qui commencent à être discutées de tenir explicitement compte des ramping costs dans les règles de marché.\\
+
+Ajout suivant dans la partie ``The case for ramping costs'':
+\begin{quote}
+This issue of ramping costs is at the heart of the choice of "quick" gas power plants to match sudden peaks in demand, where nuclear plants are more generally used for low frequency adjustments. Therefore these ramping costs are important technically on the electricity market. They are important enough for the project of European Power Exchanges named ``Price Coupling of Regions'' (PCR), which aims to develop a single price coupling solution to be used to calculate electricity prices across Europe, to consider the possibility to use load gradient orders, that is orders that condition their availability on the change in production from one hour to the next. However, at the moment of writing, PCR is still very much a work in progress \cite{EPEXPCR}.\\
+\end{quote}
+\end{itemize}
+
+\section{Chapitre 1}
+
+\begin{itemize}
+
+\item Évoquer la litterature sur les jeux en temps continu, Sannikov notamment.\\
+
+Détail dans le 6ème paragraphe de l'introduction du chapitre 1:\\
+\begin{quote}
+We choose to model the discrete time bidding as a continuous time process.  This allows us to bring to the litterature about supply function equilibria powerful mathematical tools mostly used in option pricing, that is stochastic dynamics: we want to model ramping costs, i.e. costs associated to the variation in production, while retaining the key ingredient brought by \cite{KM}, i.e. the uncertainty, through the use of brownians, and more precisely, It\={o} processes. These tools are the same introduced in the recent litterature on dynamic games, see for example \cite{sannikov2016dynamic}. However, where the focus of this litterature is to revisit classical results of repeated games in the context of a time-continuous framework as well as to describe real world cases more appropriately captured by continuous time models (for example trading), our focus is to be able to capture the effects of ramping costs on the electricity day-ahead market, a market which is discrete in nature.
+\end{quote}
+
+\end{itemize}
+
+
+%\begin{figure}
+%    \centering
+%    \includegraphics[width=3.0in]{myfigure}
+%    \caption{Simulation Results}
+%    \label{simulationfigure}
+%\end{figure}
+
+\end{document}

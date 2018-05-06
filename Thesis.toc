@@ -22,15 +22,16 @@
 \contentsline {subsubsection}{Dynamics in the case of the Monopoly and of the oligopoly}{58}{section*.19}
 \contentsline {subsection}{\numberline {1.6.3}Discussion}{60}{subsection.1.6.3}
 \contentsline {section}{\numberline {1.7}Limits}{62}{section.1.7}
-\contentsline {section}{\numberline {1.8}Concluding Remarks}{63}{section.1.8}
+\contentsline {section}{\numberline {1.8}Concluding Remarks}{64}{section.1.8}
 \contentsline {chapter}{Appendix}{67}{section*.21}
 \contentsline {section}{Appendix \numberline {1.A}Proof of equation \ref {markovtimedep}}{67}{section.a.1.A}
 \contentsline {section}{Appendix \numberline {1.B}Proof of Proposition \ref {monopequilibria} }{68}{section.a.1.B}
 \contentsline {section}{Appendix \numberline {1.C}Proof of Proposition \ref {monopequilibriaKM} }{70}{section.a.1.C}
 \contentsline {section}{Appendix \numberline {1.D}Proof of Proposition \ref {propoligo1} }{70}{section.a.1.D}
 \contentsline {section}{Appendix \numberline {1.E}Proof of proposition \ref {oligoslope_prop}}{73}{section.a.1.E}
-\contentsline {section}{Appendix \numberline {1.F}Proof of proposition \ref {monopropdyn}}{74}{section.a.1.F}
-\contentsline {section}{Appendix \numberline {1.G}Proof of proposition \ref {oligodynp}}{75}{section.a.1.G}
+\contentsline {section}{Appendix \numberline {1.F}Proof of proposition \ref {oligoslopedyn_prop}}{74}{section.a.1.F}
+\contentsline {section}{Appendix \numberline {1.G}Proof of proposition \ref {monopropdyn}}{75}{section.a.1.G}
+\contentsline {section}{Appendix \numberline {1.H}Proof of proposition \ref {oligodynp}}{76}{section.a.1.H}
 \contentsline {chapter}{\numberline {2}Methodological tools for non parametric functional data evaluation and weather data usage}{77}{chapter.2}
 \contentsline {section}{\numberline {2.1}Introduction}{79}{section.2.1}
 \contentsline {section}{\numberline {2.2}Point selection on functional data: a non parametric approach}{79}{section.2.2}

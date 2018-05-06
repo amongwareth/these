@@ -456,7 +456,7 @@ As in the monopoly case, we have the property that there exists situations in wh
 
 To sum up, we have here a model whose solutions depend on the distribution of shocks, therefore we are able to capture the interday variation of bids by assuming that the distribution of shocks varies from day to day. In this case, there exists only one symmetric equilibria each day, function of the distribution of shocks.\\
 
-\subsection{Discussion}
+\subsection{Discussion}\label{discussion_oligo}
 
 This result sheds some light on one of the questions that the electricity market literature focuses on. \\
 
@@ -566,6 +566,7 @@ $\forall p(t)\in[p(\hat{\theta}(t) - \omega(t),t), p(\hat{\theta}(t) + \omega(t)
 See Annex \ref{monopdyn_proof}.  \qed
 \end{proof}
 
+
 Note that if $\frac{d\omega}{dt}=0$ equations \ref{monopdynp} and \ref{monopdynS} are equal to equations \ref{monopsol} and \ref{monopS} respectively as expected. Note also that the solution is exactly the same as in the static monopoly case in which one replaces the ramping cost parameter $\gamma$ by $\gamma\left(1+\frac{\tau}{\omega}\frac{d\omega}{dt}(t)\right)$. This surprising fact, that our dynamic optimal strategy is simply a naive version of the static one with a specified dynamic stochastic process, can be understood as a consequence of the assumptions we have had to make in section \ref{sec_ramping_costs}. \\
 
 That is because in section \ref{sec_ramping_costs}, in Annex. \ref{stochasticdyn_proof} in which we develop the argument in more detail, and in section \ref{setupdyn} we end up in effect making a scale separation argument: the ramping costs are completely driven by the very short term fluctuations, whereas the evolution of these ramping costs is driven by the longer timescale at which our information about the demand shocks evolves over time. This means that we make a version of what physicists call a quasi-static argument: because of this time-scale separation between what drives our ramping cost and our information about the shocks, we can effectively reason in two steps, first solving for the static situation, and then injecting naively the slow changes in the static results with confidence as to the validity of this approximation as long as the assumption about this separation of scale is verified.\\
@@ -590,6 +591,13 @@ and the supply schedule has the following expression:
 \end{proposition}
 \begin{proof}
  See Annex \ref{oligodyn_proof}.\qed 
+\end{proof}
+
+\begin{proposition}\label{oligoslopedyn_prop}
+The slope of the supply schedule is increasing with $\frac{d\omega}{dt}$ and the schedule is shifted to the right of the plane $(q,p)$ as $\frac{d\omega}{dt}$ increases. This is to say that the schedule rotates around a point in the positive quadrant of the plane when the uncertainty increases over time. 
+\end{proposition}
+\begin{proof}
+See Annex \ref{oligoslopedyn_proof}. \qed
 \end{proof}
 
 \subsection{Discussion}
@@ -840,6 +848,9 @@ We can perform the same type of computation for the ratio $\frac{K_2}{K_1}$, usi
 \end{flalign}
 \end{small}
 This implies that the schedule is shifted to the right in the plane $(q,p)$ when ramping costs increase.  
+
+\section{Proof of proposition \ref{oligoslopedyn_prop}}\label{oligoslopedyn_proof}
+The proof is exactly the same as that detailed in annex \ref{oligopslope_proof}, by replacing $\gamma$ by $\gamma(1+\frac{\tau}{\omega}\frac{d\omega}{dt})$ and noting that under our assumptions, $1+\frac{\tau}{\omega}\frac{d\omega}{dt}>0$. 
 
 \section{Proof of proposition \ref{monopropdyn}}\label{monopdyn_proof}
 
