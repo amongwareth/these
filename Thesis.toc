@@ -1,117 +1,117 @@
 \select@language {english}
 \contentsline {chapter}{Remerciements---Acknowledgements}{i}{chapter*.1}
-\contentsline {chapter}{General introduction}{1}{chapter*.3}
-\contentsline {chapter}{Summary}{17}{chapter*.12}
-\contentsline {chapter}{\numberline {1}Dynamics of the Electricity Day-Ahead Market : Supply Function Equilibria and Ramping Costs}{23}{chapter.1}
-\contentsline {section}{\numberline {1.1}Introduction}{25}{section.1.1}
-\contentsline {subsection}{\numberline {1.1.1}Litterature review}{27}{subsection.1.1.1}
-\contentsline {subsection}{\numberline {1.1.2}The day-ahead markets}{30}{subsection.1.1.2}
-\contentsline {section}{\numberline {1.2}Heuristic Description of the Model}{32}{section.1.2}
-\contentsline {section}{\numberline {1.3}Stochastic Dynamics}{36}{section.1.3}
-\contentsline {subsection}{\numberline {1.3.1}The stochastic process}{37}{subsection.1.3.1}
-\contentsline {subsection}{\numberline {1.3.2}The ramping costs}{38}{subsection.1.3.2}
-\contentsline {subsection}{\numberline {1.3.3}Discussion of the approximations}{42}{subsection.1.3.3}
-\contentsline {subsection}{\numberline {1.3.4}The maximization program}{42}{subsection.1.3.4}
-\contentsline {section}{\numberline {1.4}The Monopoly}{43}{section.1.4}
-\contentsline {subsection}{\numberline {1.4.1}Results}{44}{subsection.1.4.1}
-\contentsline {section}{\numberline {1.5}The Symmetric Oligopoly}{47}{section.1.5}
-\contentsline {subsection}{\numberline {1.5.1}Discussion}{51}{subsection.1.5.1}
-\contentsline {section}{\numberline {1.6}Dynamic behavior of the bids}{53}{section.1.6}
-\contentsline {subsection}{\numberline {1.6.1}The setup}{55}{subsection.1.6.1}
-\contentsline {subsection}{\numberline {1.6.2}Results}{58}{subsection.1.6.2}
-\contentsline {subsubsection}{Dynamics in the case of the Monopoly and of the oligopoly}{58}{section*.19}
-\contentsline {subsection}{\numberline {1.6.3}Discussion}{61}{subsection.1.6.3}
-\contentsline {section}{\numberline {1.7}Limits}{63}{section.1.7}
-\contentsline {section}{\numberline {1.8}Concluding Remarks}{64}{section.1.8}
-\contentsline {chapter}{Appendix}{67}{section*.21}
-\contentsline {section}{Appendix \numberline {1.A}Proof of equation \ref {markovtimedep}}{67}{section.a.1.A}
-\contentsline {section}{Appendix \numberline {1.B}Proof of Proposition \ref {monopequilibria} }{68}{section.a.1.B}
-\contentsline {section}{Appendix \numberline {1.C}Proof of Proposition \ref {monopequilibriaKM} }{70}{section.a.1.C}
-\contentsline {section}{Appendix \numberline {1.D}Proof of Proposition \ref {propoligo1} }{70}{section.a.1.D}
-\contentsline {section}{Appendix \numberline {1.E}Proof of proposition \ref {oligoslope_prop}}{73}{section.a.1.E}
-\contentsline {section}{Appendix \numberline {1.F}Proof of proposition \ref {oligoslopedyn_prop}}{74}{section.a.1.F}
-\contentsline {section}{Appendix \numberline {1.G}Proof of proposition \ref {monopropdyn}}{75}{section.a.1.G}
-\contentsline {section}{Appendix \numberline {1.H}Proof of proposition \ref {oligodynp}}{76}{section.a.1.H}
-\contentsline {chapter}{\numberline {2}Methodological tools for non parametric functional data evaluation and weather data usage}{77}{chapter.2}
-\contentsline {section}{\numberline {2.1}Introduction}{79}{section.2.1}
-\contentsline {section}{\numberline {2.2}Point selection on functional data: a non parametric approach}{79}{section.2.2}
-\contentsline {subsection}{\numberline {2.2.1}Information about our data}{82}{subsection.2.2.1}
-\contentsline {subsection}{\numberline {2.2.2}Point selection algorithm}{83}{subsection.2.2.2}
-\contentsline {subsubsection}{Non-parametric technique to compare bid functions}{84}{section*.23}
-\contentsline {subsection}{\numberline {2.2.3}Results of the point selection methodology}{86}{subsection.2.2.3}
-\contentsline {subsubsection}{Precision of point selection}{86}{section*.26}
-\contentsline {subsection}{\numberline {2.2.4}Observations of bidding frictions}{88}{subsection.2.2.4}
-\contentsline {subsubsection}{Value of selected points (determining $K$) }{90}{section*.30}
-\contentsline {subsection}{\numberline {2.2.5}Discussion}{93}{subsection.2.2.5}
-\contentsline {section}{\numberline {2.3}Methodology to aggregate geographically dispersed information on a national level}{94}{section.2.3}
-\contentsline {subsection}{\numberline {2.3.1}Dealing with meteorological data}{95}{subsection.2.3.1}
-\contentsline {subsubsection}{Interpolation methodology on weather observations}{95}{section*.34}
-\contentsline {subsubsection}{Image transformation to recover weather forecasts}{97}{section*.37}
-\contentsline {subparagraph}{First: image cleaning}{97}{section*.39}
-\contentsline {subparagraph}{Second: removal of redundant information}{97}{section*.40}
-\contentsline {subparagraph}{Third: surface fitting}{98}{section*.41}
-\contentsline {subsubsection}{Autocorrelation lengthscale}{98}{section*.43}
-\contentsline {subsection}{\numberline {2.3.2}Aggregation of local information}{101}{subsection.2.3.2}
-\contentsline {subparagraph}{Wind1DA}{101}{section*.45}
-\contentsline {subparagraph}{Tempeff15}{104}{section*.48}
-\contentsline {subparagraph}{Solar}{105}{section*.50}
-\contentsline {subsubsection}{Other controls}{107}{section*.52}
-\contentsline {subparagraph}{Tempeff}{107}{section*.53}
-\contentsline {subparagraph}{Roll\_Temp$H$}{107}{section*.54}
-\contentsline {subparagraph}{Roll$_{avgTH}$}{107}{section*.55}
-\contentsline {subparagraph}{suncycle}{107}{section*.56}
-\contentsline {subparagraph}{deltasun}{107}{section*.57}
-\contentsline {subparagraph}{SolarRest}{107}{section*.58}
-\contentsline {subparagraph}{RteBlackBox}{108}{section*.60}
-\contentsline {section}{\numberline {2.4}Conclusion}{110}{section.2.4}
-\contentsline {chapter}{Appendix}{111}{section*.62}
-\contentsline {section}{Appendix \numberline {2.A}Technical details}{111}{section.b.2.A}
-\contentsline {subsection}{\numberline {2.A.1}Using the kernel density estimation (KDE) in our setting}{111}{subsection.b.2.A.1}
-\contentsline {subsubsection}{Hard choices in the code of the KDE}{112}{section*.63}
-\contentsline {paragraph}{Kernel choice:}{112}{section*.64}
-\contentsline {paragraph}{Bandwidth choice:}{113}{section*.65}
-\contentsline {subsection}{\numberline {2.A.2}Outlier detection and removal}{116}{subsection.b.2.A.2}
-\contentsline {chapter}{\numberline {3}Investigating the Impact of Uncertainty on Firms with Dynamic Costs: A Case Study of the French Electricity Market}{119}{chapter.3}
-\contentsline {section}{\numberline {3.1}Introduction}{121}{section.3.1}
-\contentsline {subsection}{\numberline {3.1.1}Literature review and contribution}{124}{subsection.3.1.1}
-\contentsline {subsection}{\numberline {3.1.2}Theoretical prediction}{127}{subsection.3.1.2}
-\contentsline {section}{\numberline {3.2}The EPEX spot market}{130}{section.3.2}
-\contentsline {subsection}{\numberline {3.2.1}General background}{130}{subsection.3.2.1}
-\contentsline {subsection}{\numberline {3.2.2}Auction rules and mechanism}{132}{subsection.3.2.2}
-\contentsline {section}{\numberline {3.3}Our data explained}{134}{section.3.3}
-\contentsline {section}{\numberline {3.4}Methodology}{137}{section.3.4}
-\contentsline {subsection}{\numberline {3.4.1}Regression methodology}{140}{subsection.3.4.1}
-\contentsline {subsubsection}{Identification}{140}{section*.76}
-\contentsline {subsubsection}{Left-hand-side variables}{140}{section*.77}
-\contentsline {subsubsection}{Right-hand-side variables}{141}{section*.78}
-\contentsline {subparagraph}{Generating proxies for uncertainty from market demand (PLU$^D$)}{141}{section*.79}
-\contentsline {subparagraph}{In the first step,}{142}{section*.80}
-\contentsline {subparagraph}{In the second step,}{143}{section*.81}
-\contentsline {subparagraph}{In the third step,}{143}{section*.82}
-\contentsline {subparagraph}{Generating proxy for uncertainty from renewable energies (PLU$^R$)}{144}{section*.83}
-\contentsline {subparagraph}{Controls}{147}{section*.84}
-\contentsline {subsubsection}{Extensions and robustness checks}{152}{section*.87}
-\contentsline {subsubsection}{Bootstrapping standard errors}{152}{section*.88}
-\contentsline {subparagraph}{Kernel based uncertainty forecasts (PLU$^D$)}{153}{section*.89}
-\contentsline {section}{\numberline {3.5}Results }{155}{section.3.5}
-\contentsline {subsection}{\numberline {3.5.1}Demand estimation}{155}{subsection.3.5.1}
-\contentsline {subsection}{\numberline {3.5.2}Final regression}{161}{subsection.3.5.2}
-\contentsline {paragraph}{For the point of inflection ($k=3$),}{162}{section*.92}
-\contentsline {paragraph}{For the other points ($k=1,2,4,5$),}{164}{section*.95}
-\contentsline {section}{\numberline {3.6}Discussion }{165}{section.3.6}
-\contentsline {subsection}{\numberline {3.6.1}Findings}{166}{subsection.3.6.1}
-\contentsline {subsection}{\numberline {3.6.2}Internal and external validity}{168}{subsection.3.6.2}
-\contentsline {subsection}{\numberline {3.6.3}Endogeneity}{170}{subsection.3.6.3}
-\contentsline {section}{\numberline {3.7}Conclusion}{172}{section.3.7}
-\contentsline {chapter}{Appendix}{173}{section*.98}
-\contentsline {section}{Appendix \numberline {3.A}Summary statistics of selected points}{173}{section.c.3.A}
-\contentsline {section}{Appendix \numberline {3.B}Computational details and descriptives}{174}{section.c.3.B}
-\contentsline {subsection}{\numberline {3.B.1}Hard choices in the PLU computation}{174}{subsection.c.3.B.1}
-\contentsline {subsection}{\numberline {3.B.2}Descriptive Statistics}{175}{subsection.c.3.B.2}
-\contentsline {subsubsection}{On realised market equilibria}{175}{section*.104}
-\contentsline {subsubsection}{On player bid functions}{176}{section*.107}
-\contentsline {subsubsection}{On exogenous factors}{177}{section*.110}
-\contentsline {chapter}{General conclusion}{183}{chapter*.112}
-\contentsline {chapter}{References}{191}{chapter*.116}
-\contentsline {chapter}{Code annex}{197}{chapter*.117}
-\contentsline {chapter}{List of Figures}{257}{section*.120}
+\contentsline {chapter}{Summary}{v}{chapter*.2}
+\contentsline {chapter}{General introduction}{1}{chapter*.7}
+\contentsline {chapter}{\numberline {1}Dynamics of the Electricity Day-Ahead Market : Supply Function Equilibria and Ramping Costs}{17}{chapter.1}
+\contentsline {section}{\numberline {1.1}Introduction}{19}{section.1.1}
+\contentsline {subsection}{\numberline {1.1.1}Litterature review}{21}{subsection.1.1.1}
+\contentsline {subsection}{\numberline {1.1.2}The day-ahead markets}{24}{subsection.1.1.2}
+\contentsline {section}{\numberline {1.2}Heuristic Description of the Model}{26}{section.1.2}
+\contentsline {section}{\numberline {1.3}Stochastic Dynamics}{30}{section.1.3}
+\contentsline {subsection}{\numberline {1.3.1}The stochastic process}{31}{subsection.1.3.1}
+\contentsline {subsection}{\numberline {1.3.2}The ramping costs}{32}{subsection.1.3.2}
+\contentsline {subsection}{\numberline {1.3.3}Discussion of the approximations}{36}{subsection.1.3.3}
+\contentsline {subsection}{\numberline {1.3.4}The maximization program}{36}{subsection.1.3.4}
+\contentsline {section}{\numberline {1.4}The Monopoly}{37}{section.1.4}
+\contentsline {subsection}{\numberline {1.4.1}Results}{38}{subsection.1.4.1}
+\contentsline {section}{\numberline {1.5}The Symmetric Oligopoly}{41}{section.1.5}
+\contentsline {subsection}{\numberline {1.5.1}Discussion}{45}{subsection.1.5.1}
+\contentsline {section}{\numberline {1.6}Dynamic behavior of the bids}{47}{section.1.6}
+\contentsline {subsection}{\numberline {1.6.1}The setup}{49}{subsection.1.6.1}
+\contentsline {subsection}{\numberline {1.6.2}Results}{52}{subsection.1.6.2}
+\contentsline {subsubsection}{Dynamics in the case of the Monopoly and of the oligopoly}{52}{section*.19}
+\contentsline {subsection}{\numberline {1.6.3}Discussion}{55}{subsection.1.6.3}
+\contentsline {section}{\numberline {1.7}Limits}{57}{section.1.7}
+\contentsline {section}{\numberline {1.8}Concluding Remarks}{58}{section.1.8}
+\contentsline {chapter}{Appendix}{61}{section*.21}
+\contentsline {section}{Appendix \numberline {1.A}Proof of equation \ref {markovtimedep}}{61}{section.a.1.A}
+\contentsline {section}{Appendix \numberline {1.B}Proof of Proposition \ref {monopequilibria} }{62}{section.a.1.B}
+\contentsline {section}{Appendix \numberline {1.C}Proof of Proposition \ref {monopequilibriaKM} }{64}{section.a.1.C}
+\contentsline {section}{Appendix \numberline {1.D}Proof of Proposition \ref {propoligo1} }{64}{section.a.1.D}
+\contentsline {section}{Appendix \numberline {1.E}Proof of proposition \ref {oligoslope_prop}}{67}{section.a.1.E}
+\contentsline {section}{Appendix \numberline {1.F}Proof of proposition \ref {oligoslopedyn_prop}}{68}{section.a.1.F}
+\contentsline {section}{Appendix \numberline {1.G}Proof of proposition \ref {monopropdyn}}{69}{section.a.1.G}
+\contentsline {section}{Appendix \numberline {1.H}Proof of proposition \ref {oligodynp}}{70}{section.a.1.H}
+\contentsline {chapter}{\numberline {2}Methodological tools for non parametric functional data evaluation and weather data usage}{71}{chapter.2}
+\contentsline {section}{\numberline {2.1}Introduction}{73}{section.2.1}
+\contentsline {section}{\numberline {2.2}Point selection on functional data: a non parametric approach}{73}{section.2.2}
+\contentsline {subsection}{\numberline {2.2.1}Information about our data}{76}{subsection.2.2.1}
+\contentsline {subsection}{\numberline {2.2.2}Point selection algorithm}{77}{subsection.2.2.2}
+\contentsline {subsubsection}{Non-parametric technique to compare bid functions}{78}{section*.23}
+\contentsline {subsection}{\numberline {2.2.3}Results of the point selection methodology}{80}{subsection.2.2.3}
+\contentsline {subsubsection}{Precision of point selection}{80}{section*.26}
+\contentsline {subsection}{\numberline {2.2.4}Observations of bidding frictions}{82}{subsection.2.2.4}
+\contentsline {subsubsection}{Value of selected points (determining $K$) }{84}{section*.30}
+\contentsline {subsection}{\numberline {2.2.5}Discussion}{87}{subsection.2.2.5}
+\contentsline {section}{\numberline {2.3}Methodology to aggregate geographically dispersed information on a national level}{88}{section.2.3}
+\contentsline {subsection}{\numberline {2.3.1}Dealing with meteorological data}{89}{subsection.2.3.1}
+\contentsline {subsubsection}{Interpolation methodology on weather observations}{89}{section*.34}
+\contentsline {subsubsection}{Image transformation to recover weather forecasts}{91}{section*.37}
+\contentsline {subparagraph}{First: image cleaning}{91}{section*.39}
+\contentsline {subparagraph}{Second: removal of redundant information}{91}{section*.40}
+\contentsline {subparagraph}{Third: surface fitting}{92}{section*.41}
+\contentsline {subsubsection}{Autocorrelation lengthscale}{92}{section*.43}
+\contentsline {subsection}{\numberline {2.3.2}Aggregation of local information}{95}{subsection.2.3.2}
+\contentsline {subparagraph}{Wind1DA}{95}{section*.45}
+\contentsline {subparagraph}{Tempeff15}{98}{section*.48}
+\contentsline {subparagraph}{Solar}{99}{section*.50}
+\contentsline {subsubsection}{Other controls}{101}{section*.52}
+\contentsline {subparagraph}{Tempeff}{101}{section*.53}
+\contentsline {subparagraph}{Roll\_Temp$H$}{101}{section*.54}
+\contentsline {subparagraph}{Roll$_{avgTH}$}{101}{section*.55}
+\contentsline {subparagraph}{suncycle}{101}{section*.56}
+\contentsline {subparagraph}{deltasun}{101}{section*.57}
+\contentsline {subparagraph}{SolarRest}{101}{section*.58}
+\contentsline {subparagraph}{RteBlackBox}{102}{section*.60}
+\contentsline {section}{\numberline {2.4}Conclusion}{104}{section.2.4}
+\contentsline {chapter}{Appendix}{105}{section*.62}
+\contentsline {section}{Appendix \numberline {2.A}Technical details}{105}{section.b.2.A}
+\contentsline {subsection}{\numberline {2.A.1}Using the kernel density estimation (KDE) in our setting}{105}{subsection.b.2.A.1}
+\contentsline {subsubsection}{Hard choices in the code of the KDE}{106}{section*.63}
+\contentsline {paragraph}{Kernel choice:}{106}{section*.64}
+\contentsline {paragraph}{Bandwidth choice:}{107}{section*.65}
+\contentsline {subsection}{\numberline {2.A.2}Outlier detection and removal}{110}{subsection.b.2.A.2}
+\contentsline {chapter}{\numberline {3}Investigating the Impact of Uncertainty on Firms with Dynamic Costs: A Case Study of the French Electricity Market}{113}{chapter.3}
+\contentsline {section}{\numberline {3.1}Introduction}{115}{section.3.1}
+\contentsline {subsection}{\numberline {3.1.1}Literature review and contribution}{118}{subsection.3.1.1}
+\contentsline {subsection}{\numberline {3.1.2}Theoretical prediction}{121}{subsection.3.1.2}
+\contentsline {section}{\numberline {3.2}The EPEX spot market}{124}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}General background}{124}{subsection.3.2.1}
+\contentsline {subsection}{\numberline {3.2.2}Auction rules and mechanism}{126}{subsection.3.2.2}
+\contentsline {section}{\numberline {3.3}Our data explained}{128}{section.3.3}
+\contentsline {section}{\numberline {3.4}Methodology}{131}{section.3.4}
+\contentsline {subsection}{\numberline {3.4.1}Regression methodology}{134}{subsection.3.4.1}
+\contentsline {subsubsection}{Identification}{134}{section*.76}
+\contentsline {subsubsection}{Left-hand-side variables}{134}{section*.77}
+\contentsline {subsubsection}{Right-hand-side variables}{135}{section*.78}
+\contentsline {subparagraph}{Generating proxies for uncertainty from market demand (PLU$^D$)}{135}{section*.79}
+\contentsline {subparagraph}{In the first step,}{136}{section*.80}
+\contentsline {subparagraph}{In the second step,}{137}{section*.81}
+\contentsline {subparagraph}{In the third step,}{137}{section*.82}
+\contentsline {subparagraph}{Generating proxy for uncertainty from renewable energies (PLU$^R$)}{138}{section*.83}
+\contentsline {subparagraph}{Controls}{141}{section*.84}
+\contentsline {subsubsection}{Extensions and robustness checks}{146}{section*.87}
+\contentsline {subsubsection}{Bootstrapping standard errors}{146}{section*.88}
+\contentsline {subparagraph}{Kernel based uncertainty forecasts (PLU$^D$)}{147}{section*.89}
+\contentsline {section}{\numberline {3.5}Results }{149}{section.3.5}
+\contentsline {subsection}{\numberline {3.5.1}Demand estimation}{149}{subsection.3.5.1}
+\contentsline {subsection}{\numberline {3.5.2}Final regression}{155}{subsection.3.5.2}
+\contentsline {paragraph}{For the point of inflection ($k=3$),}{156}{section*.92}
+\contentsline {paragraph}{For the other points ($k=1,2,4,5$),}{158}{section*.95}
+\contentsline {section}{\numberline {3.6}Discussion }{159}{section.3.6}
+\contentsline {subsection}{\numberline {3.6.1}Findings}{160}{subsection.3.6.1}
+\contentsline {subsection}{\numberline {3.6.2}Internal and external validity}{162}{subsection.3.6.2}
+\contentsline {subsection}{\numberline {3.6.3}Endogeneity}{164}{subsection.3.6.3}
+\contentsline {section}{\numberline {3.7}Conclusion}{166}{section.3.7}
+\contentsline {chapter}{Appendix}{167}{section*.98}
+\contentsline {section}{Appendix \numberline {3.A}Summary statistics of selected points}{167}{section.c.3.A}
+\contentsline {section}{Appendix \numberline {3.B}Computational details and descriptives}{168}{section.c.3.B}
+\contentsline {subsection}{\numberline {3.B.1}Hard choices in the PLU computation}{168}{subsection.c.3.B.1}
+\contentsline {subsection}{\numberline {3.B.2}Descriptive Statistics}{169}{subsection.c.3.B.2}
+\contentsline {subsubsection}{On realised market equilibria}{169}{section*.104}
+\contentsline {subsubsection}{On player bid functions}{170}{section*.107}
+\contentsline {subsubsection}{On exogenous factors}{171}{section*.110}
+\contentsline {chapter}{General conclusion}{177}{chapter*.112}
+\contentsline {chapter}{References}{185}{chapter*.116}
+\contentsline {chapter}{Code annex}{191}{chapter*.117}
+\contentsline {chapter}{List of Figures}{251}{section*.120}

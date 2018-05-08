@@ -9,6 +9,8 @@
 \usepackage{graphicx}
 \usepackage{textcomp}
 \usepackage{enumitem}
+%\usepackage{pageslts}
+\usepackage{flipbook}
 \usepackage{multicol}
 \usepackage{listings}
 \usepackage{amssymb}
@@ -108,16 +110,18 @@
 
 \begin{document}
 
-\pagenumbering{gobble}
+%\pagenumbering{gobble}
+\pagenumbering{roman}
 
 \include{Titre}
 
-\pagenumbering{roman}
+%\pagenumbering{roman}
 
 \onehalfspace
 %\doublespace
 
 \include{Remerciements}
+\include{resumes}
 
 \renewcommand{\cftchappresnum}{Chapter\space}
 \renewcommand{\cftchapaftersnum}{:}
@@ -128,9 +132,28 @@
 
 \pagenumbering{arabic}
 \include{intro}
-\include{resumes}
+%%%%%%
+%
+%%%%%%
+\renewcommand{\thesection}{\arabic{chapter}.\arabic{section}}
+\chapter{Dynamics of the Electricity Day-Ahead Market : Supply Function Equilibria and Ramping Costs}
+\label{chap:ch1}
+\cleardoublepage
+\pagestyle{fancy} 
+\fancyhead{} 
+\rhead[]{\textsl{The Design of Teacher Assignment: Theory and Evidence}} \lhead[The Design of Teacher Assignment: Theory and Evidence]{}
 
+\fancyfoot{}
+\fancyfoot[RO]{%
+		\labeledflipbookframe[0][0.5]{example_frames/plus_}[pgf][0.2]{r}{\thepage}{2em}%
+	}
+	\fancyfoot[LE]{%
+		\labeledflipbookframe[0][0.5]{example_frames/cross_}[pgf][0.2]{l}{\thepage}{2em}%
+}
 \include{ch1}
+%%%%%%
+%
+%%%%%%
 \include{ch1-5}
 \include{ch2}
 
