@@ -8,275 +8,114 @@
 %*************************
 % I) Package to load     *
 %*************************
+\usepackage{subfigure}
+\usepackage[subfigure]{tocloft}
+\usepackage[title,titletoc,toc]{appendix}
+\usepackage[tight]{shorttoc}
+\usepackage[utf8x]{inputenc}
+\usepackage[english]{babel}
+\usepackage[nottoc]{tocbibind} %afficher plus d'info dans table matieres
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{enumitem}
+%\usepackage{pageslts}
+\usepackage{flipbook}
+\usepackage{multicol}
+\usepackage{listings}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{stmaryrd}
+\usepackage{setspace}
+\usepackage{float}
+%\linespread{1.5}
+\doublespacing
+\usepackage{fancyhdr}%<-------------to control headers and footers
+\usepackage[a4paper,margin=1in,footskip=.25in]{geometry}
+\renewcommand{\labelitemi}{\tiny$\blacksquare$}
+\renewcommand{\labelitemii}{\tiny$\bullet$}
+\usepackage{hyperref}%[hidelinks]
 
-    %The basic
-    %***********
+\usepackage{color}
+\usepackage[usenames,dvipsnames]{xcolor}
+\definecolor{c1}{rgb}{0.55,0,0}
+\definecolor{c2}{rgb}{0,0.35,0}
+\definecolor{c3}{rgb}{1,0.5,0}
+\definecolor{c4}{rgb}{0.1,0.1,0.7}
+\definecolor{c5}{rgb}{1,0.5,0}
+\definecolor{mygreen}{RGB}{28,172,0} % color values Red, Green, Blue
+\definecolor{mylilas}{RGB}{170,55,241}
 
-        \usepackage[T1]{fontenc} % is oriented to output, that is, what fonts to use for printing characters. Better call fontenc before inputenc
-        \usepackage[utf8]{inputenc} % allows the user to input accented characters directly from the keyboard. Always use utf8 instead of latin1
-         %) Biblio before Babel
-        \usepackage{natbib}
-          % \usepackage{har2nat,natbib}
-           % \usepackage{chapterbib}
-        	% Met les références biblio dans un \section (au lieu de \section*)
-        \usepackage[french,english]{babel}
-        \usepackage{lmodern} % Better font
-        \usepackage{microtype} % improves the spacing between words and letters.
-
-
-    % Options de mise en page :
-    %*******************************
-        %1) General
-        \usepackage{geometry} %Définit les marges
-        \geometry{top=2cm, bottom=2.5cm, left=2.5cm, right=2.5cm}
-        %\usepackage{scrextend} % multiple references for same footnote  call `scrextend' before `hyperref'!
-        \usepackage[doublespacing]{setspace} %Set space between lines. Before hyperref
-        \usepackage[bottom]{footmisc} %layout option for footnote Always before hyperref
-        \usepackage[pdftex,pdfborder={0 0 0},colorlinks=true,linkcolor=blue,urlcolor=blue,citecolor=blue,bookmarksopen=true]{hyperref} % managment of hyperlinks and bookmark
-        \usepackage{lscape} %permet de changer localement d'orientation portrait vers paysage Faire \begin{landscape}
-         \usepackage{pdflscape} %Landscape Pages  will be dis­played in landscape orientation in the PDF
-        \usepackage{changepage} %Margin adjustment and detection of odd/even pages.
-        \usepackage{sectsty} % for changing the font used for the various sectional heading
-        \usepackage{appendix}
-        \usepackage{import} % gérer les sous-dossiers dans thèse
-        %\usepackage{titlesec}
-         %   \titlespacing*{\chapter} {0pt}{50pt}{40pt}
-          %  \titlespacing*{\section} {0pt}{3.5ex plus 1ex minus .2ex}{2.3ex plus .2ex}
-           % \titlespacing*{\subsection} {0pt}{3.25ex plus 1ex minus .2ex}{1.5ex plus .2ex}
-        %1) Table
-            \usepackage{threeparttable} % Permet de faire des tableaux en trois parties
-            \usepackage{longtable}
-            \usepackage{array}
-            \usepackage{multirow}
-            \usepackage{tabularx}% additional column designator, X, which creates a paragraph-like column whose width automatically expands so that the declared width of the environ­ment is filled.
-            \usepackage{booktabs} % Permet d'améliorer qualité des tableaux avec \toprule, \midrule and \bottomrule
-            %\usepackage{slashbox} %commands to produce tabular cells with diagonal lines in them Faire dans cellule du tableau   \backslashbox{Room}{Date} &
-            %\usepackage{hhline}%produces a line like \hline, or a double line like \hline\hline
-
-
-        %2) Figure
-        \usepackage[capposition=top]{floatrow}
-        \usepackage[pdftex]{graphicx} %Insert graphic with \includegraphics command
-        \usepackage{epstopdf}% convertit fichier image eps en pdf
-        \epstopdfsetup {update}
-        %\usepackage{subfigure}% Voir dictaticiel subfigure_latex Probleme de comptabilité avec hyperref et subcaption
-
-        %3) Text
-        \usepackage{verbatim} %  introduce text that won't be interpreted by the compiler
-        %\usepackage{xspace}% pour ne pas avoir à taper des accolades à la fin de certaines commandes si l'on veut une espace derrière
-        \usepackage{enumerate} % permet de définir la numérotation à adopter i) ou 1)..;
-        \usepackage{fancyref}
-        \usepackage{fancyhdr} % pour paramétrer les chapitres dans le livre
-        \usepackage{url} % Verbatim with URL-sensitive line breaks
-        %\usepackage{html}
-        \usepackage{color}
-        \usepackage{breakcites} %Ensure that multiple citations may break at line end
-        \usepackage{datetime} %Change format of \today with commands for current time.
-        \usepackage{indentfirst}% mise en retrait de la première ligne après un titre.
-        %\usepackage{csquotes}% Guillemets françaises
-
-        %4) Mathématiques
-        \usepackage{dsfont} % Nice dummy
-        \usepackage{amsmath,amssymb, amsthm,amsfonts} % Symbole mathematique et environnement
-        \usepackage{eqnarray} %Defines an equation array environment, that allows more than three columns
-        %\usepackage{ntheorem}
-        \usepackage{eurosym} % symbole en euro
-        %Pour les propositions mathematiques
-        \newtheorem{proposition}{\textbf{Proposition}}[section]
-
-
-        %5) Float
-        \usepackage[justification=centering,textfont={sc},labelfont={rm}]{caption} % Fixer format des titres dans tableaux et graphiques
-%\usepackage{floatpag}
-        \usepackage{float} %Improved interface for floating objects
-        \usepackage{placeins} %Defines a \FloatBarrier command, beyond which floats may not pass
-        \usepackage{flafter} %ensure that floats are never placed before their references.
-        \usepackage{afterpage}%place things directly after the current page.
-        %\usepackage{rotating}%Rotation tools, including rotated full-page floats
-        %\usepackage{hvfloat} %Rotating caption and object of floats independently
-         \usepackage{caption}
-          \usepackage{subcaption}
-
-
-	%6) Additional 
-
-
-\newcommand{\nm}{N_{m}}
-\newcommand{\nw}{N_{w}}
-\newcommand{\nh}{N_{h}}
-
-%\usepackage{eurosym}
-%\usepackage{amssymb}
-%\usepackage{amsmath}
-%\usepackage[multiple]{footmisc}
-%\usepackage{amsfonts}
-%\usepackage{bbm}
+\usepackage{listings}
+\usepackage{changepage}
+%\usepackage[round]{natbib}
+\usepackage{adforn}
 \usepackage{tikz}
-%\usepackage{graphicx}
-%\usepackage{sgame,xcolor}
-%\usepackage{natbib}
-%\usepackage[english]{babel}
-%\usepackage[utf8]{inputenc}
-%\usepackage{appendix}
-%\usepackage{longtable}
-%\usepackage{threeparttable}
-%\usepackage{tabularx}
-%\usepackage{xr-hyper}
-%\usepackage{times}
-%\usepackage[margin=1.5in]{geometry}
-%\usepackage[unicode=true, pdfusetitle,
-%  bookmarks=true,bookmarksnumbered=false,bookmarksopen=false,
-%  breaklinks=false,pdfborder={0 0 1},backref=false,colorlinks=false]{hyperref}
-%\usetikzlibrary{decorations.pathreplacing, arrows.meta}
-%\tikzset{vert/.style = {circle, fill, inner sep = 0, minimum size = 5}}
-%\setlength{\marginparwidth}{2cm}
-%\usetikzlibrary{decorations.pathreplacing}
-%\hypersetup{
-%   colorlinks = true,
-%   urlcolor = blue,
-%   linkcolor = red,
-%   citecolor = blue,
-%        }
-%
-%\providecommand{\U}[1]{\protect \rule{.1in}{.1in}} \textheight 8.2in
-%\topmargin 0in \oddsidemargin  0in \textwidth 6.2in
-\newtheorem{theorem}{Theorem}
-\newtheorem{assumption}{Assumption}
-\newtheorem{fact}{Fact}
-%\newtheorem{acknowledgement}{Acknowledgement}
-%\newtheorem{algorithm}{Algorithm}
-%\newtheorem{axiom}{Axiom}
-%\newtheorem{case}{Case}
-%\newtheorem{claim}{Claim}
-%\newtheorem{conclusion}{Conclusion}
-%\newtheorem{condition}{Condition}
-%\newtheorem{conjecture}{Conjecture}
-\newtheorem{corollary}{Corollary}
-%\newtheorem{criterion}{Criterion}
-\newtheorem{definition}{Definition}
-\newtheorem{example}{Example}
-\newtheorem{exemple}{Exemple}
-%\newtheorem{exercise}{Exercise}
-\newtheorem{lemma}{Lemma}
-%\newtheorem{notation}{Notation}
-%\newtheorem{observation}{Observation}
-%\newtheorem{problem}{Problem}
-%\newtheorem{proposition}{Proposition}
-%\newtheorem{property}{Property}
-\newtheorem{remark}{Remark}
-%\newtheorem{solution}{Solution}
-%\newtheorem{summary}{Summary}
-%\newenvironment{proof}[1][Proof]{\textbf{#1.} }{\  \rule{0.5em}{0.5em}}
-%\setlength{\oddsidemargin}{0.50cm}
-%\setlength{\evensidemargin}{0.50cm}
-%\setlength{\textwidth}{15.00cm}
-%
+\usepackage{caption}
+\usepackage{eurosym}
+\usepackage{longtable} 
+\usepackage{booktabs}
+%\usepackage{tocbibind}
+
+\usepackage{accsupp}% http://ctan.org/pkg/accsupp
+\newcommand{\emptyaccsupp}[1]{\BeginAccSupp{ActualText={}}#1\EndAccSupp{}}
+
+\hypersetup{
+    pdfstartview={FitH},    % fits the width of the page to the window
+    pdftitle={PhD Thesis - Supply Function Equilibria on the Electricity Market},    % title
+    pdfauthor={Alexis Bergès},     % author
+    pdfsubject={Economic Theory},   % subject of the document
+    pdfkeywords={Supply function}{Electricity} {Equilibria} {Ramping costs} {Day-ahead}{Stochastic}{Dynamics}, % list of keywords
+    colorlinks=true,       % false: boxed links; true: colored links
+    linkcolor=black,          % color of internal links (change box color with linkbordercolor)
+    citecolor=c1,        % color of links to bibliography
+    filecolor=black,      % color of file links
+    urlcolor=c4           % color of external links
+    }
+
+
+%\usepackage[utf8x]{inputenc}
+%\usepackage{amsfonts}
+%\usepackage{amsmath}
+%\usepackage{amssymb}
+%\usepackage{newtxtext}
+%\usepackage{newtxmath}
+%\usepackage{latexsym}
+%%\usepackage[pdftex]{graphicx}
+%\usepackage[round]{natbib}
+%\usepackage{tikz}
+%\usepackage{geometry}
 %\usepackage{setspace}
-%\onehalfspacing
-%%\renewcommand{\baselinestretch}{1.3}
-%%\renewcommand{\baselinestretch}{1.5}
-%%\renewcommand{\baselinestretch}{1.1}
-%\newcommand{\set}[1]{\left \{#1\right \}}
-%\def \R{\mathbb{R}}
-%\newcommand{\dsum}{\displaystyle \sum}
-%\newcommand{\abs}[1]{\lvert#1\rvert}
-%\newcommand{\eps}{\varepsilon}
-%\newcommand{\quo}[1]{^^ ^^ #1"}
-%\newcommand{\Ass}{\mathcal{A}^{\ast \ast}}
-\newcommand{\As}{\mathcal{A}^{\ast}}
-%\numberwithin{equation}{section}
-%\newcommand{\Exp}{{\rm E}}
-\newcommand{\DAs}{\mbox{DA}^{\ast}}
-%\newcommand{\ct}{\textcolor{red}}
-%\DeclareMathOperator*{\union}{\cup}
-%\DeclareMathOperator*{\cprod}{\times}
-%\parskip=.04in
-%\textheight 8.48in \topmargin -0.5in \oddsidemargin  0in \textwidth
-%6.6in
-%\renewenvironment{proof}[1][Proof]{\textsc{#1.} }{\qed}
-%\input{tcilatex}
-%\newcolumntype{L}[1]{>{\raggedright\arraybackslash}p{#1}}
-%\newcolumntype{C}[1]{>{\centering\arraybackslash}p{#1}}
-%\newcolumntype{R}[1]{>{\raggedleft\arraybackslash}p{#1}}	
+%\usepackage{import}
+%\usepackage[english]{babel}
+%\usepackage{tocloft}
+%\usepackage{emptypage}
+%\usepackage{shorttoc}
+%\usepackage{changepage}
+%\usepackage{adforn}
+%\usepackage{scalefnt}
+%\usepackage{enumitem}
+%\usepackage[stable]{footmisc}
+%\usetikzlibrary{patterns}
+%\usepackage{appendix}
+
+\raggedbottom
+\setlength{\footskip}{30pt}
+
+%\setlength{\bibsep}{0pt plus 0.3ex}
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{corollary}[theorem]{Corollary}
+\newenvironment{proof}[1][Proof]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}]}{\end{trivlist}}
+\newenvironment{definition}[1][Definition]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}]}{\end{trivlist}}
+\newenvironment{example}[1][Example]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}]}{\end{trivlist}}
+\newenvironment{remark}[1][Remark]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}]}{\end{trivlist}}
+\newcommand{\qed}{$\blacksquare$}
 
 
-%*****************************************************************************
-
-%*************************
-% II) Command to load    *
-%*************************
-
-% centering in tables
-    \usepackage{siunitx}
-    	\sisetup{
-    		detect-mode,
-    		tight-spacing		= true,
-    		group-digits		= false ,
-    		input-signs		= ,
-    		input-symbols		= ( ) [ ] - + *,
-    		input-open-uncertainty	= ,
-    		input-close-uncertainty	= ,
-    		table-align-text-post	= false
-            }
-% Command estwide and estauto
-%*******************************
-    \newcommand{\sym}[1]{\rlap{#1}}% Thanks to David Carlisle
-    \let\estinput=\input% define a new input command so that we can still flatten the document
-    \makeatletter
-    \newcommand\primitiveinput[1]
-    {\@@input #1 }
-    \makeatother
-
-    \newcommand{\estwide}[3]{
-    		\vspace{.75ex}{
-    			\begin{tabular*}
-    			{\textwidth}{@{\hskip\tabcolsep\extracolsep\fill}l*{#2}{#3}}
-    			\toprule
-    			\estinput{#1}
-    			\bottomrule
-    			\addlinespace[.75ex]
-    			\end{tabular*}
-    			}
-        }	
-
-    \newcommand{\estauto}[3]{
-    		\vspace{0.75ex}{
-    			\begin{tabular}{l*{#2}{#3}}
-    			\toprule
-    			\estinput{#1}
-    			\bottomrule
-    			\addlinespace[.75ex]
-    			\end{tabular}
-    			}
-    		}
-
-% Allow line breaks with \\ in specialcells
-%********************************************
-	\newcommand{\specialcell}[2][c]{%
-	\begin{tabular}[#1]{@{}c@{}}#2\end{tabular}}
-
-% Standard errors at the end of table
-%*************************************
-    \newcommand{\Starnote}{\item * p < 0.1, ** p < 0.05, *** p < 0.01. Standard errors in parentheses.}
-
-% DIfferent new commands
-%**************************
-    \newcommand{\e}{\textsuperscript{e}}
-    \newcommand{\eme}{\textsuperscript{e}}
-    \newcommand{\er}{\textsuperscript{er}}
-
-% Pour les tableaux et figures
-    \setlength{\textfloatsep}{0.7cm} %réduit espace entre texte et flottant
-    % Permet d'avoir du texte occupant 10% de la page
-    \renewcommand{\floatpagefraction}{.9}
-    \renewcommand{\textfraction}{.1}
-
-% Infos spécifiques aux pdfs
-%------------------------------------------------------------------------------------
-		\hypersetup{
-				pdfauthor   = {Julien Combe},
-				%pdftitle    = {},%
-				%pdfsubject  = {},%
-				%pdfkeywords = {},%
-		}	
-%------------------------------------------------------------------------------------
+\pdfmapfile{+OrnementsADF.map}

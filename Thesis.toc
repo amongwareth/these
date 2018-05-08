@@ -1,7 +1,7 @@
 \select@language {english}
 \contentsline {chapter}{Remerciements---Acknowledgements}{i}{chapter*.1}
 \contentsline {chapter}{Summary}{v}{chapter*.2}
-\contentsline {chapter}{General introduction}{1}{chapter*.7}
+\contentsline {chapter}{General Introduction}{1}{chapter*.7}
 \contentsline {chapter}{\numberline {1}Dynamics of the Electricity Day-Ahead Market : Supply Function Equilibria and Ramping Costs}{17}{chapter.1}
 \contentsline {section}{\numberline {1.1}Introduction}{19}{section.1.1}
 \contentsline {subsection}{\numberline {1.1.1}Litterature review}{21}{subsection.1.1.1}
@@ -16,7 +16,7 @@
 \contentsline {subsection}{\numberline {1.4.1}Results}{38}{subsection.1.4.1}
 \contentsline {section}{\numberline {1.5}The Symmetric Oligopoly}{41}{section.1.5}
 \contentsline {subsection}{\numberline {1.5.1}Discussion}{45}{subsection.1.5.1}
-\contentsline {section}{\numberline {1.6}Dynamic behavior of the bids}{47}{section.1.6}
+\contentsline {section}{\numberline {1.6}Dynamic Behavior of the Bids}{47}{section.1.6}
 \contentsline {subsection}{\numberline {1.6.1}The setup}{49}{subsection.1.6.1}
 \contentsline {subsection}{\numberline {1.6.2}Results}{52}{subsection.1.6.2}
 \contentsline {subsubsection}{Dynamics in the case of the Monopoly and of the oligopoly}{52}{section*.19}
@@ -24,7 +24,7 @@
 \contentsline {section}{\numberline {1.7}Limits}{57}{section.1.7}
 \contentsline {section}{\numberline {1.8}Concluding Remarks}{58}{section.1.8}
 \contentsline {chapter}{Appendix}{61}{section*.21}
-\contentsline {section}{Appendix \numberline {1.A}Proof of equation \ref {markovtimedep}}{61}{section.a.1.A}
+\contentsline {section}{Appendix \numberline {1.A}Proof of Equation \ref {markovtimedep}}{61}{section.a.1.A}
 \contentsline {section}{Appendix \numberline {1.B}Proof of Proposition \ref {monopequilibria} }{62}{section.a.1.B}
 \contentsline {section}{Appendix \numberline {1.C}Proof of Proposition \ref {monopequilibriaKM} }{64}{section.a.1.C}
 \contentsline {section}{Appendix \numberline {1.D}Proof of Proposition \ref {propoligo1} }{64}{section.a.1.D}
@@ -32,9 +32,9 @@
 \contentsline {section}{Appendix \numberline {1.F}Proof of proposition \ref {oligoslopedyn_prop}}{68}{section.a.1.F}
 \contentsline {section}{Appendix \numberline {1.G}Proof of proposition \ref {monopropdyn}}{69}{section.a.1.G}
 \contentsline {section}{Appendix \numberline {1.H}Proof of proposition \ref {oligodynp}}{70}{section.a.1.H}
-\contentsline {chapter}{\numberline {2}Methodological tools for non parametric functional data evaluation and weather data usage}{71}{chapter.2}
+\contentsline {chapter}{\numberline {2}Methodological Tools for Non-Parametric Functional data Evaluation and Weather Data Usage}{71}{chapter.2}
 \contentsline {section}{\numberline {2.1}Introduction}{73}{section.2.1}
-\contentsline {section}{\numberline {2.2}Point selection on functional data: a non parametric approach}{73}{section.2.2}
+\contentsline {section}{\numberline {2.2}Point Selection on Functional Data: a Non-Parametric Approach}{73}{section.2.2}
 \contentsline {subsection}{\numberline {2.2.1}Information about our data}{76}{subsection.2.2.1}
 \contentsline {subsection}{\numberline {2.2.2}Point selection algorithm}{77}{subsection.2.2.2}
 \contentsline {subsubsection}{Non-parametric technique to compare bid functions}{78}{section*.23}
@@ -43,7 +43,7 @@
 \contentsline {subsection}{\numberline {2.2.4}Observations of bidding frictions}{82}{subsection.2.2.4}
 \contentsline {subsubsection}{Value of selected points (determining $K$) }{84}{section*.30}
 \contentsline {subsection}{\numberline {2.2.5}Discussion}{87}{subsection.2.2.5}
-\contentsline {section}{\numberline {2.3}Methodology to aggregate geographically dispersed information on a national level}{88}{section.2.3}
+\contentsline {section}{\numberline {2.3}Methodology to Aggregate Geographically Dispersed Information on a National Level}{88}{section.2.3}
 \contentsline {subsection}{\numberline {2.3.1}Dealing with meteorological data}{89}{subsection.2.3.1}
 \contentsline {subsubsection}{Interpolation methodology on weather observations}{89}{section*.34}
 \contentsline {subsubsection}{Image transformation to recover weather forecasts}{91}{section*.37}
@@ -65,7 +65,7 @@
 \contentsline {subparagraph}{RteBlackBox}{102}{section*.60}
 \contentsline {section}{\numberline {2.4}Conclusion}{104}{section.2.4}
 \contentsline {chapter}{Appendix}{105}{section*.62}
-\contentsline {section}{Appendix \numberline {2.A}Technical details}{105}{section.b.2.A}
+\contentsline {section}{Appendix \numberline {2.A}Technical Details}{105}{section.b.2.A}
 \contentsline {subsection}{\numberline {2.A.1}Using the kernel density estimation (KDE) in our setting}{105}{subsection.b.2.A.1}
 \contentsline {subsubsection}{Hard choices in the code of the KDE}{106}{section*.63}
 \contentsline {paragraph}{Kernel choice:}{106}{section*.64}
@@ -75,10 +75,10 @@
 \contentsline {section}{\numberline {3.1}Introduction}{115}{section.3.1}
 \contentsline {subsection}{\numberline {3.1.1}Literature review and contribution}{118}{subsection.3.1.1}
 \contentsline {subsection}{\numberline {3.1.2}Theoretical prediction}{121}{subsection.3.1.2}
-\contentsline {section}{\numberline {3.2}The EPEX spot market}{124}{section.3.2}
+\contentsline {section}{\numberline {3.2}The EPEX Spot Market}{124}{section.3.2}
 \contentsline {subsection}{\numberline {3.2.1}General background}{124}{subsection.3.2.1}
 \contentsline {subsection}{\numberline {3.2.2}Auction rules and mechanism}{126}{subsection.3.2.2}
-\contentsline {section}{\numberline {3.3}Our data explained}{128}{section.3.3}
+\contentsline {section}{\numberline {3.3}Our Data Explained}{128}{section.3.3}
 \contentsline {section}{\numberline {3.4}Methodology}{131}{section.3.4}
 \contentsline {subsection}{\numberline {3.4.1}Regression methodology}{134}{subsection.3.4.1}
 \contentsline {subsubsection}{Identification}{134}{section*.76}
@@ -104,8 +104,8 @@
 \contentsline {subsection}{\numberline {3.6.3}Endogeneity}{164}{subsection.3.6.3}
 \contentsline {section}{\numberline {3.7}Conclusion}{166}{section.3.7}
 \contentsline {chapter}{Appendix}{167}{section*.98}
-\contentsline {section}{Appendix \numberline {3.A}Summary statistics of selected points}{167}{section.c.3.A}
-\contentsline {section}{Appendix \numberline {3.B}Computational details and descriptives}{168}{section.c.3.B}
+\contentsline {section}{Appendix \numberline {3.A}Summary Statistics of Selected Points}{167}{section.c.3.A}
+\contentsline {section}{Appendix \numberline {3.B}Computational Details and Descriptives}{168}{section.c.3.B}
 \contentsline {subsection}{\numberline {3.B.1}Hard choices in the PLU computation}{168}{subsection.c.3.B.1}
 \contentsline {subsection}{\numberline {3.B.2}Descriptive Statistics}{169}{subsection.c.3.B.2}
 \contentsline {subsubsection}{On realised market equilibria}{169}{section*.104}
@@ -113,5 +113,6 @@
 \contentsline {subsubsection}{On exogenous factors}{171}{section*.110}
 \contentsline {chapter}{General conclusion}{177}{chapter*.112}
 \contentsline {chapter}{References}{185}{chapter*.116}
-\contentsline {chapter}{Code annex}{191}{chapter*.117}
+\contentsline {chapter}{Code Annex}{191}{chapter*.117}
 \contentsline {chapter}{List of Figures}{251}{section*.120}
+\contentsline {chapter}{Table of Contents - Long}{255}{section*.121}

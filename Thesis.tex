@@ -1,111 +1,7 @@
 \documentclass[book,12pt,twoside,openright,authoryear]{report}
-\usepackage{subfigure}
-\usepackage[subfigure]{tocloft}
-\usepackage[title,titletoc,toc]{appendix}
-\usepackage{shorttoc}
-\usepackage[utf8x]{inputenc}
-\usepackage[english]{babel}
-\usepackage[nottoc]{tocbibind} %afficher plus d'info dans table matieres
-\usepackage{graphicx}
-\usepackage{textcomp}
-\usepackage{enumitem}
-%\usepackage{pageslts}
-\usepackage{flipbook}
-\usepackage{multicol}
-\usepackage{listings}
-\usepackage{amssymb}
-\usepackage{amsmath}
-\usepackage{stmaryrd}
-\usepackage{setspace}
-\usepackage{float}
-%\linespread{1.5}
-\doublespacing
-\usepackage{fancyhdr}%<-------------to control headers and footers
-\usepackage[a4paper,margin=1in,footskip=.25in]{geometry}
-\renewcommand{\labelitemi}{\tiny$\blacksquare$}
-\renewcommand{\labelitemii}{\tiny$\bullet$}
-\usepackage{hyperref}%[hidelinks]
-\usepackage{color}
-\usepackage[usenames,dvipsnames]{xcolor}
-\definecolor{c1}{rgb}{0.55,0,0}
-\definecolor{c2}{rgb}{0,0.35,0}
-\definecolor{c3}{rgb}{1,0.5,0}
-\definecolor{c4}{rgb}{0.1,0.1,0.7}
-\definecolor{c5}{rgb}{1,0.5,0}
-\definecolor{mygreen}{RGB}{28,172,0} % color values Red, Green, Blue
-\definecolor{mylilas}{RGB}{170,55,241}
-\usepackage{listings}
-\usepackage{changepage}
-%\usepackage[round]{natbib}
-\usepackage{adforn}
-\usepackage{tikz}
-\usepackage{caption}
-\usepackage{eurosym}
-\usepackage{longtable} 
-\usepackage{booktabs}
-\usepackage{accsupp}% http://ctan.org/pkg/accsupp
-\newcommand{\emptyaccsupp}[1]{\BeginAccSupp{ActualText={}}#1\EndAccSupp{}}
 
-\hypersetup{
-    pdfstartview={FitH},    % fits the width of the page to the window
-    pdftitle={PhD Thesis - Supply Function Equilibria on the Electricity Market},    % title
-    pdfauthor={Alexis Bergès},     % author
-    pdfsubject={Economic Theory},   % subject of the document
-    pdfkeywords={Supply function}{Electricity} {Equilibria} {Ramping costs} {Day-ahead}{Stochastic}{Dynamics}, % list of keywords
-    colorlinks=true,       % false: boxed links; true: colored links
-    linkcolor=black,          % color of internal links (change box color with linkbordercolor)
-    citecolor=c1,        % color of links to bibliography
-    filecolor=black,      % color of file links
-    urlcolor=c4           % color of external links
-    }
+\usepackage{preambule_latex}
 
-
-%\usepackage[utf8x]{inputenc}
-%\usepackage{amsfonts}
-%\usepackage{amsmath}
-%\usepackage{amssymb}
-%\usepackage{newtxtext}
-%\usepackage{newtxmath}
-%\usepackage{latexsym}
-%%\usepackage[pdftex]{graphicx}
-%\usepackage[round]{natbib}
-%\usepackage{tikz}
-%\usepackage{geometry}
-%\usepackage{setspace}
-%\usepackage{import}
-%\usepackage[english]{babel}
-%\usepackage{tocloft}
-%\usepackage{emptypage}
-%\usepackage{shorttoc}
-%\usepackage{changepage}
-%\usepackage{adforn}
-%\usepackage{scalefnt}
-%\usepackage{enumitem}
-%\usepackage[stable]{footmisc}
-%\usetikzlibrary{patterns}
-%\usepackage{appendix}
-
-\raggedbottom
-\setlength{\footskip}{30pt}
-
-%\setlength{\bibsep}{0pt plus 0.3ex}
-
-\newtheorem{theorem}{Theorem}[section]
-\newtheorem{lemma}[theorem]{Lemma}
-\newtheorem{proposition}[theorem]{Proposition}
-\newtheorem{corollary}[theorem]{Corollary}
-\newenvironment{proof}[1][Proof]{\begin{trivlist}
-\item[\hskip \labelsep {\bfseries #1}]}{\end{trivlist}}
-\newenvironment{definition}[1][Definition]{\begin{trivlist}
-\item[\hskip \labelsep {\bfseries #1}]}{\end{trivlist}}
-\newenvironment{example}[1][Example]{\begin{trivlist}
-\item[\hskip \labelsep {\bfseries #1}]}{\end{trivlist}}
-\newenvironment{remark}[1][Remark]{\begin{trivlist}
-\item[\hskip \labelsep {\bfseries #1}]}{\end{trivlist}}
-\newcommand{\qed}{$\blacksquare$}
-
-
-\pdfmapfile{+OrnementsADF.map}
 
 
 \begin{document}
@@ -115,33 +11,55 @@
 
 \include{Titre}
 
-%\pagenumbering{roman}
-
-\onehalfspace
-%\doublespace
-
 \include{Remerciements}
+
 \include{resumes}
 
 \renewcommand{\cftchappresnum}{Chapter\space}
 \renewcommand{\cftchapaftersnum}{:}
 \renewcommand{\cftchapnumwidth}{6em}
 
-\shorttoc{Contents}{0}
+\onehalfspace
+\shorttoc{Table of Contents - short}{0}
 \cleardoublepage
 
 \pagenumbering{arabic}
-\include{intro}
-%%%%%%
-%
-%%%%%%
+
+%%%%%%%%%%%%
+%Introduction
+%%%%%%%%%%%%
 \renewcommand{\thesection}{\arabic{chapter}.\arabic{section}}
-\chapter{Dynamics of the Electricity Day-Ahead Market : Supply Function Equilibria and Ramping Costs}
-\label{chap:ch1}
+\chapter*{General Introduction}
+\addcontentsline{toc}{chapter}{General Introduction}
+\label{chap:intro}
+\pagestyle{empty} 
 \cleardoublepage
 \pagestyle{fancy} 
 \fancyhead{} 
-\rhead[]{\textsl{The Design of Teacher Assignment: Theory and Evidence}} \lhead[The Design of Teacher Assignment: Theory and Evidence]{}
+\rhead[]{\textsl{Introduction}} 
+\lhead[Introduction]{}
+\fancyfoot{}
+\fancyfoot[RO]{%
+		\labeledflipbookframe[0][0.5]{example_frames/plus_}[pgf][0.2]{r}{\thepage}{2em}%
+	}
+	\fancyfoot[LE]{%
+		\labeledflipbookframe[0][0.5]{example_frames/cross_}[pgf][0.2]{l}{\thepage}{2em}%
+}
+\include{intro}
+
+%%%%%%%%%%%%
+%First chapter
+%%%%%%%%%%%%
+\renewcommand{\thesection}{\arabic{chapter}.\arabic{section}}
+\chapter[Dynamics of the Electricity Day-Ahead Market : Supply Function Equilibria and Ramping Costs]{Dynamics of the Electricity Day-Ahead Market : Supply Function Equilibria and Ramping Costs \footnote{JEL Classification Numbers:  C62, C72, D21, D43, D84, L94, Q41 \\
+Keywords: Supply function, Equilibria, Unicity, Oligopoly, Electricity, Auctions, Day-ahead, Uncertainty, Dynamics}}
+\label{chap:ch1}
+\pagestyle{empty} 
+\cleardoublepage
+\pagestyle{fancy} 
+\fancyhead{} 
+\rhead[]{\textsl{Dynamics of the Electricity Day-Ahead Market : Supply Function Equilibria and Ramping Costs}} 
+\lhead[Dynamics of the Electricity Day-Ahead Market : Supply Function Equilibria and Ramping Costs]{}
 
 \fancyfoot{}
 \fancyfoot[RO]{%
@@ -151,33 +69,115 @@
 		\labeledflipbookframe[0][0.5]{example_frames/cross_}[pgf][0.2]{l}{\thepage}{2em}%
 }
 \include{ch1}
-%%%%%%
-%
-%%%%%%
+
+
+
+
+%%%%%%%%%%%%
+%Second chapter
+%%%%%%%%%%%%
+\renewcommand{\thesection}{\arabic{chapter}.\arabic{section}}
+\chapter[Methodological Tools for Non-Parametric Functional data Evaluation and Weather Data Usage]{Methodological Tools for Non-Parametric Functional data Evaluation and Weather Data Usage \footnote{Joint work with Henri de Belsunce.\\
+The weather data was obtained through a research convention with Météo-France - ref. DIRIC/13/024\\
+JEL Classification Numbers: C10, C57, C81, L94, Q41\\
+Keywords: Functional, Electricity, Auctions, Day-ahead, Weather, Uncertainty, Dynamics, Regression}}
+\label{chap:ch1-5}
+\pagestyle{empty} 
+\cleardoublepage
+\pagestyle{fancy} 
+\fancyhead{} 
+\rhead[]{\textsl{Methodological Tools for Non-Parametric Functional data Evaluation and Weather Data Usage}} 
+\lhead[Methodological Tools for Non-Parametric Functional data Evaluation and Weather Data Usage]{}
+
+\fancyfoot{}
+\fancyfoot[RO]{%
+		\labeledflipbookframe[0][0.5]{example_frames/plus_}[pgf][0.2]{r}{\thepage}{2em}%
+	}
+	\fancyfoot[LE]{%
+		\labeledflipbookframe[0][0.5]{example_frames/cross_}[pgf][0.2]{l}{\thepage}{2em}%
+}
 \include{ch1-5}
+
+
+
+
+%%%%%%%%%%%%
+%Third chapter
+%%%%%%%%%%%%
+\renewcommand{\thesection}{\arabic{chapter}.\arabic{section}}
+\chapter[Investigating the Impact of Uncertainty on Firms with Dynamic Costs: A Case Study of the French Electricity Market]{Investigating the Impact of Uncertainty on Firms with Dynamic Costs: A Case Study of the French Electricity Market \footnote{Joint work with Henri de Belsunce.\\
+The weather data was obtained through a research convention with Météo-France - ref. DIRIC/13/024\\
+JEL Classification Numbers: C10, C57, L94, Q41 }}
+\label{chap:ch2}
+\pagestyle{empty} 
+\cleardoublepage
+\pagestyle{fancy} 
+\fancyhead{} 
+\rhead[]{\textsl{Investigating the Impact of Uncertainty on Firms with Dynamic Costs: A Case Study of the French Electricity Market}} 
+\lhead[Investigating the Impact of Uncertainty on Firms with Dynamic Costs: A Case Study of the French Electricity Market]{}
+
+\fancyfoot{}
+\fancyfoot[RO]{%
+		\labeledflipbookframe[0][0.5]{example_frames/plus_}[pgf][0.2]{r}{\thepage}{2em}%
+	}
+	\fancyfoot[LE]{%
+		\labeledflipbookframe[0][0.5]{example_frames/cross_}[pgf][0.2]{l}{\thepage}{2em}%
+}
 \include{ch2}
 
-\include{ccl}
 
+%%%%%%%%%%%%
+%Conclusion
+%%%%%%%%%%%%
+\renewcommand{\thesection}{\arabic{chapter}.\arabic{section}}
+\chapter*{General conclusion}
+\addcontentsline{toc}{chapter}{General conclusion}
+\label{chap:ccl}
+\pagestyle{empty} 
+\cleardoublepage
+\pagestyle{fancy} 
+\fancyhead{} 
+\rhead[]{\textsl{Conclusion}} 
+\lhead[Conclusion]{}
+\fancyfoot{}
+\fancyfoot[RO]{%
+		\labeledflipbookframe[0][0.5]{example_frames/plus_}[pgf][0.2]{r}{\thepage}{2em}%
+	}
+	\fancyfoot[LE]{%
+		\labeledflipbookframe[0][0.5]{example_frames/cross_}[pgf][0.2]{l}{\thepage}{2em}%
+}
+\include{ccl}
+\fancyhead{} 
+\rhead[]{\textsl{References}} 
+\lhead[References]{}
 \singlespacing
 
 \bibliographystyle{apalike}
 \renewcommand\bibname{References}
 \bibliography{biblio.bib}
 
+\fancyhead{} 
+\rhead[]{\textsl{Code Annex}} 
+\lhead[Code Annex]{}
 \include{code_annex}
 \makeatletter
 \renewcommand*\l@figure{\@dottedtocline{1}{1 em}{3.2em}}
 \makeatother
 
+\fancyhead{} 
+\rhead[]{\textsl{List of Figures}} 
+\lhead[List of Figures]{}
 \newpage
 \listoffigures
 \newpage
 
-
+\fancyhead{} 
+\rhead[]{\textsl{Table of Contents - Long}} 
+\lhead[Table of Contents - Long]{}
+\phantomsection \addcontentsline{toc}{chapter}{Table of Contents - Long}
 \renewcommand{\cftchapleader}{\bfseries\cftdotfill{\cftchapdotsep}}
 \renewcommand{\cftchappagefont}{\bfseries}
-\renewcommand{\contentsname}{Table of Contents}
+\renewcommand{\contentsname}{Table of Contents - Long}
 \renewcommand{\cftsecdotsep}{\cftnodots}
 \setlength\cftaftertoctitleskip{20pt}
 \tableofcontents

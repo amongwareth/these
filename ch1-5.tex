@@ -1,22 +1,10 @@
-%\renewcommand{\tabularxcolumn}[1]{m{#1}}
-%\newcolumntype{Y}{>{\centering\arraybackslash}X}
-%\newcolumntype{R}{>{\flushright\arraybackslash}X}
-
-
-\renewcommand{\thesection}{\arabic{chapter}.\arabic{section}}
-
-
-\chapter{Methodological tools for non parametric functional data evaluation and weather data usage} 
-\label{chap:ch1-5}
-\cleardoublepage
-
 \doublespacing
 \section{Introduction}
 In the previous chapter, we have introduced a model of supply function equilibria under uncertainty that takes ramping costs into account and we derived solutions that depend on the information the firms have about the future demand at the time of bidding. Here, we will focus on introducing tools that will allow us to perform an empirical analysis of the French day ahead market and test these theoretical predictions, which will be the focus of our third chapter.\\
 
 In this short chapter we develop a methodology to analyze data of two specific formats. The focus lies on the methodological details as well as evaluating the performance of our technique. The aim is first to extract points of interests from functional data in order to be able to compare functions to one another across bids, and second to describe a methodology that will allow us take into account the uncertainty related to the weather. The economic interpretation is secondary in this chapter. Chapter 3 will use the methodology developed here for a case study of the French electricity market.\\
 
-\section{Point selection on functional data: a non parametric approach}
+\section{Point Selection on Functional Data: a Non-Parametric Approach}
 Reduced form models often rely on exploiting market outcomes for their analysis, i.e. equilibrium prices and quantities, in order to identify the determinants of firm behaviour and test predictions of the theory. On a few markets, sufficient information is available to get around the problem of using endogenous equilibrium data. For example on the government bond markets, both the full aggregate demand and supply functions are observed. This market is of a specific type, it is a divisible goods auction (also called multi-unit or share auctions). These are auctions where multiple units of a good are sold in a single auction. The exact quantity is not predetermined, but endogenous and depends on the price. Furthermore, the auction format is more complex than for indivisible, single unit auctions and most notably requires that bidders simultaneously submit full bid functions for the goods, i.e. multiple price-quantity combinations at which each bidder is willing to buy or sell the goods. The market price and quantity are determined by the intersection of the aggregate demand and supply functions.\\
 
 The aggregate bid functions are very rich in information and the reduced form models can be adapted to use this data. However, the literature on exploiting functional data is limited. This idea has been applied to investigate the determinants of demand bid functions in French government bond auctions \cite{preget2005treasury}. They rely on the propositions first put forward in \cite{boukai1998market} and \cite{berg1999bid}, who identified that aggregate bid functions in divisible goods auctions follow an S-shaped curve that can be estimated by a logistic function. The fluctuations across auctions are claimed to be due to random shocks on the parameters of the estimated logistic function. The methodology is applied in \cite{ozcan2004logistic} to investigate the revenue superiority of the discriminatory price auction format over the uniform price auction format for the Turkish government bonds market.\\
@@ -239,7 +227,7 @@ Smoothing of the original bid functions is a component in both the traditional l
 
 The results of the comparable point selection are encouraging. We show that each type of point is distinctly chosen and that patterns of the original bid functions do not influence the quality of derivative information extracted at the selected points. We acknowledge the existence of bidding frictions in the original data and highlight this observation for further work. \\
 
-\section{Methodology to aggregate geographically dispersed information on a national level}
+\section{Methodology to Aggregate Geographically Dispersed Information on a National Level}
 The theoretical results of chapter 1 indicate that a key ingredient in explaining the dynamics of the bids submitted by suppliers on the electricity market is the uncertainty about demand shocks. \\
 
 Energy  demand  addressed to the electricity markets depends on  temperature (through the heating of buildings), on wind speed (through the production of wind turbines which reduces the net demand) and on luminosity (through the production of solar panels which reduces the net demand). However, these three weather variables vary in space, whereas the market is at the national level. We introduce here the methodology with which we estimate the associated uncertainty.\\  
@@ -479,7 +467,7 @@ In the next chapter we will therefore be able to focus on the econometric analys
 \numberwithin{figure}{section}
 \numberwithin{equation}{section}
 
-\section{Technical details}
+\section{Technical Details}
 \label{Techdetails}
 
 \subsection{Using the kernel density estimation (KDE) in our setting}
