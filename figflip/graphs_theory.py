@@ -30,7 +30,7 @@ g = 10
 l = 0.1
 start = 0
 end = 25
-theta_l = np.sin(np.arange(start, end) / 24 * 2 * np.pi) / 40 + 2
+theta_l = np.sin(np.arange(start, end) / 24 * 2 * np.pi) / 40 + 10
 w_l = 3 * (np.sin(np.arange(start, end) / 24 * 2 * np.pi) + 1.1)
 dwt_l = theta_l[1:] - theta_l[:-1]
 theta_l = theta_l[:-1]
@@ -40,20 +40,23 @@ coef = 100
 fig, ax1 = texfig.subplots()
 # These are in unitless percentages of the figure size. (0,0 is bottom left)
 width = 0.3
-offset = 0.18
-left, bottom, width, height = [offset, 1 - width - offset, width, width]
+offset = 0.13
+offsetv = 0.05
+left, bottom, width, height = [offset, 1 - width - offsetv, width, width]
 ax2 = fig.add_axes([left, bottom, width, height])
 xval = np.arange(0, 2, 0.5)
 idx = 3
 w = w_l[idx]
 theta = theta_l[idx]
 dwt = dwt_l[idx]
-ax1.plot(xval, supply(xval, n, g, theta, w, dwt, l, coef))
+ax1.plot(supply(xval, n, g, theta, w, dwt, l, coef), xval)
 ax2.plot(np.arange(start, end)[:-1], theta_l, 'b')
 ax2.plot(np.arange(start, end)[:-1], theta_l + w_l, 'r')
 ax2.plot(np.arange(start, end)[:-1], theta_l - w_l, 'r')
 plt.axvline(x=np.arange(start, end)[:-1][idx])
-plt.show()
+# plt.show()
+texfig.savefig('test')
+
 
 xval = np.arange(0, 2, 0.5)
 for w, dwt, theta in zip(w_l, dwt_l, theta_l):

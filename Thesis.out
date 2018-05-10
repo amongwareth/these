@@ -21,15 +21,15 @@
 \BOOKMARK [2][-]{subsection.1.6.3}{Discussion}{section.1.6}% 21
 \BOOKMARK [1][-]{section.1.7}{Limits}{chapter.1}% 22
 \BOOKMARK [1][-]{section.1.8}{Concluding Remarks}{chapter.1}% 23
-\BOOKMARK [0][-]{section*.21}{Appendix}{}% 24
-\BOOKMARK [1][-]{section.a.1.A}{Appendix Proof of Equation 1.11}{section*.21}% 25
-\BOOKMARK [1][-]{section.a.1.B}{Appendix Proof of Proposition 1.4.1 }{section*.21}% 26
-\BOOKMARK [1][-]{section.a.1.C}{Appendix Proof of Proposition 1.4.2 }{section*.21}% 27
-\BOOKMARK [1][-]{section.a.1.D}{Appendix Proof of Proposition 1.5.1 }{section*.21}% 28
-\BOOKMARK [1][-]{section.a.1.E}{Appendix Proof of proposition 1.5.2}{section*.21}% 29
-\BOOKMARK [1][-]{section.a.1.F}{Appendix Proof of proposition 1.6.3}{section*.21}% 30
-\BOOKMARK [1][-]{section.a.1.G}{Appendix Proof of proposition 1.6.1}{section*.21}% 31
-\BOOKMARK [1][-]{section.a.1.H}{Appendix Proof of proposition 1.6.2}{section*.21}% 32
+\BOOKMARK [0][-]{section*.31}{Appendix}{}% 24
+\BOOKMARK [1][-]{section.a.1.A}{Appendix Proof of Equation 1.11}{section*.31}% 25
+\BOOKMARK [1][-]{section.a.1.B}{Appendix Proof of Proposition 1.4.1 }{section*.31}% 26
+\BOOKMARK [1][-]{section.a.1.C}{Appendix Proof of Proposition 1.4.2 }{section*.31}% 27
+\BOOKMARK [1][-]{section.a.1.D}{Appendix Proof of Proposition 1.5.1 }{section*.31}% 28
+\BOOKMARK [1][-]{section.a.1.E}{Appendix Proof of proposition 1.5.2}{section*.31}% 29
+\BOOKMARK [1][-]{section.a.1.F}{Appendix Proof of proposition 1.6.3}{section*.31}% 30
+\BOOKMARK [1][-]{section.a.1.G}{Appendix Proof of proposition 1.6.1}{section*.31}% 31
+\BOOKMARK [1][-]{section.a.1.H}{Appendix Proof of proposition 1.6.2}{section*.31}% 32
 \BOOKMARK [0][-]{chapter.2}{Methodological Tools for Non-Parametric Functional data Evaluation and Weather Data Usage}{}% 33
 \BOOKMARK [1][-]{section.2.1}{Introduction}{chapter.2}% 34
 \BOOKMARK [1][-]{section.2.2}{Point Selection on Functional Data: a Non-Parametric Approach}{chapter.2}% 35
@@ -42,8 +42,8 @@
 \BOOKMARK [2][-]{subsection.2.3.1}{Dealing with meteorological data}{section.2.3}% 42
 \BOOKMARK [2][-]{subsection.2.3.2}{Aggregation of local information}{section.2.3}% 43
 \BOOKMARK [1][-]{section.2.4}{Conclusion}{chapter.2}% 44
-\BOOKMARK [0][-]{section*.62}{Appendix}{}% 45
-\BOOKMARK [1][-]{section.b.2.A}{Appendix Technical Details}{section*.62}% 46
+\BOOKMARK [0][-]{section*.72}{Appendix}{}% 45
+\BOOKMARK [1][-]{section.b.2.A}{Appendix Technical Details}{section*.72}% 46
 \BOOKMARK [2][-]{subsection.b.2.A.1}{Using the kernel density estimation \(KDE\) in our setting}{section.b.2.A}% 47
 \BOOKMARK [2][-]{subsection.b.2.A.2}{Outlier detection and removal}{section.b.2.A}% 48
 \BOOKMARK [0][-]{chapter.3}{Investigating the Impact of Uncertainty on Firms with Dynamic Costs: A Case Study of the French Electricity Market}{}% 49
@@ -64,13 +64,13 @@
 \BOOKMARK [2][-]{subsection.3.6.2}{Internal and external validity}{section.3.6}% 64
 \BOOKMARK [2][-]{subsection.3.6.3}{Endogeneity}{section.3.6}% 65
 \BOOKMARK [1][-]{section.3.7}{Conclusion}{chapter.3}% 66
-\BOOKMARK [0][-]{section*.98}{Appendix}{}% 67
-\BOOKMARK [1][-]{section.c.3.A}{Appendix Summary Statistics of Selected Points}{section*.98}% 68
-\BOOKMARK [1][-]{section.c.3.B}{Appendix Computational Details and Descriptives}{section*.98}% 69
+\BOOKMARK [0][-]{section*.108}{Appendix}{}% 67
+\BOOKMARK [1][-]{section.c.3.A}{Appendix Summary Statistics of Selected Points}{section*.108}% 68
+\BOOKMARK [1][-]{section.c.3.B}{Appendix Computational Details and Descriptives}{section*.108}% 69
 \BOOKMARK [2][-]{subsection.c.3.B.1}{Hard choices in the PLU computation}{section.c.3.B}% 70
 \BOOKMARK [2][-]{subsection.c.3.B.2}{Descriptive Statistics}{section.c.3.B}% 71
-\BOOKMARK [0][-]{chapter*.112}{General conclusion}{}% 72
-\BOOKMARK [0][-]{chapter*.116}{References}{}% 73
-\BOOKMARK [0][-]{chapter*.117}{Code Annex}{}% 74
-\BOOKMARK [0][-]{section*.120}{List of Figures}{}% 75
-\BOOKMARK [0][-]{section*.121}{Table of Contents - Long}{}% 76
+\BOOKMARK [0][-]{chapter*.122}{General conclusion}{}% 72
+\BOOKMARK [0][-]{chapter*.126}{References}{}% 73
+\BOOKMARK [0][-]{chapter*.127}{Code Annex}{}% 74
+\BOOKMARK [0][-]{section*.130}{List of Figures}{}% 75
+\BOOKMARK [0][-]{section*.131}{Table of Contents - Long}{}% 76
