@@ -40,11 +40,9 @@
 \lhead[Introduction]{}
 \fancyfoot{}
 \fancyfoot[RO]{%
-		\labeledflipbookframe[0][0.5]{example_frames/plus_}[pgf][0.2]{r}{\thepage}{2em}%
+		\labeledflipbookframe[0][0.5]{figflip/figs/test}[pgf][0.18]{r}{\hspace{0.1cm}\thepage}{2em}%
 	}
-	\fancyfoot[LE]{%
-		\labeledflipbookframe[0][0.5]{example_frames/cross_}[pgf][0.2]{l}{\thepage}{2em}%
-}
+	\fancyfoot[LE]{\thepage}
 \include{intro}
 
 %%%%%%%%%%%%
@@ -63,11 +61,9 @@ Keywords: Supply function, Equilibria, Unicity, Oligopoly, Electricity, Auctions
 
 \fancyfoot{}
 \fancyfoot[RO]{%
-		\labeledflipbookframe[0][0.5]{example_frames/plus_}[pgf][0.2]{r}{\thepage}{2em}%
+		\labeledflipbookframe[0][0.5]{figflip/figs/test}[pgf][0.18]{r}{\thepage}{2em}%
 	}
-	\fancyfoot[LE]{%
-		\labeledflipbookframe[0][0.5]{example_frames/cross_}[pgf][0.2]{l}{\thepage}{2em}%
-}
+\fancyfoot[LE]{\thepage}
 \include{ch1}
 
 
@@ -91,11 +87,9 @@ Keywords: Functional, Electricity, Auctions, Day-ahead, Weather, Uncertainty, Dy
 
 \fancyfoot{}
 \fancyfoot[RO]{%
-		\labeledflipbookframe[0][0.5]{example_frames/plus_}[pgf][0.2]{r}{\thepage}{2em}%
+		\labeledflipbookframe[0][0.5]{figflip/figs/test}[pgf][0.18]{r}{\thepage}{2em}%
 	}
-	\fancyfoot[LE]{%
-		\labeledflipbookframe[0][0.5]{example_frames/cross_}[pgf][0.2]{l}{\thepage}{2em}%
-}
+\fancyfoot[LE]{\thepage}
 \include{ch1-5}
 
 
@@ -118,11 +112,9 @@ JEL Classification Numbers: C10, C57, L94, Q41 }}
 
 \fancyfoot{}
 \fancyfoot[RO]{%
-		\labeledflipbookframe[0][0.5]{example_frames/plus_}[pgf][0.2]{r}{\thepage}{2em}%
+		\labeledflipbookframe[0][0.5]{figflip/figs/test}[pgf][0.18]{r}{\thepage}{2em}%
 	}
-	\fancyfoot[LE]{%
-		\labeledflipbookframe[0][0.5]{example_frames/cross_}[pgf][0.2]{l}{\thepage}{2em}%
-}
+\fancyfoot[LE]{\thepage}
 \include{ch2}
 
 
@@ -141,15 +133,16 @@ JEL Classification Numbers: C10, C57, L94, Q41 }}
 \lhead[Conclusion]{}
 \fancyfoot{}
 \fancyfoot[RO]{%
-		\labeledflipbookframe[0][0.5]{example_frames/plus_}[pgf][0.2]{r}{\thepage}{2em}%
+		\labeledflipbookframe[0][0.5]{figflip/figs/test}[pgf][0.18]{r}{\thepage}{2em}%
 	}
-	\fancyfoot[LE]{%
-		\labeledflipbookframe[0][0.5]{example_frames/cross_}[pgf][0.2]{l}{\thepage}{2em}%
-}
+\fancyfoot[LE]{\thepage}
 \include{ccl}
 \fancyhead{} 
 \rhead[]{\textsl{References}} 
 \lhead[References]{}
+\fancyfoot{}
+\fancyfoot[RO]{\thepage}
+\fancyfoot[LE]{\thepage}
 \singlespacing
 
 \bibliographystyle{apalike}
@@ -159,6 +152,11 @@ JEL Classification Numbers: C10, C57, L94, Q41 }}
 \fancyhead{} 
 \rhead[]{\textsl{Code Annex}} 
 \lhead[Code Annex]{}
+\fancyfoot{}
+\fancyfoot[RO]{%
+		\labeledflipbookframe[0][0.5]{figflip/figs/test}[pgf][0.18]{r}{\thepage}{2em}%
+	}
+\fancyfoot[LE]{\thepage}
 \include{code_annex}
 \makeatletter
 \renewcommand*\l@figure{\@dottedtocline{1}{1 em}{3.2em}}
@@ -167,6 +165,9 @@ JEL Classification Numbers: C10, C57, L94, Q41 }}
 \fancyhead{} 
 \rhead[]{\textsl{List of Figures}} 
 \lhead[List of Figures]{}
+\fancyfoot{}
+\fancyfoot[RO]{\thepage}
+\fancyfoot[LE]{\thepage}
 \newpage
 \listoffigures
 \newpage
@@ -174,6 +175,9 @@ JEL Classification Numbers: C10, C57, L94, Q41 }}
 \fancyhead{} 
 \rhead[]{\textsl{Table of Contents - Long}} 
 \lhead[Table of Contents - Long]{}
+\fancyfoot{}
+\fancyfoot[RO]{\thepage}
+\fancyfoot[LE]{\thepage}
 \phantomsection \addcontentsline{toc}{chapter}{Table of Contents - Long}
 \renewcommand{\cftchapleader}{\bfseries\cftdotfill{\cftchapdotsep}}
 \renewcommand{\cftchappagefont}{\bfseries}

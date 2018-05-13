@@ -112,7 +112,7 @@
 \contentsline {subsubsection}{On player bid functions}{186}{section*.117}
 \contentsline {subsubsection}{On exogenous factors}{187}{section*.120}
 \contentsline {chapter}{General conclusion}{193}{chapter*.122}
-\contentsline {chapter}{References}{201}{chapter*.126}
-\contentsline {chapter}{Code Annex}{207}{chapter*.127}
-\contentsline {chapter}{List of Figures}{267}{section*.130}
-\contentsline {chapter}{Table of Contents - Long}{271}{section*.131}
+\contentsline {chapter}{References}{203}{chapter*.126}
+\contentsline {chapter}{Code Annex}{209}{chapter*.127}
+\contentsline {chapter}{List of Figures}{269}{section*.130}
+\contentsline {chapter}{Table of Contents - Long}{273}{section*.131}

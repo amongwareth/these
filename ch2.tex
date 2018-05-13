@@ -2,57 +2,35 @@
 \section{Introduction}
 In the last chapter, we have given some attention to a methodology that allows us to use functional data for reduced form analysis. In this chapter, we focus on the economic questions that can be asked using such a methodology. Specifically, we focus on an investigation of the effect of uncertainty on the behavior of electricity producers, and testing the predictions of our first chapter, by leveraging the results of our second chapter that allow us to compare schedules to one another. \\
 
-There exists a consensus that dynamic costs, also referred to as ramping or adjustment costs, are important on the electricity market.\footnote{ \cite{anderson2005supply},  \cite{hobbs2001next}, \cite{hortacsu2008understanding}, \cite{reguant2011welfare}, \cite{sewalt2003negative}. } These are the costs incurred by a producer when production varies. 
-The importance of uncertainty for the expectation of dynamic costs is shown in chapter 1. Uncertainty itself on the electricity market as well as estimates for the value of ramping costs have been studied empirically by \cite{wolak2007quantifying}, in the case of step functions. We focus on two sources of uncertainty for traditional electricity suppliers, namely uncertainty about the realization of the market demand and uncertainty from the inherently unpredictable meteorological situation
-(which affects renewables generation), mainly because those are the two main sources of uncertainty in the span of time covered by our data (2011-2013). There is one blind spot in our analysis: we do not have data about the interconnected countries, which themselves affect the French market, and therefore introduce another important of uncertainty. Not taking this effect into account essentially introduces noise in our data and means that we need more data to infer the significance of an effect compared to a case where we would be able to control for it. We propose a methodology to measure this uncertainty and its impact on firm strategies on the electricity market. \\
+There exists a consensus that dynamic costs, also referred to as ramping or adjustment costs, are important on the electricity market.\footnote{ \cite{anderson2005supply},  \cite{hobbs2001next}, \cite{hortacsu2008understanding}, \cite{reguant2011welfare}, \cite{sewalt2003negative}. } These are the costs incurred by a producer when production varies. The importance of uncertainty for the expectation of dynamic costs is shown in chapter 1. Uncertainty itself on the electricity market as well as estimates for the value of ramping costs have been studied empirically by \cite{wolak2007quantifying}, in the case of step functions. We focus on two sources of uncertainty for traditional electricity suppliers, namely uncertainty about the realization of the market demand and uncertainty from the inherently unpredictable meteorological situation (which affects renewables generation), mainly because those are the two main sources of uncertainty in the span of time covered by our data (2011-2013). There is one blind spot in our analysis: we do not have data about the interconnected countries, which themselves affect the French market and therefore introduce another important of uncertainty. Not taking this effect into account essentially introduces noise in our data and means that we need more data to infer the significance of an effect compared to a case where we would be able to control for it. We propose a methodology to measure this uncertainty and its impact on firm strategies on the electricity market. \\
 
-Electricity as a market is very important in and of itself ($\$2$ trillion in worldwide sales in 2010). It is also a crucial input for many industries; power outages induce very large costs to society (\cite{lacommare2004understanding}, \cite{reichl2013power}). 
-%The importance of electricity for modern economies is undeniable. Indicators of its importance are the size of its market ($\$2$ trillion in worldwide sales in 2010) and the fact that electricity is an input for many other industries. 
-%Market failures, which arise in the form of mis-pricings or network breakdowns, have very large economic costs to society and deserve more attention. 
-%The analysis of its markets is highly interesting from an economic perspective. 
-The electricity market is, however, quite different from the markets for other commodities in a few respects. First, electricity cannot be efficiently stored. As a consequence, electricity markets are high frequency (prices can update down to 15-min intervals) and firm strategies are purer as they are free of stock management considerations. \\
+Electricity as a market is very important in and of itself ($\$2$ trillion in worldwide sales in 2010). It is also a crucial input for many industries; power outages induce very large costs to society (\cite{lacommare2004understanding}, \cite{reichl2013power}). The electricity market is, however, quite different from the markets for other commodities in a few respects. First, electricity cannot be efficiently stored. As a consequence, electricity markets are high frequency (prices can update down to 15-min intervals) and firm strategies are purer as they are free of stock management considerations. \\
 
 Second and in addition to non-storability, a generation surplus cannot be disposed of freely.\footnote{The common assumption of free disposal as made in standard microeconomics is violated.} Thus, generation of electricity must always be matched with consumption in real time (modulo a small tolerance). This represents a hard constraint on the market\footnote{Mismatches between consumption and generation ultimately result in power outages.} and forces suppliers to be reactive. However, this reactivity is costly as plant operators incur dynamic costs when adjusting production and the larger the adjustment made, the larger the cost. 
 Hence, suppliers face a trade-off between cheap generation of electricity and costly reactivity to the demand realization. Indeed, no single generation technology exists that satisfies both cheap generation and sufficient reactivity to allow production fluctuations at a reasonable price. Existing generation techniques are either cheap and unresponsive, e.g. nuclear plants, or expensive and flexible, e.g. gas turbines. \\
  
-Interestingly, we also observe negative prices. In France for example, during the weekend of the 15$^\text{th}$ June 2013, the price per MWh dropped to $-200$\EUR{}. This contrasts to the yearly average of approx. $ 45$\EUR{}/MWh and is generally understood as a sign that subsidizing consumption temporarily is cheaper for a supplier than shutting down a plant \cite{epexwebsite1}.\footnote{``Negative prices are a price signal on the power wholesale market that occurs when a high inflexible power generation meets low demand. Inflexible power sources can’t be shut down and restarted in a quick and cost-efficient manner. Renewables do count in, as they are dependent from external factors (wind, sun)."}  The increase of the share of renewable generation in the energy mix contributes to the occurrence of negative prices on the market. 
-% Renewables generation benefits from a feed-in guarantee on the electricity grid. 
-The intermittency of renewables causes large residual demand shocks \cite{epexwebsite1}. The unreliability of renewable generation also means that more flexible plants (i.e. plants with lower dynamic costs) are required to provide rapid responses to fluctuations in production from renewables \cite{ren2013renewables}. \\
+Interestingly, we also observe negative prices. In France for example, during the weekend of the 15$^\text{th}$ June 2013, the price per MWh dropped to $-200$\EUR{}. This contrasts to the yearly average of approx. $ 45$\EUR{}/MWh and is generally understood as a sign that subsidizing consumption temporarily is cheaper for a supplier than shutting down a plant \cite{epexwebsite1}.\footnote{``Negative prices are a price signal on the power wholesale market that occurs when a high inflexible power generation meets low demand. Inflexible power sources can’t be shut down and restarted in a quick and cost-efficient manner. Renewables do count in, as they are dependent from external factors (wind, sun)."} The increase of the share of renewable generation in the energy mix contributes to the occurrence of negative prices on the market. The intermittency of renewables causes large residual demand shocks \cite{epexwebsite1}. The unreliability of renewable generation also means that more flexible plants (i.e. plants with lower dynamic costs) are required to provide rapid responses to fluctuations in production from renewables \cite{ren2013renewables}. \\
 
-Furthermore, uncertainty arises from the fact that renewable production is a local and dispersed production, but feeds into a national market with a single price. When meteorological conditions change, the geographic production profile also changes. This further complicates the predictability of renewables generation and contributes to the uncertainty that electricity producers face when playing %bidding 
-on the electricity %EPEX Spot 
-market \cite{meibom2009operational}.\\
+Furthermore, uncertainty arises from the fact that renewable production is a local and dispersed production, but feeds into a national market with a single price. When meteorological conditions change, the geographic production profile also changes. This further complicates the predictability of renewables generation and contributes to the uncertainty that electricity producers face when playing on the electricity market \cite{meibom2009operational}.\\
 
-This paper explores the effect that the absolute level of uncertainty about residual demand has on players' strategies on the electricity market. In the light of the existence of dynamic costs, which are inherent to the production technologies, uncertainty is costly to suppliers as shown in chapter 1. Thus when faced with uncertainty, we expect that electricity producers smooth production volume over time in order to minimize dynamic costs. In a single market interaction with a symmetric oligopoly and linear demand functions this translates to playing a steeper supply function when uncertainty is high. The detailed intuition behind the predictions tested is given in section \ref{intropredict}. \\
+This paper explores the effect that the absolute level of uncertainty about residual demand has on players' strategies on the electricity market. In the light of the existence of dynamic costs, which are inherent to the production technologies, uncertainty is costly to suppliers as shown in chapter 1. Thus when faced with uncertainty, we expect that electricity producers smooth production volume over time in order to minimize dynamic costs. In a single market interaction with a symmetric oligopoly and linear demand functions, this translates to playing a steeper supply function when uncertainty is high. The detailed intuition behind the predictions tested is given in section \ref{intropredict}. \\
 
 \label{introresults}
 We show that uncertainty does impact supplier strategies. However, this prediction and result only apply locally to the central, flat and linear part of the supply bid function. Towards the high and low volume extremities of the bid functions when capacity constraints start to matter, bid functions are stepper and the effect of uncertainty vanishes. Furthermore, we observe results that indicate that demand-side bidding is also impacted by uncertainty.  \\
-%However the prediction tested is only partially validated by the data, in that only part of the curves are indeed getting steeper as uncertainty increases whereas others get less steep. We discuss how and why those discrepancies might arise at the end of the paper.  
 
-%In the light of the existence of dynamic costs, which are inherent to the production technologies,  uncertainty is costly to suppliers \cite{bergesmartimort2014}. 
-%The industry set-up allows suppliers to trade the uncertainty on three different markets that differ the lead time up to delivery *** OR 
-%The converse holds: acquisition of information about expected residual demand is valuable. 
-%The industry set-up allows the incorporation of new information about expected demand by its segmentation into three markets that differ by the lead time up to delivery: 
-%a longterm bilateral contracting market, a one-day ahead market and an intraday balancing market for last-minute adjustments. 
-
-We focus on the French one-day ahead market, EPEX Spot. This market is a divisible goods auction and 
-particularly suited for our analysis as we observe data on the full aggregate bid functions for both supply and demand.  We introduce the market's auction format and rules in section \ref{epexall}.\\
+We focus on the French one-day ahead market, EPEX Spot. This market is a divisible goods auction and particularly suited for our analysis as we observe data on the full aggregate bid functions for both supply and demand. We introduce the market's auction format and rules in section \ref{epexall}.\\
 
 The dataset and its sources are presented in section~\ref{datasection}.
 We develop our identification methodology in section \ref{newapproach}. Our empirical strategy relies on the non-parametric, comparable point selection technique presented in chapter \ref{pschapter}. 
 We reuse the selected points of the previous chapter for our analysis here. 
-We present and interpret the results in section \ref{resultsplusinterpret}. 
-%In section XXX, we focus on welfare analyses.**** TO DO: We first apply the model to quantify the effect of uncertainty in terms of price differentials on the market and then address the social cost, which could be avoided if geographic plant location was not decided on by individual investors, but by a social planner, who minimised uncertainty of renewables production. 
-Finally, we discuss some overarching points in section \ref{discussgeneral} and conclude in section~\ref{conclusion}.
+We present and interpret the results in section \ref{resultsplusinterpret}. Finally, we discuss some overarching points in section \ref{discussgeneral} and conclude in section~\ref{conclusion}.
 
 
 \subsection{Literature review and contribution}
 \label{litrev}
 
 There exists a literature on supply function equilibria initiated by \cite{KM}. 
-In traditional models, firms choose between quantities (Cournot) or prices (Bertrand) as their strategic quantities. In the intermediate case, firms choose a relationship between quantities and prices, namely a supply function. This is the focus of the supply function equilibrium models.
-%In this literature, firms do not have to choose between prices or quantities as a strategic variable, but submit a supply function which matches the quantity supplied by the firm to the price of the market. %, which endogenously determined by the aggregate supply and demand. 
-A key ingredient of these models is uncertainty.\\
+In traditional models, firms choose between quantities (Cournot) or prices (Bertrand) as their strategic quantities. In the intermediate case, firms choose a relationship between quantities and prices, namely a supply function. This is the focus of the supply function equilibrium models. A key ingredient of these models is uncertainty.\\
 
 Supply function equilibrium models are very relevant for the analysis of electricity markets, since many electricity market designs allow firms to submit a price-volume function rather than a specific price or quantity. \cite{Newgreen}, \cite{newbery1998competition} and \cite{bolle1992supply} have used these models to analyze competition on the electricity markets. \\
 
@@ -60,219 +38,102 @@ These papers have contributed to a broader investigation of the competition on t
 While those initial papers have focused on the supply function equilibria of the market, they have abstracted from some technological specificities for the sake for simplification. \\
 
 One such aspect that we are interested in and that has been the subject of research in recent years is the importance of dynamic costs for electricity production. \\
-% First paper:
-Our first chapter extends \cite{KM} to derive predictions on firms facing dynamic costs in a supply function oligopoly under uncertainty. 
-When varying production is costly, suppliers take these costs into consideration by submitting steeper functions when facing more uncertainty, in order to limit the range of variation in production.
-\cite{reguant2011welfare} develops a model and an empirical strategy to measure dynamic costs on the Spanish one-day-ahead electricity market. She finds that ``complex bids", which allow firms to minimize dynamic costs by linking production in one time period to production in a subsequent time period, reduce the volatility and the level of prices on the market.  Her work is also unique in terms of data availability. By using individual bid functions she is able to produce estimates of start-up and ramping costs per production technology. \\
 
-In order to quantify dynamic costs on the Australian electricity market, \cite{wolak2007quantifying} derives a methodology to recover estimates of the parameters of parametric cost functions at the level of the production unit. His identification is based on the assumption that each profit maximizing supplier knows the distribution of shocks on the demand function when playing on the market. Uncertainty is thus an explicit ingredient of his paper and he captures two sources of uncertainty in a single index: (i) the uncertainty from not knowing the aggregate supply function served by all other suppliers and (ii) the uncertainty about the realization of the market demand.  The recovered cost functions quantify the cost of varying output. Forward contracts are useful to avoid output variations. By comparing the observed  level of forward contracting (assumed to be the profit maximizing choice for production variation) with the theoretical minimum cost production pattern, he %cannot reject the hypothesis that ramping costs are important for suppliers. 
-does not find support for ramping costs.\\
+Our first chapter extends \cite{KM} to derive predictions on firms facing dynamic costs in a supply function oligopoly under uncertainty. When varying production is costly, suppliers take these costs into consideration by submitting steeper functions when facing more uncertainty, in order to limit the range of variation in production. \cite{reguant2011welfare} develops a model and an empirical strategy to measure dynamic costs on the Spanish one-day-ahead electricity market. She finds that ``complex bids", which allow firms to minimize dynamic costs by linking production in one time period to production in a subsequent time period, reduce the volatility and the level of prices on the market. Her work is also unique in terms of data availability. By using individual bid functions she is able to produce estimates of start-up and ramping costs per production technology. \\
 
-We contribute to this literature by providing an empirical analysis of the French electricity market.
-Specifically, we look at the impact of uncertainty on supplier strategies and take this as evidence that dynamic costs matter. 
- Our approach to separate out the uncertainty from market demand expectations and predictability of renewables generation is novel. Both proxies for uncertainty used are new, uncertainty from market demand is inferred from the prediction errors that firms make in a demand estimation and uncertainty from renewable production is computed in a bottom-up approach from local weather forecasts.
-Instead of opting for a time series regression, we understand all hourly auctions as a cross-sectional dataset and control for the time of the day by using continuous transition variables for daytime periods. Similarly, we control for seasonality using continuous variables rather than dummies.  Thereby, %we circumvent the problem of dummies in our regressions, which are black boxes for the interpretation.
-we are able to leverage our dataset and increase the sample size for each of our regressions and improve the precision of our estimates. \\
+In order to quantify dynamic costs on the Australian electricity market, \cite{wolak2007quantifying} derives a methodology to recover estimates of the parameters of parametric cost functions at the level of the production unit. His identification is based on the assumption that each profit maximizing supplier knows the distribution of shocks on the demand function when playing on the market. Uncertainty is thus an explicit ingredient of his paper and he captures two sources of uncertainty in a single index: (i) the uncertainty from not knowing the aggregate supply function served by all other suppliers and (ii) the uncertainty about the realization of the market demand. The recovered cost functions quantify the cost of varying output. Forward contracts are useful to avoid output variations. By comparing the observed level of forward contracting (assumed to be the profit maximizing choice for production variation) with the theoretical minimum cost production pattern, he does not find support for ramping costs.\\
 
+We contribute to this literature by providing an empirical analysis of the French electricity market. Specifically, we look at the impact of uncertainty on supplier strategies and take this as evidence that dynamic costs matter. Our approach to separate out the uncertainty from market demand expectations and predictability of renewables generation is novel. Both proxies for uncertainty used are new, uncertainty from market demand is inferred from the prediction errors that firms make in a demand estimation and uncertainty from renewable production is computed in a bottom-up approach from local weather forecasts. Instead of opting for a time series regression, we understand all hourly auctions as a cross-sectional dataset and control for the time of the day by using continuous transition variables for daytime periods. Similarly, we control for seasonality using continuous variables rather than dummies. Thereby, we are able to leverage our dataset and increase the sample size for each of our regressions and improve the precision of our estimates. \\
 
-%maybe 4. (authors of Operational costs induced by fluctuating wind power production in Germany and Scandinavia) give the link from production intermittency of renewables to operational costs for the market. In particular, they separate out the operational costs due to predictatbility and variability of renewables generatio. 
-
-%
-%\subsection{Larger research question - link to electricity storage and demand response policies}
-%This paper feeds into a larger research project on how a government should allocate resources between developing renewable's generation and alternative policies, such as incentivising research on electricity storage or the pushing of demand response policies. 
-%
-%Electricity storage refers to techniques to defer consumption of electricity to a later point in time\footnote{** Say example, say problems: Power-to-gas, too expensive on large scale}. 
-%Demand response measures allow to reduce electricity consumption at peak times, e.g. by deferring or deleting consumption on the grid\footnote{** say example and problems, "effacement energetique, pas repandu en europe, existe aux US, probleme contraignant.}. 
-
-Furthermore, our work contributes to the empirical literature testing strategic behaviour of market participants. 
- Generally, these studies focus on point-wise analyses for reasons of data availability. Not only does this cause endogeneity problems when the data used is equilibrium data, but also the analysis is restricted to an understanding of the usually observed outcomes of the market. \\
+Furthermore, our work contributes to the empirical literature testing strategic behaviour of market participants. Generally, these studies focus on point-wise analyses for reasons of data availability. Not only does this cause endogeneity problems when the data used is equilibrium data, but also the analysis is restricted to an understanding of the usually observed outcomes of the market. \\
  
-In our setting, we benefit from an interesting dataset in which we observe full aggregate bid functions of players. The functions describe the players' behaviour both in the region where the equilibrium is likely to occur as well as in regions that  rarely have an impact on the equilibrium outcome. As such, they provide a much fuller description of the firms' strategies. 
-The additional information contained in the full aggregate bid functions has been used extensively in theoretical work (notably in the supply function equilibria literature mentioned above). 
-However, few papers exploit these full bid functions empirically. \\
+In our setting, we benefit from an interesting dataset in which we observe full aggregate bid functions of players. The functions describe the players' behaviour both in the region where the equilibrium is likely to occur as well as in regions that rarely have an impact on the equilibrium outcome. As such, they provide a much fuller description of the firms' strategies. The additional information contained in the full aggregate bid functions has been used extensively in theoretical work (notably in the supply function equilibria literature mentioned above). However, few papers exploit these full bid functions empirically. \\
 
-For the government bond market, \cite{preget2005treasury} and \cite{ozcan2004logistic} use a parametric approach to this functional data for a description of the variation of bid functions with respect to exogenous factors and an investigation of the revenue superiority of the uniform or discriminatory multi-unit auction mechanism, respectively. On the electricity market,  \cite{wolfram1999measuring} leaves the analysis of equilibrium data to investigate duopoly power of firms on the UK day-ahead spot market. Instead, she uses information from the whole aggregate supply function to investigate the impact of price caps for electricity producers. Using an analysis conditioned on 25 different demand levels, she shows that the introduction of price caps resulted in a counter-clockwise rotation of the aggregate supply function. She relates these results to produce a lower bound on the extent to which firms can increase their prices above marginal costs when regulatory pressure makes it advantageous to do so. Thereby, she contributes  empirical evidence for the distorting effects of price caps. \\
+For the government bond market, \cite{preget2005treasury} and \cite{ozcan2004logistic} use a parametric approach to this functional data for a description of the variation of bid functions with respect to exogenous factors and an investigation of the revenue superiority of the uniform or discriminatory multi-unit auction mechanism, respectively. On the electricity market,  \cite{wolfram1999measuring} leaves the analysis of equilibrium data to investigate duopoly power of firms on the UK day-ahead spot market. Instead, she uses information from the whole aggregate supply function to investigate the impact of price caps for electricity producers. Using an analysis conditioned on 25 different demand levels, she shows that the introduction of price caps resulted in a counter-clockwise rotation of the aggregate supply function. She relates these results to produce a lower bound on the extent to which firms can increase their prices above marginal costs when regulatory pressure makes it advantageous to do so. Thereby, she contributes empirical evidence for the distorting effects of price caps. \\
 
-Our work adds to this empirical literature using the information contained in the full bid functions 
-by developing a non-parametric approach which allows to condition our analyses on multiple, representative points of the bid functions. The statistical ingredients rely on \cite{ramsaysilverman2005functional} and are detailed in chapter \ref{pschapter}.
-Thereby we are able to leverage our dataset, increase the sample size in individual regressions as well as obtain a fuller picture of the effects of exogenous variables on the behaviour of electricity producing firms. We emphasize that out approach allows to overcome structural restrictions underlying previous parametric approaches, e.g. the symmetry of the logistic function used in \cite{pw2002etude}.
-
-%this literature by  on functional analyses, specifically to that on the electricity market. By conditioning our analysis on different points of the market bid functions, we are able to investigate non-linear effects of exogenous factors on the shape of the bid functions.  While functional analysis have been used in the past, our non-parametric, point-specific approach is novel in the economics literature. Our approach  
-
+Our work adds to this empirical literature using the information contained in the full bid functions by developing a non-parametric approach which allows to condition our analyses on multiple, representative points of the bid functions. The statistical ingredients rely on \cite{ramsaysilverman2005functional} and are detailed in chapter \ref{pschapter}. Thereby we are able to leverage our dataset, increase the sample size in individual regressions as well as obtain a fuller picture of the effects of exogenous variables on the behaviour of electricity producing firms. We emphasize that out approach allows to overcome structural restrictions underlying previous parametric approaches, e.g. the symmetry of the logistic function used in \cite{pw2002etude}.
 
 \subsection{Theoretical prediction}
 \label{intropredict}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%*** ADD OBJ FUNCTIONS AND QUick DERIVATION TO SUPPORT INTUITION
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
 We test the impact of uncertainty of supplier strategies by testing the prediction that suppliers bid steeper supply bid functions when faced with a larger uncertainty concerning the outcome of the (residual) demand realization, for which the traditional supply function equilibria framework provides no prediction at all, which means that our null hypothesis, that there is no effect of uncertainty of the slope, corresponds to the regular SFE framework.\\
-%More specifically, in this paper we aim to better understand the shape of aggregate bid functions on the EPEX Spot market and test the impact of the absolute level of uncertainty on the suppliers submitted bid functions. 
 
 In a discontinuous setting, where the supplier produces volume $Q_H$ of electricity in hour $H$, we assume that he faces a cost function $C_i(.)$ for each production plant $i$. This cost function depends on both marginal costs of production as well as the dynamic costs for changing production rapidly: $C_i \bigl( (Q_H), (Q_H - Q_{H-1})^2 \bigr)$. The larger the variation in production between hours, the larger the dynamic costs. 
-Even when the expected residual demand is constant, there are still fluctuations in the production due to possible shocks to the residual demand. The larger the shocks, the larger the change in production and thus the larger the dynamic costs. 
-%Given a constant expected residual demand, unpredictable shocks on the demand function induce these dynamic costs. 
-Consequently, increased uncertainty (as represented by shocks on the demand function) translates into increased expected dynamic costs. We assume that the profit maximizing supplier knows the distribution of shocks on the demand function when choosing his supply function.  In order to minimize these costs, the producer can choose a steeper supply function when uncertainty is high. We want to test this prediction. \\
+Even when the expected residual demand is constant, there are still fluctuations in the production due to possible shocks to the residual demand. The larger the shocks, the larger the change in production and thus the larger the dynamic costs. Consequently, increased uncertainty (as represented by shocks on the demand function) translates into increased expected dynamic costs. We assume that the profit maximizing supplier knows the distribution of shocks on the demand function when choosing his supply function. In order to minimize these costs, the producer can choose a steeper supply function when uncertainty is high. We want to test this prediction. \\
 
-%The intuition behind the predictions tested in this paper is illustrated in figure \ref{predictslope} using a stylised case. 
 We illustrate the intuition behind this prediction using a stylised case in figure \ref{predictslope}. The graphs depict a situation in which a single, risk-neutral supplier bids a supply function to supply electricity in the hours 9 and 10 of the next day. For both hours, the supplier faces a constant expected residual demand function represented by $E(D)$. In a static optimization problem, the supplier would bid a supply function $S_0$ in both auctions. \\
 
 \begin{figure}[!ht]
-\begin{center} \makebox[\textwidth]{\includegraphics[height=50mm]{figch2/Shot35.pdf} \hspace{0.03cm} \includegraphics[height=50mm]{figch2/Shot36.pdf} %\hspace{0.03cm} \includegraphics[height=50mm]{predictslope11.pdf}
+\begin{center} \makebox[\textwidth]{\includegraphics[height=50mm]{figch2/Shot35.pdf} \hspace{0.03cm} \includegraphics[height=50mm]{figch2/Shot36.pdf} 
 } \end{center}
 \caption{Illustrating the effect of increased uncertainty.}
 \label{predictslope}
-%{\small Note: }
 \end{figure}
 
-The uncertainty in the market is represented %in the model (to move away from model for intuition
- by the width of the envelope of shocks that affect the residual demand function (represented by the arrows on $E(D)$). Thus, in each hour, the residual demand fluctuates between $D_{min}$ and $D_{max}$, where the range between the extremal demands may vary from one hour to the next. \\
+The uncertainty in the market is represented by the width of the envelope of shocks that affect the residual demand function (represented by the arrows on $E(D)$). Thus, in each hour, the residual demand fluctuates between $D_{min}$ and $D_{max}$, where the range between the extremal demands may vary from one hour to the next. \\
  
-Before submitting a supply function to the market, the supplier estimates the distribution of probabilities of demand shocks that he will face.  %The price elasticity of the supply function is given by the slope of the supply function. 
-In hour 9, the supplier is able to rather precisely predict the realization of the demand function in the auction, i.e. it realises within a tight confidence interval. In hour 10, however, uncertainty in predicting the outcome of the demand realization has grown strongly as represented by the much wider confidence interval on the demand realization. \\
+Before submitting a supply function to the market, the supplier estimates the distribution of probabilities of demand shocks that he will face. In hour 9, the supplier is able to rather precisely predict the realization of the demand function in the auction, i.e. it realises within a tight confidence interval. In hour 10, however, uncertainty in predicting the outcome of the demand realization has grown strongly as represented by the much wider confidence interval on the demand realization. \\
 
 Given a fixed supply bid function $S_0$, the possible range of quantities to be produced by the supplier when going from hour 9 to hour 10 has increased due to the increase in the size of the uncertainty (interval on the Q-axis has grown from length $A$ for hour 9 to the dotted length $B$ in hour 10).\\
 
-Now, we assume that the supplier faces dynamic costs, i.e. it is costly for production to vary on top of any traditional marginal cost consideration and the larger the variation, the larger the cost.  Then in the case of a fixed supply bid function ($S_0$ in both auctions), an increase in uncertainty implies an increase in expected dynamic costs. \\
+Now, we assume that the supplier faces dynamic costs, i.e. it is costly for production to vary on top of any traditional marginal cost consideration and the larger the variation, the larger the cost. Then in the case of a fixed supply bid function ($S_0$ in both auctions), an increase in uncertainty implies an increase in expected dynamic costs. \\
 
-The supplier's reaction to increased uncertainty is therefore to bid a steeper supply function $S_1$ in order to trade-off static optimality and dynamic effects. As a consequence, the range of volumes produced in equilibrium is reduced (the firm produces in the range $C$ instead of $B$). When seen over time, these considerations lead to a smoother production as compared to a constant supply curve: demand shocks are absorbed through a higher price volatility and a lower production volatility. \\%In other words, by introducing dynamic cost considerations, volatility in prices has become comparatively cheaper than volatility in production. 
-
+The supplier's reaction to increased uncertainty is therefore to bid a steeper supply function $S_1$ in order to trade-off static optimality and dynamic effects. As a consequence, the range of volumes produced in equilibrium is reduced (the firm produces in the range $C$ instead of $B$). When seen over time, these considerations lead to a smoother production as compared to a constant supply curve: demand shocks are absorbed through a higher price volatility and a lower production volatility. \\
 
 If cautious behavior under high uncertainty is true for all firms on the market and each firm has the same expectation of the probability distribution of the uncertainty, then the reaction of bidding a more price inelastic supply function to increased uncertainty should be observable on the aggregated supply function. \\
 
-We emphasize that this prediction relies on linear demand and supply functions and does not incorporate capacity constraint considerations (both upper and lower bounds on the production volume of plants), which are also important on the market.  Furthermore, we have outlined our prediction using a discrete time-setting. 
-The continuous version of this analysis on dynamic costs is explored in detail in chapter 1.\\ 
-%Finally, we consider that the number of bidders stays constant across auctions. Holmberg 2004 shows that the slope of the unique symmetric equilibrium supply function falls with the number of 
-% The full blown model solves the problem in the case of a symetric oligopoly of suppliers facing uncertain demand and subject to dynamic costs of production. The essence of the model is for a supplier $i$ to maximise its expected profit: 
-%
-%\begin{equation}
-%\displaystyle{\max_{S_i(p)}}~\mathbb{E}\left[\int_{0}^{T} \left(p(\theta(t))S_i(p(\theta(t))) -C\left(S_i(p(\theta(t))),\frac{dS_i(p(\theta(t)))}{dt} \right)\right)dt\right]
-%\end{equation} 
-%
-%with $S_i(p)$ the supply schedule as a function of the price $p$, $f(\theta)$ the distribution of demand shocks $\theta$, $C(\cdot)$ the cost function depending on the level of production and its variation, $t$ the time, and $T$ the time period over which the flow of profits is maximised. This formula is only presented to give the gist of what is done, the formal maximisation program is different\footnote{This comes from the fact that one of the difficulties lies in the representation of the dynamic costs: the key ingredient in such a model is uncertainty, however, the most natural way to represent dynamic costs is by taking the time derivative of the production. Taking the derivative of a stochastic process is not possible, which is why the program has to be written in a different way. This is a technicality that is developed in much detail in the paper.}.   
-%
-%This model is solved analytically in the case of linear demand functions and symmetric oligopoly. The main result is that supply functions are linear too, and that their slope evolves with the time derivative of the amount of demand uncertainty. This effect is mainly driven by the use of a time continuous model, which allows to derive analytical results, but which implies myopic solutions: only local dynamic effects (the time derivative of the amount of demand uncertainty) can be derived. The authors believe that this result is a consequence of the continuous formulation of the model, we therefore focus empirically on the impact of the level of uncertainty on the strategies of the suppliers.
+We emphasize that this prediction relies on linear demand and supply functions and does not incorporate capacity constraint considerations (both upper and lower bounds on the production volume of plants), which are also important on the market. Furthermore, we have outlined our prediction using a discrete time-setting. The continuous version of this analysis on dynamic costs is explored in detail in chapter 1.\\ 
 
-The present paper tests this mechanism empirically and understands an increase in the slope of aggregate supply bid functions due to an increased level of uncertainty as evidence that firms minimize dynamic costs across auctions. %\footnote{In a companion paper ***REF, the authors explore the effect of the dynamics of the uncertainty, as opposed to the level of uncertainty investigated in this paper, on the bidding behaviour of electricity supplying firms.}.
-
-
-%
-%This narrative allows for two distinct mathematical interpretations. On the one hand, the absolute level of uncertainty could account for steeper supply schedules. On the other hand, one could think that it is the variation in uncertainty, and not uncertainty itself, that drives the dynamic bidding behaviour. 
-%
-%The first interpretation is straightforward from the previous paragraphs. The second one comes from a more detailed analysis of the dynamics of demand shocks. More precisely, when modelling shocks it is possible to obtain a situation where the level itself of uncertainty is not the driving force but the variation of the uncertainty is. This distinction can arise when a the level of demand is close to its expected maximum or minimum value. Close to the boundaries, it is expected to stay there longer than if it is close to its expected value. One can think of this as a producer forming his anticipation of demand based on different demand scenarios. 
-%
-%There can be many different situations leading to an average demand, but for demand to be close to its maximum or minimum anticipated value, a lot of events must realise in a specific way. Therefore, when close to a boundary, there is not much uncertainty as to which scenario lead to such a situation, whereas multiple scenarios can lead to an average demand value. The level effects of uncertainty, i.e. when close to a boundary there is less potential variation in demand than when close to its expected value, may cancel out, leaving the dynamics of the uncertainty as the only driver for bid shifting of suppliers: when uncertainty increases these effects become unbalanced and optimal bids change.
-
-
-%These effects, i.e when close to a boundary there is less potential variation in demand than when close to its expected value, can balance out and leave only a pure dynamic effect, that is that the variation in uncertainty drives the dynamics of the optimal bid submitted by producers: when uncertainty increases these effects become unbalanced and optimal bids change. 
-%
-%Berg\`es and Martimort (in prep) develop a full mathematical analysis of the dynamics of supply function equilibria under uncertainty when production is subject to dynamic costs, which points towards the possibility for the second more involved and less intuitive effect to exist. This paper tests empirically both mechanisms and understands an increase in the slope of aggregate supply bid functions due to increased uncertainty as evidence that firms minimise dynamic costs across auctions.
-
-%If there is low uncertainty on both low and high frequency volatility over time, the supplier can reasonably well anticipate the dynamic costs between production volumes. If now there is high uncertainty on high frequency volatility (noise) and low uncertainty on the trend, it means that the specific trajectory of demand is quite uncertain but it might not change much statistically speaking from a well anticipated trajectory. On the contrary, what can be quite informative is the variation in uncertainty. If the uncertainty increases sharply, it means that we know that there might be large shocks to the demand, which is not the same as having a low amount of information about an otherwise typical demand trajectory during the day. 
-
-%In other words, constant high uncertainty can point towards daily shocks, i.e. the anticipation of the heating required for the day was off for every hour by the same amount, whereas varying uncertainty can point towards knowledge of local shocks than can lead to high dynamic costs. This is why variation in uncertainty could be the actual driving force behind changes in supply curves from hour to hour. The paper by \cite{bergesmartimort2014} predicts the latter relationship. This paper tests empirically both mechanisms and understands an increase in the slope of aggregate supply bid functions due to increased uncertainty as evidence that firms minimise dynamic costs across auctions.
-
-%
-%*********
-%
-%Alternative idea of explanation: 
-%
-%Costly variation in the predictability of demand shock is due to to coordination failures in the market. When uncertainty increases sharply, many firms in the industry aim to adjust their bidding behaviour. Expectation differences (does not work with symmetric players) lead to exacerbation of natural uncertainty and thus increase dynamic costs. 
-%Private information in bidding distorts the adjustment bidding behaviour of firms and can exacerbate over/undershooting of aggregate bid expectation when adjusting to new uncertainty environment. 
-%
-%*********
-
-
+The present paper tests this mechanism empirically and understands an increase in the slope of aggregate supply bid functions due to an increased level of uncertainty as evidence that firms minimize dynamic costs across auctions. 
 
 \section{The EPEX Spot Market}
 \label{epexall}
 \subsection{General background}
 \label{epexbackground}
-The EPEX Spot market is an auction market, which allows firms to trade electricity 12-36h ahead of delivery. It covers France, Germany with Austria and Switzerland. The volume traded on Epex Spot represents $12\%$, $40\%$ and $30\%$ of the total electricity consumption in these countries respectively in 2013 \cite{epexwebsite1}.\\
+The EPEX Spot market is an auction market, which allows firms to trade electricity 12-36h ahead of delivery. It covers France, Germany with Austria and Switzerland. The volume traded on EPEX Spot represents $12\%$, $40\%$ and $30\%$ of the total electricity consumption in these countries respectively in 2013 \cite{epexwebsite1}.\\
 
-The EPEX Spot market has considerably gained in importance over time and the daily trading volume has almost quadrupled since $2005$, whereas the total electricity consumption has essentially remained constant. The graph in figure \ref{volconsfr} shows these trends very clearly. Furthermore, it shows the significant volatility of the market trading volume (as indicated by the width 
-%\footnote{Figure \ref{rollsdvolconsfr} in the appendix shows the evolution of the standard error on which the confidence interval in figure \ref{volconsfr} is based.} 
-of the grey-shaded confidence interval).  \\
+The EPEX Spot market has considerably gained in importance over time, and the daily trading volume has almost quadrupled since $2005$, whereas the total electricity consumption has essentially remained constant. The graph in figure \ref{volconsfr} shows these trends very clearly. Furthermore, it shows the significant volatility of the market trading volume (as indicated by the width of the grey-shaded confidence interval).  \\
 \begin{figure}[!ht]
 \begin{center} \makebox[\textwidth]{
 \includegraphics[height=74mm]{figch2/volplusconso3.pdf} 
 } \end{center}
 \caption{Traded volume plotted against total annual consumption}
 \label{volconsfr}
-% graph updated on 24.11.2014
 {\small Note: Total consumption is netted of the electricity withdrawal at the level of the production unit. The 95\% confidence interval is based on a 150-days moving window and assumes that volumes are normally distributed in the time window. GWh and TWh stand for giga and terawatt hours, respectively.}
 \end{figure}
 
-
-%EPEX SPOT provides a liquidity outlet for the producers, the suppliers and the transmission system operators, as well as for the industrial consumers, to fulfil their sales or their purchases in short term power \cite{epexwebsite1}.
-On the EPEX Spot market, the participants submit supply or demand bid functions to be able to meet their next day's supply commitment. 
-This market is important, because it allows the firms to adjust their  portfolio to the upcoming demand. The market matches business to business trades, where producers (the suppliers and transmission system operators) and industrial consumers may participate.\\
-
-%the following firms may participate in the market: All primary (e.g. EDF) and secondary (e.g. Poweo\footnote{Power does not own nuclear electricity generating units, but buys this energy in bulk from primary producers, e.g. in the wholesale virtual power plant auctions, where EDF sells virtual nuclear capacity to rival firms who are not allowed by the government to run nuclear plants independently.}) electricity supplying firms, intermediate electricity resellers (e.g. XXXXX to complete) and large-scale electricity consumers (e.g. aluminium plants). The minimum barrier to entry is XXXXXX. %to complete
+On the EPEX Spot market, the participants submit supply or demand bid functions to be able to meet their next day's supply commitment. This market is important, because it allows the firms to adjust their portfolio to the upcoming demand. The market matches business to business trades, where producers (the suppliers and transmission system operators) and industrial consumers may participate.\\
 
 The EPEX Spot market settles in a three-headed market that firms use to achieve their desired power position: The long-term bilateral contracting market, the day-ahead market and the intra-day market. Energy cannot be stored, thus a precise power position must be achieved at each point in time. Firms thus face a trade-off between cheap up-front sourcing and costly uncertainty. The closer the market gets to the delivery of its power, the less uncertainty does the firm face in determining its power requirements (pushing firms to wait until the last minute to fill their energy position). However, the imperfect flexibility of the electricity production landscape cannot satisfy the whole demand short-term at a reasonable price, hence firms must anticipate their requirements in order to obtain cheaper power. Consequently, these three markets complement each other to allow firms to gather a power position at a reasonable price. 
 
-
-	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-	% Brief account of auction mechanism 
-	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Auction rules and mechanism}
 \label{epexrules}
-We present here the rules that applied during the period for which we have data. \\
+We present the rules here that applied during the period for which we have data. \\
 
 The EPEX Spot auction occurs daily, all year-round, and proceeds as follows: the order book closes every day at noon for contracts of the following day, results are published two hours later. Bids may be submitted 24/7 from 45 days prior until the closing of the books. \\
 
 Tradable contracts exist for each hour of the day and firms submit an individual bid function for each of these hours, i.e. a separate, simultaneous auction is run for all hours of the following day and trading is specific for each of these hourly tranches.  \\
 
-The bid submission must be a supply function (or a demand function depending on the position of the firm) with at least 2 and at most 256 price/quantity combinations for single contract orders. The final bid function, thus, consists of the explicitly submitted points and all linearly interpolated points between them. The bid curves must be monotonically increasing for a supply function and vice versa for a demand function. Orders are transmitted via an online IT-platform and a redundant confirmation process aims to avoid erroneous bids. Bids are anonymous and the final electricity distribution is done via the French distribution network controlled by RTE EDF Transport SA.\\ 
+The bid submission must be a supply function (or a demand function depending on the position of the firm) with at least 2 and at most 256 price/quantity combinations for single contract orders. The final bid function, thus, consists of the explicitly submitted points and all linearly interpolated points between them. The bid curves must be monotonically increasing for a supply function and vice versa for a demand function. Orders are transmitted via an online IT-platform and a redundant confirmation process aims to avoid erroneous bids. Bids are anonymous, and the final electricity distribution is done via the French distribution network controlled by RTE EDF Transport SA.\\ 
 
-%Furthermore, the French day-ahead market is coupled with the intraday and forward markets % HOW????? TO explain in a footnote
-%as well as the day-ahead markets of some of its European neighbours, e.g. the German market\footnote{Formally known under \textit{Leipziger Stromb\"{o}rse}.}% TO confirm 
-%. In the case of national market coupling, the effectiveness of the coupling is subject to the physical laws underlying electricity transfer (e.g. laws of XXXXX) %la loi qui rends le transfer d'electricity hyper complique a calculer dans un reseau..:)
-
-	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-	% Bidding
-	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 Prices are specified in \euro{}/MWh with two decimal digits and must range from -3000\euro{}/MWh to +3000\euro{}/MWh. Quantities are specified in whole MWh. In addition to single contract orders for an individual hour, bidders may submit block orders. \\
 
 These are combined single contract orders with a minimum of two consecutive hours. The vital difference with multiple single contract orders is the "All-or-None" condition, namely that the executions of the individual contract orders forming the block are dependent on one another. That is for a block order covering hours 17 to 20, the quantity demanded for the hour 17 is only awarded if the corresponding quantity is also awarded for the hours 18, 19 and 20. Each registered bidder account is limited to a maximum of 40 block orders per delivery day, each of which is limited in volume to 400 MWh (approx. equal to $0.25\%$ of total daily volume traded on EPEX Spot). \\
 
-	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-	% Price determination
-	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-The price-quantity determining mechanism is a uniform price, multi-unit auction mechanism: the summed demand and supply curves are computed and the intersection of these gives the equilibrium price and quantity pair.\footnote{\begin{quote}The Auction takes place daily, after the Order Book has closed. The price corresponds to the Matching of Exchange Members' aggregate supply and demand curves of both Single Orders and Block Orders for each Contract. The price determined by the algorithm at the time of Auction is the price at which all Trades will be executed. For price determination purposes, the Exchange Member's interest is assumed to be linear between two price/quantity combinations. The price determination algorithm aims at optimising the total welfare, i.e. the seller surplus, the buyer surplus and the congestion rent including tariff rates. The algorithm determines the execution prices, the matched volumes and the net positions of each coupled market if applicable. It also returns the selection of blocks that will be executed and other complex Orders allowed in other Coupled Markets1 if applicable. The presence of all-or-none Block Orders in the Order Book makes necessary the use of a specific search algorithm, in order to determine a market clearing price.\end{quote} \cite{EPEXRules}} The market clearing mechanism takes into account single and block orders simultaneously and hence solves the corresponding programme by an algorithm of full enumeration of possible solutions, where each partial solution is verified to provide real, compatible prices. %When no explicit bid point exists at the point of intersection, the algorithm linearly interpolates between the closest points.  - already in function definition included
-The mechanism works under a time limit. In the case of a curtailment, i.e. a disequilibrium with disproportionate prices due to unmatched supply and demand or an abnormal price for a specific hourly contract, the system proceeds to a second price fixing. \\
+The price-quantity determining mechanism is a uniform price, multi-unit auction mechanism: the summed demand and supply curves are computed and the intersection of these gives the equilibrium price and quantity pair.\footnote{\begin{quote}The Auction takes place daily, after the Order Book has closed. The price corresponds to the Matching of Exchange Members' aggregate supply and demand curves of both Single Orders and Block Orders for each Contract. The price determined by the algorithm at the time of Auction is the price at which all Trades will be executed. For price determination purposes, the Exchange Member's interest is assumed to be linear between two price/quantity combinations. The price determination algorithm aims at optimising the total welfare, i.e. the seller surplus, the buyer surplus and the congestion rent including tariff rates. The algorithm determines the execution prices, the matched volumes and the net positions of each coupled market if applicable. It also returns the selection of blocks that will be executed and other complex Orders allowed in other Coupled Markets1 if applicable. The presence of all-or-none Block Orders in the Order Book makes necessary the use of a specific search algorithm, in order to determine a market clearing price.\end{quote} \cite{EPEXRules}} The market clearing mechanism takes into account single and block orders simultaneously and hence solves the corresponding programme by an algorithm of full enumeration of possible solutions, where each partial solution is verified to provide real, compatible prices. The mechanism works under a time limit. In the case of a curtailment, i.e. a disequilibrium with disproportionate prices due to unmatched supply and demand or an abnormal price for a specific hourly contract, the system proceeds to a second price fixing. \\
 
-	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-	% Information distribution in the market, what players know when bidding
-	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 Of particular interest is the clear distribution of information. Ex-ante bidding, firms in the market know the identities of the rival bidders they face (but neither their individual bid functions nor their results in past auctions), the history of aggregated equilibrium prices and quantities up to that day, their clients' past demand realizations and their individual long term contracting position. Upon the clearing of the market, the aggregated supply and demand bid functions, equilibrium quantity and the equilibrium price become common knowledge. Each bidding account is informed of the contracts it has been awarded, i.e. the individual quantities to be sold and bought through the system.
 
 
 \section{Our Data Explained}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%----*** REMOVE AND PUT IN OTHER CHAPTER
 \label{pschapter}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \label{datasection}
 \subsection*{Auction market data}
 We have data from the French EPEX Spot market for the period 01.01.2011 to 30.06.2013. This is the latest period, where no significant changes in the auction rules have occurred and where data for all variables can be observed. \\
 
-We observe the full aggregate bid functions for the day-ahead auctions of each hourly contract for both supply and demand. 
-We understand the dataset as a cross-section rather than a time-series\footnote{This is supported by the graph in figure \ref{volconsfr}, which shows a flat total consumption and average trading volume on EPEX Spot since 01.01.2011.} and focus on weekday trading contracts only. 
-This sums up to about 31 500 observations.\footnote{31 500 observations $\approx 2.5$ years of hourly ($*365 *24$) demand and supply ($*2$) functions for weekday trading ($*5/7$).} A single aggregate bid function is the sum of the individual bid functions, which are not available. %for competition reasons. 
-We also observe the equilibrium price and quantity for each auction. Moreover, we observe the block bidding results at the equilibrium solution only. We ignore the blocked aspects and treat subsequent auctions as independent from one another.\\
+We observe the full aggregate bid functions for the day-ahead auctions of each hourly contract for both supply and demand. We understand the dataset as a cross-section rather than a time-series\footnote{This is supported by the graph in figure \ref{volconsfr}, which shows a flat total consumption and average trading volume on EPEX Spot since 01.01.2011.} and focus on weekday trading contracts only. This sums up to about 31 500 observations.\footnote{31 500 observations $\approx 2.5$ years of hourly ($*365 *24$) demand and supply ($*2$) functions for weekday trading ($*5/7$).} A single aggregate bid function is the sum of the individual bid functions, which are not available. We also observe the equilibrium price and quantity for each auction. Moreover, we observe the block bidding results at the equilibrium solution only. We ignore the blocked aspects and treat subsequent auctions as independent from one another.\\
 	
-	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-	% Graphical example of the data we have. 
-	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 The two graphs in figure \ref{examplebidfunc} show the aggregate supply and demand bid functions for the same hour of the same day. For a glimpse at the variation of bid functions over time, see figure \ref{graphmultifunc}. The table \ref{overallsummary} sheds some light on the raw data. For further details as well as the plotted distribution of realised market equilibria, refer to appendix \ref{statdes1}. \\
 
 Finally, we reuse the data output from chapter 2. Specifically, we reuse the specific points extracted from the aggregate demand and supply bid functions, which are comparable across auctions. Why these points are useful for our analysis is explained in the methodology section \ref{newapproach}.
@@ -297,88 +158,42 @@ Finally, we reuse the data output from chapter 2. Specifically, we reuse the spe
 \caption{Aggregate bid functions for 20 consecutive days}
 \label{graphmultifunc}
 \end{center}
-{\small Note: The graph shows 20 consecutive aggregate demand and supply functions for the contracts on hour 1 (between 12am and 1am) for the time period 11/12/2011 to 31/12/2011. The graph on the right is a zoom on the price elastic region of the curves on the left.}
+{\small Note: The graph shows 20 consecutive aggregate demand and supply functions for the contracts on hour 1 (between 12 am and 1 am) for the time period 11/12/2011 to 31/12/2011. The graph on the right is a zoom on the price elastic region of the curves on the left.}
 \end{figure}
-
-	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-	% Tabular data to give an example
-	% Keep LONGTABLE TO HAVE FOOTNOTES APPEAR. 
-	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%	
-%\setlength{\LTleft}{-20cm plus -1fill}
-%\setlength{\LTright}{\LTleft}
-%\setlength{\LTpre}{18pt}
-%\setlength{\LTpost}{0pt}
-%\newgeometry{margin=2cm} 
-%\begin{landscape}
-%\footnotesize
-%\begin{table}[!ht]
-%\vspace{-1.4cm}
-
 
 \begin{center}
 \input{texch2/FIN_overallsummary.tex}
-%\caption{\label{overallsummary} ***}
 \end{center}
-%\emph{Note}:
-%\end{table}
-%\end{landscape}
-%\restoregeometry
 
 
-		%%%%%%%%%%%
-		% can include more info on number on functions observed and give 
-		% tabular stata at 3 year level for weekday only. 
-		% say we focus on weekdays, not distinction between mo and tues
-		%%%%%%%%%%
 \subsection*{Exogenous factors}
-	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-	% Meteo data
-	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
 Regarding weather statistics, we have hourly previsions for temperature, wind and cloudiness from the GFS (Global Forecast System) as well as hourly observations for these quantities and luminosity from M\'{e}t\'{e}oFrance
-. The previsions from the GFS are in the form of weather maps that are outputted from simulations that run one-day ahead at 6am. This is the weather information that market participants have access to when bidding on EPEX Spot.\footnote{The next weather simulation run takes place at 12 noon, and is therefore not being used by the bidders on the EPEX day-ahead market, as the deadline for submitting bids is precisely 12 noon.} The weather observations are in the form of tables for specific weather stations (between 100 and 200 depending on the specific parameter of interest).\\
+. The previsions from the GFS are in the form of weather maps that are outputted from simulations that run one-day ahead at 6 am. This is the weather information that market participants have access to when bidding on EPEX Spot.\footnote{The next weather simulation run takes place at 12 noon and is therefore not being used by the bidders on the EPEX day-ahead market, as the deadline for submitting bids is precisely 12 noon.} The weather observations are in the form of tables for specific weather stations (between 100 and 200 depending on the specific parameter of interest).\\
 
 Moreover, we have the location of the total installed capacity per generation type (i.e. wind turbines, solar panels, etc.) at the level of the postcode, that is roughly a 3km precision. We obtain this data from the SOeS, a branch of the French government producing data on environmental issues at large. \\
 
-Population data and data on the level of the domestic production from the manufacturing industry is obtained in monthly steps from the French National Institute of Statistics and Economic Studies (INSEE). From the same source, we obtain the spot prices for petrol and natural gas as well as the import prices at the border for coal, which we use as a proxy for the domestic prices. 
-Prices for the European CO2 emission certificates are taken from the Portuguese secondary market (SENDECO$_2$) for European Unit Allowances (EUA).\footnote{Each unit EUA permit allows one tonne of CO2 emissions.}\\
+Population data and data on the level of the domestic production from the manufacturing industry is obtained in monthly steps from the French National Institute of Statistics and Economic Studies (INSEE). From the same source, we obtain the spot prices for petrol and natural gas as well as the import prices at the border for coal, which we use as a proxy for the domestic prices. Prices for the European CO2 emission certificates are taken from the Portuguese secondary market (SENDECO$_2$) for European Unit Allowances (EUA).\footnote{Each unit EUA permit allows one tonne of CO2 emissions.}\\
 
 As a very coarse proxy for generation from hydro power plants, we have the total weekly stock of water in domestic dams (in the form of the summed height of all dam water levels in France) from RTE the grid operator.
 
 
 \section{Methodology}
 \label{newapproach}
-We want to identify the impact that the level 
-%and growth (positive or negative) 
-of 
-%residual demand 
-uncertainty has on the price elasticity of the aggregate supply function. In data terms, this means that we aim to regress the slope of (aggregate) supply bid functions on a proxy corresponding to the uncertainty that existed at the time of bidding. The uncertainty may come from two different sources: (i) uncertainty about the realization of market demand and (ii) uncertainty on the generation from renewables. Both types of uncertainty affect the residual demand curve faced by each supplier.\footnote{Renewable generation benefits from a feed-in guarantee on the market and thus reduces the residual demand for all traditional electricity producers.}\\
+We want to identify the impact that the level of uncertainty has on the price elasticity of the aggregate supply function. In data terms, this means that we aim to regress the slope of (aggregate) supply bid functions on a proxy corresponding to the uncertainty that existed at the time of bidding. The uncertainty may come from two different sources: (i) uncertainty about the realization of market demand and (ii) uncertainty on the generation from renewables. Both types of uncertainty affect the residual demand curve faced by each supplier.\footnote{Renewable generation benefits from a feed-in guarantee on the market and thus reduces the residual demand for all traditional electricity producers.}\\
 
 This regression is able to explain how supply firms adjust their bidding strategies to the expectation of demand shocks that they face. Statistical significance of the level of uncertainty on the slope of the supply function would be evidence that firms take the strategic considerations of dynamic costs into account. \\
 
-%We first outline the strategy of our work in section \ref{strat}. In section \ref{identification}, we then detail the identification of the effects we are interested in. Section \ref{comparablepoints} addresses methodological details. 
-
-%\subsection{Outline of methodology}
 \label{strat}
-%Three questions compose this project: First, how to appropriately extract the price elasticity of the supply function. Second, how to obtain a natural, precise (and exogenous) measure of the uncertainty. Third, how to test the former on the latter using a simple technique.
 
 First, in section \ref{identification} we show the final regression of interest. Sections \ref{LHS} and \ref{RHS} then detail the theory and empirics underlying the variables that feed into the final regression. \\
 
-Some of the information used in our analysis is drawn from the bid functions of the EPEX Spot market. As introduced in section \ref{datasection}, we observe the full aggregate %\footnote{However, we do not observe individual bid functions (which would have been even better).} 
-bid functions for both supply and demand, %This is particularly suited for our analysis, since it allows to condition our analysis on specific points of the functions.   
-%This is useful as show the graphs in figure \ref{graphmultifunc} since 
-the shape of which %the supply bid functions 
-(and thus the information that we aim to extract from them, e.g. their slope) varies differently at different points (recall the graphs in figure \ref{graphmultifunc}). \\
+Some of the information used in our analysis is drawn from the bid functions of the EPEX Spot market. As introduced in section \ref{datasection}, we observe the full aggregate bid functions for both supply and demand, the shape of which (and thus the information that we aim to extract from them, e.g. their slope) varies differently at different points (recall the graphs in figure \ref{graphmultifunc}). \\
 
-Generally speaking, a regression aims at quantifying the impact of some independent variables on a dependent one. The dependent variable is most frequently numerical, and the independent variables explain part of its value. Here the dependent variable is functional in nature, that is that we aim to describe how the supply function changes shape with respect to some independent variables. One observation is formed of one function coupled to the value of some independent variables. We therefore adopt a functional data analysis approach, which allows us to condition our analysis at specific points $k=1,..,K$ of the functions.
-% The specific points $k=\{1,...,K\}$, chosen to base our analysis on, 
-This approach allows to define comparable points across auctions, that is different functions, in order to derive insights.   \\
-%do this cross-auction comparison. 
+Generally speaking, a regression aims at quantifying the impact of some independent variables on a dependent one. The dependent variable is most frequently numerical, and the independent variables explain part of its value. Here the dependent variable is functional in nature, that is that we aim to describe how the supply function changes shape with respect to some independent variables. One observation is formed of one function coupled to the value of some independent variables. We therefore adopt a functional data analysis approach, which allows us to condition our analysis at specific points $k=1,..,K$ of the functions. This approach allows us to define comparable points across auctions, that is different functions, in order to derive insights. \\
 
 More precisely we want to quantify how uncertainty affects the strategy of bidders from one hour to the next. For this we cannot rely on a standard estimation of the overall demand or supply functions from market outcomes, we want to actually measure how the functions that we observe change shape. \\
 
-The methodology to select comparable points across auctions is detailed in chapter 2. 
-This appendix also evaluates the results when applying the technique to our data from the Epex Spot market. Figure \ref{TypeallocK} shows the selected points on an exemple of demand and supply curve. \\
+The methodology to select comparable points across auctions is detailed in chapter 2. This appendix also evaluates the results when applying the technique to our data from the EPEX Spot market. Figure \ref{TypeallocK} shows the selected points on an exemple of demand and supply curve. \\
 
 The different types of points selected capture different information of the aggregate bid functions. The most important point is the one we label $k=3$, which corresponds to the central part of the bids. This point is most relevant for equilibrium determination.\footnote{See figure \ref{g7f} for a glimpse at the distribution of equilibrium outcomes.} The points $k=2,4$ are the points of maximum curvature and represent the transition points between the central (very price elastic) region and the outer (very price inelastic) regions of the bid function. Last, we have the points $k=1,5$ which are imposed by the auction rules and are the endpoints of the bid functions. \\
 
@@ -396,120 +211,61 @@ The different types of points selected capture different information of the aggr
 \end{figure}
  
 In chapter 2, we also detail the choice of setting $K=5$ and show that this choice allows us to improve the precision of our analysis by a factor of 50 when it is conducted on the 5 points simultaneously.\footnote{We briefly mention that the evaluation of the point selection has revealed focal price points for the points $k=2,4$. These points are however rarely relevant for equilibrium determination.}
-%**** CHECK ALEX \footnote{alternative:  *****reduce the degrees of freedom of bid function volatility by a factor of about $50$ as compared to selecting a single point}. 
-
-
 
 \subsection{Regression methodology}
 \subsubsection{Identification}
 \label{identification}
-	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-	% Methodology
-	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%	
-At each of these comparable points, %$k=\{1,..,K\}$, %we use a two stage least squares methodology, where the first stage produces a natural measure of the uncertainty that producing firms have and the second stage 
-we want to identify the effect of uncertainty on the slope of the supply function. \\%The regression runs over all auctions $i=\text{Hour 1 on }01.01.2011, ..$. %, for convenience we drop the index $i$.
-
-%\subparagraph{In the second stage,} we want to measure the impact of the constructed uncertainty proxies on the price elasticity of supply. 
-%By the same methodology as in step one, we extract the slope of the supply bid function a $m$ points and use this as our local proxy for the price elasticity of supply. 
+At each of these comparable points, we want to identify the effect of uncertainty on the slope of the supply function. \\
 
 Defining $S'_{i,k}$ the slope of the supply function of auction $i$ at point $k$ in the quantity (X-axis) - price (Y-axis) dimension, $\boldsymbol{X^S}$ being the vector of exogenous variables, PLU$^D_{i,k}$ being the proxy for the level of demand uncertainty, PLU$^R_i$ being the proxy for the level of uncertainty from renewables, what we called the width of our possible shocks in the first chapter, $\alpha$ being the regression constant and $\epsilon$ being the error term, we estimate the following:
-%\begin{eqnarray}
-%\label{secondstagereg2b}
-%S'_m(H) &=&\alpha_{m(H)}^S+ \boldsymbol{\beta_{i,m(H)}^S}\sum_{i=1}^{K} V(\boldsymbol{\epsilon_{i(H)}^D}) \nonumber \\  &+&\boldsymbol{\eta_{i,m(H)}^S}\sum_{i=1}^{K} \Delta V(\boldsymbol{\epsilon_{i(H)}^D})+ \boldsymbol{\gamma_{m(H)}^S X}+\epsilon_{m(H)}^S
-%\end{eqnarray}
 \begin{eqnarray}
 \label{secondstagereg2}
 S'_{i,k} =\alpha_{k}^S+ \beta_{k}^S \text{PLU}^D_{i,k} + \gamma_{k}^S \text{PLU}^R_{i} + \boldsymbol{\delta_{k}^S X^S_i}+\epsilon_{i,k}^S
 \end{eqnarray}
 
-We are interested in the sign and magnitude of the coefficients $\beta^S$ and $\gamma^S$, which identify the effects of the PLUs (PLU$^D$ and PLU$^R$, respectively) on the shape of the supply bid function. From the predictions outlined in section \ref{intropredict}, we expect a positive coefficient when uncertainty levels increase.\footnote{Specifically, we want $\beta^S$ to be positive, $\gamma^S_1$ positive and $\gamma^S_2$ negative. For details on $\gamma^S$, see section \ref{proxyautocorrel}.}\\ %\cite{bergesmartimort2014}  predict a positive $\eta_Q$ since the model only allows for quantity shocks to demand. 
-
-%In equation \ref{secondstagereg}, we ignore the dynamic uncertainty in price prediction $\Delta V(\epsilon_{P_k(H)}^D)$. This is because \cite{bergesmartimort2014} only allow for quantity shocks to demand. An extension will control for the impact of price uncertainty. 
-
-
+We are interested in the sign and magnitude of the coefficients $\beta^S$ and $\gamma^S$, which identify the effects of the PLUs (PLU$^D$ and PLU$^R$, respectively) on the shape of the supply bid function. From the predictions outlined in section \ref{intropredict}, we expect a positive coefficient when uncertainty levels increase.\footnote{Specifically, we want $\beta^S$ to be positive, $\gamma^S_1$ positive and $\gamma^S_2$ negative. For details on $\gamma^S$, see section \ref{proxyautocorrel}.}\\ 
 
 \subsubsection{Left-hand-side variables}
 \label{LHS}
-We extract the slope of the aggregate supply function at any given point $k$ from a kernel density estimation with a bandwidth of 45 units.\footnote{The
-slope is a by-product of the point selection mechanism and the bandwidth selection for the smoothing thus follows the same considerations as for the latter. The details of this choice are specified in chapter 2.}  \\
+We extract the slope of the aggregate supply function at any given point $k$ from a kernel density estimation with a bandwidth of 45 units.\footnote{The slope is a by-product of the point selection mechanism, and the bandwidth selection for the smoothing thus follows the same considerations as for the latter. The details of this choice are specified in chapter 2.}  \\
 
-Effectively, this is a smoothed version of the slope. This makes our slope estimates robust to steps in the bid function\footnote{In our data, we observe that bid functions are effectively step functions. On EPEX spot $256$ price-quantity combinations are allowed per bidder. When additional bid points are costly, then stepwise bidding behaviour may be very different from a setting where continuous functions can be bid \cite{kastl2011discrete}. Due to the fact that, on average, we do not observe that firms use up all available price-quantity combinations , the cost argument of an additional bid point seems weak. Hence, by smoothing the slope we approximate the unconstrained, continuous bid function. }, which in turn allows us to test the predictions from the theoretical paper. 
-Steps in the bid functions mostly are much larger towards the extremities of the bid functions and probably arise from capacity constraints considerations. 
-Working with smoothed slopes is  in line with previous work \`{a} la \cite{pw2002etude} and \cite{ozcan2004logistic}, who also apply reduced form models to aggregate bid function data. 
-
+Effectively, this is a smoothed version of the slope. This makes our slope estimates robust to steps in the bid function\footnote{In our data, we observe that bid functions are effectively step functions. On EPEX spot $256$ price-quantity combinations are allowed per bidder. When additional bid points are costly, then stepwise bidding behaviour may be very different from a setting where continuous functions can be bid \cite{kastl2011discrete}. Due to the fact that, on average, we do not observe that firms use up all available price-quantity combinations, the cost argument of an additional bid point seems weak. Hence, by smoothing the slope we approximate the unconstrained, continuous bid function. }, which in turn allows us to test the predictions from the theoretical paper. Steps in the bid functions mostly are much larger towards the extremities of the bid functions and probably arise from capacity constraints considerations. Working with smoothed slopes is in line with previous work \`{a} la \cite{pw2002etude} and \cite{ozcan2004logistic}, who also apply reduced form models to aggregate bid function data. 
 
 \subsubsection{Right-hand-side variables}
 \label{RHS}
 
 We are regressing an ex-post measure of the auction market (realised slope of the supply bid function) on ex-ante information that bidders have at the time of bidding, i.e. which is available at midday of the day ahead of delivery.  
-We thus keep a strict separation of the ex-post and  ex-ante information to the left  and right hand side of equation \ref{secondstagereg2}, respectively. This separation allows us to circumvent endogeneity problems and  validates the use of simple OLS regressions. \\
+We thus keep a strict separation of the ex-post and ex-ante information to the left and right hand side of equation \ref{secondstagereg2}, respectively. This separation allows us to circumvent endogeneity problems and validates the use of simple OLS regressions. \\
 
 For this reason, we construct our PLUs on the basis of predicted uncertainty. However, for data availability reasons we cannot exclude endogeneity problems completely. For details, see the discussion in section \ref{endogeneityconcern}.  \\
 
 In this subsection, we first outline how we generate the proxies for the level of market demand uncertainty (PLU$^D$) in section \ref{proxyunc}. Second, we construct the proxies for the level of uncertainty from renewables energies (PLU$^R$) in section \ref{proxyautocorrel}. Third, we detail how the vector of exogenous variables ($\boldsymbol{X}$) is constructed in subsection \ref{controlssec}.  \\
-
 
 \subparagraph{Generating proxies for uncertainty from market demand (PLU$^D$)}
 \label{proxyunc}
 
 We construct a proxy for the level of the demand uncertainty (PLU$^{D}$) by using the residuals from a demand estimation on exogenous parameters as a measure of the uncertainty that bidders face in an auction. Specifically, our PLU$^D$ is the expected squared level of the prediction errors that firms expect to make when anticipating the demand level of the day ahead. We assume that the ex-post prediction errors give a reasonable estimate of the uncertainty at the time of bidding. \\
 
-
-
-%%In order to make full use of the data variability in the dataset, the PLU$_i$ encompasses the whole uncertainty (at the $K$ comparable points) of the demand function, since we do not have a priori knowledge of any specific local uncertainty (e.g. uncertainty at the boundaries or towards the point of intersection) driving the effects. 
-%The uncertainty proxies are given by 
-%the point-specific PLU$_{D,i,k^{-1}}$  is given by  $ V(\epsilon^D_{i,k^{-1}}) $, a measure of the variation of demand prediction errors: 
-%\begin{equation}
-%\label{levelproxy}
-%\text{PLU}_{D,i,k^{-1}} 
-%= V(\epsilon^D_{i,k}) 
-%\end{equation}
-%%\begin{equation}
-%%\label{dynamicsproxy}
-%%\text{PDU} = \sum^K_k\text{PDU}_{k} = \sum^K_k \Delta V(\epsilon^D_{k}) 
-%%\end{equation}
-
-The uncertainty proxy
-%individual, point-specific proxies (PLU$_{i,k}$) 
-is obtained as detailed next in a three-step procedure. In the first step, we explain what kind of uncertainty our PLU$^D$ refers to. The second step details the conceptual details of constructing the PLU$^D$. The third step computes the PLU$^D$. % and the fourth computes the proxy of the dynamcis of uncertainty (PDU). 
-
-%We then compute the variation of these variances over time, $\Delta V(\epsilon_{P_k(H)}^D)=V(\epsilon_{P_k(H)}^D)-V(\epsilon_{P_k(H-1)}^D)$ and $\Delta V(\epsilon_{Q_k(H)}^D)=V(\epsilon_{Q_k(H)}^D)-V(\epsilon_{Q_k(H-1)}^D)$  as a proxy for the dynamics of the uncertainty.
-%*** V and $\epsilon$ missing the index for P or q dimension - on purpose.
+The uncertainty proxy is obtained as detailed next in a three-step procedure. In the first step, we explain what kind of uncertainty our PLU$^D$ refers to. The second step details the conceptual details of constructing the PLU$^D$. The third step computes the PLU$^D$.
 
 \subparagraph{In the first step,} 
 \label{firststepresiduals}
-we focus the analysis to a fixed number $K$ of comparable points across auctions by using the non-parametric point selection technique outlined in section \ref{newapproach}. 
-Each k$^{th}$ point is defined by a price and a quantity, which we regress independently on the exogenous variables. \\% for each auction $i$ (for which we now drop the index). 
+we focus the analysis to a fixed number $K$ of comparable points across auctions by using the non-parametric point selection technique outlined in section \ref{newapproach}. Each k$^{th}$ point is defined by a price and a quantity, which we regress independently on the exogenous variables. \\
 
 Let us call $P_{i,k}^D$ and $Q_{i,k}^D$ the price and quantity of point $k$ of the realised demand function in auction $i$, $\boldsymbol{X^D_i}$ the vector of exogenous variables relevant for the demand estimation.
-%\end{siderules}
 \begin{eqnarray}
 P_{i,k}^D=\alpha_{k}^{D,P}+{\boldsymbol{\beta_{k}^{D,P}}} \boldsymbol{X^D_i}+\epsilon_{i,k}^{D,P} \label{regDP}\\
 Q_{i,k}^D=\alpha_{k}^{D,Q}+{\boldsymbol{\beta_{k}^{D,Q}}} \boldsymbol{X^D_i}+\epsilon_{i,k}^{D,Q} \label{regDQ}
 \end{eqnarray}
-In regressions \ref{regDP} and \ref{regDQ}, firms try to anticipate the realization of the demand using the exogenous information available. We consider that the producers are able to do such an analysis at the time of bidding. \\%\footnote{We avoid the use of hour dummies by controlling for the time of the day using the variables suncycle, morning, deltasun. For details, see section \ref{controlssec}. }
+In regressions \ref{regDP} and \ref{regDQ}, firms try to anticipate the realization of the demand using the exogenous information available. We consider that the producers are able to do such an analysis at the time of bidding. \\
 
-The prediction errors  $\epsilon_{i,k}^{D,J}, \; J=\{Q, P\}$ are a consequence of the stochastic nature of the demand and hence a manifestation of the uncertainty. We consider that more uncertainty will lead to larger prediction errors being made in equilibrium and adopt the 
-square
-%standard deviation 
-of the residuals $ \bigl( \epsilon_{i,k}^{D,J} \bigr)^2$ as our measure for the realised level of demand uncertainty.
-
-
+The prediction errors  $\epsilon_{i,k}^{D,J}, \; J=\{Q, P\}$ are a consequence of the stochastic nature of the demand and hence a manifestation of the uncertainty. We consider that more uncertainty will lead to larger prediction errors being made in equilibrium and adopt the square of the residuals $ \bigl( \epsilon_{i,k}^{D,J} \bigr)^2$ as our measure for the realised level of demand uncertainty.
 
 \subparagraph{In the second step,} 
 \label{secondstepresiduals}
-%we compute the variances of the predicted residuals conditional on the exogenous variables and consider this a good proxy of the level of uncertainty faced by the producers that we denote $V(\epsilon_{P_k(H)}^D)$ and $V(\epsilon_{Q_k(H)}^D)$. The underlying hypothesis is that more uncertainty will lead to larger prediction errors being made in equilibrium.
-
-%\subparagraph{Bin based variance estimates}
-%\label{binbasedvariances}
-%Step 1: Predict Price and Volumes from Demand estimation as in euqations \ref{regDP} and \ref{regDQ}. 
-
 we recover the residuals from the demand estimation in regressions \ref{regDP} and \ref{regDQ} and test for heteroskedasticity using \cite{white1980heteroskedasticity}, which is clearly confirmed (see tables \ref{VolDEPur52} and \ref{PriceDEPur52}). \\
 
-Heteroskedasticity means here that the variation of error terms varies conditional on the levels of the exogenous factors: $E(\epsilon_i^2 \vert \boldsymbol{X_i})=g(\boldsymbol{X_i})$. However, they are still orthogonal%have tested and error terms are orthogonal both individually as well as collectively. 
-: $E(\epsilon_i \vert \boldsymbol{X_i})=0$, thus ensuring that the prediction is unbiased, but not ``best" in the sense of the best linear unbiased estimator (BLUE). Thus, heteroskedasticity results in inefficient regressions where the estimator is not minimum variance. 
-%*** CITE. 
-Since we do not interpret regressions \ref{regDP} and \ref{regDQ} for causality, but only for predictive purposes, we stick to the unbiased OLS. \\
+Heteroskedasticity means here that the variation of error terms varies conditional on the levels of the exogenous factors: $E(\epsilon_i^2 \vert \boldsymbol{X_i})=g(\boldsymbol{X_i})$. However, they are still orthogonal: $E(\epsilon_i \vert \boldsymbol{X_i})=0$, thus ensuring that the prediction is unbiased, but not ``best" in the sense of the best linear unbiased estimator (BLUE). Thus, heteroskedasticity results in inefficient regressions where the estimator is not minimum variance. Since we do not interpret regressions \ref{regDP} and \ref{regDQ} for causality, but only for predictive purposes, we stick to the unbiased OLS. \\
 
 The heteroskedasticity regression is given for $J=\{P,Q\}$ by
 \begin{equation}
@@ -518,18 +274,13 @@ The heteroskedasticity regression is given for $J=\{P,Q\}$ by
  +\epsilon^{U,J}_{k}
 \end{equation}
 
-
-
 \subparagraph{In the third step,} we compute the predicted PLU$^D_{i,k}$ that firms use when bidding in the auction as:
 \begin{equation}
 \label{predictu}
  \underbrace{ \widehat{ \bigl( \: \epsilon_{i,k}^{D,J}\: \bigr)^2}}_{\widehat{\text{PLU}}^D_{i,k}}= \alpha^{U,J}_{k} + \beta^{U,J}_{k} \boldsymbol{X^D_i} 
  % +\epsilon^{U,J}_{k}
 \end{equation}
-The idea is that by experience, firms in the market know that their predictions are more or less accurate depending on the environmental conditions (in the sense of realizations of exogenous factors%(e.g. similar temperature, windproduction, etc...)
-). In other words, firms can use the realizations of $ \boldsymbol{X^D}$ to infer the accuracy of their demand predictions. %, i.e. the expected confidence interval on their prediction. 
- Technically speaking, they can use the heteroskedastic nature of the residuals to forecast the level of uncertainty that they face.\\
-
+The idea is that by experience, firms in the market know that their predictions are more or less accurate depending on the environmental conditions (in the sense of realizations of exogenous factors). In other words, firms can use the realizations of $ \boldsymbol{X^D}$ to infer the accuracy of their demand predictions. Technically speaking, they can use the heteroskedastic nature of the residuals to forecast the level of uncertainty that they face.\\
 
 The PLU$^{D}$ subs into regression \ref{secondstagereg2}. 
 For simplicity, we do not include the uncertainty proxies PLU$^D_{i,k}$ measured at all $K=5$ points in regression \ref{secondstagereg2} simultaneously, but only a single PLU$^D_{i,k}$ at a time. 
@@ -542,13 +293,12 @@ Therefore in the final regression \ref{secondstagereg2}, we regress the slope at
 \end{equation}
 An increase in PLU$^D_i$ corresponds to an increase in the uncertainty about the market demand realization. We thus expect $\beta^S$ to be positive in regression \ref{secondstagereg2}.
 
-
 \subparagraph{Generating proxy for uncertainty from renewable energies (PLU$^R$)}
 \label{proxyautocorrel}
 
 We have already referred to the statement that the intermittency of renewables causes large residual demand shocks \cite{epexwebsite1}. Suppliers are thus wary of the expected production of renewables generation. \\
 
-Given that renewable generation is an exogenous source of supply, and is completely injected on the network without being bidded for (fixed feed-in tariff), it affects the residual demand curve for each supplier, but does not enter the PLU$^D$, which captures the uncertainty on market demand only. \\
+Given that renewable generation is an exogenous source of supply and is completely injected on the network without being bidden for (fixed feed-in tariff), it affects the residual demand curve for each supplier, but does not enter the PLU$^D$, which captures the uncertainty on market demand only. \\
 
 In predicting the generation from renewables, we assume that suppliers are able to infer renewables generation from meteorological forecasts.\footnote{We specify the technique in chapter 2 and use it to construct our controls in section \ref{controlssec}.}\\
 
@@ -556,15 +306,15 @@ When forecasting the residual demand shocks due to generation from renewables, w
 
 We consider that this notion of geographical heterogeneity of the forecasts correlates to the uncertainty associated with the prediction of renewable production. The argument is as follows: \\
 
-\textbf{First}, renewable production is built by aggregating the forecast of all individual renewable sources. This means knowing the position and capacity of every renewable source, querying weather forecasts for all of these points, modeling the renewable's response to the forecasted weather, and adding the forecasted productions. \\
+\textbf{First}, renewable production is built by aggregating the forecast of all individual renewable sources. This means knowing the position and capacity of every renewable source, querying weather forecasts for all of these points, modeling the renewable's response to the forecasted weather and adding the forecasted productions. \\
 
-\textbf{Second}, we note that weather is spatially correlated, which means that the closer two points are, the closer the values for a given weather variable (the air temperature at your left hand is very close to that at your left hand, but less so across the city, and even less so across the country). This correlation roughly follows an exponential law: the difference between the values of a weather variable between two points behaves in a linear fashion for small distances, and saturates at large distances.\footnote{Intuitively, the characteristic lengthscale of autocorrelation represents the distance required between two geographical points on a map of weather forecasts to observe a decorrelation of half of its maximum value. For example on the wind speeds prediction, a characteristic length of 80 km means that if we observe two very distant points (say 1000km) to have a difference in wind speeds of, on average, 50km/h (this being the maximum difference, we are in the saturated regime), then we will observe, on average, wind speed differences of 25km/h for points distant from each other by 80km.} The transition between those two regimes is given by a caracteristic lengthscale, a bit less than 200km on average. \\
+\textbf{Second}, we note that weather is spatially correlated, which means that the closer two points are, the closer the values for a given weather variable (the air temperature at your left hand is very close to that at your left hand, but less so across the city, and even less so across the country). This correlation roughly follows an exponential law: the difference between the values of a weather variable between two points behaves in a linear fashion for small distances and saturates at large distances.\footnote{Intuitively, the characteristic lengthscale of autocorrelation represents the distance required between two geographical points on a map of weather forecasts to observe a decorrelation of half of its maximum value. For example on the wind speeds prediction, a characteristic length of 80 km means that if we observe two very distant points (say 1000km) to have a difference in wind speeds of, on average, 50km/h (this being the maximum difference, we are in the saturated regime), then we will observe, on average, wind speed differences of 25km/h for points distant from each other by 80km.} The transition between those two regimes is given by a characteristic lengthscale, a bit less than 200km on average. \\
 
-\textbf{Third}, we observe that the average distance between production points is large enough that the relevant regime of autocorrelation is the saturated part.\footnote{For N production points, we compute the N(N-1)/2 pairs of points, consider their distances, and compute the average of these distances weighted by the production capacity at every point. In the case of the wind we have an average distance of 459 km, in the case of the photovoltaic production we have an average distance of 499km.} \\
+\textbf{Third}, we observe that the average distance between production points is large enough that the relevant regime of autocorrelation is the saturated part.\footnote{For N production points, we compute the N(N-1)/2 pairs of points, consider their distances and compute the average of these distances weighted by the production capacity at every point. In the case of the wind, we have an average distance of 459 km, in the case of the photovoltaic production we have an average distance of 499km.} \\
 
 \textbf{Fourth}, we note that there are two main channels through which the overall uncertainty about renewable production is related to the weather. There is an issue of error averaging, which means that if the weather becomes very spatially uncorrelated, one can expect errors to cancel out relative to a given bias in the forecast. This channel would tend to imply that more spatial variations imply a smaller uncertainty about production. There is also the issue that weather forecasts are numerical simulations and that the mesh size for such simulations, typically 5km for the high precision ARPEGE model of Météo France, implies that the errors are higher as the simulated phenomenons have higher gradients. This means in our case that the uncertainty about the forecast increases as the weather becomes more spatially uncorrelated. \\
 
-\textbf{Fifth}, these two effects are of opposite signs, but our third point is an argument for considering that the averaging of errors is smaller than the simulation errors. Therefore we expect our uncertainty to increase as the spatial autocorrelation decreases (i.e. more spatial variation). \\
+\textbf{Fifth}, these two effects are of opposite signs, but our third point is an argument for considering that the averaging of errors is smaller than the simulation errors. Therefore, we expect our uncertainty to increase as the spatial autocorrelation decreases (i.e. more spatial variation). \\
 
 This can be summed up with the following hand-waving argument: when there is more spatial variations, the weather is more messy, therefore more difficult to predict. \\
 
@@ -588,7 +338,7 @@ The vector $\boldsymbol{X^D}$ for the demand equation includes the variables: Te
 For the supply regression we include in $\boldsymbol{X^S}$ the following variables\footnote{We do not include the variables used for the demand estimation as they indirectly feed into the final regression via the PLU$^D$.}: 
 Coal, Brent, Gas, IT2, EUA, Wind1DA, Hydro. \\
  
-Table \ref{exogsummary} gives a brief overview of the controls used. Details on the computation of some  variables are given in the appendix (see links in table). The last column indicates the frequency with which we observe the variable in question. 
+Table \ref{exogsummary} gives a brief overview of the controls used. Details on the computation of some variables are given in the appendix (see links in table). The last column indicates the frequency with which we observe the variable in question. 
 
 \begin{center}
 \begin{longtable}{p{2cm} p{8.5cm} p{1.3cm}  p{1.5cm}}
@@ -609,54 +359,46 @@ Details on p. \pageref{Wind1DA}. & MWh  & Hourly   \\
 Solar & The electricity volume generated from photovoltaic sources. 
 Details p. \pageref{Solar} & MWh &  Hourly \\  
 \midrule
-%Tempeff & 
-%Predicted temperature in France, aggregated on a national level. 
-%Details on p. \pageref{Tempeff}. & $^\text{o}$C & Hourly\\
-%\midrule 
-% Roll\_avgT24 & Mean of \emph{Tempeff} over the last  24 consecutive hours. Details on p. \pageref{}. &  $^\text{o}$C   & Hourly \\
-%\midrule
-% Roll\_avgT240 & Mean of \emph{Tempeff} over the last  240 consecutive hours. Details on p. \pageref{}.  &  $^\text{o}$C  & Hourly \\
-%\midrule
 Tempeff15 & 
 Effective predicted temperature in France (with a cutoff point at $15^o$C to reflect demand patterns), aggregated on a national level.
 Details on p. \pageref{Tempeff15}. & $^\text{o}$C & Hourly\\
 \midrule
- Roll\_Temp24 &  Mean of \emph{Tempeff15} over the last 24 consecutive hours. %Details on p. \pageref{}.
+ Roll\_Temp24 &  Mean of \emph{Tempeff15} over the last 24 consecutive hours. 
   &  $^\text{o}$C   & Hourly \\
 \midrule
- Roll\_Temp240 & Mean of \emph{Tempeff15} over the last 240 consecutive hours. %Details on p. \pageref{}. 
+ Roll\_Temp240 & Mean of \emph{Tempeff15} over the last 240 consecutive hours. 
  &  $^\text{o}$C   & Hourly\\
 \midrule
-suncycle & Luminosity as a percentage of maximum luminosity of the day. %Proxy for time of the day as a function of the cycle of the sun. 
+suncycle & Luminosity as a percentage of maximum luminosity of the day. 
 \emph{Midday} defined as \emph{suncycle}=1. Details on p. \pageref{suncycle}.  & $\%$ & Hourly\\
 \midrule
- morning & Indicator variable for hours before \emph{Midday}. %Details on p. \pageref{morning}. 
+ morning & Indicator variable for hours before \emph{Midday}. 
  &$ \{0,1\}$ & Hourly\\
 \midrule
- deltasun & Absolute value of the change in \emph{suncycle}.  Details on p. \pageref{deltasun}. & $ [0,1]$ & Hourly\\
+ deltasun & Absolute value of the change in \emph{suncycle}. Details on p. \pageref{deltasun}. & $ [0,1]$ & Hourly\\
  \midrule 
- EWH & Indicator variable for hours between 10pm and 4am. % Details on p. \pageref{EWH}. 
+ EWH & Indicator variable for hours between 10 pm and 4 am.
  & $ \{0,1\}$ & Hourly\\
  \midrule
 SolarRest & The unexplained component of photovoltaic generation. Specifically, the residuals from a regression of \emph{Solar} on \emph{suncycle}. Details on p. \pageref{SolarRest}. & MWh &  Hourly \\  
 \midrule
 RteBlackBox & The unexplained component of the day ahead prediction of total consumption in France issued by the grid operator (RTE). Specifically, the residuals from a consumption estimation. Details on p. \pageref{RteBlackBox}. & MWh &  Hourly \\  
 \midrule
-Coal  & Average coal import prices at the French border. %Details on p. \pageref{Coal}. 
+Coal  & Average coal import prices at the French border. 
 & \EUR{}/ton &  Monthly \\  
 \midrule
-Brent & Average of spot prices for crude oil on the London based stock exchange.% Details on p. \pageref{Brent}. 
+Brent & Average of spot prices for crude oil on the London based stock exchange.
 & \$/bl & Monthly\\
 \midrule
-Gas & Average of closing prices for natural gas at 1 month on the London market (NBP). %Details on p. \pageref{Gas}.  
+Gas & Average of closing prices for natural gas at 1 month on the London market (NBP). 
 & \textsterling/Therm &  Monthly \\  
 \midrule
-IT2 & Interaction term between gas and demand: \emph{Gas} weighted by an hourly index for the demand level \footnote{Gas turbines generate electricity using natural gas as a fuel. We thus proxy for its input price using a Gas variable for which we take the closing price for natural gas at 1 month on the London market (NBP). Electricity generation from gas is expensive and flexible. In general gas plants are only called upon to provide peak load electricity generation in moments of high demand. WE therefore compute an interaction term between Gas and an index for the hourly level of the demand. The index acts as a weight on the gas price. The weight is computed as the percentage demand level as compared to the maximum demand level observed in our dataset.} & \textsterling/Therm &  Hourly \\  
+IT2 & Interaction term between gas and demand: \emph{Gas} weighted by an hourly index for the demand level \footnote{Gas turbines generate electricity using natural gas as a fuel. We thus proxy for its input price using a Gas variable for which we take the closing price for natural gas at 1 month on the London market (NBP). Electricity generation from gas is expensive and flexible. In general gas plants are only called upon to provide peak load electricity generation in moments of high demand. We, therefore, compute an interaction term between Gas and an index for the hourly level of the demand. The index acts as a weight on the gas price. The weight is computed as the percentage demand level as compared to the maximum demand level observed in our dataset.} & \textsterling/Therm &  Hourly \\  
 \midrule
-EUA  & Price of CO$^2$ emissions. %Details on p. \pageref{EUA}. 
+EUA  & Price of CO$^2$ emissions. 
 & \EUR{}/ton &  Daily \\  
 \midrule
-Hydro & Sum of dam level heights on a national level. %Details on p. \pageref{Hydro}.
+Hydro & Sum of dam level heights on a national level. 
 & $\%$ &  Weekly \\  
 \midrule
 \bottomrule
@@ -672,7 +414,7 @@ First, Wind1DA and Solar control for the expected level of renewables generation
 Second, Tempeff15 controls for the demand patterns as a function of the temperature.\footnote{Note that electric heating is widely spread in France. It is used in 32\% of principal residences (INSEE, RP2011 exploitation principale).} 
 Tempeff15 includes a cut-off at $15^o$C in order to take into account the demand pattern as a function of temperature according to \cite{rtewebsite1}. Table \ref{black1} reveals the improved fit over a simple temperature variable without respecting the demand cut-off (Tempeff). \\
 
-Third, Roll\_Temp24 and Roll\_Temp240 capture the demand seasonality via the temperature. The former gives the daily average temperature, while the latter captures the average temperature over the last 10 days. The demand cut-off at $15^o$C for Tempeff15 is respected for these means.  Including these as seasonality controls allows to get away from using dummy variables for the seasonality. In short, avoiding dummies yields more transparency of the results as we do not have the problem of interpreting the dummies, which are often black boxes.\footnote{See section \ref{nodummies} for a full discussion on the advantage of avoiding dummies.} \\
+Third, Roll\_Temp24 and Roll\_Temp240 capture the demand seasonality via the temperature. The former gives the daily average temperature, while the latter captures the average temperature over the last 10 days. The demand cut-off at $15^o$C for Tempeff15 is respected for these means. Including these as seasonality controls allows to get away from using dummy variables for the seasonality. In short, avoiding dummies yields more transparency of the results as we do not have the problem of interpreting the dummies, which are often black boxes.\footnote{See section \ref{nodummies} for a full discussion on the advantage of avoiding dummies.} \\
 
 \begin{figure}[!ht]
 \begin{center}
@@ -681,7 +423,6 @@ Third, Roll\_Temp24 and Roll\_Temp240 capture the demand seasonality via the tem
 \label{tempseasonality2}
 \end{center}
 \emph{Note: } The graph shows the evolution of the temperature based controls for seasonality for the month of February 2012. The graph shows the lagged nature of the rolling average temperature controls. 
-% * drop Tempeff or explain in table above and here.
 \end{figure}
 Fourth, we use the four variables suncycle, morning, deltasun and EWH collectively to continuously control for the time of the day. The reasoning is again the ability to get away from using dummies and being able to interpret the results. Figure \ref{seasonalityday3} shows how the controls describe the daily patterns continuously. \\
 
@@ -694,7 +435,6 @@ Fourth, we use the four variables suncycle, morning, deltasun and EWH collective
 \emph{Note:} With the exception of EWH, all intraday seasonality controls (suncycle, morning, deltasun) are determined endogenously by the prevalent luminosity as captured by Solar.
 \end{figure}
 Fifth, SolarRest and RteBlackBox are the residual information gained from the variables Solar and the day ahead consumption prediction of RTE (PrevConsoH) over other variables included in $\boldsymbol{X^D}$ or $\boldsymbol{X^S}$, respectively.\footnote{E.g. Solar is strongly correlated with suncycle, thus SolarRest is the residual from a regression of the former on the latter. RteBlackBox is computed as the residuals from regressing PrevConsoH on Tempeff15,  Roll\_Temp24,  Roll\_Temp240, suncycle, morning, deltasun and EWH. See appendix \ref{SolarRest} and \ref{RteBlackBox} for details.}  \\
-% They are the residuals with respect to the variation of these underlying statistics explained by other exogenous variables. 
 Sixth, Coal, Brent, Gas, IT2 and EUA are rough proxies for the input prices for electricity suppliers. Hydro is used as a crude proxy for dam operator's ability to generate short term electricity using hydro reserves. \\
 
 We briefly emphasize that novel methodologies have been used to compute all variables derived from weather forecasts or observations. 
@@ -709,30 +449,20 @@ For cases where forecast data was not available, e.g. Solar, realised weather da
 \subsubsection{Extensions and robustness checks}
 In order to test the robustness of our results and circumvent some drawbacks of the baseline model, we use a few alternative specifications of our empirical model. 
 
-%\subsubsection{Alternative specifications of the PLU$^D$ }
-%In the baseline, we have computed the PLU$^D$ according to equation \ref{predictu} as the forecasted squared residuals $ \widehat{ \bigl( \: \epsilon_{i,k}^{D,J}\: \bigr)^2}$ given the parameter constellation of the exogenous variables. 
-%
-%We also compute slight variants of the baseline PLU$^D$ as a simple robustness check of our forecasting model. One alternative is to predict the absolute value of the residuals $ \widehat{ \vert \:\epsilon_{i,k}^{D,J}\: \vert}$ in equation \ref{predictu}. The recovered values for the PLU$^D$ can herewith directly be interpreted as volume or price variations on the expected level (volume or price, respectively) of the demand bid function. 
-
-
-
 \subsubsection{Bootstrapping standard errors}
-The set-up of our empirical analysis relies on stochastic variables, e.g. PLU$^D$, which are computed in the first stage of our identification. The assumption made for an OLS regression of normally distributed residuals is a very strong one (particularly with the forecast variable) and one which can flaw the precision of estimates in the second stage regression. 
-We therefore bootstrap the standard errors of the final regression by using random sampling with replacement at each stage of the analysis, i.e. for both the PLU computation and the final slope regression  with 300 repetitions. \\% for the baseline specification and 50 repetitions for the kernel based 
+The set-up of our empirical analysis relies on stochastic variables, e.g. PLU$^D$, which are computed in the first stage of our identification. The assumption made for an OLS regression of normally distributed residuals is a very strong one (particularly with the forecast variable) and one which can flaw the precision of estimates in the second stage regression. We therefore bootstrap the standard errors of the final regression by using random sampling with replacement at each stage of the analysis, i.e. for both the PLU computation and the final slope regression with 300 repetitions. \\
 
 Bootstrapping allows us to non-parametrically approximate the distribution of the forecast PLUs and thus enables us to correct the standard errors of our coefficient estimates. 
 
 \subparagraph{Kernel based uncertainty forecasts (PLU$^D$)}
 \label{robustunc}
 
-The PLU$^D$ computed as described in section \ref{proxyunc} is noisy since we assume a linear forecast model to be valid for any combination of realizations of exogenous paarameters, i.e. the same model applies winter and summer, day and night. 
-While the results are as desired for the baseline PLU$^D$, a bootstrapping of the standard errors indicates that the first stage forecast is too imprecise for effects of a satisfactory significance level. \\
+The PLU$^D$ computed as described in section \ref{proxyunc} is noisy since we assume a linear forecast model to be valid for any combination of realizations of exogenous paarameters, i.e. the same model applies winter and summer, day and night. While the results are as desired for the baseline PLU$^D$, a bootstrapping of the standard errors indicates that the first stage forecast is too imprecise for effects of a satisfactory significance level. \\
 
-We therefore develop an extension of the uncertainty prediction model  in which we use the idea of demand forecasts (equation \ref{predictu}) only locally, i.e. for a limited range of variation in the exogenous parameters. In other words, we estimate the PLU$^D$ corresponding to an auction only in the neighbourhood of this auction, i.e. over all auctions that occurred in similar conditions. By conditions, we mean realizations of exogenous parameters and the neighbourhood refers to the concept of measuring the similarity of these realizations by means of a range. The next step explains how this is done formally. \\
+We therefore develop an extension of the uncertainty prediction model in which we use the idea of demand forecasts (equation \ref{predictu}) only locally, i.e. for a limited range of variation in the exogenous parameters. In other words, we estimate the PLU$^D$ corresponding to an auction only in the neighbourhood of this auction, i.e. over all auctions that occurred in similar conditions. By conditions, we mean realizations of exogenous parameters, and the neighbourhood refers to the concept of measuring the similarity of these realizations by means of a range. The next step explains how this is done formally. \\
 
 We consider that firms predict the level of the uncertainty by comparing it with the level of uncertainty in past\footnote{For data availability reasons, we pool all (past and future) auctions for the computation of this PLU. This introduces some endogeneity. For a discussion of this choice, please see section \ref{endogeneityconcern}.} auctions of similar exogenous conditions. 
-The methodology is analogous to the computation of the baseline PLU$^D$. The suppliers forecast the precision (squared residuals) of their demand estimation as before, but only on a subsample of the data. The subsample is defined as all observations which lie within a distance $b_{X_e}$ of the observation of interest with respect to each %parameter realization of the 
-control variable~$X_e , \; \forall e=\{1,..,E\}$. Effectively, this is a multi-variate kernel regression and subsequent forecast with a rectangular (also called ``boxcar") weighting function. Observations within the kernel window are given equal weight, while observations outside the kernel window are given zero weight. We set the bandwidth $b_{X_e}$ with respect to each variable equal to $\frac{1}{3}$ of the range of that variable.\footnote{See appendix \ref{hardchoicePLU} for details. Column 2 of table \ref{multikernel} indicates the choice of $b_{X_e}$ for each exogenous variable considered.} \\
+The methodology is analogous to the computation of the baseline PLU$^D$. The suppliers forecast the precision (squared residuals) of their demand estimation as before, but only on a subsample of the data. The subsample is defined as all observations which lie within a distance $b_{X_e}$ of the observation of interest with respect to each control variable~$X_e , \; \forall e=\{1,..,E\}$. Effectively, this is a multi-variate kernel regression and subsequent forecast with a rectangular (also called ``boxcar") weighting function. Observations within the kernel window are given equal weight, while observations outside the kernel window are given zero weight. We set the bandwidth $b_{X_e}$ with respect to each variable equal to $\frac{1}{3}$ of the range of that variable.\footnote{See appendix \ref{hardchoicePLU} for details. Column 2 of table \ref{multikernel} indicates the choice of $b_{X_e}$ for each exogenous variable considered.} \\
 
 At any arbitrary observation (auction) with the realization $\boldsymbol{\tilde{X}}$ for the stacked vector of exogenous variables ($X_e$), the simple weight function is 
 \begin{equation}
@@ -754,73 +484,9 @@ and the local uncertainty regressions and forecasts $\forall J=\{P,Q\} $ are giv
 \underbrace{\widehat{\bigl(\epsilon^{D,J}_{k,\boldsymbol{\tilde{X}}}\bigr)}^2}_{\widehat{\text{PLU}}^D_{k, \boldsymbol{\tilde{X}}}} &= \alpha^{U,J}_{k,\boldsymbol{\tilde{X}}} + \beta^{U,J}_{k,\boldsymbol{\tilde{X}}} \boldsymbol{\tilde{X}}
 \end{align}
 
-%Stuff from princeton: REGRESSION DISCONTINUITY DESIGNS IN ECONOMICS from Lee and LEmieux. 
-%As discussed above, local linear regressions provide a non-parametric way of consistently estimating the treatment effect in an RD design (Hahn et al. (2001), Porter (2003)). Following Imbens and Lemieux (2008), we focus on the case of a rectangular kernel, which amounts to estimating a standard regression over a window of width h on both sides of the cutoff point. While other kernels (triangular, Epanechnikov, etc.) could also be used, the choice of kernel typically has little impact in practice. As a result, the convenience of working with a rectangular kernel compensates for efficiency gains that could be achieved using more sophisticated kernels.
-%It has been shown in the statistics literature (Fan and Gijbels (1996)) that a triangular kernel is optimal for estimating local linear regressions at the boundary. As it turns out, the only difference between regressions using a rectangular or a triangular kernel is that the latter puts more weight (in a linear way) on observations closer to the cutoff point. It thus involves estimating a weighted, as opposed to an unweighted, regression within a bin of width h. An arguably more transparent way of putting more weightonobservationsclosetothecutoffissimplytore-estimateamodelwitharectangularkernelusingasmallerbandwidth. In practice, it is therefore simpler and more transparent to just estimate standard linear regressions (rectangular kernel) with a variety of bandwidths, instead of trying out different kernels corresponding to particular weighted regressions that are more difficult to interpret.
-
-%We thus adopt the standard deviation $\sigma(.)$ of the demand prediction errors %absolute values of the residuals ($\sigma(\vert \epsilon^{D,J}_{i,k} \vert )$) 
-%as our measure of the demand (superscript $D$) uncertainty at point $k$ in auction $i$ in the price or quantity dimension ($J, \; \; J=\{P,Q\}$). 
-%Specifically, we define the alternative PLU$^D$ as the observed standard deviation of the absolute values of the residuals ($\sigma(\vert \epsilon^{D,J}_{i,k} \vert )$) %demand residuals $\sigma(.)$ 
-%per multi-variate kernel window ($C_{b}(.)$). The bandwidth $b_{X_i}$ of $C_{b}(.)$ with respect to each variable $X_i$ is equal to $\frac{2}{m}$ of the range of that variable\footnote{******Column 1 of table \ref{multikernel} indicates the choice of $m$ for each exogenous variable considered.}.  
-%\begin{equation}
-%\label{PLU}
-%\text{PLU}^{D,J}_{i,k} %\vert \boldsymbol{X_H} 
-%= \sigma \bigl(  \vert \epsilon^{D,J}_{i,k}  \vert  \bigr) \; \vert \; C_{b_{\boldsymbol{X}}}(\boldsymbol{X} )
-%\end{equation}
-%This means that the predicted uncertainty is given by measuring the observed standard deviation of residuals over past auctions of a sufficient degree of similarity (i.e. within the kernel bandwidth of the observation of interest). 
-
-%, i.e. $g=\{1,...,N^{m}\}$, $m$ is the bandwidth of the kernel per exogenous variable and $N$ is the number of exogenous variables. Each bin then regroups a set of hours that that were of similar conditions.
-%We thus measure the uncertainty as the standard deviation of the squared residuals of the volume prediction over all similar days. 
-%By similar hours, we understand that auctions of comparable uncertainty have realisations for $ \boldsymbol{X_i}$  that are in the same decile of the distribution of each exogenous factor. 
-%In the data, this is implemented by extracting a bandwidth $b_{X_i}$ with respect to each exogenous variable $X_i$, equal to 
-%
-%In the data, we measure the PLU$^D$ for any given auction by pooling together all similar demand predictions (within the vector $\boldsymbol{b_{X}}$ of the auction in question) and then computing $\sigma \bigl( \vert \epsilon^{D,J}_{i,k} \vert \bigr)$, the standard deviation of the absolute residuals from the demand prediction. We use $m=6$ to capture a third of the variation with respect to each variable, simultaneously. 
-
-%%this is done by creating an $N$-dimensional grid over the $N$ exogenous factors, where the grid interval length with respect to each variable is $\frac{1}{m^{\text{th}}}$ of the range of that variable. We set $m=10$. For details on the multi-variate kernel measurement, please see 
-%
-%The figure \ref{meshexog1a} exemplifies the idea for a setting of only two exogenous variables $A$ and $B$.  Both exogenous variables are normally distributed over time and vary hourly. The frequencies of observed realisations of $A-B$ combinations over 900 hours are given by the z-axis values. The residuals from the demand estimation, however, are not graphed in the figure. 
-%\begin{figure}[!ht]
-%\begin{center}
-%\includegraphics[trim=0cm 0.03cm 0cm 1.5cm, clip=true, height=55mm]{meshexog1a.pdf} 
-%\caption{Fictional distribution of observations conditional on two exogenous variables}
-%\label{meshexog1a}
-%\end{center}
-%%{ \small Note:} 
-%\end{figure}
-%
-%The bandwidth $b_{X_i}= 5.8, \; \forall i=\{A,B\}$ corresponds to a decile of the range of either $A$ and $B$. The grid in figure \ref{meshexog1a} is in units of 2.9. Hence, when computing the PLU for any given observation$_{\, k,H}$, we take the standard deviation of all squared residuals ($\epsilon^D_{k,H}$)$^2$ from observations that are in the $6*6$ square around the observation of interest. 
-%
-%If we use factors $A$ and $B$ to predict the uncertainty at a given moment, then our prediction will more accurate, the more observations are similar, i.e. within proximity of the observation of interest. Hence, the most precise estimate in the example will be possible for realisations $A=6$ and $B=18$. The further we move away from these high frequency realisations of the exogenous factors, the less precise our estimate will be. 
-%
-%The same logic applies to our study on EPEX Spot and we control for the sample size issue in predicting the PLU by *******correcting the measured values by the sample size in the kernel - HOW?. 
-%
-%%* be careful to talk about precision of our estimate in the example or of the inferred value of uncertainty (= other dimension of data points in bins). 
-
-%This methodology is applied to generate our measure of variance of the error terms. 
-
-When firms infer the upcoming uncertainty by looking at the uncertainty in past auctions, the precision of their estimate depends on the number of comparable auctions available, i.e the sample size. Given that the sample size varies greatly across auctions, we use a sample-size-weighted OLS regression in the final estimation of equation \ref{secondstagereg2}. Finally, we bootstrap the standard errors on the kernel-based PLUs using 50 repetitions.\footnote{For computational reasons, we only bootstrap the kernel based PLUs for the point of inflection ($k=3$). We choose only 50 repetitions for the same reason. Given the size of our dataset, we consider it acceptable.  The general criterion for convergence is that each observation is selected at least once in the bootstrapping exercise.}\\
-
-
-%
-%
-%\subsubsection{Alternative pairing of points across Supply and Demand functions}
-%In the final regression (equation \ref{secondstagereg2}) we regress the slope on the PLUs and controls. Both the slope of the supply function as well as the PLUs from the demand function are point specific, i.e. measured at a specific point on the respective bid function. 
-%
-%We therefore pair a point on the supply curve ($k^S$) with a selected point on the demand curve ($k^D$) and run the final regression of the slope of the supply function on a single PLU$^D_k$ (rather than on all PLU$^D_k \; \; \forall k=\{1,..,5\}$ from the corresponding demand curve collectively). Doing so has the advantage of significantly simplifying the interpretation of the regression results. However, this choice also introduces some arbitrariness. 
-%
-%In the baseline, we have chosen to link points via volumes. This means that for a slope regression at point\footnote{Characterised by average Volumes of approx. $4400$ MWh and a Price of $-30$\EUR{}/MWh. Source: see descriptive statistics of selected points in appendix \ref{****Pointsstats} of chapter \ref{pschapter}.} $k^S=2$ we use the PLU$^D_{k^{-1}}$ computed at point\footnote{With average Volumes approx. $5700$ MWh and Prices $120$\EUR{}/MWh.} $k^D=4$ . 
-%
-%We collect further support for our choice by testing the alternative option, namely a pairing in the price dimension. We run the corresponding test and expect to see our results disappear if our pairing assumption is of relevance.  
-%We thus match points which do not resemble each other in terms of volumes, but prices. Specifically, we match points\footnote{With average volume and prices of $4400$MWh and $-30$\EUR{}/MWh, respectively.} $k^S=2$ with points of type\footnote{With average volume and prices of $13000$MWh and $-60$\EUR{}/MWh, respectively.} $k^D=2$.  
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%
-	%NET BLOCK ORDERS not done
-%%%%%%%%%%%%%%%%%%%%%%%%%%
-
+When firms infer the upcoming uncertainty by looking at the uncertainty in past auctions, the precision of their estimate depends on the number of comparable auctions available, i.e. the sample size. Given that the sample size varies greatly across auctions, we use a sample-size-weighted OLS regression in the final estimation of equation \ref{secondstagereg2}. Finally, we bootstrap the standard errors on the kernel-based PLUs using 50 repetitions.\footnote{For computational reasons, we only bootstrap the kernel based PLUs for the point of inflection ($k=3$). We choose only 50 repetitions for the same reason. Given the size of our dataset, we consider it acceptable. The general criterion for convergence is that each observation is selected at least once in the bootstrapping exercise.}\\
 
 \section{Results }
-%(+ Discussion: include result specific commentary here)
 \label{resultsplusinterpret}
 We first present the results for the demand estimation in both the Price and Volume dimension since this step is identical for all PLU specifications. We then present the results of the final regression in the baseline and alternative specifications. 
 
@@ -829,13 +495,11 @@ Table \ref{VolDEPur52} gives the results for the demand estimation on volumes (e
 
 These tables are interesting for two reasons. First, they provide the basis for our computation of the PLU$^D$. Second and the reason why we disclose them in such detail, they are already a result in themselves. \\
 
-It is comforting to see that all variables used are significant and, more importantly, of the expected sign. This significance provides  support for our specification of the demand estimation. 
-For the interpretation here, we focus on the effects at the point of inflection\footnote{As mentioned, the point of inflection is the centre point of the bid curves and the most relevant for equilibrium determination. %This is evident by comparing figures \ref{g7f} and \ref{EquilVolPriperHour} with the summary statistics of selected points in appendix \ref{****6.3} of chapter \ref{pschapter}.
-} ($k=3$). \\
+It is comforting to see that all variables used are significant and, more importantly, of the expected sign. This significance provides support for our specification of the demand estimation. For the interpretation here, we focus on the effects at the point of inflection\footnote{As mentioned, the point of inflection is the centre point of the bid curves and the most relevant for equilibrium determination. } ($k=3$). \\
 
 First, looking at the volume effects of the exogenous variables: 
 All variables included in the regression are highly significant at the $1\%$ level.
-All temperature statistics (Tempeff15, Roll\_temp24, Roll\_temp240) bear coefficients with a negative sign and confirm that electricity demand falls with increasing ambient temperature.  All daytime controls show up the expected sign as well: suncycle and deltasun have positive coefficients. This is sensible as electricity demand is higher during the day than at night (proxied for by suncycle) and rush or activity hours (proxied for by deltasun) in the morning and evening are also characterised by increased demand. The variables morning and EWH have coefficients of a plausible negative sign. The morning as controlled for by our indicator variable\footnote{The morning is defined as the hours before midday, which occurs when luminosity is at its daily maximum.} is shorter than the afternoon and evening together, thus total electricity consumption is lower as well. EWH stands for the deep night between 10pm and 4am and thus also corresponds to low demand periods. SolarRest controls for selfgeneration to cover own consumption and has a plausible negative coefficient. RteBlackBox on the other hand has a very sensible positive coefficient and confirms that actual demand is higher when the grid operator expects it to be the case. \\
+All temperature statistics (Tempeff15, Roll\_temp24, Roll\_temp240) bear coefficients with a negative sign and confirm that electricity demand falls with increasing ambient temperature. All daytime controls show up the expected sign as well: suncycle and deltasun have positive coefficients. This is sensible as electricity demand is higher during the day than at night (proxied for by suncycle) and rush or activity hours (proxied for by deltasun) in the morning and evening are also characterised by increased demand. The variables morning and EWH have coefficients of a plausible negative sign. The morning as controlled for by our indicator variable\footnote{The morning is defined as the hours before midday, which occurs when luminosity is at its daily maximum.} is shorter than the afternoon and evening together, thus total electricity consumption is lower as well. EWH stands for the deep night between 10 pm and 4 am and thus also corresponds to low demand periods. SolarRest controls for selfgeneration to cover own consumption and has a plausible negative coefficient. RteBlackBox, on the other hand, has a very sensible positive coefficient and confirms that actual demand is higher when the grid operator expects it to be the case. \\
 
 The analysis of the price effects of these controls on demand functions is in line with the analysis of volume effects. This is coherent since for a linear downwards sloping demand curve, a left shift (volume decrease) is synonymous for a downwards shift (price decrease) of the curve. We consider that at the point $k=3$, the demand functions are locally linear. We note the only exception for the coefficient of SolarRest which has a positive price effect, while a negative volume effect.\footnote{We emphasize in the construction of our variable (appendix \ref{Solar}) that it is not possible to build a proxy for lighting consumption that would allow us to decorrelate the effects from photovoltaic production and lighting consumption. We therefore stick to the SolarRest proxy, which aims to capture the effect of Solar which is not captured by suncycle.} \\
 
@@ -843,34 +507,17 @@ Second, these tables already give a descriptive analysis of the effects of exoge
 We now compare all coefficients for a specific variable on the $K=5$ different points on the demand function (we read the table horizontally and compare sign changes across columns).\\
 
 In table \ref{VolDEPur52}, we observe for each row at most a single sign change across the coefficients for the different points. Furthermore (and with few exceptions), the magnitudes of the coefficients generally increase or decrease monotonically along a row. 
-This is very convincing as it suggests that exogenous variables have a monotone effect on the shape of the bid function. We thus only observe one-directional shifts (e.g. a unilateral left shift) or two-directional shifts (extension or contraction%\footnote{They can also been seen as one-directional pivots (clockwise or anticlockwise) of the functions.}
-) in the volume dimension induced by the variation in exogenous variables. While the unilateral effects are explained analogously to our point specific interpretation on the point $k=3$ above, we do not have a story to tell about two-directional effects.\\
+This is very convincing as it suggests that exogenous variables have a monotone effect on the shape of the bid function. We thus only observe one-directional shifts (e.g. a unilateral left shift) or two-directional shifts (extension or contraction) in the volume dimension induced by the variation in exogenous variables. While the unilateral effects are explained analogously to our point specific interpretation on the point $k=3$ above, we do not have a story to tell about two-directional effects.\\
 
 Tempeff15 results in a contraction of the bid function in terms of volumes (right shifts on low volume points, $k=5,4$ and left shifts on high volume points $k=3,2,1$). Roll\_Temp24 has the opposite effect and results in a volume extension of the curve. Roll\_Temp240 induces a pure left shift of the whole function.\footnote{Excluding interaction effects, we note that the net effect of a simultaneous 1$^o$C increase for all three temperature variables results in a net left shift of the function. In the price dimension (table \ref{PriceDEPur52}) we observe a net downwards shift. Both effects suggest that electricity demand decreases with the prevailing temperature.}
 For the intraday seasonality controls, the results are very clear. While suncycle results in an extension of the demand function\footnote{Combined with the observed price effects from table \ref{PriceDEPur52}, this suggests that demand is more price elastic during the day.}, all other intraday controls (morning, deltasun, EWH) have unilateral effects. When the indicators morning and EWH are positive, we observe volume decreases at all points and thus a left shift of the function. Higher values of deltasun induces volume increases at all points of the bid function.\\
 
 Finally, we have SolarRest which induces an expansion of the curve and RteBlackBox which has a unilateral right shifting effect on the aggregate demand bid function. \\
 
-The price variation of the demand bid function yields interesting results, too. Given that the prices of points $k=1,5$ are fixed, we only observe effects for the interior points. We thus focus on the effects on the points $k=4,3,2$ only (called the ``central demand function" here). %and an extension on these points would represent a clockwise pivot of the whole function. 
-Again, we only observe at most a single sign change across columns for any exogenous variable. 
-Both Tempeff15 and Roll\_Temp240 lead to an extension of the central demand function (we are now looking at vertical variation of the bid function as shown in fig. \ref{TypeallocK}), while Roll\_Temp24 causes a  unilateral downwards shift. 
-For intraday seasonality controls, we see that suncycle and deltasun have a contracting effect on the central demand function and morning a unilaterally negative effect. EWH leads to an expansion of the central demand function. 
+The price variation of the demand bid function yields interesting results, too. Given that the prices of points $k=1,5$ are fixed, we only observe effects for the interior points. We thus focus on the effects on the points $k=4,3,2$ only (called the ``central demand function" here). Again, we only observe at most a single sign change across columns for any exogenous variable. Both Tempeff15 and Roll\_Temp240 lead to an extension of the central demand function (we are now looking at vertical variation of the bid function as shown in fig. \ref{TypeallocK}), while Roll\_Temp24 causes a unilateral downwards shift. For intraday seasonality controls, we see that suncycle and deltasun have a contracting effect on the central demand function and morning a unilaterally negative effect. EWH leads to an expansion of the central demand function. 
 SolarRest and RteBlackBox indicate an extension of the central demand function in the price dimension. \\
-%and one-directional pivots (clockwise or anticlockwise) as interpretation.
-
-%Combining the functional effects in both the price and volume dimension, we observe coherent net effects: Tempeff15 lead to an extension of the curve in the volume dimension and a contraction in the price dimension - both effects result in a flattening of the demand curve (absolute value of the slope decreases), in particular of the price sensitive middle region of the curve at point $k=3$. 
-%With the same argument, we obtain net effects on the slope for all variables: Roll\_Temp24 (steepening), Roll\_Temp240 (flattening), suncycle (steepening), morning and EWH and deltasun (unilateral shifts only, no slope effect), SolarRest (Steepening), RteBlackBox (unilateral effect only).
-%
-%Figure \ref{demandslopepred5} shows that these predictions are appropriate. The table shows a regression of the absolute value of the slope of the demand function at the point $k=3$ on the exogenous factors. A steepening of the slope corresponds to a positive coefficient and vice versa for a flattening of the bid function. We see that the predictions are confirmed for Tempeff15, Roll\_Temp24, suncycle and morning. Our predictions are wrong on the effects of Roll\_Temp240 and SolarRest. Deltasun, EWH and RteBlackBox have non-zero coefficients, which we do not predict with the previous regressions on the levels of the bid function points.
-%\begin{table}[!ht]
-%\vspace{-0cm}
-%\input{demandslopepred5.tex}
-%\caption{\label{demandslopepred5} Demand slope regression }
-%\emph{Note}: Regression of the slope of the demand curve at the point $k=3$ on exogenous controls.
-%\end{table}
 
 \newgeometry{margin=3cm} 
-%\begin{landscape}
 \begin{table}[!ht]
 \vspace{2cm}
 \begin{center}
@@ -879,111 +526,71 @@ SolarRest and RteBlackBox indicate an extension of the central demand function i
 \end{center}
 \emph{Note}: The estimated constants of this table or the left graph of fig. \ref{TypeallocK} indicate to which portion of the demand function the types of points $k=1,..,5$ refer. \\
 \end{table}
-%\end{landscape}
-%\restoregeometry
-%
-%\newgeometry{margin=3cm} 
-%\begin{landscape}
-%\footnotesize
+
 \begin{table}[!ht]
-%\vspace{-1.4cm}
 \begin{center}
 \input{texch2/FIN_PriceDEPur52.tex}
 \caption{\label{PriceDEPur52} Estimation results for demand prices }
 \end{center}
-\emph{Note}: The estimated constants of this table  or the left graph of fig. \ref{TypeallocK} indicate to which portion of the demand function the types of points $k=1,..,5$ refer. \\
+\emph{Note}: The estimated constants of this table or the left graph of fig. \ref{TypeallocK} indicate to which portion of the demand function the types of points $k=1,..,5$ refer. \\
 \end{table}
-%\end{landscape}
 \restoregeometry
 
 
-Overall, we take away a solid R$^2$ with coefficients of the correct sign. We furthermore have disclosed the White statistic which unanimously confirms heteroskedasticity in these regressions. The significance levels have been measured using robust standard errrors. \\
+Overall, we take away a solid R$^2$ with coefficients of the correct sign. We furthermore have disclosed the White statistic which unanimously confirms heteroskedasticity in these regressions. The significance levels have been measured using robust standard errors. \\
 
-We point to the fact that the explanatory power of our demand estimations is highest for the point of inflection, in line with our expectations. 
-Points of maximum curvature $k=2,4$ reveal lower R$^2$ statistics. This is likely due to the underlying data patterns that arise from bidding frictions, e.g. focal price points. For these points, it is thus not surprising that we do not observe convincing demand estimates - we note in particular the lack of explanatory power for the demand estimation in the price dimension for points of type $k=4$. \\
-
-
+We point to the fact that the explanatory power of our demand estimations is highest for the point of inflection, in line with our expectations. Points of maximum curvature $k=2,4$ reveal lower R$^2$ statistics. This is likely due to the underlying data patterns that arise from bidding frictions, e.g. focal price points. For these points, it is thus not surprising that we do not observe convincing demand estimates - we note in particular the lack of explanatory power for the demand estimation in the price dimension for points of type $k=4$. \\
 
 \subsection{Final regression}
 \label{discident}
-For the final regression, we first lay the focus on the point of inflection ($k=3$) for a detailed interpretation of our results. We choose the point $k=3$, because this type of point is the most relevant for equilibrium determination.
-We then disclose the results for all other points $k \neq 3$ to give an overview of the effects of uncertainty on the whole aggregate supply bid function. \\
+For the final regression, we first lay the focus on the point of inflection ($k=3$) for a detailed interpretation of our results. We choose the point $k=3$, because this type of point is the most relevant for equilibrium determination. We then disclose the results for all other points $k \neq 3$ to give an overview of the effects of uncertainty on the whole aggregate supply bid function. \\
 
 Each result table has four (three\footnote{For computational reasons, we do not run the bootstrapping of the kernel based PLU$^D$ for the points $k\neq 3$, thus we only have three columns for these tables.}) columns to show the results for different estimators and two specifications of the PLU$^D$. All other variables remain unchanged across the columns. In the tables, column 1 refers to the baseline specification of the PLU$^{D,J}$, where standard errors are calculated using the Huber-White sandwich estimator. Column 2 reports the results for the baseline model using bootstrapped standard errors with 300 repetitions. Column 3 reports the results for the regression on the kernel based PLU$^{D,J}_{\tilde{X}}$, using the sample size of each kernel as weights in the regression. Column 4 reports the results of the kernel based model using bootstrapped standard errors using 50 repetitions.\footnote{Coefficients vary slightly ($<\pm20\%$, no sign change), because the bootstrapping loop includes the kernel-based prediction of the uncertainty and thus varies the kernel sample sizes, which are used as weights in the final regression. Furthermore, the estimator has probably not yet fully converged with 50 repetitions, however for computational reasons we stick to this choice.} \\
 
-%First, as described in chapter \ref{pschapter}, the selection for the point of inflection $k=3$ is not dependent on any other point (unlike the points $k=2$ or $k=4$). Moreover, in comparison to the points $k=1$ and $k=5$, the point of inflection exhibits variation in both volumes and prices. 
-%Second, the selected points of type $k=3$ do not reveal any suspicious data patterns (as is the case for the points $k=2$ and $k=4$). Also, the point of type $k=3$ are the most relevant for equilibrium determination. We thus consider that the points $k=3$ (representing the central portion of the bid function) are least affected by frictions in bidding, e.g. focal price points. %, or marginal cost considerations due to different production technologies. 
-
-\emph{Regarding notation:  } In the results tables,
- PLUvRvar`m' stands for PLU$^R_{1,m}$ with `m' being replaced by the initial of the variable in question (W, S and T, respectively). PLU$^R_{2,m}$ is indicated by the extension ``sq".  PLUvDvar`J' stands for PLU$^{D,J}$ with $J=\{P,Q\}$ representing the dimension in which the demand uncertainty is measured.
- The kernel based PLU$^D_{\tilde{X}}$ are given by PLUvDvarK`J' in the tables.
-To facilitate the reading of the tables, we adopt this notation for the discussion of the results. 
+\emph{Regarding notation:  } In the results tables, PLUvRvar`m' stands for PLU$^R_{1,m}$ with `m' being replaced by the initial of the variable in question (W, S and T, respectively). PLU$^R_{2,m}$ is indicated by the extension ``sq".  PLUvDvar`J' stands for PLU$^{D,J}$ with $J=\{P,Q\}$ representing the dimension in which the demand uncertainty is measured. The kernel based PLU$^D_{\tilde{X}}$ are given by PLUvDvarK`J' in the tables. To facilitate the reading of the tables, we adopt this notation for the discussion of the results. 
 
 
 \paragraph{For the point of inflection ($k=3$),}
-the results are shown in table \ref{main_1_5}. %The results for the other points are shown in tables \ref{mainNS1_1} - \ref{mainNS1_9}. 
-Regarding uncertainty from renewables production, only that of wind has a significant and robust impact. PLUvRvarW has a positive effect (significant at the 1\% level) on the slope in all specifications. PLUvRvarWsq has a negative effect on the slope in all specifications, however this second effect is not robust to bootstrapping the standard errors. The signs of the estimated coefficients are in line with our expectations. To show this, we recall that both versions of the PLUvRvarW are %proxy for uncertainty PLUvRvarW and its squared brother (PLUvRvarWsq) are 
-based on the inverse of the characteristic lengthscale $L_W$ of autocorrelation of the wind speed measurements. Thus,  when $L_W$ increases (it represents a decrease in the uncertainty since wind speeds are homogenous over longer distances), the PLU decreases (corresponding to a decrease in uncertainty). \\
+the results are shown in table \ref{main_1_5}. Regarding uncertainty from renewables production, only that of wind has a significant and robust impact. PLUvRvarW has a positive effect (significant at the 1\% level) on the slope in all specifications. PLUvRvarWsq has a negative effect on the slope in all specifications, however this second effect is not robust to bootstrapping the standard errors. The signs of the estimated coefficients are in line with our expectations. To show this, we recall that both versions of the PLUvRvarW are based on the inverse of the characteristic lengthscale $L_W$ of autocorrelation of the wind speed measurements. Thus, when $L_W$ increases (it represents a decrease in the uncertainty since wind speeds are homogenous over longer distances), the PLU decreases (corresponding to a decrease in uncertainty). \\
 
-While an increase in the PLUvRvarW leads to an increase in the slope of the supply function, the effect is attenuated by the squared term PLUvRvarWsq 
-%The result for PLUvRvarW is therefore plausible as with decreasing $L_W$, the PLU increases and in line with our predictions the slope increases. Intuitively, a more heterogenous wind speeds profile leads to uncertainty, which induces steeper supply bid functions by electricity suppliers. However, the squared PLUvRvarWsq term counterbalances this effect 
-for very small and large $L_W$.\footnote{By looking at the variation of our data, we see that the negative effect of the PLUvRvarWsq term merely attenuates, rather than overrides, the positive effect of the PLUvRvarW term on the slope since in our dataset we very rarely observe PLUvRvarW values sufficiently large to exceed the maximum of the Laffer curve of the impact on the slope.} The estimated coefficient for the latter is negative and suggests that for very short $L_W$ (i.e. very heterogenous wind speeds over the country), prediction errors cancel out. For very long $L_W$ (i.e. very homogenous wind speed profile), the marginal impact of $L_W$ on the level of uncertainty decreases. \\
+While an increase in the PLUvRvarW leads to an increase in the slope of the supply function, the effect is attenuated by the squared term PLUvRvarWsq for very small and large $L_W$.\footnote{By looking at the variation of our data, we see that the negative effect of the PLUvRvarWsq term merely attenuates, rather than overrides, the positive effect of the PLUvRvarW term on the slope since in our dataset we very rarely observe PLUvRvarW values sufficiently large to exceed the maximum of the Laffer curve of the impact on the slope.} The estimated coefficient for the latter is negative and suggests that for very short $L_W$ (i.e. very heterogenous wind speeds over the country), prediction errors cancel out. For very long $L_W$ (i.e. very homogenous wind speed profile), the marginal impact of $L_W$ on the level of uncertainty decreases. \\
 
-
-With respect to the uncertainty from temperature forecasts, the results are insignificant (although of the anticipated sign). We expect the impact of temperature uncertainty goes via the demand response, which we account for in our proxy for the uncertainty from demand realization (PLUvD). Similarly, uncertainty from Solar production is attributed no effect. This is not surprising as 
-generation from solar is only a fraction of that generated from wind power and thus negligible.
-Furthermore, we are unable to disentangle the effect of solar generation from the reduced demand effect from high luminosity (which result in low demand for lighting). We do not find evidence for a direct response from suppliers to uncertainty in temperature or solar predictions. \\
+With respect to the uncertainty from temperature forecasts, the results are insignificant (although of the anticipated sign). We expect the impact of temperature uncertainty goes via the demand response, which we account for in our proxy for the uncertainty from demand realization (PLUvD). Similarly, uncertainty from Solar production is attributed no effect. This is not surprising as generation from solar is only a fraction of that generated from wind power and thus negligible. Furthermore, we are unable to disentangle the effect of solar generation from the reduced demand effect from high luminosity (which result in low demand for lighting). We do not find evidence for a direct response from suppliers to uncertainty in temperature or solar predictions. \\
 
 Uncertainty from the realization of market demand has a negative and significant effect when proxied for by price-based PLUvDvarP (see table \ref{main_1_5}) as opposed to a positive and significant effect when proxied for by a volume-based PLUvDvarQ (see table \ref{main_1_5}). 
-The positive effect on PLUvDvarQ is in line with our prediction made in section \ref{intropredict}. This results supports the theory that firms take uncertainty when bidding into account and consequently adjust their bidding strategy in order to minimize dynamic costs. \\
+The positive effect on PLUvDvarQ is in line with our prediction made in section \ref{intropredict}. This result supports the theory that firms take uncertainty when bidding into account and consequently adjust their bidding strategy in order to minimize dynamic costs. \\
 
 However, our theory produces a prediction for volume based uncertainty only. We include the uncertainty proxy for price PLUvDvarP as a control and its effect seems rather robust. The effects of PLUvD in either the price or volume dimension are robust to the exclusion of the other.\footnote{Results available from the authors.} We try to explain the opposing signs for the coefficients of the two proxies in section \ref{findings}.\footnote{The net effect cannot be precisely computed as the conversion of the PLUvD from the price dimension to the quantity dimension is not possible. We approximate the comparison however, by including both PLU$^{D}$ simultaneously in the regression. All PLUvD are rescaled by their respective means to allow some degree of comparison.} \\
 
-Furthermore, table \ref{main_1_5} gives support to our extension using kernel based PLUvDs. Column~2 shows that the effects of the baseline PLUvD are not significant when bootstrapped. Our alternative is to use a more elaborate uncertainty prediction model.  These kernel based PLUvD are more sophisticated in two respects: (i) the forecasting model is only applied locally, that is auctions are only compared to similar auctions and (ii) the obtained forecast is weighted by the sample size used for its prediction. Thereby, we control for the confidence of the firms in making those predictions. The results of the weighted regression are given in column 3. The results using the more elaborate prediction model are
-in line with those from the baseline regression, while being more accurate as indicated by the improved explanatory power of our model (we see a $16.5\%$ increase of the R$^2$ from columns 1-2 to columns 3-4). Finally, the results of our kernel based model are more precise as indicated by the higher significance level for the PLUvDvarKP and PLUvDvarKQ, which are now also robust to a bootstrap (column~4).\\
-
-
-
- %the volume effect seems to dominate. We see this as indicative evidence that demand uncertainty has an effect on the supply function bidding of electricity producers).
-% I have done the combined (using rescaled)-> negative coeff + sig. all else same. 
+Furthermore, table \ref{main_1_5} gives support to our extension using kernel based PLUvDs. Column~2 shows that the effects of the baseline PLUvD are not significant when bootstrapped. Our alternative is to use a more elaborate uncertainty prediction model.  These kernel based PLUvD are more sophisticated in two respects: (i) the forecasting model is only applied locally, that is auctions are only compared to similar auctions and (ii) the obtained forecast is weighted by the sample size used for its prediction. Thereby, we control for the confidence of the firms in making those predictions. The results of the weighted regression are given in column 3. The results using the more elaborate prediction model are in line with those from the baseline regression, while being more accurate as indicated by the improved explanatory power of our model (we see a $16.5\%$ increase of the R$^2$ from columns 1-2 to columns 3-4). Finally, the results of our kernel based model are more precise as indicated by the higher significance level for the PLUvDvarKP and PLUvDvarKQ, which are now also robust to a bootstrap (column~4).\\
 
 Finally, we explicitly include the controls for the levels of the input prices of electricity producers ($\boldsymbol{X^S}$). We do not interpret these coefficients since there are no ex-ante expectations of their levels to affect the slope of the supply bid function. We briefly mention that intraday seasonality controls as well as other demand related variables are not included in this regression to avoid multicollinearity problems with the PLUvD, which are themselves computed as a linear combination of the demand control variables~($\boldsymbol{X^D}$). \\
 
 Overall, we take away a goodness of fit of $\geq 20\%$ for our empirical model as well as the robust positive coefficients for both the demand based uncertainty proxy (PLUvDvarQ) and the weather based uncertainty proxies (PLUvRvarW and PLUvRvarWsq). We note the puzzling result for the PLUvDvarP. 
 
-%%%%%%%%% THINGS TO ADAPT IN RESULTS TABLES: 
-%-TITLE 
-%- Variable names 
-%- remove model names 
-%
-
-%\newgeometry{margin=3cm} 
 \begin{table}[!ht]
 \vspace{-2.38cm}
 \input{texch2/FIN_main1_5.tex}
-\caption{\label{main_1_5} Regressions of slope on PLU$^R$ and PLU$^{D}$ and PLU$^{D}$ at $k=3$}
+\caption{\label{main_1_5} Regressions of the slope on PLU$^R$ and PLU$^{D}$ and PLU$^{D}$ at $k=3$}
 \emph{Note}: Standard errors are reported in parenthesis. Column 1 refers to the baseline specification. Column 2 reports bootstrapped results for the baseline model. Column 3 reports the results for the (weighted) regression on the kernel based PLU$^D_{\tilde{X}}$. Column 4 reports bootstrapped results of the model in column 3. 
 \end{table}
 \pagestyle{empty}
-%\restoregeometry
 
 \section*{}
-\paragraph{For the other points  ($k=1,2,4,5$),} the results are given in tables \ref{mainNS1_1}, \ref{mainNS1_3}, \ref{mainNS1_7} and \ref{mainNS1_9}, respectively.\footnote{Variables marked ``(omitted)" are drop due to perfect collinearity.} We comment on the effects over all points collectively in order to give an overview of the full bid function behaviour. %For individual effects, we emphasize that $k=3$ is the focal point of our analysis as it is the  most relevant for the market equilibrium. 
+\paragraph{For the other points  ($k=1,2,4,5$),} the results are given in tables \ref{mainNS1_1}, \ref{mainNS1_3}, \ref{mainNS1_7} and \ref{mainNS1_9}, respectively.\footnote{Variables marked ``(omitted)" are drop due to perfect collinearity.} We comment on the effects over all points collectively in order to give an overview of the full bid function behaviour.\\
 
 The specification of the proxies for the uncertainty from renewables as well as of the controls does not vary across columns, we thus focus on column 2 for these (in order to take bootstrapped standard errors into account). 
 While we observe in table \ref{main_1_5} a convincing effect for the uncertainty from wind predictions on the slope of the point of inflection ($k=3$), we cannot observe this effects on the other points of the bid function.\footnote{We note the exception of a negative effect for PLUvRvarW on the slopes at points $k=2$ and 5 (significant at the $5\%$ level).} No other proxy for the uncertainty from renewables has a significant effect on the slope at any point. \\
 
 The proxies for uncertainty from market demand produce opposing effect depending on the prediction model. PLUvDvarP has a negative and significant effect on all points (with the exception of points $k=1$ and $k=5$ of course, which do not exhibit variation in prices due to the auction rules). PLUvDvarQ has a positive effect, when significant\footnote{For both the bootstrapped baseline results (col. 2) and the weighted kernel based specification (col. 3). }, on all points ($k=2-5$), but not on $k=1$. \\
 
-On the remaining controls, we do not observe a clear patterns on the effects at the different points. We run the analysis without these controls and note that the signs of all significant variables remain unchanged.\footnote{Results available from the authors.}\\
-
+On the remaining controls, we do not observe a clear pattern on the effects at the different points. We run the analysis without these controls and note that the signs of all significant variables remain unchanged.\footnote{Results available from the authors.}\\
 
 \begin{table}[!ht]
 \vspace{-2.5cm}
 \input{texch2/FIN_mainNS1_1.tex}
 \vspace{-0.2cm}
 \caption{\label{mainNS1_1} Regressions of slope on PLU$^R$ and PLU$^{D}$ and PLU$^{D}$ at $k=1$}
-%\emph{Note}: Standard errors are reported in parenthesis. Column 1 refers to the baseline specification. Column 2 reports bootstrapped results for the baseline model. Column 3 reports the results for the (weighted) regression on the kernel based PLU$^D_{\tilde{X}}$. 
 \vspace{0.9cm}
 \input{texch2/FIN_mainNS1_3.tex}
 \vspace{-0.2cm}
@@ -1002,119 +609,28 @@ On the remaining controls, we do not observe a clear patterns on the effects at 
 \caption{\label{mainNS1_9} Regressions of slope on PLU$^R$ and PLU$^{D}$ and PLU$^{D}$ at $k=5$}
 \end{table}
 
-
-%
-%\section*{}
-%\paragraph{Using the kernel based PLU$^D$:}
-%We compute a kernel-based equivalent for the PLU$^D$ computed in the baseline.  The different versions are named $v51a$, $v51b$ and $v52a$, $v52b$. Version $51$ computes the kernel based PLU on squared residuals, version $52$ computes them on absolute values of the residuals. In version $b$, the PLU is computed with respect to one third of the variation of each variable included in forecast \ref{predictu}. 
-%Version $a$ differs from this only by the fact that we do not condition on the variation of the variable Roll\_Temp240 in order to increase the sample size per multi-variate kernel window.
-%
-%Tables \ref{k5152_5} gives the results for the kernel specified PLU$^D$. We first emphasize that the effect of the uncertainty from renewables is confirmed, and also stronger than in the baseline results. While both PLU$^R_{1,W}$ and PLU$^R_{2,W}$ remain significant and of the same sign, we now have positive results for PLU$^R_{1,T}$ and PLU$^R_{1,T}$. The uncertainty from temperature forecasts interprets analogously to that arising from wind predictions. Uncertainty from solar forecasts remains insignificant. Controls for supplier input prices yield the same results as before (with the exception of the variable Gas). Finally, kernel based PLU$^D$ confirm the importance of volume-based demand uncertainty for supplier bidding for both versions $51$ and $52$ and in both specifications $a$ and $b$ thereof. Price-based demand uncertainty has a positive effect when analysed using kernels on squared residuals  and a negative impact when based on absolute residuals. Significance of all variables in at the $1\%$ level and we take away the strong support for demand volume uncertainty having a steepening effect on the supplier bid function. 
-%%\newgeometry{margin=1.5cm} 
-%%\begin{landscape}
-%\begin{table}[!ht]
-%%\vspace{-1.4cm}
-%\input{k5152_5.tex}
-%\caption{\label{k5152_5} Regressions of slope on PLU$^R$ and PLU$^{D,Q}$ at $k=3$}
-%%\emph{Note}: 
-%\end{table}
-%%\end{landscape}
-%%\restoregeometry
-%
-%Tables \ref{k5152_3} and \ref{k5152_7} give the results for the kernel based PLU$^D$ on the selected points of type $k=2$ and $k=4$, respectively. We emphasize the robustness of the positive effect of PLU$^{D,Q}$ on the slope of the supply function. We note the non-supporting results for the PLU$^R$, but do not put much weight on these for the reason of noise in the bidding functions.
-%%\newgeometry{margin=1.5cm} 
-%%\begin{landscape}
-%\begin{table}[!ht]
-%%\vspace{-1.4cm}
-%\input{k5152_3.tex}
-%\caption{\label{k5152_3} Regressions of slope on PLU$^R$ and PLU$^{D,Q}$ at $k=2$}
-%%\emph{Note}: 
-%\end{table}
-%%\end{landscape}
-%%\restoregeometry
-%%\newgeometry{margin=1.5cm} 
-%%\begin{landscape}
-%\begin{table}[!ht]
-%%\vspace{-1.4cm}
-%\input{k5152_7.tex}
-%\caption{\label{k5152_7} Regressions of slope on PLU$^R$ and PLU$^{D,Q}$ at $k=4$}
-%%\emph{Note}: 
-%\end{table}
-%%\end{landscape}
-%%\restoregeometry
-%
-%%
-%
-%
-%
-%\section*{}
-%\paragraph{Using the alternative pairing of point types across Supply and Demand}
-%\footnote{ NO NEED TO REINTRODUCE EVERYTHING; DONE IN METHODOLOGY ALREADY 
-%OR REDUCE METHODOLOGY AND PUT MOTIVATION IN ROBUSTNESS SECTION. -> MAYBE BETTER AS LIGHTER TO UNDERSTAND ON FIRST READ.}
-%%The baseline pairing is done via volumes. We thus consider that a point $k=2$ from the supply function ``faces" a point of type $k=4$ from the demand function. Thereby, we acknowledge the fact that the supply and demand function have slopes of opposite signs. 
-%
-%We test robustness of our pairing mechanism by running the analysis using a link via prices. We here match points $k=2$ from the supply function with points $k=2$ from the demand function. The main focus of our analysis, namely on the point of inflection $k=3$, is unaffected. We disclose the new results for the points $k=2$ and $k=4$ in tables \ref{R1doublereg1_3} and \ref{R1doublereg1_7}, respectively\footnote{The individual result tables for price and volume PLU$^D$ are given in appendix \ref{results: indiv tables alt pairing}}. 
-%
-%This robustness test confirms the initial assumption that pairing should be done in the dimension of volumes. While, results using a Volume pairing indicate a significant effect for both PLU$^D$ from prices and volumes, the latter disappears when the pairing is done in the dimension of prices. \footnote{********** FIND REASON WHY ONLY VOLUME EFFECT DISAPPEARS!}
-%
-%Intuitively, this result makes sense since the non-central parts of a supply function are only relevant in equilibrium, when there is an important discrepancy between supply and demand, e.g. in case of a supply shortage. In a supply shortage, the market has difficulties to serve the demand on the market at the usual price, thus supply is running at high price -high volumes schedules (relative to average prices). Demand on the other hand, wants more than the market is willing to supply at average prices. Thus, the low volume -high price region of the demand curve will be relevant for the equilibrium determination. This pairing of corresponding parts of the demand and supply function is taken into account by the pairing f points in the baseline model. The alternative tested in this extension looks at whether, in case of a supply shortage example,  uncertainty from the high-volume - low price region of the demand curve affects supplier behaviour in the high volume - high price region of the bid function. 
-%
-%While we take away the support for our baseline pairing of supply and demand points, we are careful as before with these results for other variables on the points $k=2$ and $k=4$ due to the previously mentioned bidding frictions. As a last note, we not that compared to the baseline specification, the results for the PLU$^R$ are unchanged (and still not as expected). %The PLU$^D$ generate the desired effects and confirm the result of a positive coefficient on volume-based uncertainty versus a negative coefficient for price-based uncertainty. 
-%
-%
-%%\newgeometry{margin=1.5cm} 
-%%\begin{landscape}
-%\begin{table}[!ht]
-%%\vspace{-1.4cm}
-%\input{R1doublereg1_3.tex}
-%\caption{\label{R1doublereg1_3} Regressions of slope on PLU$^R$ and PLU$^{D,P}$ and PLU$^{D,Q}$  at $k=2$}
-%%\emph{Note}: 
-%\end{table}
-%%\end{landscape}
-%%\restoregeometry
-%%
-%%\newgeometry{margin=1.5cm} 
-%%\begin{landscape}
-%\begin{table}[!ht]
-%%\vspace{-1.4cm}
-%\input{R1doublereg1_7.tex}
-%\caption{\label{R1doublereg1_7} Regressions of slope on PLU$^R$ and PLU$^{D,P}$ and PLU$^{D,Q}$  at $k=4$}
-%%\emph{Note}: 
-%\end{table}
-%%\end{landscape}
-%%\restoregeometry
-
-
 \section{Discussion }
-%(do not include result specific commentary)
 \label{discussgeneral}
 \pagestyle{plain}
 In this section we reflect on the results and use the opportunity to address a few issues, drawbacks as well as qualities of the research conducted. We first discuss the findings of the paper and their internal and external validity. We briefly review the design of the empirical strategy and lend particular focus to how we deal with the issue of endogeneity.
 
 \subsection{Findings}\label{findings}
-In this paper, we investigate whether uncertainty affects supplier bidding as predicted by the theory. 
-We find that uncertainty from weather forecasts indeed affects the suppliers' bid function as expected. The aggregate supply function steepens when the level of uncertainty increases. We take this as evidence that firms take dynamic cost considerations into account and adjust their behaviour when facing increased expected dynamic costs. \\
+In this paper, we investigate whether uncertainty affects supplier bidding as predicted by the theory. We find that uncertainty from weather forecasts indeed affects the suppliers' bid function as expected. The aggregate supply function steepens when the level of uncertainty increases. We take this as evidence that firms take dynamic cost considerations into account and adjust their behaviour when facing increased expected dynamic costs. \\
 
-We also find significant results for the effect of the level of uncertainty about the realization of market demand on the suppliers' behaviour. However, we observe a strong discrepancy between the effect for uncertainty as measured on price volatility and the effect of uncertainty as measured on volume volatility. While the former sees itself attributed with a negative effect, the latter sees itself attributed with a positive effect on the slope of the aggregate supply function. 
-These opposing signs are robust in all specifications and seem to be of too much importance to be neglected. \\
+We also find significant results for the effect of the level of uncertainty about the realization of market demand on the suppliers' behaviour. However, we observe a strong discrepancy between the effect for uncertainty as measured on price volatility and the effect of uncertainty as measured on volume volatility. While the former sees itself attributed with a negative effect, the latter sees itself attributed with a positive effect on the slope of the aggregate supply function. These opposing signs are robust in all specifications and seem to be of too much importance to be neglected. \\
 
-The two proxies in question (PLU$^{D,P}$ and PLU$^{D,Q}$) are two variables designed to measure the same information, namely the prediction error of the demand function.
-As such, they are identical with respect to the set-up, computation as well as point at which they are extracted. They only differ with respect to the dimension in which the variation of the demand function  is measured, the former in the price dimension and the latter in the volume dimension. \\
+The two proxies in question (PLU$^{D,P}$ and PLU$^{D,Q}$) are two variables designed to measure the same information, namely the prediction error of the demand function. As such, they are identical with respect to the set-up, computation as well as point at which they are extracted. They only differ with respect to the dimension in which the variation of the demand function is measured, the former in the price dimension and the latter in the volume dimension. \\
 
-A theory using linear functions would predict that these measures of the shifts of the demand line are identical and interchangeable (modulo a translation by the slope). Also our data, i.e. the observed bid functions,  suggests that, at least locally at the point $k=3$, the bid functions are linear.\footnote{Recall the graph in figure \ref{graphmultifunc}.} Furthermore, our demand estimation models for both price and volume variation\footnote{Precisely look at columns 3 of tables \ref{VolDEPur52} and \ref{PriceDEPur52}.} indicate that the prediction model used works well in both dimension. In particular at $k=3$, significance and equal signs on coefficients for all terms included as well as similar explanatory power\footnote{R$^2$ of 0.463 for the price  and 0.478 for the volume regression.} in both regressions confirms the similar nature of the two proxies. \\
+A theory using linear functions would predict that these measures of the shifts of the demand line are identical and interchangeable (modulo a translation by the slope). Also our data, i.e. the observed bid functions,  suggests that, at least locally at the point $k=3$, the bid functions are linear.\footnote{Recall the graph in figure \ref{graphmultifunc}.} Furthermore, our demand estimation models for both price and volume variation\footnote{Precisely look at columns 3 of tables \ref{VolDEPur52} and \ref{PriceDEPur52}.} indicate that the prediction model used works well in both dimension. In particular at $k=3$, significance and equal signs on coefficients for all terms included as well as similar explanatory power\footnote{R$^2$ of 0.463 for the price and 0.478 for the volume regression.} in both regressions confirms the similar nature of the two proxies. \\
 
-Our recovered PLU$^{D,P}$ and PLU$^{D,Q}$ are, as expected, collinear.\footnote{Not prefectly, but with a correlation coefficient of 0,62} While OLS remains unbiased in the presence of collinearity between two regressors, its precision is reduced. We correct for the collinearity by dropping one proxy or the other, but the individual results remain unchanged - the coefficients of the two proxies keep opposite signs. \\
+Our recovered PLU$^{D,P}$ and PLU$^{D,Q}$ are, as expected, collinear.\footnote{Not perfectly, but with a correlation coefficient of 0,62} While OLS remains unbiased in the presence of collinearity between two regressors, its precision is reduced. We correct for the collinearity by dropping one proxy or the other, but the individual results remain unchanged - the coefficients of the two proxies keep opposite signs. \\
 
-Assuming that our empirical strategy is valid to test the relationship of interest, a possible reason for our intriguing observations could be that the slope of the demand function, which relates PLU$^{D,Q}$ and PLU$^{D,P}$, is endogenous on the uncertainty. Uncertain demand does not only unilaterally shift the demand function in one dimension (either P or Q), but also affects the shape and thus the slope of the curve. This effect is not accounted for in our research design and could drive the opposing results for both proxies. The endogeneity of the slope of the demand curve could be accounted for in our model by extracting the residuals from a regression of PLU$^{D,P}$ on PLU$^{D,Q}$ in an analysis to see if endogeneity exists and then reusing the residuals to control for slope effects of the demand curve in the final regression. We leave this  avenue for further research. \\
+Assuming that our empirical strategy is valid to test the relationship of interest, a possible reason for our intriguing observations could be that the slope of the demand function, which relates PLU$^{D,Q}$ and PLU$^{D,P}$, is endogenous on the uncertainty. Uncertain demand does not only unilaterally shift the demand function in one dimension (either P or Q), but also affects the shape and thus the slope of the curve. This effect is not accounted for in our research design and could drive the opposing results for both proxies. The endogeneity of the slope of the demand curve could be accounted for in our model by extracting the residuals from a regression of PLU$^{D,P}$ on PLU$^{D,Q}$ in an analysis to see if endogeneity exists and then reusing the residuals to control for slope effects of the demand curve in the final regression. We leave this avenue for further research. \\
 
 Without having resolved the empirical discrepancy in the results, the stark contrast between the two could also hint at the fact that we need new theories to explain both demand and supplier bidding behaviour on the electricity market. This calls for new theoretical models to better explain the shape of aggregate bid functions, which are S-shaped overall. Special attention in these models should be placed on the effect of uncertainty and its importance for bidders via the link of dynamic costs. \\
 
-%***Why is it ok to assume linear functions in model, while step functions in reality? Schmidt question. 
-
-
-Finally, our analysis relies strongly on the analysis of the point of inflection ($k=3$), but the functional analysis is important, too. While results on the whole bid function are broadly speaking in line with the point-specific analysis on the point of inflection, the significance of the results is weaker and the results less clear. Furthermore, we often observe varying effects on low and high volume points.\footnote{We refer specifically to the strengthening or weakening effects of exogenous variables on different points a shown in demand level estimation tables \ref{VolDEPur52} and \ref{PriceDEPur52}  as well as in the slope regressions tables \ref{mainNS1_1} - \ref{mainNS1_9}.}
+Finally, our analysis relies strongly on the analysis of the point of inflection ($k=3$), but the functional analysis is important, too. While results on the whole bid function are broadly speaking in line with the point-specific analysis on the point of inflection, the significance of the results is weaker and the results less clear. Furthermore, we often observe varying effects on low and high volume points.\footnote{We refer specifically to the strengthening or weakening effects of exogenous variables on different points a shown in demand level estimation tables \ref{VolDEPur52} and \ref{PriceDEPur52} as well as in the slope regressions tables \ref{mainNS1_1} - \ref{mainNS1_9}.}
 We conclude that the impacts of variations in exogenous factors on the shape of the bid functions are not uniform. Non-linear effects are neither predicted by our linear theory nor have been shown in previous studies (with the exception of \cite{wolfram1999measuring}). Our results hint at more intricate mechanisms which drive the shape of these bid functions. 
-
 
 \subsection{Internal and external validity}
 \label{internal}
@@ -1123,44 +639,34 @@ We believe that the work is credible due to many aspects of the research design.
 
 First, our set-up is based on rather intuitive relations which we test exclusively using simple OLS regressions. These regressions are econometrically unbiased given the data impurities that we observe. To guarantee precision of our estimates, we use bootstrapping techniques.\\ 
 
-Second, considerable effort has gone into the treatment of the information that goes into the right hand side of our regressions. We do not only refer to the final PLUs used, but also point at the precise use of our controls. See for example the treatment of the variable RteBlackBox (details see page \pageref{RteBlackBox}), which proxies for the information contained in the day ahead demand estimates (PrevConsoH) given out by the grid operator RTE. In order to extract the marginal information of the PrevConsoH estimate, which is not explained by other controls variables that we include in our analysis, we compute the residuals from a regression of PrevConsoH on our other controls, e.g. daytime controls such as suncycle. These residuals (called RteBlackBox) enable us to achieve a more sophisticated understanding of our regression output.\footnote{See for example the regression output of the demand estimation in tables \ref{VolDEPur52} and \ref{PriceDEPur52}.}\\
+Second, considerable effort has gone into the treatment of the information that goes into the right hand side of our regressions. We do not only refer to the final PLUs used, but also point at the precise use of our controls. See, for example, the treatment of the variable RteBlackBox (details see page \pageref{RteBlackBox}), which proxies for the information contained in the day ahead demand estimates (PrevConsoH) given out by the grid operator RTE. In order to extract the marginal information of the PrevConsoH estimate, which is not explained by other controls variables that we include in our analysis, we compute the residuals from a regression of PrevConsoH on our other controls, e.g. daytime controls such as suncycle. These residuals (called RteBlackBox) enable us to achieve a more sophisticated understanding of our regression output.\footnote{See, for example, the regression output of the demand estimation in tables \ref{VolDEPur52} and \ref{PriceDEPur52}.}\\
 
 We also emphasize the aspect that we understand our dataset as a cross-sectional dataset rather than a time-series. 
 \label{nodummies}
-While we do segment our dataset into weekday and weekend days and only run our analysis on the former, there is not reason why demand on a Tuesday afternoon should not be comparable to demand on a Thursday afternoon. We therefore ignore weekday dummies to increase our sample size. 
-Furthermore, we avoid the use of dummy variables to control for the hour of the contracts in our regressions in order to further increase the sample size. However, we cannot compare electricity consumption between 4am and 4pm within a day. Neither can we compare two 4pm hours of a day in winter and another in the summer. Using dummies would first restrict our sample size, plus make our interpretation more difficult since the dummy variable aggregates the effect over all conditions that change between samples. We use a bottom up approach that allows us to circumvent the sample size restriction and interpretation difficulties from daytime or seasonality dummies. Instead, we use continuous variables to control for the daytime and season by means of short and longer term temperature averages or other weather characteristics such as luminosity , which generates controls like deltasun.\footnote{See section \ref{controlssec} for full details on our set of control variables for both demand and supply.} \\
+While we do segment our dataset into weekday and weekend days and only run our analysis on the former, there is not reason why demand on a Tuesday afternoon should not be comparable to demand on a Thursday afternoon. We therefore ignore weekday dummies to increase our sample size. Furthermore, we avoid the use of dummy variables to control for the hour of the contracts in our regressions in order to further increase the sample size. However, we cannot compare electricity consumption between 4 am and 4 pm within a day. Neither can we compare two 4 pm hours of a day in winter and another in the summer. Using dummies would first restrict our sample size, plus make our interpretation more difficult since the dummy variable aggregates the effect over all conditions that change between samples. We use a bottom up approach that allows us to circumvent the sample size restriction and interpretation difficulties from daytime or seasonality dummies. Instead, we use continuous variables to control for the daytime and season by means of short and longer term temperature averages or other weather characteristics such as luminosity, which generates controls like deltasun.\footnote{See section \ref{controlssec} for full details on our set of control variables for both demand and supply.} \\
 
-Finally, we point at the empirical framework that allows us to run reduced form regressions on multiple regions of bid functions to better understand functional responses of those bids to variation in exogenous factors. We use 5 points for our analysis and refer to chapter 2 for the full details on this choice and the evaluation of the point selection. With hindsight, we feel that an additional two points would have been useful to better understand functional behaviour of the part of the bid functions, which is more relevant in equilibrium, i.e. on the centre part.\footnote{For that we would recommend the points representing half of the maximum curvature between the current points $k=2,4$ and $k=3$.}
-We note the computational demands of more points. \\
+Finally, we point at the empirical framework that allows us to run reduced form regressions on multiple regions of bid functions to better understand functional responses of those bids to variation in exogenous factors. We use 5 points for our analysis and refer to chapter 2 for the full details on this choice and the evaluation of the point selection. With hindsight, we feel that an additional two points would have been useful to better understand functional behaviour of the part of the bid functions, which is more relevant in equilibrium, i.e. on the centre part.\footnote{For that we would recommend the points representing half of the maximum curvature between the current points $k=2,4$ and $k=3$.} We note the computational demands of more points. \\
 
 \label{externalvalidity}
 The methodology developed for our exercise on data from the French electricity market has applications in other domains. This is valid for the non-parametric point selection mechanism (section \ref{newapproach}), the mechanism to aggregate local geographic data to a national level (chapter 2) as well as the identification strategy based on purely ex-ante data. \\
 
 In particular, we note that the possibility to run reduced form estimation strategies for the analysis of markets which make access to functional data available. This includes all markets which use a multi-unit, uniform (or discriminatory) auction mechanism. \\
 
-
 \subsection{Endogeneity}
 \label{endogeneityconcern}
-The set-up of this work is specifically aimed at  circumventing problems of endogeneity. For that sake, we keep a strict separation of ex-post and ex-ante information to the left and right hand sides, respectively, of any regression. \\
+The set-up of this work is specifically aimed at circumventing problems of endogeneity. For that sake, we keep a strict separation of ex-post and ex-ante information to the left and right hand sides, respectively, of any regression. \\
 
-To achieve this separation of ex-ante and ex-post information, both newly developed methodologies are highly useful. The point selection methodology from section \ref{newapproach} allows us to extract proxies for the level of uncertainty about the realization of market demand, which are unaffected by the equilibrium interaction with the market supply.
-The weather data treatment methodology from chapter 2 enables us to base our proxies for the level of uncertainty from renewables on measures of the expected homogeneity of weather forecasts. 
-Both methodologies allow us to recover ex-ante information on the prevailing uncertainty that firms have at their hands at the time of bidding. The information contained in all other controls used is also available at the time of bidding. \\
+To achieve this separation of ex-ante and ex-post information, both newly developed methodologies are highly useful. The point selection methodology from section \ref{newapproach} allows us to extract proxies for the level of uncertainty about the realization of market demand, which are unaffected by the equilibrium interaction with the market supply. The weather data treatment methodology from chapter 2 enables us to base our proxies for the level of uncertainty from renewables on measures of the expected homogeneity of weather forecasts. Both methodologies allow us to recover ex-ante information on the prevailing uncertainty that firms have at their hands at the time of bidding. The information contained in all other controls used is also available at the time of bidding. \\
 
-However for data availability reasons, we are not able keep this strict separation at all times in practice and revert to using ex-post data to compute some variables that should ideally be computed on ex-ante information only. This is the case twice in this work: (i) we use observed weather data to compute the variable Solar\footnote{Contrary to Wind1DA and Tempeff15, which we are able to compute purely on forecast data.} and (ii) we use the pooled data over all auctions for the demand estimation and subsequent uncertainty forecast of equations \ref{regDP} - \ref{predictu}.\\ 
+However for data availability reasons, we are not able to keep this strict separation at all times in practice and revert to using ex-post data to compute some variables that should ideally be computed on ex-ante information only. This is the case twice in this work: (i) we use observed weather data to compute the variable Solar\footnote{Contrary to Wind1DA and Tempeff15, which we are able to compute purely on forecast data.} and (ii) we use the pooled data over all auctions for the demand estimation and subsequent uncertainty forecast of equations \ref{regDP} - \ref{predictu}.\\ 
 
-In both cases, we do not believe that this choice compromises our results.
+In both cases, we do not believe that this choice compromise our results.
 For the case of Solar, we use realised luminosity instead of forecast data. This is as if weather forecasts were perfectly accurate. 
 Given that solar production only accounts for a small fraction for of total electricity generation and that we extract the very informative component of the Solar variable by using the variable suncycle (which is arguably very well predictable), we do not see the use of ex-post data as problematic. \\
 
-%-> thus have PLU$^D$ that is based on some ex-post data. but not a problem due to averaging. 
-For the case of the PLU$^D$ computation,  we run the demand estimation pooled over all observed auctions (i.e. past and future) and say that firms have this level of information when bidding in each auction of our sample. We do so because, we do not have the necessary data before 01.01.2011 and thus cannot calibrate our forecasting model on a ``learning" dataset. Instead, we assume that demand patterns conditional on the explanatory variables has remained constant over our 2.5 years time period of analysis. 
-%The assumption necessary to validate this approach is that our 
-The estimation based on pooled data then yields, on average, the same insights as an analysis conducted purely on past data. \\
-
+For the case of the PLU$^D$ computation, we run the demand estimation pooled over all observed auctions (i.e. past and future) and say that firms have this level of information when bidding in each auction of our sample. We do so because we do not have the necessary data before 01.01.2011 and thus cannot calibrate our forecasting model on a ``learning" dataset. Instead, we assume that demand patterns conditional on the explanatory variables has remained constant over our 2.5 years time period of analysis. The estimation based on pooled data then yields, on average, the same insights as an analysis conducted purely on past data. \\
 
 We could test robustness of our pooled approach by investigating the effect of a restriction on using only past data in the demand estimation. A learning effect could arise from more precise estimations of demand functions. However, due to the long experience of most firms on the market in reality, this learning effect would be artificial and not represent a real insight. We therefore accept the possibility of a (small) endogeneity concern in this paper and further work could fully circumvent this issue by extending the database appropriately. \\
-
 
 \section{Conclusion}
 \label{conclusion}
@@ -1185,20 +691,13 @@ Future empirical work should focus on investigating the endogeneity of the deman
 
 \input{texch2/selectedVolumesSell.tex}
 
-
-
 \section{Computational Details and Descriptives}
-
 \subsection{Hard choices in the PLU computation}
 \label{hardchoicePLU}
 
 In computing the multi-variate kernel based prediction of the uncertainty for a given auction, we select auctions of a sufficient degree of similarity. We base the forecast equation \ref{predictu} on this subsample dataset. We thereby consider that firms use the forecasting equation only \textit{locally} in the neighbourhood of the auction of interest. \\
 
 In order to define the size of the neighbourhood of an auction, we have to explicitly specify the width of the kernel window used in selecting the respective subsamples. \\
-
-%standard deviation of observed squared residuals from the demand estimation (equation \ref{PLU}), we have to decide on the width of the kernels. 
-
-%Depending on the information contained in the variables,  their distribution and the precision of measurement, we choose different bandwidths with respect to each variable. 
 
 The trade-off involved is that we want to have small kernels for a precise computation of the PLU, while we want large kernels to make sure that we have a sufficient sample size in each kernel in order to derive meaningful statistics. \\
 
@@ -1233,8 +732,6 @@ Table \ref{multikernel} gives descriptive statistics about the conditioning vari
 
 \begin{figure}[H]
 \begin{center}
-%\includegraphics[height=100mm]{g7f.pdf} 
-%\includegraphics[trim=0cm 0cm 0cm 1.6cm, clip=true, height=80mm]{Shot26.pdf} 
 \makebox[\textwidth][c]{
 \includegraphics[trim=0cm 0cm 0cm 0cm, clip=true, height=45mm]{figch2/Shot16.pdf} 
 \includegraphics[trim=0cm 0cm 0cm 0cm, clip=true, height=45mm]{figch2/Shot01.pdf}
@@ -1250,15 +747,12 @@ Table \ref{multikernel} gives descriptive statistics about the conditioning vari
 \subsubsection{On player bid functions}
 \begin{figure}[H]
 \begin{center}
-%\includegraphics[trim=0cm 0cm 0cm 1.6cm, clip=true, height=65mm]{g9a.pdf}  
-%\includegraphics[trim=0cm 0cm 0cm 1.6cm, clip=true, height=65mm]{g9b.pdf} 
 \makebox[\textwidth][c]{
 \includegraphics[height=45mm]{figch2/Shot20.pdf}  \includegraphics[height=45mm]{figch2/Shot21.pdf} 
 }
 \caption{Distribution of minimum and maximum production volumes (and corresponding range) bid in an hourly auction.}
 \label{g9a}
 \end{center}
-%{ \small Note: Kernels were smoothed in the quantity dimension with a bandwidth of 20 units.}
 \end{figure}
 \begin{figure}[H]
 \begin{center}
@@ -1269,8 +763,6 @@ Table \ref{multikernel} gives descriptive statistics about the conditioning vari
 \caption{Distribution of number of bid function steps}
 \label{steps}
 \end{center}
-%{ \small Note:} 
-% Think of redoing and having each year in a different colour. 
 \end{figure}
 
 
@@ -1284,7 +776,6 @@ Table \ref{multikernel} gives descriptive statistics about the conditioning vari
 \caption{Histogram of predicted wind (left) and predicted solar (right) generation}
 \label{m1b}
 \end{center}
-%{ \small Note:} 
 \end{figure}
 
 \end{subappendices}
