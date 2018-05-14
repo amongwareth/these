@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.7.5)  14 MAY 2018 01:54
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.7.5)  14 MAY 2018 21:03
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1899,12 +1899,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 119--120
 
  []
 
-
+(./figflip/figs/test14.pgf) [13]
 Underfull \hbox (badness 10000) in paragraph at lines 121--122
 
  []
 
-(./figflip/figs/test14.pgf) [13]
+
 Underfull \hbox (badness 10000) in paragraph at lines 123--124
 
  []
@@ -1914,12 +1914,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 125--126
 
  []
 
-
+[14]
 Underfull \hbox (badness 10000) in paragraph at lines 127--128
 
  []
 
-[14]
+
 Underfull \hbox (badness 10000) in paragraph at lines 129--130
 
  []
@@ -1929,20 +1929,15 @@ Underfull \hbox (badness 10000) in paragraph at lines 131--132
 
  []
 
+
+Underfull \hbox (badness 10000) in paragraph at lines 133--134
+
+ []
+
 (./figflip/figs/test15.pgf) [15] [16]
-Overfull \hbox (2.37044pt too wide) in paragraph at lines 140--141
+Overfull \hbox (2.37044pt too wide) in paragraph at lines 144--145
 \OT1/cmr/m/n/12 L'int^^Ser^et pour la mod^^Selisation des march^^Ses de l'^^Sel
 ectricit^^Se re-monte aux travaux de r^^Sef^^Serence
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 140--141
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 142--143
-
  []
 
 
@@ -1955,7 +1950,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 146--147
 
  []
 
-(./figflip/figs/test16.pgf) [17]
+
 Underfull \hbox (badness 10000) in paragraph at lines 148--149
 
  []
@@ -1965,13 +1960,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 150--151
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 153--154
+(./figflip/figs/test16.pgf) [17]
+Underfull \hbox (badness 10000) in paragraph at lines 152--153
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 155--156
+Underfull \hbox (badness 10000) in paragraph at lines 154--155
 
  []
 
@@ -1980,20 +1975,20 @@ Underfull \hbox (badness 10000) in paragraph at lines 157--158
 
  []
 
+
+Underfull \hbox (badness 10000) in paragraph at lines 159--160
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 161--162
+
+ []
+
 [18]
-Overfull \hbox (14.70781pt too wide) in paragraph at lines 162--164
+Overfull \hbox (14.70781pt too wide) in paragraph at lines 166--168
 \OT1/cmr/m/n/12 L'organisation des march^^Ses de l'^^Selectricit^^Se est tr^^Re
 s forte-ment in-duite par deux car-act^^Seristiques
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 168--169
-
- []
-
-(./figflip/figs/test17.pgf) [19]
-Underfull \hbox (badness 10000) in paragraph at lines 170--171
-
  []
 
 
@@ -2001,7 +1996,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 172--173
 
  []
 
-
+(./figflip/figs/test17.pgf) [19]
 Underfull \hbox (badness 10000) in paragraph at lines 174--175
 
  []
@@ -2011,15 +2006,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 176--177
 
  []
 
-[20]
+
 Underfull \hbox (badness 10000) in paragraph at lines 178--179
 
- []
-
-
-Overfull \hbox (2.92737pt too wide) in paragraph at lines 180--181
-[]\OT1/cmr/m/n/12 Cette ap-proche est toute-fois en-core con-sid^^Ser^^See comm
-e per-ti-nente par nom-bre d'auteurs,
  []
 
 
@@ -2027,18 +2016,24 @@ Underfull \hbox (badness 10000) in paragraph at lines 180--181
 
  []
 
-(./figflip/figs/test18.pgf) [21]
+[20]
 Underfull \hbox (badness 10000) in paragraph at lines 182--183
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 187--188
-
+Overfull \hbox (2.92737pt too wide) in paragraph at lines 184--185
+[]\OT1/cmr/m/n/12 Cette ap-proche est toute-fois en-core con-sid^^Ser^^See comm
+e per-ti-nente par nom-bre d'auteurs,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 189--190
+Underfull \hbox (badness 10000) in paragraph at lines 184--185
+
+ []
+
+(./figflip/figs/test18.pgf) [21]
+Underfull \hbox (badness 10000) in paragraph at lines 186--187
 
  []
 
@@ -2047,7 +2042,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 191--192
 
  []
 
-[22]
+
 Underfull \hbox (badness 10000) in paragraph at lines 193--194
 
  []
@@ -2057,32 +2052,37 @@ Underfull \hbox (badness 10000) in paragraph at lines 195--196
 
  []
 
+[22]
+Underfull \hbox (badness 10000) in paragraph at lines 197--198
 
-Underfull \hbox (badness 10000) in paragraph at lines 209--210
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 199--200
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 213--214
 
  []
 
 (./figflip/figs/test19.pgf) [23]
-Underfull \hbox (badness 10000) in paragraph at lines 215--217
+Underfull \hbox (badness 10000) in paragraph at lines 219--221
 
  []
 
 File: figintro/KMboundaries.png Graphic file (type png)
 <use figintro/KMboundaries.png>
-Package pdftex.def Info: figintro/KMboundaries.png used on input line 222.
+Package pdftex.def Info: figintro/KMboundaries.png used on input line 226.
 (pdftex.def)             Requested size: 227.62204pt x 185.4668pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 227--228
+Underfull \hbox (badness 10000) in paragraph at lines 231--232
 
  []
 
 [24]
-Underfull \hbox (badness 10000) in paragraph at lines 229--230
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 231--232
+Underfull \hbox (badness 10000) in paragraph at lines 233--234
 
  []
 
@@ -2092,31 +2092,26 @@ Underfull \hbox (badness 10000) in paragraph at lines 235--236
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 237--238
-
- []
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 239--240
 
  []
 
+
+Underfull \hbox (badness 10000) in paragraph at lines 241--242
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--244
+
+ []
+
 (./figflip/figs/test20.pgf) [25]
-Underfull \hbox (badness 10000) in paragraph at lines 244--245
-
- []
-
-[26]
-Underfull \hbox (badness 10000) in paragraph at lines 246--247
-
- []
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 248--249
 
  []
 
-(./figflip/figs/test21.pgf) [27]
+[26]
 Underfull \hbox (badness 10000) in paragraph at lines 250--251
 
  []
@@ -2126,12 +2121,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 252--253
 
  []
 
-
+(./figflip/figs/test21.pgf) [27]
 Underfull \hbox (badness 10000) in paragraph at lines 254--255
 
  []
 
-[28]
+
 Underfull \hbox (badness 10000) in paragraph at lines 256--257
 
  []
@@ -2141,7 +2136,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 258--259
 
  []
 
-(./figflip/figs/test22.pgf) [29]
+[28]
 Underfull \hbox (badness 10000) in paragraph at lines 260--261
 
  []
@@ -2151,19 +2146,34 @@ Underfull \hbox (badness 10000) in paragraph at lines 262--263
 
  []
 
-
+(./figflip/figs/test22.pgf) [29]
 Underfull \hbox (badness 10000) in paragraph at lines 264--265
 
  []
 
+
+Underfull \hbox (badness 10000) in paragraph at lines 266--267
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 268--269
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 270--271
+
+ []
+
 [30]
-Overfull \hbox (22.93272pt too wide) in paragraph at lines 266--267
+Overfull \hbox (22.93272pt too wide) in paragraph at lines 272--273
 []\OT1/cmr/m/n/12 La con-tri-bu-tion du dernier chapitre est de pro-poser une m
 ^^Sethodologie es-ti-mant l'incertitude
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 266--267
+Underfull \hbox (badness 10000) in paragraph at lines 272--273
 
  []
 
@@ -2221,7 +2231,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 28--29
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 31--32
+Underfull \hbox (badness 10000) in paragraph at lines 30--31
 
  []
 
@@ -2271,7 +2281,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 49--50
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 64--65
+Underfull \hbox (badness 10000) in paragraph at lines 51--52
 
  []
 
@@ -2286,7 +2296,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 68--69
  []
 
 [40]
-Underfull \hbox (badness 10000) in paragraph at lines 74--75
+Underfull \hbox (badness 10000) in paragraph at lines 70--71
 
  []
 
@@ -2301,7 +2311,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 78--79
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 85--86
+Underfull \hbox (badness 10000) in paragraph at lines 80--81
 
  []
 
@@ -2310,12 +2320,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 87--88
 
  []
 
-
+[42]
 Underfull \hbox (badness 10000) in paragraph at lines 89--90
 
  []
 
-[42]
+
 Underfull \hbox (badness 10000) in paragraph at lines 91--92
 
  []
@@ -2326,34 +2336,34 @@ Underfull \hbox (badness 10000) in paragraph at lines 93--94
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 99--101
+Underfull \hbox (badness 10000) in paragraph at lines 95--96
 
  []
 
 (./figflip/figs/test29.pgf) [43]
-Underfull \hbox (badness 10000) in paragraph at lines 102--103
+Underfull \hbox (badness 10000) in paragraph at lines 101--103
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 108--110
+Underfull \hbox (badness 10000) in paragraph at lines 104--105
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 111--112
+Underfull \hbox (badness 10000) in paragraph at lines 110--112
+
+ []
+
+[44]
+Underfull \hbox (badness 10000) in paragraph at lines 113--114
 
  []
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/ucs/data/uni-32.def
 File: uni-32.def 2013/05/13 UCS: Unicode data U+2000..U+20FF
 )
-Underfull \hbox (badness 10000) in paragraph at lines 113--140
-
- []
-
-[44]
-Underfull \hbox (badness 10000) in paragraph at lines 141--142
+Underfull \hbox (badness 10000) in paragraph at lines 115--142
 
  []
 
@@ -2368,82 +2378,87 @@ Underfull \hbox (badness 10000) in paragraph at lines 145--146
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 152--153
+Underfull \hbox (badness 10000) in paragraph at lines 147--148
 
  []
 
-[46]
+
 Underfull \hbox (badness 10000) in paragraph at lines 154--155
 
  []
 
-
+[46]
 Underfull \hbox (badness 10000) in paragraph at lines 156--157
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 159--160
+Underfull \hbox (badness 10000) in paragraph at lines 158--159
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 165--167
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 168--169
+Underfull \hbox (badness 10000) in paragraph at lines 161--162
 
  []
 
 (./figflip/figs/test31.pgf) [47]
-Underfull \hbox (badness 10000) in paragraph at lines 176--177
+Underfull \hbox (badness 10000) in paragraph at lines 167--169
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 180--181
+Underfull \hbox (badness 10000) in paragraph at lines 170--171
 
  []
 
-[48]
+
+Underfull \hbox (badness 10000) in paragraph at lines 178--179
+
+ []
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 182--183
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 188--190
+[48]
+Underfull \hbox (badness 10000) in paragraph at lines 184--185
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 198--199
+Underfull \hbox (badness 10000) in paragraph at lines 190--192
 
  []
 
 (./figflip/figs/test32.pgf) [49]
-Overfull \hbox (9.71242pt too wide) detected at line 204
+Underfull \hbox (badness 10000) in paragraph at lines 200--201
+
+ []
+
+
+Overfull \hbox (9.71242pt too wide) detected at line 206
 []\U/msb/m/n/12 E [] \OT1/cmr/m/n/12 = \U/msb/m/n/12 E []
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 216--218
+[50]
+Underfull \hbox (badness 10000) in paragraph at lines 218--220
 
  []
 
-[50]
-Overfull \hbox (39.2464pt too wide) in alignment at lines 221--225
+
+Overfull \hbox (39.2464pt too wide) in alignment at lines 223--227
  [][][] []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 225--228
+Underfull \hbox (badness 10000) in paragraph at lines 227--230
 
  []
 
 
-Overfull \hbox (5.40479pt too wide) detected at line 234
+Overfull \hbox (5.40479pt too wide) detected at line 236
 []\OML/cmm/m/it/10.95 ^^Y[]\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 t; ^^R\OT1/c
 mr/m/n/10.95 (\OML/cmm/m/it/10.95 t\OT1/cmr/m/n/10.95 )) = \OML/cmm/m/it/10.95 
 p\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 ^^R\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/1
@@ -2466,26 +2481,21 @@ n/10.95 )[]
  []
 
 (./figflip/figs/test33.pgf) [51]
-Underfull \hbox (badness 10000) in paragraph at lines 252--253
+Underfull \hbox (badness 10000) in paragraph at lines 254--255
 
  []
 
 [52]
-Underfull \hbox (badness 10000) in paragraph at lines 270--272
+Underfull \hbox (badness 10000) in paragraph at lines 272--274
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 273--275
+Underfull \hbox (badness 10000) in paragraph at lines 275--277
 
  []
 
 (./figflip/figs/test34.pgf) [53]
-Underfull \hbox (badness 10000) in paragraph at lines 311--312
-
- []
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 313--314
 
  []
@@ -2511,26 +2521,28 @@ Underfull \hbox (badness 10000) in paragraph at lines 319--320
 
  []
 
-(./figflip/figs/test35.pgf) [55]
-<figch1/monopoly_complet.png, id=904, 639.38875pt x 401.5pt>
+
+Underfull \hbox (badness 10000) in paragraph at lines 321--322
+
+ []
+
+(./figflip/figs/test35.pgf) [55] [56]
+<figch1/monopoly_complet.png, id=908, 639.38875pt x 401.5pt>
 File: figch1/monopoly_complet.png Graphic file (type png)
 
 <use figch1/monopoly_complet.png>
-Package pdftex.def Info: figch1/monopoly_complet.png used on input line 352.
+Package pdftex.def Info: figch1/monopoly_complet.png used on input line 354.
 (pdftex.def)             Requested size: 284.52756pt x 178.67pt.
 
-<figch1/monopoly_completab.png, id=905, 268.00125pt x 392.46625pt>
+<figch1/monopoly_completab.png, id=909, 268.00125pt x 392.46625pt>
 File: figch1/monopoly_completab.png Graphic file (type png)
 
 <use figch1/monopoly_completab.png>
-Package pdftex.def Info: figch1/monopoly_completab.png used on input line 352.
+Package pdftex.def Info: figch1/monopoly_completab.png used on input line 354.
 (pdftex.def)             Requested size: 128.0374pt x 187.49535pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[56]
-Overfull \hbox (32.51778pt too wide) detected at line 378
+ (./figflip/figs/test36.pgf) [57 <./figch1/monopoly_complet.png (PNG copy)> <./
+figch1/monopoly_completab.png (PNG copy)>]
+Overfull \hbox (32.51778pt too wide) detected at line 380
 [][]  [][] \OML/cmm/m/it/12 f[]p\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 a^^R \OT1/cmr
 /m/n/12 + \OML/cmm/m/it/12 b \OMS/cmsy/m/n/12 ^^@ \OML/cmm/m/it/12 p \OMS/cmsy/
 m/n/12 ^^@ \OT1/cmr/m/n/12 (\OML/cmm/m/it/12 n \OMS/cmsy/m/n/12 ^^@ \OT1/cmr/m/
@@ -2542,19 +2554,13 @@ n \OMS/cmsy/m/n/12 ^^@ \OT1/cmr/m/n/12 1)\OML/cmm/m/it/12 S\OT1/cmr/m/n/12 )[]
  ^^R[]\OT1/cmr/m/n/12 ) [][] []\OML/cmm/m/it/12 d^^R
  []
 
-(./figflip/figs/test36.pgf) [57 <./figch1/monopoly_complet.png (PNG copy)> <./f
-igch1/monopoly_completab.png (PNG copy)>]
-Underfull \hbox (badness 10000) in paragraph at lines 412--413
-
- []
-
 [58pdfTeX warning (ext4): destination with the same identifier (name{equation.1
 .5.25}) has been already used, duplicate ignored
 
 \@EveryShipout@Output ...@Org@Shipout \box \@cclv 
                                                   
-l.413 
-      ]
+l.409 \end{proposition}
+                       ]
 Underfull \hbox (badness 10000) in paragraph at lines 414--415
 
  []
@@ -2564,30 +2570,30 @@ Underfull \hbox (badness 10000) in paragraph at lines 416--417
 
  []
 
+
+Underfull \hbox (badness 10000) in paragraph at lines 418--419
+
+ []
+
 (./figflip/figs/test37.pgf) [59]
 <figch1/oligovraiKMd.png, id=944, 583.17876pt x 367.3725pt>
 File: figch1/oligovraiKMd.png Graphic file (type png)
 
 <use figch1/oligovraiKMd.png>
-Package pdftex.def Info: figch1/oligovraiKMd.png used on input line 429.
+Package pdftex.def Info: figch1/oligovraiKMd.png used on input line 431.
 (pdftex.def)             Requested size: 341.43306pt x 215.08861pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 433--434
-
- []
-
 
 Underfull \hbox (badness 10000) in paragraph at lines 435--436
 
  []
 
-[60 <./figch1/oligovraiKMd.png (PNG copy)>]
+
 Underfull \hbox (badness 10000) in paragraph at lines 437--438
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 447--448
+[60 <./figch1/oligovraiKMd.png (PNG copy)>]
+Underfull \hbox (badness 10000) in paragraph at lines 439--440
 
  []
 
@@ -2597,16 +2603,16 @@ Underfull \hbox (badness 10000) in paragraph at lines 449--450
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 453--454
+Underfull \hbox (badness 10000) in paragraph at lines 451--452
 
  []
 
-(./figflip/figs/test38.pgf) [61]
+
 Underfull \hbox (badness 10000) in paragraph at lines 455--456
 
  []
 
-
+(./figflip/figs/test38.pgf) [61]
 Underfull \hbox (badness 10000) in paragraph at lines 457--458
 
  []
@@ -2627,7 +2633,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 463--464
  []
 
 [62]
-Underfull \hbox (badness 10000) in paragraph at lines 471--472
+Underfull \hbox (badness 10000) in paragraph at lines 465--466
 
  []
 
@@ -2656,18 +2662,18 @@ Underfull \hbox (badness 10000) in paragraph at lines 481--482
 
  []
 
-[64]
+
 Underfull \hbox (badness 10000) in paragraph at lines 483--484
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 488--490
+[64]
+Underfull \hbox (badness 10000) in paragraph at lines 485--486
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 491--492
+Underfull \hbox (badness 10000) in paragraph at lines 490--492
 
  []
 
@@ -2676,44 +2682,49 @@ Underfull \hbox (badness 10000) in paragraph at lines 493--494
 
  []
 
-(./figflip/figs/test40.pgf) [65]
+
 Underfull \hbox (badness 10000) in paragraph at lines 495--496
 
  []
 
-[66]
-Underfull \hbox (badness 10000) in paragraph at lines 510--511
+(./figflip/figs/test40.pgf) [65]
+Underfull \hbox (badness 10000) in paragraph at lines 497--498
 
  []
 
-
+[66]
 Underfull \hbox (badness 10000) in paragraph at lines 512--513
 
  []
 
+
+Underfull \hbox (badness 10000) in paragraph at lines 514--515
+
+ []
+
 (./figflip/figs/test41.pgf) [67]
-Underfull \hbox (badness 10000) in paragraph at lines 532--533
+Underfull \hbox (badness 10000) in paragraph at lines 534--535
 
  []
 
 
-Overfull \hbox (49.71214pt too wide) detected at line 538
+Overfull \hbox (49.71214pt too wide) detected at line 540
 [][]  [][] [][] \OML/cmm/m/it/12 f\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 ^^R; t\OT1/
 cmr/m/n/12 ) [] \OML/cmm/m/it/12 d^^Rdt
  []
 
 [68]
-Underfull \hbox (badness 10000) in paragraph at lines 562--563
-
- []
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 564--565
 
  []
 
-(./figflip/figs/test42.pgf) [69]
+
 Underfull \hbox (badness 10000) in paragraph at lines 566--567
+
+ []
+
+(./figflip/figs/test42.pgf) [69]
+Underfull \hbox (badness 10000) in paragraph at lines 568--569
 
  []
 
@@ -2723,11 +2734,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 597--598
  []
 
 [70]
-Underfull \hbox (badness 10000) in paragraph at lines 599--600
-
- []
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 601--602
 
  []
@@ -2742,33 +2748,37 @@ Underfull \hbox (badness 10000) in paragraph at lines 605--606
 
  []
 
-(./figflip/figs/test43.pgf) [71]
+
 Underfull \hbox (badness 10000) in paragraph at lines 607--608
 
  []
 
-<figch1/uncertainty.png, id=1036, 1021.8175pt x 349.305pt>
+(./figflip/figs/test43.pgf) [71]
+Underfull \hbox (badness 10000) in paragraph at lines 609--610
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 611--612
+
+ []
+
+<figch1/uncertainty.png, id=1035, 1021.8175pt x 349.305pt>
 File: figch1/uncertainty.png Graphic file (type png)
 
 <use figch1/uncertainty.png>
-Package pdftex.def Info: figch1/uncertainty.png used on input line 611.
+Package pdftex.def Info: figch1/uncertainty.png used on input line 615.
 (pdftex.def)             Requested size: 426.79134pt x 145.89694pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 619--620
 
- []
-
-[72 <./figch1/uncertainty.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 621--622
-
- []
+LaTeX Warning: `h' float specifier changed to `ht'.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 623--624
 
  []
 
-
+[72]
 Underfull \hbox (badness 10000) in paragraph at lines 625--626
 
  []
@@ -2778,13 +2788,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 627--628
 
  []
 
-(./figflip/figs/test44.pgf) [73]
-Underfull \hbox (badness 10000) in paragraph at lines 633--634
+
+Underfull \hbox (badness 10000) in paragraph at lines 629--630
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 635--636
+(./figflip/figs/test44.pgf) [73 <./figch1/uncertainty.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 631--632
 
  []
 
@@ -2823,100 +2833,110 @@ Underfull \hbox (badness 10000) in paragraph at lines 649--650
 
  []
 
-(./figflip/figs/test45.pgf) [75] [76]
-Underfull \hbox (badness 10000) in paragraph at lines 663--664
+
+Underfull \hbox (badness 10000) in paragraph at lines 651--652
+
+ []
+
+(./figflip/figs/test45.pgf) [75]
+Underfull \hbox (badness 10000) in paragraph at lines 653--654
+
+ []
+
+[76]
+Underfull \hbox (badness 10000) in paragraph at lines 667--668
 
  []
 
 (./figflip/figs/test46.pgf) [77]
-Underfull \hbox (badness 10000) in paragraph at lines 691--694
+Underfull \hbox (badness 10000) in paragraph at lines 695--698
 
  []
 
 
-Overfull \hbox (8.2306pt too wide) in paragraph at lines 695--697
+Overfull \hbox (8.2306pt too wide) in paragraph at lines 699--701
 []\OT1/cmr/m/n/12 Now by con-sid-er-ing the spec-i-fi-ca-tion of our stochas-ti
 c pro-cess we know that $\U/msb/m/n/12 E [] \OT1/cmr/m/n/12 =
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 706--708
+Underfull \hbox (badness 10000) in paragraph at lines 710--712
 
  []
 
 [78]
-Underfull \hbox (badness 10000) in paragraph at lines 719--721
+Underfull \hbox (badness 10000) in paragraph at lines 723--725
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 727--729
+Underfull \hbox (badness 10000) in paragraph at lines 731--733
 
  []
 
 (./figflip/figs/test47.pgf) [79]
-Underfull \hbox (badness 10000) in paragraph at lines 752--754
+Underfull \hbox (badness 10000) in paragraph at lines 756--758
 
  []
 
 [80]
-Underfull \hbox (badness 10000) in paragraph at lines 769--771
+Underfull \hbox (badness 10000) in paragraph at lines 773--775
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 772--773
+Underfull \hbox (badness 10000) in paragraph at lines 776--777
 
  []
 
 (./figflip/figs/test48.pgf) [81]
-Overfull \hbox (89.43898pt too wide) in paragraph at lines 780--782
+Overfull \hbox (89.43898pt too wide) in paragraph at lines 784--786
 \OT1/cmr/m/n/12 con-tin-u-ous and piece-wise con-tin-u-ously dif-fer-en-tiable 
 func-tion $\OML/cmm/m/it/12 ^^V$\OT1/cmr/m/n/12 , as shown in [[],
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 780--782
+Underfull \hbox (badness 10000) in paragraph at lines 784--786
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 783--784
+Underfull \hbox (badness 10000) in paragraph at lines 787--788
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 797--799
+Underfull \hbox (badness 10000) in paragraph at lines 801--803
 
  []
 
 [82]
-Underfull \hbox (badness 10000) in paragraph at lines 804--806
+Underfull \hbox (badness 10000) in paragraph at lines 808--810
 
  []
 
 (./figflip/figs/test49.pgf) [83]
-Underfull \hbox (badness 10000) in paragraph at lines 831--832
+Underfull \hbox (badness 10000) in paragraph at lines 835--836
 
  []
 
 [84]
-Underfull \hbox (badness 10000) in paragraph at lines 852--854
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 855--856
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 857--858
+Underfull \hbox (badness 10000) in paragraph at lines 856--858
 
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 859--860
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 861--862
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 863--864
 
  []
 
@@ -4915,6 +4935,9 @@ Package rerunfilecheck Info: File `Thesis.out' has not changed.
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 189.
  )
 (\end occurred inside a group at level 1)
@@ -4924,7 +4947,7 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 189.
 Here is how much of TeX's memory you used:
  39310 strings out of 492995
  684504 string characters out of 6132705
- 1084640 words of memory out of 5000000
+ 1084641 words of memory out of 5000000
  38140 multiletter control sequences out of 15000+600000
  25878 words of font info for 101 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -4967,7 +4990,7 @@ ts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/2017/texmf-dist
 ist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2017/tex
 mf-dist/fonts/type1/public/cm-super/sfrm0600.pfb></usr/local/texlive/2017/texmf
 -dist/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on Thesis.pdf (290 pages, 7007684 bytes).
+Output written on Thesis.pdf (290 pages, 7009764 bytes).
 PDF statistics:
  6924 PDF objects out of 7423 (max. 8388607)
  6333 compressed objects within 64 object streams

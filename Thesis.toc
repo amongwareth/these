@@ -6,16 +6,16 @@
 \contentsline {section}{\numberline {1.1}Introduction}{35}{section.1.1}
 \contentsline {subsection}{\numberline {1.1.1}Litterature review}{37}{subsection.1.1.1}
 \contentsline {subsection}{\numberline {1.1.2}The day-ahead markets}{40}{subsection.1.1.2}
-\contentsline {section}{\numberline {1.2}Heuristic Description of the Model}{42}{section.1.2}
-\contentsline {section}{\numberline {1.3}Stochastic Dynamics}{46}{section.1.3}
+\contentsline {section}{\numberline {1.2}Heuristic Description of the Model}{43}{section.1.2}
+\contentsline {section}{\numberline {1.3}Stochastic Dynamics}{47}{section.1.3}
 \contentsline {subsection}{\numberline {1.3.1}The stochastic process}{47}{subsection.1.3.1}
-\contentsline {subsection}{\numberline {1.3.2}The ramping costs}{48}{subsection.1.3.2}
+\contentsline {subsection}{\numberline {1.3.2}The ramping costs}{49}{subsection.1.3.2}
 \contentsline {subsection}{\numberline {1.3.3}Discussion of the approximations}{52}{subsection.1.3.3}
 \contentsline {subsection}{\numberline {1.3.4}The maximization program}{52}{subsection.1.3.4}
 \contentsline {section}{\numberline {1.4}The Monopoly}{53}{section.1.4}
 \contentsline {subsection}{\numberline {1.4.1}Results}{54}{subsection.1.4.1}
 \contentsline {section}{\numberline {1.5}The Symmetric Oligopoly}{57}{section.1.5}
-\contentsline {subsection}{\numberline {1.5.1}Discussion}{61}{subsection.1.5.1}
+\contentsline {subsection}{\numberline {1.5.1}Discussion}{62}{subsection.1.5.1}
 \contentsline {section}{\numberline {1.6}Dynamic Behavior of the Bids}{63}{section.1.6}
 \contentsline {subsection}{\numberline {1.6.1}The setup}{65}{subsection.1.6.1}
 \contentsline {subsection}{\numberline {1.6.2}Results}{68}{subsection.1.6.2}
